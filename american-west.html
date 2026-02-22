@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American West | Deborah Heinlen Fine Art</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css"/>
+
+  <style>
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #f2ede8;
+      color: var(--text-dark);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ── MAIN HEADER ──────────────────────────────────────────────── */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(242, 237, 232, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .header-logo {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .header-title {
+      font-family: "lindsey-signature", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      letter-spacing: 0em;
+      color: var(--text-dark);
+      text-decoration: none;
+      text-transform: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-contact {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 1.5rem;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .header-contact:hover {
+      background: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ── COLLECTIONS STRIP ───────────────────────────────────────── */
+    .collections-strip {
+      position: fixed;
+      top: 80px;
+      left: 0; right: 0;
+      z-index: 199;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(237, 232, 220, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .strip-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1.25rem 1.6rem;
+      border-right: 1px solid rgba(200, 184, 154, 0.3);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .strip-link:first-child {
+      border-left: 1px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .strip-link:hover {
+      background: rgba(200, 184, 154, 0.2);
+      color: var(--text-dark);
+    }
+
+    .strip-link.active {
+      color: var(--text-dark);
+      background: rgba(200, 184, 154, 0.15);
+    }
+
+    /* ── HERO ─────────────────────────────────────────────────────── */
+   .hero {
+  margin-top: 112px;
+  min-height: 88vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(210, 170, 120, 0.3) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 70%, rgba(180, 150, 110, 0.2) 0%, transparent 50%),
+    linear-gradient(to right, #f2ede4 0%, #ede8d8 50%, #e8e0cc 100%);
+}
+
+    .hero-texture {
+      position: relative;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 4rem 5rem 5rem;
+    slideshow}
+
+    .hero-texture::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-breadcrumb {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-breadcrumb a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .hero-breadcrumb a:hover { color: var(--text-mid); }
+
+    .hero-collection-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.0;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.5s forwards;
+    }
+
+    .hero-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin: 0 auto 1.8rem auto;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.7s forwards;
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.9s forwards;
+    }
+
+    .hero-slideshow {
+      position: relative;
+      overflow: hidden;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+
+    .slide.active { opacity: 1; }
+
+    .slide img {
+      display: block;
+      width: 62%;
+      max-height: 78vh;
+      object-fit: contain;
+      border-radius: 1px;
+      transform: scale(1);
+      transition: opacity 2s ease, transform 7s ease;
+      filter: drop-shadow(0 8px 32px rgba(100, 80, 60, 0.15));
+    }
+
+    .slide img.portrait { width: 42%; }
+    .slide.active img { transform: scale(1.06); }
+
+    .hero-slideshow::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 140px;
+      height: 100%;
+      background: #f2ede4 0%,  40%;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, #e8dcc8);
+      pointer-events: none;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── INTERLUDE ────────────────────────────────────────────────── */
+    .interlude {
+      background: #e8dcc8;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-top: 1px solid rgba(180, 150, 100, 0.25);
+      border-bottom: 1px solid rgba(180, 150, 100, 0.25);
+    }
+
+    .interlude span {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+
+    /* ── PRINTS SECTION ───────────────────────────────────────────── */
+    .prints-section {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: #2a2a4a;
+    }
+
+    .print-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 85vh;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .print-row.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .print-row.reverse { direction: rtl; }
+    .print-row.reverse > * { direction: ltr; }
+
+    .print-row[data-print="night-watch"] { background: linear-gradient(to right, #2e2e52 0%, #3a3060 50%, #4a3828 100%); }
+
+    .print-row[data-print="night-watch"] .print-text .print-number,
+    .print-row[data-print="night-watch"] .print-text .print-title,
+    .print-row[data-print="night-watch"] .print-text .print-caption { color: #e8d8b8; }
+    .print-row[data-print="night-watch"] .print-text .print-title { color: #f0e8cc; }
+    .print-row[data-print="night-watch"] .print-text .btn-view { color: #e8d8b8; border-color: rgba(232, 216, 184, 0.5); }
+    .print-row[data-print="night-watch"] .print-text .btn-view::before { background: rgba(200, 136, 42, 0.5); }
+    .print-row[data-print="night-watch"] .print-image::after { background: linear-gradient(to right, transparent, #3a3060) !important; }
+    .print-row.reverse[data-print="night-watch"] .print-image::after { background: linear-gradient(to left, transparent, #3a3060) !important; }
+	  
+	  
+
+    .print-row[data-print="red-rock-light"] { background: linear-gradient(to right, #c86848 0%, #b85c3c 50%, #a07060 100%); }
+
+    .print-row[data-print="red-rock-light"] .print-text .print-number,
+    .print-row[data-print="red-rock-light"] .print-text .print-caption { color: #f0e0d0; }
+    .print-row[data-print="red-rock-light"] .print-text .print-title { color: #fff0e8; }
+    .print-row[data-print="red-rock-light"] .print-text .btn-view { color: #f0e0d0; border-color: rgba(240, 224, 208, 0.5); }
+    .print-row[data-print="red-rock-light"] .print-text .btn-view::before { background: rgba(180, 100, 60, 0.5); }
+    .print-row[data-print="red-rock-light"] .print-image::after { background: linear-gradient(to right, transparent, #b85c3c) !important; }
+    .print-row.reverse[data-print="red-rock-light"] .print-image::after { background: linear-gradient(to left, transparent, #b85c3c) !important; }
+
+    .print-row[data-print="desert-roads"] { background: linear-gradient(to right, #788a60 0%, #6a7a54 50%, #7a7050 100%); }
+
+    .print-row[data-print="desert-roads"] .print-text .print-number,
+    .print-row[data-print="desert-roads"] .print-text .print-caption { color: #e8e0c8; }
+    .print-row[data-print="desert-roads"] .print-text .print-title { color: #f0ecd8; }
+    .print-row[data-print="desert-roads"] .print-text .btn-view { color: #e8e0c8; border-color: rgba(232, 224, 200, 0.5); }
+    .print-row[data-print="desert-roads"] .print-text .btn-view::before { background: rgba(120, 140, 80, 0.5); }
+    .print-row[data-print="desert-roads"] .print-image::after { background: linear-gradient(to right, transparent, #6a7a54) !important; }
+    .print-row.reverse[data-print="desert-roads"] .print-image::after { background: linear-gradient(to left, transparent, #6a7a54) !important; }
+
+ .print-row[data-print="country-roads"] { background: linear-gradient(to right, #687888 0%, #5e6c7a 50%, #6a7060 100%); }
+
+
+    .print-row[data-print="country-roads"] .print-text .print-number,
+    .print-row[data-print="country-roads"] .print-text .print-caption { color: #dce4e8; }
+    .print-row[data-print="country-roads"] .print-text .print-title { color: #eef4f8; }
+    .print-row[data-print="country-roads"] .print-text .btn-view { color: #dce4e8; border-color: rgba(220, 228, 232, 0.5); }
+    .print-row[data-print="country-roads"] .print-text .btn-view::before { background: rgba(100, 120, 140, 0.5); }
+    .print-row[data-print="country-roads"] .print-image::after { background: linear-gradient(to right, transparent, #5e6c7a) !important; }
+    .print-row.reverse[data-print="country-roads"] .print-image::after { background: linear-gradient(to left, transparent, #5e6c7a) !important; }
+
+    .print-row[data-print="homestead"] { background: linear-gradient(to right, #8c4e30 0%, #7e4228 50%, #8a6030 100%); }
+
+    .print-row[data-print="homestead"] .print-text .print-number,
+    .print-row[data-print="homestead"] .print-text .print-caption { color: #f0e0c8; }
+    .print-row[data-print="homestead"] .print-text .print-title { color: #fff0e0; }
+    .print-row[data-print="homestead"] .print-text .btn-view { color: #f0e0c8; border-color: rgba(240, 224, 200, 0.5); }
+    .print-row[data-print="homestead"] .print-text .btn-view::before { background: rgba(160, 100, 40, 0.5); }
+    .print-row[data-print="homestead"] .print-image::after { background: linear-gradient(to right, transparent, #7e4228) !important; }
+    .print-row.reverse[data-print="homestead"] .print-image::after { background: linear-gradient(to left, transparent, #7e4228) !important; }
+
+   .print-row[data-print="quiet-shore"] { background: linear-gradient(to right, #b88830 0%, #a87820 50%, #788898 100%); }
+
+    .print-row[data-print="quiet-shore"] .print-text .print-number,
+    .print-row[data-print="quiet-shore"] .print-text .print-caption { color: #f0ead8; }
+    .print-row[data-print="quiet-shore"] .print-text .print-title { color: #fff8e8; }
+    .print-row[data-print="quiet-shore"] .print-text .btn-view { color: #f0ead8; border-color: rgba(240, 234, 216, 0.5); }
+    .print-row[data-print="quiet-shore"] .print-text .btn-view::before { background: rgba(180, 140, 40, 0.5); }
+    .print-row[data-print="quiet-shore"] .print-image::after { background: linear-gradient(to right, transparent, #a87820) !important; }
+    .print-row.reverse[data-print="quiet-shore"] .print-image::after { background: linear-gradient(to left, transparent, #a87820) !important; }
+
+    .print-row[data-print="mustang"] { background: linear-gradient(to right, #a87868 0%, #9a6858 50%, #b09070 100%); }
+
+    .print-row[data-print="mustang"] .print-text .print-number,
+    .print-row[data-print="mustang"] .print-text .print-caption { color: #f0e8e0; }
+    .print-row[data-print="mustang"] .print-text .print-title { color: #fff8f0; }
+    .print-row[data-print="mustang"] .print-text .btn-view { color: #f0e8e0; border-color: rgba(240, 232, 224, 0.5); }
+    .print-row[data-print="mustang"] .print-text .btn-view::before { background: rgba(180, 130, 100, 0.5); }
+    .print-row[data-print="mustang"] .print-image::after { background: linear-gradient(to right, transparent, #9a6858) !important; }
+    .print-row.reverse[data-print="mustang"] .print-image::after { background: linear-gradient(to left, transparent, #9a6858) !important; }
+
+   .print-row[data-print="blue-channels"] { background: linear-gradient(to right, #388898 0%, #2e7888 50%, #607860 100%); }
+
+    .print-row[data-print="blue-channels"] .print-text .print-number,
+    .print-row[data-print="blue-channels"] .print-text .print-caption { color: #d8eef0; }
+    .print-row[data-print="blue-channels"] .print-text .print-title { color: #eef8fa; }
+    .print-row[data-print="blue-channels"] .print-text .btn-view { color: #d8eef0; border-color: rgba(216, 238, 240, 0.5); }
+    .print-row[data-print="blue-channels"] .print-text .btn-view::before { background: rgba(60, 140, 160, 0.5); }
+    .print-row[data-print="blue-channels"] .print-image::after { background: linear-gradient(to right, transparent, #2e7888) !important; }
+    .print-row.reverse[data-print="blue-channels"] .print-image::after { background: linear-gradient(to left, transparent, #2e7888) !important; }
+
+    /* ── FRAMED PRINT IMAGE (NO CROP) ─────────────────────────────── */
+    .print-image{
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem;
+    }
+
+    .print-frame{
+      width: min(95%, 820px);
+      aspect-ratio: 5 / 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .print-frame.portrait{ aspect-ratio: 4 / 5; }
+
+    .print-frame img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      transition: transform 0.7s ease;
+    }
+
+    .print-row:hover .print-frame img { transform: scale(1.03); }
+
+    .print-row:not(.reverse) .print-image::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .print-row.reverse .print-image::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .print-text {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 5rem 5rem 4.5rem;
+      overflow: hidden;
+    }
+
+    .print-text::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .print-text-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .print-number {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .print-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+
+    .print-divider {
+      width: 36px;
+      height: 1px;
+      background: var(--warm-tan);
+      opacity: 0.8;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .print-caption {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      margin-bottom: 2.8rem;
+    }
+
+    .btn-view {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      text-decoration: none;
+      border: 1px solid rgba(100, 80, 60, 0.35);
+      padding: 0.85rem 2.2rem;
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-view::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--warm-tan);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-view:hover { border-color: var(--warm-tan); color: var(--text-dark); }
+    .btn-view:hover::before { transform: translateX(0); }
+
+    /* ── FOOTER ───────────────────────────────────────────────────── */
+    footer {
+      padding: 2.5rem 3rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      background: #e8e4e0;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ── RESPONSIVE ───────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { font-size: 1rem; }
+      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+
+      .hero { grid-template-columns: 1fr; min-height: auto; margin-top: 120px; }
+      .hero-texture { padding: 5rem 2rem 3rem; min-height: 60vw; }
+      .hero-slideshow { height: 80vw; }
+      .hero-slideshow::before { display: none; }
+      .hero::after { display: none; }
+      .slide img { width: 75%; max-height: 75vw; }
+      .slide img.portrait { width: 50%; }
+
+      .print-row, .print-row.reverse { grid-template-columns: 1fr; direction: ltr; min-height: auto; }
+
+      /* Important: do not force a tall fixed height when not full bleed */
+      .print-image { padding: 2.5rem 1.5rem; height: auto; }
+
+      .print-frame { width: min(90%, 420px); }
+
+      .print-row:not(.reverse) .print-image::after,
+      .print-row.reverse .print-image::after { display: none; }
+
+      .print-text { padding: 3rem 2rem; }
+    }
+
+    @media (max-width: 600px) {
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .hero { margin-top: 68px; }
+      .hero-title { font-size: 3rem; }
+      .slide img { width: 85%; }
+      .slide img.portrait { width: 60%; }
+
+      .print-frame { width: min(92%, 380px); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MAIN HEADER -->
+  <header class="site-header">
+    <a href="index.html">
+      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
+    </a>
+    <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
+    <a href="contact.html" class="header-contact">Contact</a>
+  </header>
+
+  <!-- COLLECTIONS STRIP -->
+  <div class="collections-strip">
+    <a href="wildlife.html"          class="strip-link">Wildlife</a>
+    <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
+    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
+    <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
+    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="american-west.html"     class="strip-link active">American West</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-texture">
+      <div class="hero-text">
+        <p class="hero-breadcrumb">
+          <a href="index.html">Home</a> &nbsp;&rsaquo;&nbsp;
+          <a href="index.html#collections">Collections</a> &nbsp;&rsaquo;&nbsp;
+          American West
+        </p>
+        <p class="hero-collection-label">The Collection</p>
+        <h1 class="hero-title">American<br>West</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">Where the land tells a story.</p>
+      </div>
+    </div>
+
+    <div class="hero-slideshow">
+      <div class="slide active" data-index="0">
+        <img src="images/nightstarsutah.jpg" alt="Night Watch by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/utahroad.jpg" alt="Red Rock Light by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="2">
+        <img src="images/signpost.jpg" alt="Desert Roads by Deborah Heinlen" class="portrait" />
+      </div>
+      <div class="slide" data-index="3">
+        <img src="images/oldfordtruck.jpg" alt="Country Roads by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="4">
+        <img src="images/homestead.jpg" alt="Homestead by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="5">
+        <img src="images/argoniteutah.jpg" alt="Quiet Shore by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="6">
+        <img src="images/utahmustang.jpg" alt="Mustang in the High Desert by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="7">
+        <img src="images/greatsaltlakedesert.jpg" alt="Blue Channels by Deborah Heinlen" />
+      </div>
+    </div>
+  </section>
+
+  <div class="interlude">
+    <span>Under Western Skies</span>
+  </div>
+
+  <main class="prints-section">
+
+    <article class="print-row" data-print="night-watch">
+      <div class="print-image">
+        <div class="print-frame">
+          <img src="images/nightstarsutah.jpg" alt="Night Watch fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 01 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Night Watch</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"The desert doesn't sleep.<br>It just changes what it's watching."</p>
+          <a href="night-watch.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row reverse" data-print="red-rock-light">
+      <div class="print-image">
+        <div class="print-frame">
+          <img src="images/utahroad.jpg" alt="Red Rock Light fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 02 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Red Rock Light</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Ancient stone holding<br>the last of the day's warmth."</p>
+          <a href="red-rock-light.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row" data-print="desert-roads">
+      <div class="print-image">
+        <div class="print-frame portrait">
+          <img src="images/signpost.jpg" alt="Desert Roads fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 03 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Desert Roads</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Every direction is<br>a decision out here."</p>
+          <a href="desert-roads.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row reverse" data-print="country-roads">
+      <div class="print-image">
+        <div class="print-frame">
+          <img src="images/oldfordtruck.jpg" alt="Country Roads fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 04 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Country Roads</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"It didn't need to go anywhere.<br>It had already arrived."</p>
+          <a href="country-roads.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row" data-print="homestead">
+      <div class="print-image">
+        <div class="print-frame">
+          <img src="images/homestead.jpg" alt="Homestead fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 05 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Homestead</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Someone built a life here.<br>The land still remembers."</p>
+          <a href="homestead.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row reverse" data-print="quiet-shore">
+      <div class="print-image">
+        <div class="print-frame">
+          <img src="images/argoniteutah.jpg" alt="Quiet Shore fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 06 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Quiet Shore</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Where the mountains come down<br>to catch their reflection."</p>
+          <a href="quiet-shore.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row" data-print="mustang">
+      <div class="print-image">
+        <div class="print-frame">
+          <img src="images/utahmustang.jpg" alt="Mustang in the High Desert fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 07 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Mustang in the<br>High Desert</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Wild and unhurried,<br>on ground that belongs to no one."</p>
+          <a href="mustang-in-the-high-desert.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row reverse" data-print="blue-channels">
+      <div class="print-image">
+        <div class="print-frame">
+          <img src="images/greatsaltlakedesert.jpg" alt="Blue Channels fine art print" loading="lazy" />
+        </div>
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 08 &nbsp;&mdash;&nbsp; American West</p>
+          <h2 class="print-title">Blue Channels</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Water finding its way,<br>the way it always has."</p>
+          <a href="blue-channels.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a>
+    </p>
+    <p style="margin-top: 0.5rem;">
+      All images &copy; Deborah Heinlen.  All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    const SLIDE_DURATION = 3000;
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function nextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(nextSlide, SLIDE_DURATION);
+
+    const rows = document.querySelectorAll('.print-row');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    rows.forEach(row => observer.observe(row));
+  </script>
+
+</body>
+</html>

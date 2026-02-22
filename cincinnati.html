@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cincinnati | Deborah Heinlen Fine Art</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.typekit.net/uug2krd.css"/>
+
+  <style>
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #f2ede8;
+      color: var(--text-dark);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ── MAIN HEADER (MATCHES MASTER) ─────────────────────────────── */
+   .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(242, 237, 232, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .header-logo {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .header-title {
+   font-family: "lindsey-signature", sans-serif;
+font-weight: 400;
+font-style: normal;
+      font-size: 3rem;
+      letter-spacing: 0em;
+      color: var(--text-dark);
+      text-decoration: none;
+      text-transform: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-contact {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 1.5rem;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .header-contact:hover {
+      background: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ── COLLECTIONS STRIP (MATCHES MASTER) ───────────────────────── */
+    .collections-strip {
+      position: fixed;
+      top: 80px;
+      left: 0; right: 0;
+      z-index: 199;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(237, 232, 220, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .strip-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1.25rem 1.6rem;
+      border-right: 1px solid rgba(200, 184, 154, 0.3);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .strip-link:first-child {
+      border-left: 1px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .strip-link:hover {
+      background: rgba(200, 184, 154, 0.2);
+      color: var(--text-dark);
+    }
+
+    .strip-link.active {
+      color: var(--text-dark);
+      background: rgba(200, 184, 154, 0.15);
+    }
+
+    /* ── HERO (SAME STRUCTURE AS MASTER, CINCINNATI COLORS KEPT) ──── */
+    .hero {
+      margin-top: 112px;
+      min-height: 88vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-texture {
+      position: relative;
+      background:
+        radial-gradient(ellipse at 20% 30%, rgba(100, 140, 190, 0.3) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 70%, rgba(190, 160, 90, 0.2) 0%, transparent 50%),
+        linear-gradient(160deg, #e8eef5 0%, #dce8f0 50%, #e8e8d8 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 4rem 5rem 5rem;
+    }
+
+    .hero-texture::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-breadcrumb {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-breadcrumb a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .hero-breadcrumb a:hover { color: var(--text-mid); }
+
+    .hero-collection-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.0;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.5s forwards;
+    }
+
+    .hero-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin: 0 auto 1.8rem auto;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.7s forwards;
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.9s forwards;
+    }
+
+    .hero-slideshow {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(100, 140, 190, 0.25) 0%, transparent 55%),
+        radial-gradient(ellipse at 70% 70%, rgba(190, 160, 90, 0.2) 0%, transparent 50%),
+        linear-gradient(160deg, #dce8f0 0%, #d0e0ec 60%, #e8e4d8 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+
+    .slide.active { opacity: 1; }
+
+    .slide img {
+      display: block;
+      width: 62%;
+      max-height: 78vh;
+      object-fit: contain;
+      border-radius: 1px;
+      transform: scale(1);
+      transition: opacity 2s ease, transform 7s ease;
+      filter: drop-shadow(0 8px 32px rgba(100, 80, 60, 0.15));
+    }
+
+    .slide img.portrait { width: 42%; }
+    .slide.active img { transform: scale(1.06); }
+
+    .hero-slideshow::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 140px;
+      height: 100%;
+      background: linear-gradient(to right, #d0e0ec 0%, rgba(208, 224, 236, 0.7) 40%, transparent 100%);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, #c8d8e8);
+      pointer-events: none;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── INTERLUDE ───────────────────────────────────────────────── */
+    .interlude {
+      background: #c8d8e8;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-top: 1px solid rgba(100, 140, 190, 0.25);
+      border-bottom: 1px solid rgba(100, 140, 190, 0.25);
+    }
+
+    .interlude span {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+    }
+
+    /* ── PRINTS SECTION (SAME MECHANICS AS MASTER, CINCY GRADS KEPT) ─ */
+    .prints-section {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: #4a6880;
+    }
+
+    .print-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 85vh;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .print-row.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .print-row.reverse { direction: rtl; }
+    .print-row.reverse > * { direction: ltr; }
+
+    /* Row 1 */
+    .print-row[data-print="queens-crown"] { background: linear-gradient(to bottom, #4a6880, #c8a84a); }
+    .print-row[data-print="queens-crown"] .print-text {
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(70, 110, 160, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 70%, rgba(190, 160, 60, 0.3) 0%, transparent 50%),
+        linear-gradient(160deg, #3c5870 0%, #4a6880 50%, #6a5830 100%);
+    }
+    .print-row[data-print="queens-crown"] .print-text .print-number,
+    .print-row[data-print="queens-crown"] .print-text .print-caption { color: #d8e8f0; }
+    .print-row[data-print="queens-crown"] .print-text .print-title { color: #eef6fa; }
+    .print-row[data-print="queens-crown"] .print-text .btn-view { color: #d8e8f0; border-color: rgba(216, 232, 240, 0.5); }
+    .print-row[data-print="queens-crown"] .print-text .btn-view::before { background: rgba(70, 110, 160, 0.5); }
+    .print-row[data-print="queens-crown"] .print-image::after { background: linear-gradient(to right, transparent, #4a6880) !important; }
+    .print-row.reverse[data-print="queens-crown"] .print-image::after { background: linear-gradient(to left, transparent, #4a6880) !important; }
+
+    /* Row 2 */
+    .print-row[data-print="gateway"] { background: linear-gradient(to bottom, #c8943a, #88aac8); }
+    .print-row[data-print="gateway"] .print-text {
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(190, 140, 50, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 60%, rgba(120, 160, 200, 0.3) 0%, transparent 50%),
+        linear-gradient(160deg, #b88430 0%, #a87428 50%, #6888a8 100%);
+    }
+    .print-row[data-print="gateway"] .print-text .print-number,
+    .print-row[data-print="gateway"] .print-text .print-caption { color: #f0e8d8; }
+    .print-row[data-print="gateway"] .print-text .print-title { color: #fff8e8; }
+    .print-row[data-print="gateway"] .print-text .btn-view { color: #f0e8d8; border-color: rgba(240, 232, 216, 0.5); }
+    .print-row[data-print="gateway"] .print-text .btn-view::before { background: rgba(180, 130, 40, 0.5); }
+    .print-row[data-print="gateway"] .print-image::after { background: linear-gradient(to right, transparent, #a87428) !important; }
+    .print-row.reverse[data-print="gateway"] .print-image::after { background: linear-gradient(to left, transparent, #a87428) !important; }
+
+    /* Row 3 */
+    .print-row[data-print="love-the-cov"] { background: linear-gradient(to bottom, #8890b8, #c89898); }
+    .print-row[data-print="love-the-cov"] .print-text {
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(110, 120, 180, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 60%, rgba(190, 140, 140, 0.3) 0%, transparent 50%),
+        linear-gradient(160deg, #7078a8 0%, #6068a0 50%, #a07878 100%);
+    }
+    .print-row[data-print="love-the-cov"] .print-text .print-number,
+    .print-row[data-print="love-the-cov"] .print-text .print-caption { color: #e8e8f4; }
+    .print-row[data-print="love-the-cov"] .print-text .print-title { color: #f4f4ff; }
+    .print-row[data-print="love-the-cov"] .print-text .btn-view { color: #e8e8f4; border-color: rgba(232, 232, 244, 0.5); }
+    .print-row[data-print="love-the-cov"] .print-text .btn-view::before { background: rgba(110, 120, 180, 0.5); }
+    .print-row[data-print="love-the-cov"] .print-image::after { background: linear-gradient(to right, transparent, #6068a0) !important; }
+    .print-row.reverse[data-print="love-the-cov"] .print-image::after { background: linear-gradient(to left, transparent, #6068a0) !important; }
+
+    /* Row 4 */
+    .print-row[data-print="grand-terminal"] { background: linear-gradient(to bottom, #789068, #a8a090); }
+    .print-row[data-print="grand-terminal"] .print-text {
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(100, 140, 90, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 60%, rgba(160, 150, 130, 0.3) 0%, transparent 50%),
+        linear-gradient(160deg, #607850 0%, #587048 50%, #807870 100%);
+    }
+    .print-row[data-print="grand-terminal"] .print-text .print-number,
+    .print-row[data-print="grand-terminal"] .print-text .print-caption { color: #e0ead8; }
+    .print-row[data-print="grand-terminal"] .print-text .print-title { color: #eef6e8; }
+    .print-row[data-print="grand-terminal"] .print-text .btn-view { color: #e0ead8; border-color: rgba(224, 234, 216, 0.5); }
+    .print-row[data-print="grand-terminal"] .print-text .btn-view::before { background: rgba(100, 140, 90, 0.5); }
+    .print-row[data-print="grand-terminal"] .print-image::after { background: linear-gradient(to right, transparent, #587048) !important; }
+    .print-row.reverse[data-print="grand-terminal"] .print-image::after { background: linear-gradient(to left, transparent, #587048) !important; }
+
+    /* Row 5 */
+    .print-row[data-print="ault-park"] { background: linear-gradient(to bottom, #486848, #d8b8b0); }
+    .print-row[data-print="ault-park"] .print-text {
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(60, 110, 60, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 60%, rgba(200, 160, 150, 0.3) 0%, transparent 50%),
+        linear-gradient(160deg, #385838 0%, #304830 50%, #906868 100%);
+    }
+    .print-row[data-print="ault-park"] .print-text .print-number,
+    .print-row[data-print="ault-park"] .print-text .print-caption { color: #d8eed8; }
+    .print-row[data-print="ault-park"] .print-text .print-title { color: #eefaee; }
+    .print-row[data-print="ault-park"] .print-text .btn-view { color: #d8eed8; border-color: rgba(216, 238, 216, 0.5); }
+    .print-row[data-print="ault-park"] .print-text .btn-view::before { background: rgba(60, 110, 60, 0.5); }
+    .print-row[data-print="ault-park"] .print-image::after { background: linear-gradient(to right, transparent, #304830) !important; }
+    .print-row.reverse[data-print="ault-park"] .print-image::after { background: linear-gradient(to left, transparent, #304830) !important; }
+
+    /* Row 6 */
+    .print-row[data-print="incline"] { background: linear-gradient(to bottom, #a05040, #d4a850); }
+    .print-row[data-print="incline"] .print-text {
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(160, 80, 60, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 60%, rgba(200, 160, 70, 0.3) 0%, transparent 50%),
+        linear-gradient(160deg, #904030 0%, #803828 50%, #a07830 100%);
+    }
+    .print-row[data-print="incline"] .print-text .print-number,
+    .print-row[data-print="incline"] .print-text .print-caption { color: #f0e0d0; }
+    .print-row[data-print="incline"] .print-text .print-title { color: #fff0e0; }
+    .print-row[data-print="incline"] .print-text .btn-view { color: #f0e0d0; border-color: rgba(240, 224, 208, 0.5); }
+    .print-row[data-print="incline"] .print-text .btn-view::before { background: rgba(160, 80, 60, 0.5); }
+    .print-row[data-print="incline"] .print-image::after { background: linear-gradient(to right, transparent, #803828) !important; }
+    .print-row.reverse[data-print="incline"] .print-image::after { background: linear-gradient(to left, transparent, #803828) !important; }
+
+    .print-image { position: relative; overflow: hidden; }
+
+    .print-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.7s ease;
+    }
+
+    .print-row:hover .print-image img { transform: scale(1.03); }
+
+    .print-row:not(.reverse) .print-image::after,
+    .print-row.reverse .print-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .print-row:not(.reverse) .print-image::after { right: 0; }
+    .print-row.reverse .print-image::after { left: 0; }
+
+    .print-text {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 5rem 5rem 4.5rem;
+      overflow: hidden;
+    }
+
+    .print-text::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .print-text-inner { position: relative; z-index: 2; text-align: center; }
+
+    .print-number {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .print-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+
+    .print-divider {
+      width: 36px;
+      height: 1px;
+      background: var(--warm-tan);
+      opacity: 0.8;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .print-caption {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      margin-bottom: 2.8rem;
+    }
+
+    .btn-view {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      text-decoration: none;
+      border: 1px solid rgba(100, 80, 60, 0.35);
+      padding: 0.85rem 2.2rem;
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-view::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--warm-tan);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-view:hover { border-color: var(--warm-tan); color: var(--text-dark); }
+    .btn-view:hover::before { transform: translateX(0); }
+
+    /* ── “EXPLORE FURTHER” SECTION (KEPT) ─────────────────────────── */
+    .other-collections {
+      background: linear-gradient(to bottom, #a07838, #e8e4e0);
+      padding: 6rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(160, 120, 56, 0.2);
+    }
+
+    .other-collections h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .other-collections p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+
+    .collections-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .collection-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.75rem 2rem;
+      transition: background 0.25s, color 0.25s, border-color 0.25s;
+    }
+
+    .collection-link:hover {
+      background: var(--warm-tan);
+      border-color: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ── FOOTER (MATCHES MASTER) ──────────────────────────────────── */
+    footer {
+      padding: 2.5rem 3rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      background: #e8e4e0;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ── RESPONSIVE (MATCHES MASTER PATTERN) ──────────────────────── */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { font-size: 1rem; }
+      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+      .hero { grid-template-columns: 1fr; min-height: auto; margin-top: 120px; }
+      .hero-texture { padding: 5rem 2rem 3rem; min-height: 60vw; }
+      .hero-slideshow { height: 80vw; }
+      .hero-slideshow::before { display: none; }
+      .hero::after { display: none; }
+      .slide img { width: 75%; max-height: 75vw; }
+      .slide img.portrait { width: 50%; }
+      .print-row, .print-row.reverse { grid-template-columns: 1fr; direction: ltr; min-height: auto; }
+      .print-image { height: 120vw; }
+      .print-row:not(.reverse) .print-image::after,
+      .print-row.reverse .print-image::after { display: none; }
+      .print-text { padding: 3rem 2rem; }
+    }
+
+    @media (max-width: 600px) {
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .hero { margin-top: 68px; }
+      .hero-title { font-size: 3rem; }
+      .slide img { width: 85%; }
+      .slide img.portrait { width: 60%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MAIN HEADER -->
+  <header class="site-header">
+    <a href="index.html">
+      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
+    </a>
+    <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
+    <a href="contact.html" class="header-contact">Contact</a>
+  </header>
+
+  <!-- COLLECTIONS STRIP -->
+  <div class="collections-strip">
+    <a href="wildlife.html"          class="strip-link">Wildlife</a>
+    <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
+    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
+    <a href="cincinnati.html"        class="strip-link active">Cincinnati</a>
+    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="american-west.html"     class="strip-link">American West</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-texture">
+      <div class="hero-text">
+        <p class="hero-breadcrumb">
+          <a href="index.html">Home</a> &nbsp;&rsaquo;&nbsp;
+          <a href="index.html#collections">Collections</a> &nbsp;&rsaquo;&nbsp;
+          Cincinnati
+        </p>
+        <p class="hero-collection-label">The Collection</p>
+        <h1 class="hero-title">Cincinnati</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">Where the river meets its city.</p>
+      </div>
+    </div>
+
+    <div class="hero-slideshow">
+      <div class="slide active" data-index="0">
+        <img src="images/cincinnatiskyline.jpg" alt="The Queen's Crown by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/johnaroeblingbridge.jpg" alt="Gateway to the Queen City by Deborah Heinlen" class="portrait" />
+      </div>
+      <div class="slide" data-index="2">
+        <img src="images/lovethecov.jpg" alt="Love the COV by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="3">
+        <img src="images/unionterminal.jpg" alt="The Grand Terminal by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="4">
+        <img src="images/aultpark.jpg" alt="Ault Park Ascent by Deborah Heinlen" />
+      </div>
+      <div class="slide" data-index="5">
+        <img src="images/mtadamsincline.jpg" alt="Incline to the Mount by Deborah Heinlen" class="portrait" />
+      </div>
+    </div>
+  </section>
+
+  <div class="interlude">
+    <span>Queen City, Always</span>
+  </div>
+
+  <main class="prints-section">
+
+    <article class="print-row" data-print="queens-crown">
+      <div class="print-image">
+        <img src="images/cincinnatiskyline.jpg" alt="The Queen's Crown fine art print" loading="lazy" />
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 01 &nbsp;&mdash;&nbsp; Cincinnati</p>
+          <h2 class="print-title">The Queen's Crown</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"She wears her skyline like a crown,<br>best seen from the river."</p>
+          <a href="the-queens-crown.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row reverse" data-print="gateway">
+      <div class="print-image">
+        <img src="images/johnaroeblingbridge.jpg" alt="Gateway to the Queen City fine art print" loading="lazy" />
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 02 &nbsp;&mdash;&nbsp; Cincinnati</p>
+          <h2 class="print-title">Gateway to the<br>Queen City</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Every great city deserves<br>a grand entrance."</p>
+          <a href="gateway-to-the-queen-city.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row" data-print="love-the-cov">
+      <div class="print-image">
+        <img src="images/lovethecov.jpg" alt="Love the COV fine art print" loading="lazy" />
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 03 &nbsp;&mdash;&nbsp; Cincinnati</p>
+          <h2 class="print-title">Love the COV</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Covington knows -- the view<br>is always worth crossing for."</p>
+          <a href="love-the-cov.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row reverse" data-print="grand-terminal">
+      <div class="print-image">
+        <img src="images/unionterminal.jpg" alt="The Grand Terminal fine art print" loading="lazy" />
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 04 &nbsp;&mdash;&nbsp; Cincinnati</p>
+          <h2 class="print-title">The Grand Terminal</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Built for an era that believed<br>in arriving in style."</p>
+          <a href="the-grand-terminal.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row" data-print="ault-park">
+      <div class="print-image">
+        <img src="images/aultpark.jpg" alt="Ault Park Ascent fine art print" loading="lazy" />
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 05 &nbsp;&mdash;&nbsp; Cincinnati</p>
+          <h2 class="print-title">Ault Park Ascent</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Where the city remembers<br>how to slow down."</p>
+          <a href="ault-park-ascent.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="print-row reverse" data-print="incline">
+      <div class="print-image">
+        <img src="images/mtadamsincline.jpg" alt="Incline to the Mount fine art print" loading="lazy" />
+      </div>
+      <div class="print-text">
+        <div class="print-text-inner">
+          <p class="print-number">No. 06 &nbsp;&mdash;&nbsp; Cincinnati</p>
+          <h2 class="print-title">Incline to the Mount</h2>
+          <div class="print-divider"></div>
+          <p class="print-caption">"Mt. Adams has always known<br>it was worth the climb."</p>
+          <a href="incline-to-the-mount.html" class="btn-view">View Details</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <section class="other-collections">
+    <h2>Explore Further</h2>
+    <p>More collections from Deborah Heinlen Fine Art</p>
+    <nav class="collections-row" aria-label="Other collections">
+      <a href="wildlife.html"          class="collection-link">Wildlife</a>
+      <a href="botanical-studies.html" class="collection-link">Botanical Studies</a>
+      <a href="avian-studies.html"     class="collection-link">Avian Studies</a>
+      <a href="americana.html"         class="collection-link">Americana</a>
+      <a href="american-west.html"     class="collection-link">American West</a>
+    </nav>
+  </section>
+
+  <footer>
+    <p>
+      &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a>
+    </p>
+    <p style="margin-top: 0.5rem;">
+      All images &copy; Deborah Heinlen.  All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    const SLIDE_DURATION = 3000;
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function nextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(nextSlide, SLIDE_DURATION);
+
+    const rows = document.querySelectorAll('.print-row');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    rows.forEach(row => observer.observe(row));
+  </script>
+
+</body>
+</html>
