@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE TITLE -- update for each new print
+       Format: Print Name | Collection Name | Deborah Heinlen Fine Art
+  ════════════════════════════════════════════════════════════════ -->
+  <title>Golden Hour | Botanical Studies | Deborah Heinlen Fine Art</title>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- same as rest of site, do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
+
+  <style>
+
+    /* ═══════════════════════════════════════════════════════════════
+       CSS VARIABLES -- site-wide colors, do not change
+    ════════════════════════════════════════════════════════════════ */
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text-dark);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(242, 237, 232, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .header-logo {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .header-title {
+      font-family: "lindsey-signature", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      letter-spacing: 0em;
+      color: var(--text-dark);
+      text-decoration: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-contact {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 1.5rem;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .header-contact:hover {
+      background: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- matches all other pages, do not change
+       To mark a collection as active, add class="strip-link active"
+       to the correct link below
+    ════════════════════════════════════════════════════════════════ */
+    .collections-strip {
+      position: fixed;
+      top: 80px;
+      left: 0; right: 0;
+      z-index: 199;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(237, 232, 220, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .strip-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1.25rem 1.6rem;
+      border-right: 1px solid rgba(200, 184, 154, 0.3);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .strip-link:first-child { border-left: 1px solid rgba(200, 184, 154, 0.3); }
+    .strip-link:hover { background: rgba(200, 184, 154, 0.2); color: var(--text-dark); }
+    .strip-link.active { color: var(--text-dark); background: rgba(200, 184, 154, 0.15); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PAGE WRAPPER -- pushes content below fixed header + strip
+    ════════════════════════════════════════════════════════════════ */
+    .page-wrap {
+      margin-top: 122px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       BREADCRUMB -- shows navigation path, update for each print
+    ════════════════════════════════════════════════════════════════ */
+    .breadcrumb {
+      padding: 1.5rem 3rem 0;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+
+    .breadcrumb a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover { color: var(--text-mid); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO SECTION -- main product display area
+       Left side: scrolling image gallery
+       Right side: print title, caption, description
+    ════════════════════════════════════════════════════════════════ */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      min-height: 85vh;
+      padding: 2rem 3rem 4rem;
+      align-items: center;
+    }
+
+    /* ── GALLERY (LEFT SIDE) ───────────────────────────────────── */
+    .gallery-wrap {
+      position: relative;
+      padding-right: 3rem;
+    }
+
+    .gallery-main {
+      position: relative;
+      overflow: hidden;
+      background: var(--linen);
+      aspect-ratio: 4/3;
+      cursor: pointer;
+    }
+
+    .gallery-main img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      padding: 1rem;
+    }
+
+    .gallery-main img.active { opacity: 1; }
+
+    /* ── THUMBNAIL STRIP ───────────────────────────────────────── */
+    .gallery-thumbs {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .gallery-thumb {
+      width: 72px;
+      height: 56px;
+      object-fit: contain;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color 0.2s, opacity 0.2s;
+      opacity: 0.6;
+      background: var(--linen);
+      padding: 2px;
+    }
+
+    .gallery-thumb.active,
+    .gallery-thumb:hover {
+      border-color: var(--warm-tan);
+      opacity: 1;
+    }
+
+    /* ── PRINT INFO (RIGHT SIDE) ───────────────────────────────── */
+    .print-info {
+      padding-left: 2rem;
+      border-left: 1px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .print-collection {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT TITLE -- update for each new print
+    ════════════════════════════════════════════════════════════════ */
+    .print-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+
+    .print-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT CAPTION -- the short poetic line, update per print
+    ════════════════════════════════════════════════════════════════ */
+    .print-caption {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 1.4vw, 1.25rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.8rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT DESCRIPTION -- the longer sales description, update per print
+    ════════════════════════════════════════════════════════════════ */
+    .print-description {
+      font-family: 'Jost', sans-serif;
+      font-size: clamp(0.85rem, 1.1vw, 0.95rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+      margin-bottom: 2.5rem;
+    }
+
+    .print-number {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MEDIUM TABS -- Metal, Canvas, Framed selectors
+    ════════════════════════════════════════════════════════════════ */
+    .medium-tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(200, 184, 154, 0.4);
+    }
+
+    .medium-tab {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      padding: 0.75rem 1.4rem;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.2s, border-color 0.2s;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+
+    .medium-tab:hover { color: var(--text-mid); }
+
+    .medium-tab.active {
+      color: var(--text-dark);
+      border-bottom-color: var(--warm-tan);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       SIZE + PRICE SELECTOR -- dropdown and price display
+    ════════════════════════════════════════════════════════════════ */
+    .size-price-row {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .size-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      white-space: nowrap;
+    }
+
+   .size-select {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      color: var(--text-dark);
+      background: var(--cream);
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 2rem 0.55rem 0.9rem;
+      appearance: none;
+      cursor: pointer;
+    }
+      /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239e8e7a'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.7rem center;
+      cursor: pointer; */
+    }
+
+    /*.price-display {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.02em; */
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PURCHASE BUTTON -- links to Sprout Studio
+       Update href in the HTML below with your Sprout Studio link
+    ════════════════════════════════════════════════════════════════ */
+    .btn-purchase {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--cream);
+      text-decoration: none;
+      background: var(--text-dark);
+      border: 1px solid var(--text-dark);
+      padding: 0.95rem 2.8rem;
+      transition: background 0.3s, color 0.3s, border-color 0.3s;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .btn-purchase:hover {
+      background: var(--warm-tan);
+      border-color: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* Framed option links to separate page */
+    .btn-configure {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      text-decoration: none;
+      border: 1px solid rgba(100, 80, 60, 0.35);
+      padding: 0.95rem 2.8rem;
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-configure::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--warm-tan);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-configure:hover { border-color: var(--warm-tan); }
+    .btn-configure:hover::before { transform: translateX(0); }
+
+    .framed-note {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      color: var(--text-light);
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION DIVIDER -- decorative separator between sections
+    ════════════════════════════════════════════════════════════════ */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 0 3rem;
+      margin: 1rem 0 3rem;
+    }
+
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(200, 184, 154, 0.35);
+    }
+
+    .section-divider span {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      white-space: nowrap;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       SIZE GUIDE SECTION
+    ════════════════════════════════════════════════════════════════ */
+    .size-guide-section {
+      padding: 0 3rem 4rem;
+      text-align: center;
+    }
+
+    .size-guide-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.6rem;
+    }
+
+    .size-guide-section p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .size-guide-img {
+      max-width: 900px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MEDIUM DETAIL SECTIONS -- Metal, Canvas, Framed info blocks
+       Each section shows description + detail images
+    ════════════════════════════════════════════════════════════════ */
+    .medium-sections {
+      background: #f0ebe2;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .medium-section {
+      padding: 5rem 3rem;
+      border-bottom: 1px solid rgba(200, 184, 154, 0.2);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .medium-section:last-child { border-bottom: none; }
+
+    .medium-section-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-bottom: 3rem;
+    }
+
+    .medium-section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.04em;
+      margin-bottom: 1rem;
+    }
+
+    .medium-section-number {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.8rem;
+    }
+
+    .medium-section-divider {
+      width: 36px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin-bottom: 1.2rem;
+    }
+
+    .medium-section-desc {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── MEDIUM DETAIL IMAGES ──────────────────────────────────── */
+    .medium-detail-images {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .medium-detail-images img {
+      height: 160px;
+      width: auto;
+      object-fit: contain;
+      background: white;
+      padding: 0.5rem;
+      filter: drop-shadow(0 2px 8px rgba(46,36,25,0.08));
+      transition: transform 0.3s ease;
+    }
+
+    .medium-detail-images img:hover { transform: scale(1.03); }
+
+    .detail-img-caption {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      text-align: center;
+      margin-top: 0.4rem;
+    }
+
+    .detail-img-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── FRAME + MAT COLOR SWATCHES (shown in framed section) ──── */
+    .swatch-group {
+      margin-top: 2rem;
+    }
+
+    .swatch-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+    }
+
+    .swatch-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .swatch-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .swatch-item img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border: 1px solid rgba(200, 184, 154, 0.4);
+    }
+
+    .swatch-item span {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      text-align: center;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       TRUST SECTION -- shipping, policies, contact
+       Update shipping times and policy links as needed
+    ════════════════════════════════════════════════════════════════ */
+    .trust-section {
+      padding: 4rem 3rem;
+      background: var(--cream);
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .trust-block h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.8rem;
+    }
+
+    .trust-block p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+    }
+
+    .trust-block a {
+      color: var(--text-mid);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .trust-block a:hover { color: var(--text-dark); }
+
+    .trust-divider {
+      width: 1px;
+      background: rgba(200, 184, 154, 0.3);
+      align-self: stretch;
+      display: none;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       BACK TO COLLECTION + OTHER PRINTS
+    ════════════════════════════════════════════════════════════════ */
+    .back-section {
+      background: #ede8dc;
+      padding: 4rem 3rem;
+      text-align: center;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .back-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
+    }
+
+    .back-section p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+    }
+
+    .back-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .back-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.75rem 2rem;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .back-link:hover {
+      background: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    footer {
+      padding: 2.5rem 3rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      background: #e8e4e0;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- tablet and mobile adjustments
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { font-size: 1.8rem; }
+      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+      .page-wrap { margin-top: 110px; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1.5rem 3rem;
+        gap: 2rem;
+      }
+
+      .gallery-wrap { padding-right: 0; }
+      .print-info { padding-left: 0; border-left: none; border-top: 1px solid rgba(200,184,154,0.3); padding-top: 2rem; }
+
+      .medium-section-header { grid-template-columns: 1fr; gap: 2rem; }
+      .trust-section { grid-template-columns: 1fr; gap: 2rem; }
+      .medium-section { padding: 3rem 1.5rem; }
+      .size-guide-section { padding: 0 1.5rem 3rem; }
+      .back-section { padding: 3rem 1.5rem; }
+      .breadcrumb { padding: 1rem 1.5rem 0; }
+    }
+
+    @media (max-width: 600px) {
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .page-wrap { margin-top: 68px; }
+      .medium-detail-images img { height: 110px; }
+      .gallery-thumb { width: 56px; height: 44px; }
+      .size-price-row { gap: 0.8rem; }
+      .trust-section { padding: 3rem 1.5rem; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <a href="index.html">
+      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
+    </a>
+    <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
+    <a href="contact.html" class="header-contact">Contact</a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- mark the correct collection as active
+       for this print: botanical-studies.html gets class="strip-link active"
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="collections-strip">
+    <a href="wildlife.html"          class="strip-link">Wildlife</a>
+    <a href="botanical-studies.html" class="strip-link active">Botanical Studies</a>
+    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
+    <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
+    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="american-west.html"     class="strip-link">American West</a>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         BREADCRUMB -- update collection name and link per print
+    ════════════════════════════════════════════════════════════ -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> &nbsp;&rsaquo;&nbsp;
+      <a href="botanical-studies.html">Botanical Studies</a> &nbsp;&rsaquo;&nbsp;
+      sunflowers in Bloom
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO -- image GALLERY + print info
+         LEFT: gallery images (update src paths per print)
+         RIGHT: title, caption, description, purchase options
+    ════════════════════════════════════════════════════════════ -->
+    <section class="hero">
+
+      <!-- GALLERY (LEFT) -->
+      <div class="gallery-wrap">
+        <div class="gallery-main" id="galleryMain">
+
+          <!-- ═══════════════════════════════════════════════════
+               GALLERY IMAGES -- update src for each new print
+               Add class="active" to the first image only
+               Suggested order: print itself, room mockup,
+               framed sample, canvas sample, metal sample
+          ════════════════════════════════════════════════════ -->
+          <img src="images/botanical-studies/sunflower.jpg"
+               alt="sunflowers in Bloom fine art print"
+               class="active"
+               data-thumb="images/botanical-studies/sunflower.jpg" />
+
+          <img src="images/mockups/sunflower/sunflower-room.jpg"
+               alt="sunflowers in Bloom shown in a room setting"
+               data-thumb="images/mockups/sunflower/sunflower-room.jpg" />
+
+          <!-- PLACEHOLDER: replace with sunflower-framed.jpg when ready -->
+          <img src="images/mockups/sunflower/sunflower-framed.jpg"
+               alt="Framed print sample"
+               data-thumb="images/mockups/sunflower/sunflower-framed.jpg" />
+
+          <!-- PLACEHOLDER: replace with sunflower-canvas.jpg when ready -->
+          <img src="images/mockups/sunflower/sunflower-canvas.jpg"
+               alt="Canvas wrap sample"
+               data-thumb="images/mockups/sunflower/sunflower-canvas.jpg" />
+
+          <!-- PLACEHOLDER: replace with sunflower-metal.jpg when ready -->
+          <img src="images/mockups/sunflower/sunflower-metal.jpg"
+               alt="Metal print sample"
+               data-thumb="images/mockups/sunflower/sunflower-metal.jpg"/>
+            
+          <img src="images/size-guides/frame-sizes.jpg"
+               alt="Frame size guide"
+               data-thumb="images/size-guides/frame-sizes.jpg"/>
+            
+
+        </div>
+
+        <!-- THUMBNAILS -- auto-generated by JavaScript below -->
+        <div class="gallery-thumbs" id="galleryThumbs"></div>
+      </div>
+
+      <!-- PRINT INFO (RIGHT) -->
+      <div class="print-info">
+
+        <!-- ═══════════════════════════════════════════════════
+             UPDATE THESE TEXT FIELDS FOR EACH NEW PRINT
+        ════════════════════════════════════════════════════ -->
+        <p class="print-number">No. 02 &nbsp;&mdash;&nbsp; Botanical Studies</p>
+        <p class="print-collection">Botanical Studies Collection</p>
+        <h1 class="print-title">Golder<br>Hour</h1>
+        <div class="print-divider"></div>
+        <p class="print-caption">"Brief and brillian. Like all the best things."</p>
+        <p class="print-description">
+          A Sunflower opens its golden petals to late summer sunshine, displaying nature's perfect geometry in cheerful yellow and deep chocolate brown. Captured through my lens and rendered with a watercolor finish, this print celebrates the simple beauty of wildflower season. The detailed center and bright petals create a joyful composition of natural design.
+        </p>
+
+        <!-- ═══════════════════════════════════════════════════
+             MEDIUM TABS -- Metal, Canvas, Framed
+             JavaScript below handles showing/hiding panels
+        ════════════════════════════════════════════════════ -->
+        <div class="medium-tabs" role="tablist">
+          <button class="medium-tab active" data-medium="metal"  role="tab">Metal</button>
+          <button class="medium-tab"        data-medium="canvas" role="tab">Canvas</button>
+          <button class="medium-tab"        data-medium="framed" role="tab">Framed</button>
+        </div>
+
+        <!-- METAL PANEL -->
+        <div id="panel-metal" class="medium-panel">
+          <div class="size-price-row">
+            <span class="size-label">Size:</span>
+            <select class="size-select" id="select-metal" aria-label="Select metal print size">
+              <option value="55">8x10 &mdash; $55</option>
+              <option value="95">11x14 &mdash; $95</option>
+              <option value="180">16x20 &mdash; $180</option>
+            </select>
+            <span class="price-display" id="price-metal">$55</span>
+          </div>
+          <!-- ═══════════════════════════════════════════════
+               PURCHASE BUTTON -- replace # with your
+               Sprout Studio product link when ready
+          ════════════════════════════════════════════════ -->
+          <a href="#" class="btn-purchase" id="buy-metal">Purchase</a>
+        </div>
+
+        <!-- CANVAS PANEL -->
+        <div id="panel-canvas" class="medium-panel" style="display:none;">
+          <div class="size-price-row">
+            <span class="size-label">Size:</span>
+            <select class="size-select" id="select-canvas" aria-label="Select canvas print size">
+              <option value="115">8x10 &mdash; $115</option>
+              <option value="145">11x14 &mdash; $145</option>
+              <option value="200">16x20 &mdash; $200</option>
+            </select>
+            <span class="price-display" id="price-canvas">$115</span>
+          </div>
+          <!-- Replace # with Sprout Studio link -->
+          <a href="#" class="btn-purchase" id="buy-canvas">Purchase</a>
+        </div>
+
+        <!-- FRAMED PANEL -->
+        <div id="panel-framed" class="medium-panel" style="display:none;">
+          <p class="framed-note">
+            Framed prints offer a choice of frame color and mat color.
+            Click below to customize and purchase your framed print.
+          </p>
+          <!-- Links to the separate framed options page -->
+          <a href="sunflower-framed.html" class="btn-configure">Choose Frame Options</a>
+        </div>
+
+      </div><!-- end .print-info -->
+    </section><!-- end .hero -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SIZE GUIDE SECTION
+    ════════════════════════════════════════════════════════════ -->
+    <div class="section-divider"><span>Size Guide</span></div>
+
+    <section class="size-guide-section">
+      <h2>How Big is That, Really?</h2>
+      <p>All sizes shown to scale alongside a 5&apos;8&quot; figure</p>
+      <!-- ═══════════════════════════════════════════════════
+           SIZE GUIDE IMAGE -- this same image works for all prints
+           Only update if you create a landscape version
+      ════════════════════════════════════════════════════ -->
+      <img src="images/size-guides/frame-sizes.jpg"
+           alt="Print size comparison guide"
+           class="size-guide-img"
+           loading="lazy" />
+    </section>  
+
+    <!-- ═══════════════════════════════════════════════════════════
+         MEDIUM DETAIL SECTIONS
+         These three sections stay the same for every print --
+         only the product description above changes per print
+    ════════════════════════════════════════════════════════════ -->
+    <div class="section-divider"><span>About Your Print</span></div>
+
+    <div class="medium-sections">
+
+      <!-- METAL SECTION -->
+      <div class="medium-section">
+        <div class="medium-section-header">
+          <div>
+            <p class="medium-section-number">Medium 01</p>
+            <h2 class="medium-section-title">Metal Print</h2>
+            <div class="medium-section-divider"></div>
+            <p class="medium-section-desc">
+              Each print is infused directly into specially coated aluminum,
+              bringing your image to life with vibrant color, luminescent depth,
+              and exceptional detail.  The ultra-hard surface is scratch-resistant,
+              waterproof, and arrives ready to hang with a float mount hanger.
+              Production time is 2-3 business days.
+            </p>
+          </div>
+          <div>
+            <div class="medium-detail-images">
+              <div class="detail-img-wrap">
+                <img src="images/media-types/metal/metal-sample-2.jpg" alt="Metal print front" loading="lazy" />
+                <span class="detail-img-caption">Front</span>
+              </div>
+              <div class="detail-img-wrap">
+                <img src="images/media-types/metal/metal-sample.jpg" alt="Metal print edge detail" loading="lazy" />
+                <span class="detail-img-caption">Edge Detail</span>
+              </div>
+              <div class="detail-img-wrap">
+                <img src="images/media-types/metal/metal-backing.jpg" alt="Metal print float mount hanger" loading="lazy" />
+                <span class="detail-img-caption">Float Mount Hanger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end metal section -->
+
+      <!-- CANVAS SECTION -->
+      <div class="medium-section">
+        <div class="medium-section-header">
+          <div>
+            <p class="medium-section-number">Medium 02</p>
+            <h2 class="medium-section-title">Canvas Print</h2>
+            <div class="medium-section-divider"></div>
+            <p class="medium-section-desc">
+              Each print is produced directly onto premium fine art canvas material,
+              then wrapped around a 1.5 inch stretcher frame for a contemporary,
+              gallery-style display.  Printed with a lustre finish, each canvas
+              arrives ready to hang with wire hardware attached.
+              Production time is 2-3 business days.
+            </p>
+          </div>
+          <div>
+            <div class="medium-detail-images">
+              <div class="detail-img-wrap">
+                <img src="images/media-types/canvas/canvas-wrap-sample.jpg" alt="Canvas wrap front" loading="lazy" />
+                <span class="detail-img-caption">Front</span>
+              </div>
+              <div class="detail-img-wrap">
+                <img src="images/media-types/canvas/canvas-backing.jpg" alt="Canvas stretcher frame backing" loading="lazy" />
+                <span class="detail-img-caption">Stretcher Frame</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end canvas section -->
+
+      <!-- FRAMED SECTION -->
+      <div class="medium-section">
+        <div class="medium-section-header">
+          <div>
+            <p class="medium-section-number">Medium 03</p>
+            <h2 class="medium-section-title">Framed Print</h2>
+            <div class="medium-section-divider"></div>
+            <p class="medium-section-desc">
+              Each print is produced on lustre fine art paper and hand-inspected
+              before being mounted in a genuine solid wood frame.  Frames are
+              available in flat black, flat white, flat mocha, and flat natural
+              basswood, each with a naturally rich finish.  Choose your mat color
+              from polar white, white, steel blue, chocolate brown, or smoke gray
+              to complement your space.  Each framed print arrives ready to hang
+              with wire hardware attached.  Production time is 5-7 business days.
+            </p>
+          </div>
+          <div>
+            <div class="medium-detail-images">
+              <div class="detail-img-wrap">
+                <img src="images/media-types/frames/framed-print-sample.jpg" alt="Framed print sample" loading="lazy" />
+                <span class="detail-img-caption">Finished Look</span>
+              </div>
+              <div class="detail-img-wrap">
+                <img src="images/media-types/frames/framed-backing.jpg" alt="Framed print wire hanger" loading="lazy" />
+                <span class="detail-img-caption">Wire Hanger</span>
+              </div>
+            </div>
+
+            <!-- FRAME COLOR SWATCHES -->
+            <div class="swatch-group">
+              <p class="swatch-label">Frame Colors</p>
+              <div class="swatch-row">
+                <div class="swatch-item">
+                  <img src="images/media-types/frames/flat-black-wood-frame.jpg" alt="Flat black wood frame" loading="lazy" />
+                  <span>Flat Black</span>
+                </div>
+                <div class="swatch-item">
+                  <img src="images/media-types/frames/flat-white-wood-frame.jpg" alt="Flat white wood frame" loading="lazy" />
+                  <span>Flat White</span>
+                </div>
+                <div class="swatch-item">
+                  <img src="images/media-types/frames/flat-mocha-wood-frame.jpg" alt="Flat mocha wood frame" loading="lazy" />
+                  <span>Flat Mocha</span>
+                </div>
+                <div class="swatch-item">
+                  <img src="images/media-types/frames/flat-natural-basswood-frame.jpg" alt="Flat natural basswood frame" loading="lazy" />
+                  <span>Natural Basswood</span>
+                </div>
+              </div>
+
+              <!-- MAT COLOR SWATCHES -->
+              <p class="swatch-label">Mat Colors</p>
+              <div class="swatch-row">
+                <div class="swatch-item">
+                  <img src="images/media-types/matting/polar-white-mat.jpg" alt="Polar white mat" loading="lazy" />
+                  <span>Polar White</span>
+                </div>
+                <div class="swatch-item">
+                  <img src="images/media-types/matting/white-mat.jpg" alt="White mat" loading="lazy" />
+                  <span>White</span>
+                </div>
+                <div class="swatch-item">
+                  <img src="images/media-types/matting/steel-blue-mat.jpg" alt="Steel blue mat" loading="lazy" />
+                  <span>Steel Blue</span>
+                </div>
+                <div class="swatch-item">
+                  <img src="images/media-types/matting/chocolate-brown-mat.jpg" alt="Chocolate brown mat" loading="lazy" />
+                  <span>Chocolate Brown</span>
+                </div>
+                <div class="swatch-item">
+                  <img src="images/media-types/matting/smoke-gray-mat.jpg" alt="Smoke gray mat" loading="lazy" />
+                  <span>Smoke Gray</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- end framed section -->
+
+    </div><!-- end .medium-sections -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         TRUST SECTION -- shipping, quality, policies
+         Update shipping times and policy page links as needed
+    ════════════════════════════════════════════════════════════ -->
+    <div class="section-divider"><span>Our Promise</span></div>
+
+    <div class="trust-section">
+
+      <div class="trust-block">
+        <h3>Shipping</h3>
+        <p>
+          We ship to the United States and Canada only.
+          Metal and canvas prints ship within 5-7 business days.
+          Framed prints ship within 8-12 business days.
+          Each print is carefully packaged to arrive in perfect condition.
+        </p>
+      </div>
+
+      <div class="trust-block">
+        <h3>Quality Guarantee</h3>
+        <p>
+          Every print is produced to the highest archival standards and
+          hand-inspected before shipping.  If your print arrives damaged,
+          contact us within 7 days and we will make it right.
+          <!-- UPDATE: add your contact email below -->
+          <br /><br />
+          <a href="mailto:deborah@deborahheinlenphotography.com">Contact Deborah</a>
+        </p>
+      </div>
+
+      <div class="trust-block">
+        <h3>Policies</h3>
+        <p>
+          <!-- UPDATE: replace # with actual page links when ready -->
+          <a href="return-policy.html">Return Policy</a>
+          <br /><br />
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <br /><br />
+          Questions?  We are happy to help with custom size requests
+          or any other inquiries.
+        </p>
+      </div>
+
+    </div><!-- end .trust-section -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         BACK TO COLLECTION + OTHER COLLECTIONS
+         Update the collection link to match this print's collection
+    ════════════════════════════════════════════════════════════ -->
+    <section class="back-section">
+      <h2>Continue Exploring</h2>
+      <p>More from Deborah Heinlen Fine Art</p>
+      <nav class="back-links" aria-label="Continue browsing">
+        <a href="botanical-studies.html" class="back-link">Back to Botanical Studies</a>
+        <a href="wildlife.html"          class="back-link">Wildlife</a>
+        <a href="avian-studies.html"     class="back-link">Avian Studies</a>
+        <a href="cincinnati.html"        class="back-link">Cincinnati</a>
+        <a href="americana.html"         class="back-link">Americana</a>
+        <a href="american-west.html"     class="back-link">American West</a>
+      </nav>
+    </section>
+
+  </div><!-- end .page-wrap -->
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a>
+    </p>
+    <p style="margin-top: 0.5rem;">
+      All images &copy; Deborah Heinlen.  All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+
+    // ═══════════════════════════════════════════════════════════════
+    // PRICING DATA
+    // To update prices: change the numbers in this object only.
+    // Format: medium: { 'size': price }
+    // ═══════════════════════════════════════════════════════════════
+    const PRICES = {
+      metal:  { '55': 55,   '95': 95,   '180': 180  },
+      canvas: { '115': 115, '145': 145, '200': 200  }
+    };
+
+    // ═══════════════════════════════════════════════════════════════
+    // SPROUT STUDIO LINKS
+    // Replace the # values with your actual Sprout Studio product
+    // links when they are ready. Use a separate link per size if
+    // Sprout Studio creates individual listings per size.
+    // Format: medium: { 'price-value': 'url' }
+    // ═══════════════════════════════════════════════════════════════
+    const PURCHASE_LINKS = {
+      metal: {
+        '55':  '#',   // TODO: replace with Sprout Studio link for metal 8x10
+        '95':  '#',   // TODO: replace with Sprout Studio link for metal 11x14
+        '180': '#'    // TODO: replace with Sprout Studio link for metal 16x20
+      },
+      canvas: {
+        '115': '#',   // TODO: replace with Sprout Studio link for canvas 8x10
+        '145': '#',   // TODO: replace with Sprout Studio link for canvas 11x14
+        '200': '#'    // TODO: replace with Sprout Studio link for canvas 16x20
+      }
+    };
+
+    // ═══════════════════════════════════════════════════════════════
+    // FOOTER YEAR -- auto-updates, do not change
+    // ═══════════════════════════════════════════════════════════════
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ═══════════════════════════════════════════════════════════════
+    // GALLERY -- builds thumbnails and handles image switching
+    // ═══════════════════════════════════════════════════════════════
+    const galleryImages = Array.from(document.querySelectorAll('#galleryMain img'));
+    const thumbsContainer = document.getElementById('galleryThumbs');
+
+    galleryImages.forEach((img, i) => {
+      const thumb = document.createElement('img');
+      thumb.src = img.dataset.thumb || img.src;
+      thumb.alt = img.alt;
+      thumb.className = 'gallery-thumb' + (i === 0 ? ' active' : '');
+      thumb.addEventListener('click', () => {
+        galleryImages.forEach(g => g.classList.remove('active'));
+        document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+        img.classList.add('active');
+        thumb.classList.add('active');
+      });
+      thumbsContainer.appendChild(thumb);
+    });
+
+    // ═══════════════════════════════════════════════════════════════
+    // MEDIUM TABS -- shows/hides Metal, Canvas, Framed panels
+    // ═══════════════════════════════════════════════════════════════
+    const tabs   = document.querySelectorAll('.medium-tab');
+    const panels = document.querySelectorAll('.medium-panel');
+
+ tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    panels.forEach(p => p.style.display = 'none');
+    tab.classList.add('active');
+    document.getElementById('panel-' + tab.dataset.medium).style.display = 'block';
+    const mediumIndex = { metal: 4, canvas: 3, framed: 2 };
+const idx = mediumIndex[tab.dataset.medium];
+const allImgs = document.querySelectorAll('#galleryMain img');
+const allThumbs = document.querySelectorAll('.gallery-thumb');
+allImgs.forEach(g => g.classList.remove('active'));
+allThumbs.forEach(t => t.classList.remove('active'));
+allImgs[idx].classList.add('active');
+allThumbs[idx].classList.add('active');
+  });
+});
+
+    // ═══════════════════════════════════════════════════════════════
+    // SIZE DROPDOWNS -- updates price display and purchase link
+    // when a size is selected
+    // ═══════════════════════════════════════════════════════════════
+    function setupSizeSelect(medium) {
+      const select  = document.getElementById('select-' + medium);
+      const priceEl = document.getElementById('price-' + medium);
+      const buyBtn  = document.getElementById('buy-' + medium);
+
+      if (!select) return;
+
+      select.addEventListener('change', () => {
+        const val = select.value;
+        priceEl.textContent = '$' + val;
+        if (PURCHASE_LINKS[medium] && PURCHASE_LINKS[medium][val]) {
+          buyBtn.href = PURCHASE_LINKS[medium][val];
+        }
+      });
+    }
+
+    setupSizeSelect('metal');
+    setupSizeSelect('canvas');
+
+  </script>
+
+</body>
+</html>
