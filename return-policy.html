@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE TITLE
+  ════════════════════════════════════════════════════════════════ -->
+  <title>Return Policy | Deborah Heinlen Fine Art</title>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- same as rest of site, do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
+
+  <style>
+
+    /* ═══════════════════════════════════════════════════════════════
+       CSS VARIABLES -- site-wide colors, do not change
+    ════════════════════════════════════════════════════════════════ */
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text-dark);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(242, 237, 232, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .header-logo {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .header-title {
+      font-family: "lindsey-signature", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      letter-spacing: 0em;
+      color: var(--text-dark);
+      text-decoration: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-contact {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 1.5rem;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .header-contact:hover {
+      background: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    .collections-strip {
+      position: fixed;
+      top: 80px;
+      left: 0; right: 0;
+      z-index: 199;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(237, 232, 220, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .strip-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1.25rem 1.6rem;
+      border-right: 1px solid rgba(200, 184, 154, 0.3);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .strip-link:first-child { border-left: 1px solid rgba(200, 184, 154, 0.3); }
+    .strip-link:hover { background: rgba(200, 184, 154, 0.2); color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PAGE WRAPPER -- pushes content below fixed header + strip
+    ════════════════════════════════════════════════════════════════ */
+    .page-wrap {
+      margin-top: 122px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       POLICY PAGE LAYOUT
+    ════════════════════════════════════════════════════════════════ */
+    .policy-hero {
+      padding: 5rem 3rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .policy-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .policy-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+
+    .policy-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin: 0 auto;
+    }
+
+    .policy-content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 3rem 6rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       POLICY SECTIONS -- each section has a heading and body text
+    ════════════════════════════════════════════════════════════════ */
+    .policy-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(200, 184, 154, 0.2);
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .policy-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 2vw, 1.8rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.04em;
+      margin-bottom: 1rem;
+    }
+
+    .policy-section p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+    }
+
+    .policy-section a {
+      color: var(--text-mid);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .policy-section a:hover { color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    footer {
+      padding: 2.5rem 3rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      background: #e8e4e0;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { font-size: 1.8rem; }
+      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+      .page-wrap { margin-top: 110px; }
+      .policy-hero { padding: 3rem 1.5rem 2rem; }
+      .policy-content { padding: 3rem 1.5rem 4rem; }
+    }
+
+    @media (max-width: 600px) {
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .page-wrap { margin-top: 68px; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <a href="index.html">
+      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
+    </a>
+    <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
+    <a href="contact.html" class="header-contact">Contact</a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- no active link on policy pages
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="collections-strip">
+    <a href="wildlife.html"          class="strip-link">Wildlife</a>
+    <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
+    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
+    <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
+    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="american-west.html"     class="strip-link">American West</a>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- PAGE HERO -->
+    <div class="policy-hero">
+      <p class="policy-eyebrow">Deborah Heinlen Fine Art</p>
+      <h1 class="policy-title">Return Policy</h1>
+      <div class="policy-divider"></div>
+    </div>
+
+    <!-- POLICY CONTENT -->
+    <div class="policy-content">
+
+      <div class="policy-section">
+        <h2>All Sales Are Final</h2>
+        <p>
+          All fine art prints are made to order specifically for you and production
+          begins immediately upon purchase.  Because each piece is custom printed,
+          we cannot accept returns or offer refunds on completed orders.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Quality Guarantee</h2>
+        <p>
+          We stand behind the quality of every print.  If your order arrives damaged
+          during shipping or has a printing defect, please contact us within 7 days
+          of delivery with photos of the issue.  We will work with you to resolve
+          the problem, which may include a replacement print at no additional cost.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Shipping</h2>
+        <p>
+          We currently ship to addresses within the United States and Canada only.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Before You Order</h2>
+        <p>
+          Please review your selection carefully before completing your purchase,
+          including size, print type (framed, canvas, or metal), and shipping address.
+          If you have questions about which option is right for your space, please
+          contact us before ordering.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Cancellations</h2>
+        <p>
+          Orders may be cancelled within 2 hours of purchase.  After that time,
+          production has begun and the order cannot be cancelled or modified.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Questions?</h2>
+        <p>
+          We are happy to help.  Please reach out at
+          <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+          and we will respond within 24 hours.
+        </p>
+      </div>
+
+    </div><!-- end .policy-content -->
+
+  </div><!-- end .page-wrap -->
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+    </p>
+    <p style="margin-top: 0.5rem;">
+      All images &copy; Deborah Heinlen.  All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

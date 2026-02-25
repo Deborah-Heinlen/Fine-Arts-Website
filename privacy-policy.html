@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE TITLE
+  ════════════════════════════════════════════════════════════════ -->
+  <title>Privacy Policy | Deborah Heinlen Fine Art</title>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- same as rest of site, do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
+
+  <style>
+
+    /* ═══════════════════════════════════════════════════════════════
+       CSS VARIABLES -- site-wide colors, do not change
+    ════════════════════════════════════════════════════════════════ */
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text-dark);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(242, 237, 232, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .header-logo {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .header-title {
+      font-family: "lindsey-signature", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      letter-spacing: 0em;
+      color: var(--text-dark);
+      text-decoration: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-contact {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 1.5rem;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .header-contact:hover {
+      background: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    .collections-strip {
+      position: fixed;
+      top: 80px;
+      left: 0; right: 0;
+      z-index: 199;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(237, 232, 220, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .strip-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1.25rem 1.6rem;
+      border-right: 1px solid rgba(200, 184, 154, 0.3);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .strip-link:first-child { border-left: 1px solid rgba(200, 184, 154, 0.3); }
+    .strip-link:hover { background: rgba(200, 184, 154, 0.2); color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PAGE WRAPPER -- pushes content below fixed header + strip
+    ════════════════════════════════════════════════════════════════ */
+    .page-wrap {
+      margin-top: 122px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       POLICY PAGE LAYOUT
+    ════════════════════════════════════════════════════════════════ */
+    .policy-hero {
+      padding: 5rem 3rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .policy-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .policy-last-updated {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-top: 1.2rem;
+    }
+
+    .policy-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+
+    .policy-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin: 0 auto;
+    }
+
+    .policy-content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 3rem 6rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       POLICY SECTIONS
+    ════════════════════════════════════════════════════════════════ */
+    .policy-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(200, 184, 154, 0.2);
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .policy-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 2vw, 1.8rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.04em;
+      margin-bottom: 1rem;
+    }
+
+    .policy-section p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+      margin-bottom: 1rem;
+    }
+
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       DATA LIST -- used for the types of data collected sections
+    ════════════════════════════════════════════════════════════════ */
+    .policy-section .data-category {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin: 1.2rem 0 0.6rem;
+    }
+
+    .policy-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+
+    .policy-list li {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .policy-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.75em;
+      width: 4px;
+      height: 1px;
+      background: var(--warm-tan);
+    }
+
+    .policy-section a {
+      color: var(--text-mid);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .policy-section a:hover { color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER -- matches all other pages, do not change
+    ════════════════════════════════════════════════════════════════ */
+    footer {
+      padding: 2.5rem 3rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      background: #e8e4e0;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { font-size: 1.8rem; }
+      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+      .page-wrap { margin-top: 110px; }
+      .policy-hero { padding: 3rem 1.5rem 2rem; }
+      .policy-content { padding: 3rem 1.5rem 4rem; }
+    }
+
+    @media (max-width: 600px) {
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .page-wrap { margin-top: 68px; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <a href="index.html">
+      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
+    </a>
+    <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
+    <a href="contact.html" class="header-contact">Contact</a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- no active link on policy pages
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="collections-strip">
+    <a href="wildlife.html"          class="strip-link">Wildlife</a>
+    <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
+    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
+    <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
+    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="american-west.html"     class="strip-link">American West</a>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- PAGE HERO -->
+    <div class="policy-hero">
+      <p class="policy-eyebrow">Deborah Heinlen Fine Art</p>
+      <h1 class="policy-title">Privacy Policy</h1>
+      <div class="policy-divider"></div>
+      <p class="policy-last-updated">Last updated: February 7, 2026</p>
+    </div>
+
+    <!-- POLICY CONTENT -->
+    <div class="policy-content">
+
+      <div class="policy-section">
+        <p>
+          This Privacy Policy applies to all Deborah Heinlen Photography LLC ("DHP")
+          websites, applications, and services, including our fine art print shop.
+          Please review this policy to understand your rights, our standards, and
+          the regulations that govern your privacy.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Our Commitment to Data Privacy</h2>
+        <p>
+          At DHP, the privacy of your data is a top priority.  We take extreme care
+          with any data that directly identifies you, such as your name or address,
+          or any data that can reasonably be used to identify you.
+        </p>
+        <p>
+          This notice does not apply to third parties or affiliates.  For information
+          on how third parties handle your data, please review their individual
+          privacy policies.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>What Personal Data We Collect</h2>
+        <p>
+          DHP collects personal information when you interact with our websites,
+          place an order for photography services or fine art prints, or sign up
+          for our marketing lists.  This may include:
+        </p>
+
+        <p class="data-category">Information you provide to us</p>
+        <ul class="policy-list">
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Mailing and shipping address</li>
+          <li>Phone number</li>
+          <li>Payment information (processed securely by our payment partners)</li>
+        </ul>
+
+        <p class="data-category">Information collected automatically</p>
+        <ul class="policy-list">
+          <li>Purchase and cart history</li>
+          <li>IP address and access time</li>
+          <li>Device and browser usage data</li>
+          <li>Cookie and pixel data</li>
+          <li>Location data</li>
+        </ul>
+
+        <p class="data-category">Information from third parties</p>
+        <ul class="policy-list">
+          <li>Fraud detection and credit data</li>
+          <li>Demographic and activity data from partners</li>
+        </ul>
+      </div>
+
+      <div class="policy-section">
+        <h2>How We Use Your Data</h2>
+        <p>
+          DHP uses your personal information to provide and improve our services,
+          process your transactions, fulfill your orders, communicate with you, and
+          comply with applicable legal requirements.  For fine art print orders,
+          your information is shared with our print fulfillment partners to produce
+          and ship your custom order.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>How We Share Your Data</h2>
+        <p>
+          DHP may share your information with the following parties as necessary
+          to fulfill your orders and provide our services:
+        </p>
+        <ul class="policy-list">
+          <li>E-commerce platforms (Squarespace) for website hosting and payment processing</li>
+          <li>Print fulfillment partners (Printique) for art print production and shipping</li>
+          <li>Payment service providers for secure transaction processing</li>
+          <li>Delivery companies for shipping and tracking</li>
+          <li>Marketing services, limited to your name and postal address only</li>
+        </ul>
+        <p>
+          DHP will never sell your personal information.  In the event of a merger,
+          acquisition, or sale of assets, your information may be transferred to
+          the relevant organization.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Your Privacy Rights</h2>
+        <p>
+          You have the right to know, access, correct, transfer, restrict the
+          processing of, and delete your personal information at any time.  You may
+          also request to be removed from our marketing lists and cease all email
+          communications at any time.  You will not be subject to any discriminatory
+          treatment for exercising these rights.
+        </p>
+        <p>
+          To make a request, please contact us using the information in the
+          "Contact Us" section below.  We may need to verify your identity before
+          completing your request.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Cookies and Tracking Technologies</h2>
+        <p>
+          Our websites use cookies and similar technologies to provide a secure
+          user experience, keep your shopping cart persistent, and help us
+          understand how our site is being used.  You may opt out of cookies
+          at any time through your browser settings.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Children's Privacy</h2>
+        <p>
+          DHP does not knowingly collect information from any person under the
+          age of 18.  Our services are not directed to children.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>How We Protect Your Data</h2>
+        <p>
+          DHP employs reasonable electronic, physical, and operational measures
+          to ensure your personal information is secure and protected from
+          unauthorized use, disclosure, modification, or loss.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Privacy Regulations</h2>
+        <p>
+          DHP works to maintain compliance with applicable data privacy regulations,
+          including the California Consumer Privacy Act (CCPA), the General Data
+          Protection Regulation (GDPR), the Canadian Personal Information Protection
+          and Electronic Documents Act (PIPEDA), and other applicable international
+          privacy laws.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Updates to This Policy</h2>
+        <p>
+          DHP reserves the right to modify this privacy policy at any time.  Updates
+          will be reflected on this page.  If changes are substantial, we may notify
+          you by email.  Please review this policy periodically.
+        </p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions about this privacy policy or wish to exercise your
+          privacy rights, please contact us at:
+        </p>
+        <p>
+          Deborah Heinlen Photography LLC<br />
+          Hebron, Kentucky<br />
+          <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+        </p>
+      </div>
+
+    </div><!-- end .policy-content -->
+
+  </div><!-- end .page-wrap -->
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+    </p>
+    <p style="margin-top: 0.5rem;">
+      All images &copy; Deborah Heinlen.  All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
