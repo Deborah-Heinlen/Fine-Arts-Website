@@ -436,21 +436,21 @@ const PRODUCTS = {
     }
   },
 
-  "gateway-to-queen-city": {
-    id:              "gateway-to-queen-city",
+  "gateway-to-the-queen-city": {
+    id:              "gateway-to-the-queen-city",
     number:          "No. 02",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
-    title:           "Gateway to Queen City",
+    title:           "Gateway to the Queen City",
     caption:         "Every bridge is a beginning.",
     description:     "One of Cincinnati's iconic bridges spans the Ohio River, connecting two states and two stories in a single graceful arc. Rendered with a watercolor finish from an original photograph, this print celebrates the river crossings that have defined Cincinnati's character -- industrial and beautiful, practical and poetic, always pointing toward something on the other side.",
     images: {
       main:    "images/cincinnati/gateway-to...een-city.jpg",
-      room:    "images/mockups/gateway-to-queen-city/gateway-to-queen-city-room.jpg",
-      framed:  "images/mockups/gateway-to-queen-city/gateway-to-queen-city-framed.jpg",
-      canvas:  "images/mockups/gateway-to-queen-city/gateway-to-queen-city-canvas.jpg",
-      metal:   "images/mockups/gateway-to-queen-city/gateway-to-queen-city-metal.jpg"
+      room:    "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-room.jpg",
+      framed:  "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-framed.jpg",
+      canvas:  "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-canvas.jpg",
+      metal:   "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-metal.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -974,7 +974,7 @@ const COLLECTIONS = {
   ],
   "cincinnati": [
     "ault-park-ascent",
-    "gateway-to-queen-city",
+    "gateway-to-the-queen-city",
     "incline-to-the-mount",
     "love-the-cov",
     "queen-city-overture",
