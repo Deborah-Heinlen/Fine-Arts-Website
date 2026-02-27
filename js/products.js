@@ -338,11 +338,11 @@ const PRODUCTS = {
     caption:     "The stars are not decoration.  They are the point.",
     description: "The Milky Way arches over the Utah desert in a display that feels less like weather and more like revelation. Rendered with a watercolor finish from an original photograph, this print brings the overwhelming scale of the night sky into your home -- intimate, luminous, and quietly humbling.",
     images: {
-      main:    "images/american-west/nightstarsutah.jpg",
-      room:    "images/mockups/nightstarsutah/nightstarsutah-room.jpg",
-      framed:  "images/mockups/nightstarsutah/nightstarsutah-framed.jpg",
-      canvas:  "images/mockups/nightstarsutah/nightstarsutah-canvas.jpg",
-      metal:   "images/mockups/nightstarsutah/nightstarsutah-metal.jpg"
+      main:    "images/american-west/utah-night-sky.jpg",
+      room:    "images/mockups/utah-night-sky/utah-night-sky-room.jpg",
+      framed:  "images/mockups/utah-night-sky/utah-night-sky-framed.jpg",
+      canvas:  "images/mockups/utah-night-sky/utah-night-sky-canvas.jpg",
+      metal:   "images/mockups/utah-night-sky/utah-night-sky-metal.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
