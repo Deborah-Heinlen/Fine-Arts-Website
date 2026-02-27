@@ -446,7 +446,7 @@ const PRODUCTS = {
     caption:         "Every bridge is a beginning.",
     description:     "One of Cincinnati's iconic bridges spans the Ohio River, connecting two states and two stories in a single graceful arc. Rendered with a watercolor finish from an original photograph, this print celebrates the river crossings that have defined Cincinnati's character -- industrial and beautiful, practical and poetic, always pointing toward something on the other side.",
     images: {
-      main:    "images/cincinnati/gateway-to...een-city.jpg",
+      main:    "images/cincinnati/gateway-to-the-queen-city.jpg",
       room:    "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-room.jpg",
       framed:  "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-framed.jpg",
       canvas:  "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-canvas.jpg",
