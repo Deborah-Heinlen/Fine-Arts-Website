@@ -102,8 +102,7 @@ function cartUpdateBadge() {
   const badge = document.getElementById('cartCount');
   if (!badge) return;
   const count = cartItemCount();
-  badge.textContent = count;
-  badge.style.display = count > 0 ? 'inline' : 'none';
+  badge.textContent = count > 0 ? ' (' + count + ')' : '';
 }
 
 // ── CONFIRMATION FLASH ───────────────────────────────────────
