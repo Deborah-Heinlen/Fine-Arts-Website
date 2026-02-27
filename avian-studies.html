@@ -312,19 +312,10 @@
     </div>
 
     <!-- ═══════════════════════════════════════════════════════════
-         HERO SLIDESHOW IMAGES
-         All Avian Studies images live in images/avian-studies/
+         HERO SLIDESHOW -- built automatically from products.js
+         No manual updates needed when you add a new print.
     ════════════════════════════════════════════════════════════ -->
-    <div class="hero-slideshow">
-      <div class="slide active" data-index="0"><img src="images/avian-studies/american-glory.jpg"   alt="American Glory by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="1"><img src="images/avian-studies/winter-red.jpg"       alt="Winter Red by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="2"><img src="images/avian-studies/ghost-wing.jpg"       alt="Ghost Wing by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="3"><img src="images/avian-studies/poised.jpg"           alt="Poised by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="4"><img src="images/avian-studies/quiet-perch.jpg"      alt="Quiet Perch by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="5"><img src="images/avian-studies/sentinels-watch.jpg"  alt="Sentinel's Watch by Deborah Heinlen" class="portrait" /></div>
-      <div class="slide"        data-index="6"><img src="images/avian-studies/still-waters.jpg"     alt="Still Waters by Deborah Heinlen" class="portrait" /></div>
-      <div class="slide"        data-index="7"><img src="images/avian-studies/wings-of-glory.jpg"   alt="Wings of Glory by Deborah Heinlen" /></div>
-    </div>
+    <div class="hero-slideshow" id="heroSlideshow"></div>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -333,111 +324,13 @@
   <div class="interlude"><span>On the Wing</span></div>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       PRINTS SECTION
-       To add a new print: copy one full <article> block, update the
-       data-print name, image src, title, caption, and btn-view href.
-       Add a matching color block in the CSS above for the new print.
-       Alternate class="print-row" and class="print-row reverse".
+       PRINTS SECTION -- built automatically from products.js
+       To add a new print:
+         1. Add the print to products.js
+         2. Add a color block for it in the CSS above
+       That's it -- the row appears here automatically.
   ════════════════════════════════════════════════════════════════ -->
-  <main class="prints-section">
-
-    <!-- PRINT 01 -- American Glory -->
-    <article class="print-row" data-print="american-glory">
-      <div class="print-image"><img src="images/avian-studies/american-glory.jpg" alt="American Glory fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 01 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">American Glory</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Steady, certain, and impossible<br>to look away from."</p>
-        <a href="product.html?id=american-glory" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 02 -- Winter Red -->
-    <article class="print-row reverse" data-print="winter-red">
-      <div class="print-image"><img src="images/avian-studies/winter-red.jpg" alt="Winter Red fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 02 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Winter Red</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"A cardinal in winter<br>needs no introduction."</p>
-        <a href="product.html?id=winter-red" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 03 -- Ghost Wing -->
-    <article class="print-row" data-print="ghost-wing">
-      <div class="print-image"><img src="images/avian-studies/ghost-wing.jpg" alt="Ghost Wing fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 03 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Ghost Wing</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Silent as thought,<br>sharp as instinct."</p>
-        <a href="product.html?id=ghost-wing" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 04 -- Poised -->
-    <article class="print-row reverse" data-print="poised">
-      <div class="print-image"><img src="images/avian-studies/poised.jpg" alt="Poised fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 04 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Poised</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Everything about it says<br>it could leave at any moment."</p>
-        <a href="product.html?id=poised" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 05 -- Quiet Perch -->
-    <article class="print-row" data-print="quiet-perch">
-      <div class="print-image"><img src="images/avian-studies/quiet-perch.jpg" alt="Quiet Perch fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 05 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Quiet Perch</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Small enough to overlook.<br>Too beautiful to."</p>
-        <a href="product.html?id=quiet-perch" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 06 -- Sentinel's Watch -->
-    <article class="print-row reverse" data-print="sentinels-watch">
-      <div class="print-image"><img src="images/avian-studies/sentinels-watch.jpg" alt="Sentinel's Watch fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 06 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Sentinel's Watch</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"It sees everything.<br>It's waiting for the right moment."</p>
-        <a href="product.html?id=sentinels-watch" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 07 -- Still Waters -->
-    <article class="print-row" data-print="still-waters">
-      <div class="print-image"><img src="images/avian-studies/still-waters.jpg" alt="Still Waters fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 07 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Still Waters</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"The heron and the water agree --<br>patience is its own reward."</p>
-        <a href="product.html?id=still-waters" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 08 -- Wings of Glory -->
-    <article class="print-row reverse" data-print="wings-of-glory">
-      <div class="print-image"><img src="images/avian-studies/wings-of-glory.jpg" alt="Wings of Glory fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 08 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Wings of Glory</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"The world holds its breath.<br>Then -- gone."</p>
-        <a href="product.html?id=wings-of-glory" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-  </main>
+  <main class="prints-section" id="printsSection"></main>
 
   <!-- ═══════════════════════════════════════════════════════════════
        EXPLORE FURTHER
@@ -467,6 +360,7 @@
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
   </footer>
 
+  <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
 
   <script>
@@ -475,6 +369,52 @@
     // FOOTER YEAR -- auto-updates, do not change
     // ═══════════════════════════════════════════════════════════════
     document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ═══════════════════════════════════════════════════════════════
+    // BUILD HERO SLIDESHOW & PRINT ROWS from products.js
+    // No manual updates needed when you add a new print.
+    // ═══════════════════════════════════════════════════════════════
+    const collectionId  = 'avian-studies';
+    const productIds    = COLLECTIONS[collectionId] || [];
+    const slideshow     = document.getElementById('heroSlideshow');
+    const printsSection = document.getElementById('printsSection');
+
+    productIds.forEach((id, i) => {
+      const p = PRODUCTS[id];
+      if (!p) return;
+
+      const slide = document.createElement('div');
+      slide.className = 'slide' + (i === 0 ? ' active' : '');
+      slide.innerHTML = `<img src="${p.images.main}" alt="${p.title} by Deborah Heinlen" />`;
+      slideshow.appendChild(slide);
+    });
+
+    productIds.forEach((id, i) => {
+      const p = PRODUCTS[id];
+      if (!p) return;
+
+      const isReverse = i % 2 !== 0;
+      const article   = document.createElement('article');
+      article.className    = 'print-row' + (isReverse ? ' reverse' : '');
+      article.dataset.print = id;
+
+      article.innerHTML = `
+        <div class="print-image">
+          <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+        </div>
+        <div class="print-text">
+          <div class="print-text-inner">
+            <p class="print-number">${p.number} &nbsp;&mdash;&nbsp; ${p.collectionLabel}</p>
+            <h2 class="print-title">${p.title}</h2>
+            <div class="print-divider"></div>
+            <p class="print-caption">&ldquo;${p.caption}&rdquo;</p>
+            <a href="product.html?id=${id}" class="btn-view">View Details</a>
+          </div>
+        </div>
+      `;
+
+      printsSection.appendChild(article);
+    });
 
     // ═══════════════════════════════════════════════════════════════
     // HERO SLIDESHOW -- cycles through prints automatically
@@ -490,13 +430,13 @@
       slides[current].classList.add('active');
     }
 
-    setInterval(nextSlide, SLIDE_DURATION);
+    if (slides.length > 1) setInterval(nextSlide, SLIDE_DURATION);
 
     // ═══════════════════════════════════════════════════════════════
     // SCROLL ANIMATION -- print rows fade in as you scroll down
     // do not change
     // ═══════════════════════════════════════════════════════════════
-    const rows = document.querySelectorAll('.print-row');
+    const rows     = document.querySelectorAll('.print-row');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {

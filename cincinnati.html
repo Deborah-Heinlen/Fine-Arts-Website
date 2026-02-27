@@ -301,18 +301,10 @@
     </div>
 
     <!-- ═══════════════════════════════════════════════════════════
-         HERO SLIDESHOW IMAGES
-         All Cincinnati images live in images/cincinnati/
+         HERO SLIDESHOW -- built automatically from products.js
+         No manual updates needed when you add a new print.
     ════════════════════════════════════════════════════════════ -->
-    <div class="hero-slideshow">
-      <div class="slide active" data-index="0"><img src="images/cincinnati/the-queens-crown.jpg"       alt="The Queen's Crown by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="1"><img src="images/cincinnati/gateway-to-queen-city.jpg"  alt="Gateway to the Queen City by Deborah Heinlen" class="portrait" /></div>
-      <div class="slide"        data-index="2"><img src="images/cincinnati/queen-city-overture.jpg"    alt="Queen City Overture by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="3"><img src="images/cincinnati/love-the-cov.jpg"           alt="Love the COV by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="4"><img src="images/cincinnati/the-grand-terminal.jpg"     alt="The Grand Terminal by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="5"><img src="images/cincinnati/ault-park-ascent.jpg"       alt="Ault Park Ascent by Deborah Heinlen" /></div>
-      <div class="slide"        data-index="6"><img src="images/cincinnati/incline-to-the-mount.jpg"   alt="Incline to the Mount by Deborah Heinlen" class="portrait" /></div>
-    </div>
+    <div class="hero-slideshow" id="heroSlideshow"></div>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -321,99 +313,13 @@
   <div class="interlude"><span>Queen City, Always</span></div>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       PRINTS SECTION
-       To add a new print: copy one full <article> block, update the
-       data-print name, image src, title, caption, and btn-view href.
-       Add a matching color block in the CSS above for the new print.
-       Alternate class="print-row" and class="print-row reverse".
+       PRINTS SECTION -- built automatically from products.js
+       To add a new print:
+         1. Add the print to products.js
+         2. Add a color block for it in the CSS above
+       That's it -- the row appears here automatically.
   ════════════════════════════════════════════════════════════════ -->
-  <main class="prints-section">
-
-    <!-- PRINT 01 -- The Queen's Crown -->
-    <article class="print-row" data-print="the-queens-crown">
-      <div class="print-image"><img src="images/cincinnati/the-queens-crown.jpg" alt="The Queen's Crown fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 01 &nbsp;&mdash;&nbsp; Cincinnati</p>
-        <h2 class="print-title">The Queen's Crown</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"She wears her skyline like a crown,<br>best seen from the river."</p>
-        <a href="product.html?id=the-queens-crown" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 02 -- Gateway to the Queen City -->
-    <article class="print-row reverse" data-print="gateway-to-queen-city">
-      <div class="print-image"><img src="images/cincinnati/gateway-to-queen-city.jpg" alt="Gateway to the Queen City fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 02 &nbsp;&mdash;&nbsp; Cincinnati</p>
-        <h2 class="print-title">Gateway to the<br>Queen City</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Every great city deserves<br>a grand entrance."</p>
-        <a href="product.html?id=gateway-to-queen-city" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 03 -- Queen City Overture -->
-    <article class="print-row" data-print="queen-city-overture">
-      <div class="print-image"><img src="images/cincinnati/queen-city-overture.jpg" alt="Queen City Overture fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 03 &nbsp;&mdash;&nbsp; Cincinnati</p>
-        <h2 class="print-title">Queen City Overture</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"The Queen City --<br>tuned to perfection."</p>
-        <a href="product.html?id=queen-city-overture" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 04 -- Love the COV -->
-    <article class="print-row reverse" data-print="love-the-cov">
-      <div class="print-image"><img src="images/cincinnati/love-the-cov.jpg" alt="Love the COV fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 04 &nbsp;&mdash;&nbsp; Cincinnati</p>
-        <h2 class="print-title">Love the COV</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Covington knows -- the view<br>is always worth crossing for."</p>
-        <a href="product.html?id=love-the-cov" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 05 -- The Grand Terminal -->
-    <article class="print-row" data-print="the-grand-terminal">
-      <div class="print-image"><img src="images/cincinnati/the-grand-terminal.jpg" alt="The Grand Terminal fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 05 &nbsp;&mdash;&nbsp; Cincinnati</p>
-        <h2 class="print-title">The Grand Terminal</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Built for an era that believed<br>in arriving in style."</p>
-        <a href="product.html?id=the-grand-terminal" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 06 -- Ault Park Ascent -->
-    <article class="print-row reverse" data-print="ault-park-ascent">
-      <div class="print-image"><img src="images/cincinnati/ault-park-ascent.jpg" alt="Ault Park Ascent fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 06 &nbsp;&mdash;&nbsp; Cincinnati</p>
-        <h2 class="print-title">Ault Park Ascent</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Where the city remembers<br>how to slow down."</p>
-        <a href="product.html?id=ault-park-ascent" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-    <!-- PRINT 07 -- Incline to the Mount -->
-    <article class="print-row" data-print="incline-to-the-mount">
-      <div class="print-image"><img src="images/cincinnati/incline-to-the-mount.jpg" alt="Incline to the Mount fine art print" loading="lazy" /></div>
-      <div class="print-text"><div class="print-text-inner">
-        <p class="print-number">No. 07 &nbsp;&mdash;&nbsp; Cincinnati</p>
-        <h2 class="print-title">Incline to the Mount</h2>
-        <div class="print-divider"></div>
-        <p class="print-caption">"Mt. Adams has always known<br>it was worth the climb."</p>
-        <a href="product.html?id=incline-to-the-mount" class="btn-view">View Details</a>
-      </div></div>
-    </article>
-
-  </main>
+  <main class="prints-section" id="printsSection"></main>
 
   <!-- ═══════════════════════════════════════════════════════════════
        EXPLORE FURTHER
@@ -443,6 +349,7 @@
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
   </footer>
 
+  <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
 
   <script>
@@ -451,6 +358,52 @@
     // FOOTER YEAR -- auto-updates, do not change
     // ═══════════════════════════════════════════════════════════════
     document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ═══════════════════════════════════════════════════════════════
+    // BUILD HERO SLIDESHOW & PRINT ROWS from products.js
+    // No manual updates needed when you add a new print.
+    // ═══════════════════════════════════════════════════════════════
+    const collectionId  = 'cincinnati';
+    const productIds    = COLLECTIONS[collectionId] || [];
+    const slideshow     = document.getElementById('heroSlideshow');
+    const printsSection = document.getElementById('printsSection');
+
+    productIds.forEach((id, i) => {
+      const p = PRODUCTS[id];
+      if (!p) return;
+
+      const slide = document.createElement('div');
+      slide.className = 'slide' + (i === 0 ? ' active' : '');
+      slide.innerHTML = `<img src="${p.images.main}" alt="${p.title} by Deborah Heinlen" />`;
+      slideshow.appendChild(slide);
+    });
+
+    productIds.forEach((id, i) => {
+      const p = PRODUCTS[id];
+      if (!p) return;
+
+      const isReverse = i % 2 !== 0;
+      const article   = document.createElement('article');
+      article.className    = 'print-row' + (isReverse ? ' reverse' : '');
+      article.dataset.print = id;
+
+      article.innerHTML = `
+        <div class="print-image">
+          <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+        </div>
+        <div class="print-text">
+          <div class="print-text-inner">
+            <p class="print-number">${p.number} &nbsp;&mdash;&nbsp; ${p.collectionLabel}</p>
+            <h2 class="print-title">${p.title}</h2>
+            <div class="print-divider"></div>
+            <p class="print-caption">&ldquo;${p.caption}&rdquo;</p>
+            <a href="product.html?id=${id}" class="btn-view">View Details</a>
+          </div>
+        </div>
+      `;
+
+      printsSection.appendChild(article);
+    });
 
     // ═══════════════════════════════════════════════════════════════
     // HERO SLIDESHOW -- cycles through prints automatically
@@ -466,13 +419,13 @@
       slides[current].classList.add('active');
     }
 
-    setInterval(nextSlide, SLIDE_DURATION);
+    if (slides.length > 1) setInterval(nextSlide, SLIDE_DURATION);
 
     // ═══════════════════════════════════════════════════════════════
     // SCROLL ANIMATION -- print rows fade in as you scroll down
     // do not change
     // ═══════════════════════════════════════════════════════════════
-    const rows = document.querySelectorAll('.print-row');
+    const rows     = document.querySelectorAll('.print-row');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
