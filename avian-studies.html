@@ -4,12 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avian Studies | Deborah Heinlen Fine Art</title>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
 
   <style>
+    /* ═══════════════════════════════════════════════════════════════
+       CSS VARIABLES -- site-wide colors, do not change
+    ════════════════════════════════════════════════════════════════ */
     :root {
       --cream:      #f5f0e8;
       --linen:      #ede8dc;
@@ -18,25 +25,32 @@
       --text-mid:   #6b5c4a;
       --text-light: #9e8e7a;
     }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { background: #f2ede8; color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
 
-    /* ── MAIN HEADER ── */
+    /* ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- do not change
+    ════════════════════════════════════════════════════════════════ */
     .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 3rem; background: rgba(242,237,232,0.97); backdrop-filter: blur(8px); border-bottom: 1.5px solid rgba(200,184,154,0.3); }
     .header-logo { height: 44px; width: auto; display: block; }
     .header-title { font-family: "lindsey-signature", sans-serif; font-weight: 400; font-style: normal; font-size: 3rem; color: var(--text-dark); text-decoration: none; position: absolute; left: 50%; transform: translateX(-50%); }
-    .header-contact { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; border: 1px solid var(--warm-tan); padding: 0.55rem 1.5rem; transition: background 0.25s, color 0.25s; }
-    .header-contact:hover { background: var(--warm-tan); color: var(--cream); }
+    .header-cart { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; border: 1px solid var(--warm-tan); padding: 0.55rem 1.5rem; transition: background 0.25s, color 0.25s; }
+    .header-cart:hover { background: var(--warm-tan); color: var(--cream); }
 
-    /* ── COLLECTIONS STRIP ── */
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- Avian Studies is marked active
+    ════════════════════════════════════════════════════════════════ */
     .collections-strip { position: fixed; top: 80px; left: 0; right: 0; z-index: 199; display: flex; align-items: center; justify-content: center; background: rgba(237,232,220,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(200,184,154,0.25); }
     .strip-link { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; padding: 1.25rem 1.6rem; border-right: 1px solid rgba(200,184,154,0.3); transition: background 0.2s, color 0.2s; }
     .strip-link:first-child { border-left: 1px solid rgba(200,184,154,0.3); }
     .strip-link:hover { background: rgba(200,184,154,0.2); color: var(--text-dark); }
     .strip-link.active { color: var(--text-dark); background: rgba(200,184,154,0.15); }
 
-    /* ── HERO ── */
+    /* ═══════════════════════════════════════════════════════════════
+       HERO -- cool blue-grey palette for Avian Studies
+    ════════════════════════════════════════════════════════════════ */
     .hero { margin-top: 122px; min-height: 88vh; display: grid; grid-template-columns: 1fr 1fr; position: relative; overflow: hidden; }
     .hero-texture { position: relative; background: radial-gradient(ellipse at 20% 30%, rgba(80,100,130,0.3) 0%, transparent 55%), radial-gradient(ellipse at 80% 70%, rgba(160,140,100,0.2) 0%, transparent 50%), linear-gradient(160deg, #e8ecf2 0%, #dce4ee 50%, #eceae0 100%); display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 5rem; }
     .hero-texture::after { content: ''; position: absolute; inset: 0; opacity: 0.025; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 200px 200px; pointer-events: none; }
@@ -49,7 +63,9 @@
     .hero-divider { width: 48px; height: 1px; background: var(--warm-tan); margin: 0 auto 1.8rem auto; opacity: 0; animation: fadeUp 0.8s ease 0.7s forwards; }
     .hero-tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.1rem, 1.8vw, 1.4rem); font-weight: 300; color: var(--text-mid); line-height: 1.6; letter-spacing: 0.02em; opacity: 0; animation: fadeUp 0.9s ease 0.9s forwards; }
 
-    /* ── HERO SLIDESHOW -- all avian images live in images/avian-studies/ ── */
+    /* ═══════════════════════════════════════════════════════════════
+       HERO SLIDESHOW -- all Avian Studies images live in images/avian-studies/
+    ════════════════════════════════════════════════════════════════ */
     .hero-slideshow { position: relative; overflow: hidden; background: radial-gradient(ellipse at 30% 40%, rgba(80,100,130,0.25) 0%, transparent 55%), radial-gradient(ellipse at 70% 70%, rgba(160,140,100,0.2) 0%, transparent 50%), linear-gradient(160deg, #dce4ee 0%, #d0dcea 60%, #eae6d8 100%); display: flex; align-items: center; justify-content: center; }
     .slide { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 2s ease; }
     .slide.active { opacity: 1; }
@@ -60,97 +76,122 @@
     .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, transparent, #2e3848); pointer-events: none; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* ── INTERLUDE ── */
+    /* ═══════════════════════════════════════════════════════════════
+       INTERLUDE -- decorative text band between hero and prints
+    ════════════════════════════════════════════════════════════════ */
     .interlude { background: #2e3848; text-align: center; padding: 4rem 2rem; border-top: 1px solid rgba(80,100,140,0.25); border-bottom: 1px solid rgba(80,100,140,0.25); }
     .interlude span { font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; color: #a8b8c8; }
 
-    /* ── PRINTS SECTION ── */
+    /* ═══════════════════════════════════════════════════════════════
+       PRINTS SECTION
+    ════════════════════════════════════════════════════════════════ */
     .prints-section { padding: 0; margin: 0; display: flex; flex-direction: column; background: #2e3848; }
     .print-row { display: grid; grid-template-columns: 1fr 1fr; min-height: 85vh; opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .print-row.visible { opacity: 1; transform: translateY(0); }
     .print-row.reverse { direction: rtl; }
     .print-row.reverse > * { direction: ltr; }
 
-    /* ── PRINT ROW COLORS -- one block per print ── */
-    .print-row[data-print="american-resolve"] { background: linear-gradient(to bottom, #2e3848, #4a6080); }
-    .print-row[data-print="american-resolve"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(50,60,80,0.5) 0%, transparent 60%), radial-gradient(ellipse at 70% 70%, rgba(70,100,140,0.3) 0%, transparent 50%), linear-gradient(160deg, #282e3c 0%, #303848 50%, #3a5068 100%); }
-    .print-row[data-print="american-resolve"] .print-text .print-number, .print-row[data-print="american-resolve"] .print-text .print-caption { color: #b8c8d8; }
-    .print-row[data-print="american-resolve"] .print-text .print-title { color: #dce8f0; }
-    .print-row[data-print="american-resolve"] .print-text .btn-view { color: #b8c8d8; border-color: rgba(184,200,216,0.5); }
-    .print-row[data-print="american-resolve"] .print-text .btn-view::before { background: rgba(70,100,140,0.5); }
-    .print-row[data-print="american-resolve"] .print-image::after { background: linear-gradient(to right, transparent, #303848) !important; }
-    .print-row.reverse[data-print="american-resolve"] .print-image::after { background: linear-gradient(to left, transparent, #303848) !important; }
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT ROW COLORS -- one block per print
+       To add a new print: copy a block, update the data-print name
+       and adjust the colors to suit the new image's mood
+    ════════════════════════════════════════════════════════════════ */
+    /* No. 01 -- American Glory */
+    .print-row[data-print="american-glory"] { background: linear-gradient(to bottom, #2e3848, #4a6080); }
+    .print-row[data-print="american-glory"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(50,60,80,0.5) 0%, transparent 60%), radial-gradient(ellipse at 70% 70%, rgba(70,100,140,0.3) 0%, transparent 50%), linear-gradient(160deg, #282e3c 0%, #303848 50%, #3a5068 100%); }
+    .print-row[data-print="american-glory"] .print-text .print-number,
+    .print-row[data-print="american-glory"] .print-text .print-caption { color: #b8c8d8; }
+    .print-row[data-print="american-glory"] .print-text .print-title { color: #dce8f0; }
+    .print-row[data-print="american-glory"] .print-text .btn-view { color: #b8c8d8; border-color: rgba(184,200,216,0.5); }
+    .print-row[data-print="american-glory"] .print-text .btn-view::before { background: rgba(70,100,140,0.5); }
+    .print-row[data-print="american-glory"] .print-image::after { background: linear-gradient(to right, transparent, #303848) !important; }
+    .print-row.reverse[data-print="american-glory"] .print-image::after { background: linear-gradient(to left, transparent, #303848) !important; }
 
+    /* No. 02 -- Winter Red */
     .print-row[data-print="winter-red"] { background: linear-gradient(to bottom, #2e4838, #e8e8e0); }
     .print-row[data-print="winter-red"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(40,80,50,0.5) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(200,210,200,0.2) 0%, transparent 50%), linear-gradient(160deg, #243c2c 0%, #2c4834 50%, #405840 100%); }
-    .print-row[data-print="winter-red"] .print-text .print-number, .print-row[data-print="winter-red"] .print-text .print-caption { color: #c8dcc8; }
+    .print-row[data-print="winter-red"] .print-text .print-number,
+    .print-row[data-print="winter-red"] .print-text .print-caption { color: #c8dcc8; }
     .print-row[data-print="winter-red"] .print-text .print-title { color: #e0f0e0; }
     .print-row[data-print="winter-red"] .print-text .btn-view { color: #c8dcc8; border-color: rgba(200,220,200,0.5); }
     .print-row[data-print="winter-red"] .print-text .btn-view::before { background: rgba(40,80,50,0.5); }
     .print-row[data-print="winter-red"] .print-image::after { background: linear-gradient(to right, transparent, #2c4834) !important; }
     .print-row.reverse[data-print="winter-red"] .print-image::after { background: linear-gradient(to left, transparent, #2c4834) !important; }
 
+    /* No. 03 -- Ghost Wing */
     .print-row[data-print="ghost-wing"] { background: linear-gradient(to bottom, #a09080, #8898a8); }
     .print-row[data-print="ghost-wing"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(150,130,110,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(110,130,160,0.3) 0%, transparent 50%), linear-gradient(160deg, #887868 0%, #786858 50%, #687888 100%); }
-    .print-row[data-print="ghost-wing"] .print-text .print-number, .print-row[data-print="ghost-wing"] .print-text .print-caption { color: #e8e0d8; }
+    .print-row[data-print="ghost-wing"] .print-text .print-number,
+    .print-row[data-print="ghost-wing"] .print-text .print-caption { color: #e8e0d8; }
     .print-row[data-print="ghost-wing"] .print-text .print-title { color: #f4f0ec; }
     .print-row[data-print="ghost-wing"] .print-text .btn-view { color: #e8e0d8; border-color: rgba(232,224,216,0.5); }
     .print-row[data-print="ghost-wing"] .print-text .btn-view::before { background: rgba(130,110,90,0.5); }
     .print-row[data-print="ghost-wing"] .print-image::after { background: linear-gradient(to right, transparent, #786858) !important; }
     .print-row.reverse[data-print="ghost-wing"] .print-image::after { background: linear-gradient(to left, transparent, #786858) !important; }
 
+    /* No. 04 -- Poised */
     .print-row[data-print="poised"] { background: linear-gradient(to bottom, #607080, #c89848); }
     .print-row[data-print="poised"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(80,100,130,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(190,150,60,0.3) 0%, transparent 50%), linear-gradient(160deg, #506070 0%, #485868 50%, #806030 100%); }
-    .print-row[data-print="poised"] .print-text .print-number, .print-row[data-print="poised"] .print-text .print-caption { color: #d0dce8; }
+    .print-row[data-print="poised"] .print-text .print-number,
+    .print-row[data-print="poised"] .print-text .print-caption { color: #d0dce8; }
     .print-row[data-print="poised"] .print-text .print-title { color: #e8f0f8; }
     .print-row[data-print="poised"] .print-text .btn-view { color: #d0dce8; border-color: rgba(208,220,232,0.5); }
     .print-row[data-print="poised"] .print-text .btn-view::before { background: rgba(80,100,130,0.5); }
     .print-row[data-print="poised"] .print-image::after { background: linear-gradient(to right, transparent, #485868) !important; }
     .print-row.reverse[data-print="poised"] .print-image::after { background: linear-gradient(to left, transparent, #485868) !important; }
 
+    /* No. 05 -- Quiet Perch */
     .print-row[data-print="quiet-perch"] { background: linear-gradient(to bottom, #8aa880, #e8dfc8); }
     .print-row[data-print="quiet-perch"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(120,160,110,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(220,200,160,0.3) 0%, transparent 50%), linear-gradient(160deg, #789068 0%, #6a8060 50%, #a09060 100%); }
-    .print-row[data-print="quiet-perch"] .print-text .print-number, .print-row[data-print="quiet-perch"] .print-text .print-caption { color: #e0ecd8; }
+    .print-row[data-print="quiet-perch"] .print-text .print-number,
+    .print-row[data-print="quiet-perch"] .print-text .print-caption { color: #e0ecd8; }
     .print-row[data-print="quiet-perch"] .print-text .print-title { color: #f0f8ec; }
     .print-row[data-print="quiet-perch"] .print-text .btn-view { color: #e0ecd8; border-color: rgba(224,236,216,0.5); }
     .print-row[data-print="quiet-perch"] .print-text .btn-view::before { background: rgba(120,160,110,0.5); }
     .print-row[data-print="quiet-perch"] .print-image::after { background: linear-gradient(to right, transparent, #6a8060) !important; }
     .print-row.reverse[data-print="quiet-perch"] .print-image::after { background: linear-gradient(to left, transparent, #6a8060) !important; }
 
+    /* No. 06 -- Sentinel's Watch */
     .print-row[data-print="sentinels-watch"] { background: linear-gradient(to bottom, #6090c0, #c8a840); }
     .print-row[data-print="sentinels-watch"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(80,140,200,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(190,160,50,0.3) 0%, transparent 50%), linear-gradient(160deg, #4878a8 0%, #406898 50%, #887028 100%); }
-    .print-row[data-print="sentinels-watch"] .print-text .print-number, .print-row[data-print="sentinels-watch"] .print-text .print-caption { color: #d0e4f4; }
+    .print-row[data-print="sentinels-watch"] .print-text .print-number,
+    .print-row[data-print="sentinels-watch"] .print-text .print-caption { color: #d0e4f4; }
     .print-row[data-print="sentinels-watch"] .print-text .print-title { color: #e8f4ff; }
     .print-row[data-print="sentinels-watch"] .print-text .btn-view { color: #d0e4f4; border-color: rgba(208,228,244,0.5); }
     .print-row[data-print="sentinels-watch"] .print-text .btn-view::before { background: rgba(80,140,200,0.5); }
     .print-row[data-print="sentinels-watch"] .print-image::after { background: linear-gradient(to right, transparent, #406898) !important; }
     .print-row.reverse[data-print="sentinels-watch"] .print-image::after { background: linear-gradient(to left, transparent, #406898) !important; }
 
+    /* No. 07 -- Still Waters */
     .print-row[data-print="still-waters"] { background: linear-gradient(to bottom, #c8a848, #3a8888); }
     .print-row[data-print="still-waters"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(190,160,60,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(50,130,130,0.3) 0%, transparent 50%), linear-gradient(160deg, #a88830 0%, #987820 50%, #287070 100%); }
-    .print-row[data-print="still-waters"] .print-text .print-number, .print-row[data-print="still-waters"] .print-text .print-caption { color: #f0e8c8; }
+    .print-row[data-print="still-waters"] .print-text .print-number,
+    .print-row[data-print="still-waters"] .print-text .print-caption { color: #f0e8c8; }
     .print-row[data-print="still-waters"] .print-text .print-title { color: #fff8d8; }
     .print-row[data-print="still-waters"] .print-text .btn-view { color: #f0e8c8; border-color: rgba(240,232,200,0.5); }
     .print-row[data-print="still-waters"] .print-text .btn-view::before { background: rgba(180,140,40,0.5); }
     .print-row[data-print="still-waters"] .print-image::after { background: linear-gradient(to right, transparent, #987820) !important; }
     .print-row.reverse[data-print="still-waters"] .print-image::after { background: linear-gradient(to left, transparent, #987820) !important; }
 
-    .print-row[data-print="ready-for-flight"] { background: linear-gradient(to bottom, #88b0d8, #c89858); }
-    .print-row[data-print="ready-for-flight"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(100,160,210,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(190,150,70,0.3) 0%, transparent 50%), linear-gradient(160deg, #6898c0 0%, #5888b0 50%, #a07838 100%); }
-    .print-row[data-print="ready-for-flight"] .print-text .print-number, .print-row[data-print="ready-for-flight"] .print-text .print-caption { color: #d8ecf8; }
-    .print-row[data-print="ready-for-flight"] .print-text .print-title { color: #eef8ff; }
-    .print-row[data-print="ready-for-flight"] .print-text .btn-view { color: #d8ecf8; border-color: rgba(216,236,248,0.5); }
-    .print-row[data-print="ready-for-flight"] .print-text .btn-view::before { background: rgba(100,160,210,0.5); }
-    .print-row[data-print="ready-for-flight"] .print-image::after { background: linear-gradient(to right, transparent, #5888b0) !important; }
-    .print-row.reverse[data-print="ready-for-flight"] .print-image::after { background: linear-gradient(to left, transparent, #5888b0) !important; }
+    /* No. 08 -- Wings of Glory */
+    .print-row[data-print="wings-of-glory"] { background: linear-gradient(to bottom, #88b0d8, #c89858); }
+    .print-row[data-print="wings-of-glory"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(100,160,210,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(190,150,70,0.3) 0%, transparent 50%), linear-gradient(160deg, #6898c0 0%, #5888b0 50%, #a07838 100%); }
+    .print-row[data-print="wings-of-glory"] .print-text .print-number,
+    .print-row[data-print="wings-of-glory"] .print-text .print-caption { color: #d8ecf8; }
+    .print-row[data-print="wings-of-glory"] .print-text .print-title { color: #eef8ff; }
+    .print-row[data-print="wings-of-glory"] .print-text .btn-view { color: #d8ecf8; border-color: rgba(216,236,248,0.5); }
+    .print-row[data-print="wings-of-glory"] .print-text .btn-view::before { background: rgba(100,160,210,0.5); }
+    .print-row[data-print="wings-of-glory"] .print-image::after { background: linear-gradient(to right, transparent, #5888b0) !important; }
+    .print-row.reverse[data-print="wings-of-glory"] .print-image::after { background: linear-gradient(to left, transparent, #5888b0) !important; }
 
-    /* ── PRINT IMAGE & TEXT ── */
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT IMAGE & TEXT
+    ════════════════════════════════════════════════════════════════ */
     .print-image { position: relative; overflow: hidden; }
     .print-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.7s ease; }
     .print-row:hover .print-image img { transform: scale(1.03); }
-    .print-row:not(.reverse) .print-image::after, .print-row.reverse .print-image::after { content: ''; position: absolute; top: 0; width: 100px; height: 100%; z-index: 2; pointer-events: none; }
-    .print-row:not(.reverse) .print-image::after { right: 0; }
-    .print-row.reverse .print-image::after { left: 0; }
+    .print-row:not(.reverse) .print-image::after { content: ''; position: absolute; top: 0; right: 0; width: 100px; height: 100%; z-index: 2; pointer-events: none; }
+    .print-row.reverse .print-image::after { content: ''; position: absolute; top: 0; left: 0; width: 100px; height: 100%; z-index: 2; pointer-events: none; }
     .print-text { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 5rem 5rem 5rem 4.5rem; overflow: hidden; }
     .print-text::after { content: ''; position: absolute; inset: 0; opacity: 0.02; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 200px 200px; pointer-events: none; }
     .print-text-inner { position: relative; z-index: 2; text-align: center; }
@@ -163,7 +204,9 @@
     .btn-view:hover { border-color: var(--warm-tan); color: var(--text-dark); }
     .btn-view:hover::before { transform: translateX(0); }
 
-    /* ── EXPLORE FURTHER ── */
+    /* ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+    ════════════════════════════════════════════════════════════════ */
     .other-collections { background: linear-gradient(to bottom, #3a5068, #e8e4e0); padding: 6rem 2rem; text-align: center; border-top: 1px solid rgba(58,80,104,0.2); }
     .other-collections h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 300; letter-spacing: 0.08em; color: var(--text-dark); margin-bottom: 0.5rem; }
     .other-collections p { font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 300; letter-spacing: 0.15em; color: var(--text-light); margin-bottom: 3rem; text-transform: uppercase; }
@@ -171,12 +214,16 @@
     .collection-link { font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; border: 1px solid var(--warm-tan); padding: 0.75rem 2rem; transition: background 0.25s, color 0.25s, border-color 0.25s; }
     .collection-link:hover { background: var(--warm-tan); border-color: var(--warm-tan); color: var(--cream); }
 
-    /* ── FOOTER ── */
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+    ════════════════════════════════════════════════════════════════ */
     footer { padding: 2.5rem 3rem; text-align: center; font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 300; letter-spacing: 0.14em; color: var(--text-light); background: #e8e4e0; border-top: 1px solid rgba(200,184,154,0.25); }
     footer a { color: var(--text-light); text-decoration: none; }
     footer a:hover { color: var(--text-mid); }
 
-    /* ── RESPONSIVE: tablet ── */
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- tablet (max 900px)
+    ════════════════════════════════════════════════════════════════ */
     @media (max-width: 900px) {
       .site-header { padding: 0.9rem 1.5rem; }
       .header-title { font-size: 2rem; }
@@ -197,7 +244,9 @@
       .other-collections { padding: 4rem 1.5rem; }
     }
 
-    /* ── RESPONSIVE: mobile ── */
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- mobile (max 600px)
+    ════════════════════════════════════════════════════════════════ */
     @media (max-width: 600px) {
       .site-header { padding: 0.75rem 1rem; }
       .header-title { display: none; }
@@ -223,12 +272,18 @@
 
 <body>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
     <a href="index.html"><img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" /></a>
     <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
-    <a href="contact.html" class="header-contact">Contact</a>
+    <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
   </header>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- Avian Studies is marked active
+  ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
     <a href="wildlife.html"          class="strip-link">Wildlife</a>
     <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
@@ -238,6 +293,9 @@
     <a href="american-west.html"     class="strip-link">American West</a>
   </div>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO -- update slideshow src paths if you change prints
+  ════════════════════════════════════════════════════════════════ -->
   <section class="hero">
     <div class="hero-texture">
       <div class="hero-text">
@@ -253,113 +311,137 @@
       </div>
     </div>
 
-    <!-- Slideshow -- all images in images/avian-studies/ -->
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO SLIDESHOW IMAGES
+         All Avian Studies images live in images/avian-studies/
+    ════════════════════════════════════════════════════════════ -->
     <div class="hero-slideshow">
-      <div class="slide active" data-index="0"><img src="images/avian-studies/baldeagle.jpg" alt="American Resolve by Deborah Heinlen" /></div>
-      <div class="slide" data-index="1"><img src="images/avian-studies/cardinal.jpg" alt="Winter Red by Deborah Heinlen" /></div>
-      <div class="slide" data-index="2"><img src="images/avian-studies/hawk.jpg" alt="Ghost Wing by Deborah Heinlen" /></div>
-      <div class="slide" data-index="3"><img src="images/avian-studies/perigrinefalcon.jpg" alt="Poised by Deborah Heinlen" /></div>
-      <div class="slide" data-index="4"><img src="images/avian-studies/tuftedtitmouse.jpg" alt="Quiet Perch by Deborah Heinlen" /></div>
-      <div class="slide" data-index="5"><img src="images/avian-studies/easternbluebird.jpg" alt="Sentinel's Watch by Deborah Heinlen" class="portrait" /></div>
-      <div class="slide" data-index="6"><img src="images/avian-studies/blueheron.jpg" alt="Still Waters by Deborah Heinlen" class="portrait" /></div>
-      <div class="slide" data-index="7"><img src="images/avian-studies/baldeagletakeoffprep.jpg" alt="Ready for Flight by Deborah Heinlen" class="portrait" /></div>
+      <div class="slide active" data-index="0"><img src="images/avian-studies/american-glory.jpg"   alt="American Glory by Deborah Heinlen" /></div>
+      <div class="slide"        data-index="1"><img src="images/avian-studies/winter-red.jpg"       alt="Winter Red by Deborah Heinlen" /></div>
+      <div class="slide"        data-index="2"><img src="images/avian-studies/ghost-wing.jpg"       alt="Ghost Wing by Deborah Heinlen" /></div>
+      <div class="slide"        data-index="3"><img src="images/avian-studies/poised.jpg"           alt="Poised by Deborah Heinlen" /></div>
+      <div class="slide"        data-index="4"><img src="images/avian-studies/quiet-perch.jpg"      alt="Quiet Perch by Deborah Heinlen" /></div>
+      <div class="slide"        data-index="5"><img src="images/avian-studies/sentinels-watch.jpg"  alt="Sentinel's Watch by Deborah Heinlen" class="portrait" /></div>
+      <div class="slide"        data-index="6"><img src="images/avian-studies/still-waters.jpg"     alt="Still Waters by Deborah Heinlen" class="portrait" /></div>
+      <div class="slide"        data-index="7"><img src="images/avian-studies/wings-of-glory.jpg"   alt="Wings of Glory by Deborah Heinlen" /></div>
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       INTERLUDE -- update the text inside the span tag if desired
+  ════════════════════════════════════════════════════════════════ -->
   <div class="interlude"><span>On the Wing</span></div>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       PRINTS SECTION
+       To add a new print: copy one full <article> block, update the
+       data-print name, image src, title, caption, and btn-view href.
+       Add a matching color block in the CSS above for the new print.
+       Alternate class="print-row" and class="print-row reverse".
+  ════════════════════════════════════════════════════════════════ -->
   <main class="prints-section">
 
-    <article class="print-row" data-print="american-resolve">
-      <div class="print-image"><img src="images/avian-studies/baldeagle.jpg" alt="American Resolve fine art print" loading="lazy" /></div>
+    <!-- PRINT 01 -- American Glory -->
+    <article class="print-row" data-print="american-glory">
+      <div class="print-image"><img src="images/avian-studies/american-glory.jpg" alt="American Glory fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 01 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">American Resolve</h2>
+        <h2 class="print-title">American Glory</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"Steady, certain, and impossible<br>to look away from."</p>
-        <a href="american-resolve.html" class="btn-view">View Details</a>
+        <a href="product.html?id=american-glory" class="btn-view">View Details</a>
       </div></div>
     </article>
 
+    <!-- PRINT 02 -- Winter Red -->
     <article class="print-row reverse" data-print="winter-red">
-      <div class="print-image"><img src="images/avian-studies/cardinal.jpg" alt="Winter Red fine art print" loading="lazy" /></div>
+      <div class="print-image"><img src="images/avian-studies/winter-red.jpg" alt="Winter Red fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 02 &nbsp;&mdash;&nbsp; Avian Studies</p>
         <h2 class="print-title">Winter Red</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"A cardinal in winter<br>needs no introduction."</p>
-        <a href="winter-red.html" class="btn-view">View Details</a>
+        <a href="product.html?id=winter-red" class="btn-view">View Details</a>
       </div></div>
     </article>
 
+    <!-- PRINT 03 -- Ghost Wing -->
     <article class="print-row" data-print="ghost-wing">
-      <div class="print-image"><img src="images/avian-studies/hawk.jpg" alt="Ghost Wing fine art print" loading="lazy" /></div>
+      <div class="print-image"><img src="images/avian-studies/ghost-wing.jpg" alt="Ghost Wing fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 03 &nbsp;&mdash;&nbsp; Avian Studies</p>
         <h2 class="print-title">Ghost Wing</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"Silent as thought,<br>sharp as instinct."</p>
-        <a href="ghost-wing.html" class="btn-view">View Details</a>
+        <a href="product.html?id=ghost-wing" class="btn-view">View Details</a>
       </div></div>
     </article>
 
+    <!-- PRINT 04 -- Poised -->
     <article class="print-row reverse" data-print="poised">
-      <div class="print-image"><img src="images/avian-studies/perigrinefalcon.jpg" alt="Poised fine art print" loading="lazy" /></div>
+      <div class="print-image"><img src="images/avian-studies/poised.jpg" alt="Poised fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 04 &nbsp;&mdash;&nbsp; Avian Studies</p>
         <h2 class="print-title">Poised</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"Everything about it says<br>it could leave at any moment."</p>
-        <a href="poised.html" class="btn-view">View Details</a>
+        <a href="product.html?id=poised" class="btn-view">View Details</a>
       </div></div>
     </article>
 
+    <!-- PRINT 05 -- Quiet Perch -->
     <article class="print-row" data-print="quiet-perch">
-      <div class="print-image"><img src="images/avian-studies/tuftedtitmouse.jpg" alt="Quiet Perch fine art print" loading="lazy" /></div>
+      <div class="print-image"><img src="images/avian-studies/quiet-perch.jpg" alt="Quiet Perch fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 05 &nbsp;&mdash;&nbsp; Avian Studies</p>
         <h2 class="print-title">Quiet Perch</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"Small enough to overlook.<br>Too beautiful to."</p>
-        <a href="quiet-perch.html" class="btn-view">View Details</a>
+        <a href="product.html?id=quiet-perch" class="btn-view">View Details</a>
       </div></div>
     </article>
 
+    <!-- PRINT 06 -- Sentinel's Watch -->
     <article class="print-row reverse" data-print="sentinels-watch">
-      <div class="print-image"><img src="images/avian-studies/easternbluebird.jpg" alt="Sentinel's Watch fine art print" loading="lazy" /></div>
+      <div class="print-image"><img src="images/avian-studies/sentinels-watch.jpg" alt="Sentinel's Watch fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 06 &nbsp;&mdash;&nbsp; Avian Studies</p>
         <h2 class="print-title">Sentinel's Watch</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"It sees everything.<br>It's waiting for the right moment."</p>
-        <a href="sentinels-watch.html" class="btn-view">View Details</a>
+        <a href="product.html?id=sentinels-watch" class="btn-view">View Details</a>
       </div></div>
     </article>
 
+    <!-- PRINT 07 -- Still Waters -->
     <article class="print-row" data-print="still-waters">
-      <div class="print-image"><img src="images/avian-studies/blueheron.jpg" alt="Still Waters fine art print" loading="lazy" /></div>
+      <div class="print-image"><img src="images/avian-studies/still-waters.jpg" alt="Still Waters fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 07 &nbsp;&mdash;&nbsp; Avian Studies</p>
         <h2 class="print-title">Still Waters</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"The heron and the water agree --<br>patience is its own reward."</p>
-        <a href="still-waters.html" class="btn-view">View Details</a>
+        <a href="product.html?id=still-waters" class="btn-view">View Details</a>
       </div></div>
     </article>
 
-    <article class="print-row reverse" data-print="ready-for-flight">
-      <div class="print-image"><img src="images/avian-studies/baldeagletakeoffprep.jpg" alt="Ready for Flight fine art print" loading="lazy" /></div>
+    <!-- PRINT 08 -- Wings of Glory -->
+    <article class="print-row reverse" data-print="wings-of-glory">
+      <div class="print-image"><img src="images/avian-studies/wings-of-glory.jpg" alt="Wings of Glory fine art print" loading="lazy" /></div>
       <div class="print-text"><div class="print-text-inner">
         <p class="print-number">No. 08 &nbsp;&mdash;&nbsp; Avian Studies</p>
-        <h2 class="print-title">Ready for Flight</h2>
+        <h2 class="print-title">Wings of Glory</h2>
         <div class="print-divider"></div>
         <p class="print-caption">"The world holds its breath.<br>Then -- gone."</p>
-        <a href="ready-for-flight.html" class="btn-view">View Details</a>
+        <a href="product.html?id=wings-of-glory" class="btn-view">View Details</a>
       </div></div>
     </article>
 
   </main>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+  ════════════════════════════════════════════════════════════════ -->
   <section class="other-collections">
     <h2>Explore Further</h2>
     <p>More collections from Deborah Heinlen Fine Art</p>
@@ -372,23 +454,60 @@
     </nav>
   </section>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
   <footer>
-    <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a></p>
+    <p>
+      &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="contact.html">Contact</a>
+    </p>
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
   </footer>
 
+  <script src="js/cart.js"></script>
+
   <script>
+
+    // ═══════════════════════════════════════════════════════════════
+    // FOOTER YEAR -- auto-updates, do not change
+    // ═══════════════════════════════════════════════════════════════
     document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ═══════════════════════════════════════════════════════════════
+    // HERO SLIDESHOW -- cycles through prints automatically
+    // To change speed: update SLIDE_DURATION (3000 = 3 seconds)
+    // ═══════════════════════════════════════════════════════════════
     const SLIDE_DURATION = 3000;
     const slides = document.querySelectorAll('.slide');
     let current = 0;
-    function nextSlide() { slides[current].classList.remove('active'); current = (current + 1) % slides.length; slides[current].classList.add('active'); }
+
+    function nextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
     setInterval(nextSlide, SLIDE_DURATION);
+
+    // ═══════════════════════════════════════════════════════════════
+    // SCROLL ANIMATION -- print rows fade in as you scroll down
+    // do not change
+    // ═══════════════════════════════════════════════════════════════
     const rows = document.querySelectorAll('.print-row');
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 120); observer.unobserve(entry.target); } });
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
     }, { threshold: 0.12 });
+
     rows.forEach(row => observer.observe(row));
+
   </script>
 
 </body>

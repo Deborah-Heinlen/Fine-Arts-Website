@@ -74,7 +74,7 @@
       transform: translateX(-50%);
     }
 
-    .header-contact {
+    .header-cart {
       font-family: 'Jost', sans-serif;
       font-size: 0.65rem;
       font-weight: 300;
@@ -87,7 +87,7 @@
       transition: background 0.25s, color 0.25s;
     }
 
-    .header-contact:hover {
+    .header-cart:hover {
       background: var(--warm-tan);
       color: var(--cream);
     }
@@ -630,7 +630,7 @@
       <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
     </a>
     <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
-    <a href="contact.html" class="header-contact">Contact</a>
+    <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -669,16 +669,16 @@
     ════════════════════════════════════════════════════════════ -->
     <div class="hero-slideshow">
       <div class="slide active" data-index="0">
-        <img src="images/americana/longhorn.jpg" alt="Pasture Calm by Deborah Heinlen" />
+        <img src="images/americana/pasture-calm.jpg" alt="Pasture Calm by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="1">
-        <img src="images/americana/bikofence.jpg" alt="Kentucky Afternoon by Deborah Heinlen" />
+        <img src="images/americana/kentucky-afternoon.jpg" alt="Kentucky Afternoon by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="2">
-        <img src="images/americana/pondwithcanoe.jpg" alt="Lakeside Solitude by Deborah Heinlen" />
+        <img src="images/americana/lakeside-solitude.jpg" alt="Lakeside Solitude by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="3">
-        <img src="images/americana/flag.jpg" alt="American Sky by Deborah Heinlen" class="portrait" />
+        <img src="images/americana/american-sky.jpg" alt="American Sky by Deborah Heinlen" class="portrait" />
       </div>
     </div>
   </section>
@@ -702,7 +702,7 @@
     <!-- PRINT 01 -- Pasture Calm -->
     <article class="print-row" data-print="pasture-calm">
       <div class="print-image">
-        <img src="images/americana/longhorn.jpg" alt="Pasture Calm fine art print" loading="lazy" />
+        <img src="images/americana/pasture-calm.jpg" alt="Pasture Calm fine art print" loading="lazy" />
       </div>
       <div class="print-text">
         <div class="print-text-inner">
@@ -710,7 +710,7 @@
           <h2 class="print-title">Pasture Calm</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Some creatures wear their dignity<br>like they were born to it."</p>
-          <a href="pasture-calm.html" class="btn-view">View Details</a>
+          <a href="product.html?id=pasture-calm" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -718,7 +718,7 @@
     <!-- PRINT 02 -- Kentucky Afternoon -->
     <article class="print-row reverse" data-print="kentucky-afternoon">
       <div class="print-image">
-        <img src="images/americana/bikofence.jpg" alt="Kentucky Afternoon fine art print" loading="lazy" />
+        <img src="images/americana/kentucky-afternoon.jpg" alt="Kentucky Afternoon fine art print" loading="lazy" />
       </div>
       <div class="print-text">
         <div class="print-text-inner">
@@ -726,7 +726,7 @@
           <h2 class="print-title">Kentucky Afternoon</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Green pastures, white fences,<br>and all the time in the world."</p>
-          <a href="kentucky-afternoon.html" class="btn-view">View Details</a>
+          <a href="product.html?id=kentucky-afternoon" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -734,7 +734,7 @@
     <!-- PRINT 03 -- Lakeside Solitude -->
     <article class="print-row" data-print="lakeside-solitude">
       <div class="print-image">
-        <img src="images/americana/pondwithcanoe.jpg" alt="Lakeside Solitude fine art print" loading="lazy" />
+        <img src="images/americana/lakeside-solitude.jpg" alt="Lakeside Solitude fine art print" loading="lazy" />
       </div>
       <div class="print-text">
         <div class="print-text-inner">
@@ -742,7 +742,7 @@
           <h2 class="print-title">Lakeside Solitude</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"The canoe knows what we forget --<br>stillness is never empty."</p>
-          <a href="lakeside-solitude.html" class="btn-view">View Details</a>
+          <a href="product.html?id=lakeside-solitude" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -750,7 +750,7 @@
     <!-- PRINT 04 -- American Sky -->
     <article class="print-row reverse" data-print="american-sky">
       <div class="print-image">
-        <img src="images/americana/flag.jpg" alt="American Sky fine art print" loading="lazy" />
+        <img src="images/americana/american-sky.jpg" alt="American Sky fine art print" loading="lazy" />
       </div>
       <div class="print-text">
         <div class="print-text-inner">
@@ -758,7 +758,7 @@
           <h2 class="print-title">American Sky</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"It catches the wind<br>and reminds you what it stands for."</p>
-          <a href="american-sky.html" class="btn-view">View Details</a>
+          <a href="product.html?id=american-sky" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -771,12 +771,16 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a>
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="contact.html">Contact</a>
     </p>
     <p style="margin-top: 0.5rem;">
       All images &copy; Deborah Heinlen.  All rights reserved.
     </p>
   </footer>
+
+  <script src="js/cart.js"></script>
 
   <script>
 
