@@ -72,7 +72,7 @@
       transform: translateX(-50%);
     }
 
-    .header-contact {
+    .header-cart {
       font-family: 'Jost', sans-serif;
       font-size: 0.65rem;
       font-weight: 300;
@@ -85,7 +85,7 @@
       transition: background 0.25s, color 0.25s;
     }
 
-    .header-contact:hover {
+    .header-cart:hover {
       background: var(--warm-tan);
       color: var(--cream);
     }
@@ -397,7 +397,6 @@
 
     /* ═══════════════════════════════════════════════════════════════
        COLLECTIONS GRID
-       To update print counts, find the collection-count spans below
     ════════════════════════════════════════════════════════════════ */
     .collections {
       position: relative;
@@ -617,7 +616,7 @@
       <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
     </a>
     <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
-    <a href="contact.html" class="header-contact">Contact</a>
+    <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -635,14 +634,15 @@
   <div id="story-section">
 
     <!-- ═══════════════════════════════════════════════════════════
-         BACKGROUND IMAGES -- update src paths if you change
-         which images appear in the scrolling story section
+         BACKGROUND IMAGES
+         To change which images appear in the scrolling story:
+         update the src attributes below.
     ════════════════════════════════════════════════════════════ -->
     <div id="story-bg">
-      <img class="bg-image active" data-index="0" src="images/botanical-studies/redbud.jpg"    alt="Redbud Blossoms" />
-      <img class="bg-image"        data-index="1" src="images/american-west/nightstarsutah.jpg" alt="Utah Night Sky" />
-      <img class="bg-image"        data-index="2" src="images/avian-studies/cardinal.jpg"       alt="Cardinal" />
-      <img class="bg-image"        data-index="3" src="images/avian-studies/baldeagle.jpg"      alt="Bald Eagle" />
+      <img class="bg-image active" data-index="0" src="images/botanical-studies/redbuds-in-bloom.jpg" alt="Redbuds in Bloom" />
+      <img class="bg-image"        data-index="1" src="images/american-west/night-watch.jpg"           alt="Night Watch" />
+      <img class="bg-image"        data-index="2" src="images/avian-studies/winter-red.jpg"            alt="Winter Red" />
+      <img class="bg-image"        data-index="3" src="images/avian-studies/american-glory.jpg"        alt="American Glory" />
     </div>
 
     <!-- ═══════════════════════════════════════════════════════════
@@ -659,11 +659,13 @@
       <div class="card-spacer" data-bg="0"></div>
 
       <!-- ═══════════════════════════════════════════════════════
-           STORY CARDS -- update src paths if you change images
+           STORY CARDS
+           To change the images shown in these panels:
+           update the src attributes below.
       ════════════════════════════════════════════════════════ -->
       <div class="story-card" data-bg="1">
         <div class="card-image-side">
-          <img src="images/wildlife/lion.jpg" alt="Lion" />
+          <img src="images/wildlife/focused-intent.jpg" alt="Focused Intent" />
         </div>
         <div class="card-text-side card-text-lion">
           <p>Every image begins in a moment.</p>
@@ -678,7 +680,7 @@
 
       <div class="story-card" data-bg="2">
         <div class="card-image-side">
-          <img src="images/americana/bikofence.jpg" alt="Biko Fence" />
+          <img src="images/americana/pasture-calm.jpg" alt="Pasture Calm" />
         </div>
         <div class="card-text-side card-text-biko">
           <p>In the field, before the dawn.</p>
@@ -693,7 +695,7 @@
 
       <div class="story-card" data-bg="3">
         <div class="card-image-side">
-          <img src="images/american-west/utahroad.jpg" alt="Utah Road" />
+          <img src="images/american-west/desert-roads.jpg" alt="Desert Roads" />
         </div>
         <div class="card-text-side card-text-utah">
           <p>Part photograph. Part painting.</p>
@@ -725,15 +727,15 @@
 
   <!-- ═══════════════════════════════════════════════════════════════
        COLLECTIONS GRID
-       To update print counts: find the collection-count span
-       for the collection you want to update and change the number
+       To update the representative image for each collection:
+       update the src attribute on the img tag inside that card.
   ════════════════════════════════════════════════════════════════ -->
   <section class="collections" id="collections">
     <p class="collections-label">Browse the Collections</p>
     <div class="collections-grid">
 
       <a href="wildlife.html" class="collection-card">
-        <img src="images/wildlife/wolf.jpg" alt="Wildlife" />
+        <img src="images/wildlife/gray-wind.jpg" alt="Wildlife" />
         <div class="collection-info">
           <span class="collection-name">Wildlife</span>
           <span class="collection-count">Prints available</span>
@@ -742,14 +744,14 @@
 
       <div>
         <a href="botanical-studies.html" class="collection-card">
-          <img src="images/botanical-studies/lily.jpg" alt="Botanical Studies" />
+          <img src="images/botanical-studies/waterlily-in-bloom.jpg" alt="Botanical Studies" />
           <div class="collection-info">
             <span class="collection-name">Botanical Studies</span>
             <span class="collection-count">Prints available</span>
           </div>
         </a>
         <a href="cincinnati.html" class="collection-card">
-          <img src="images/cincinnati/cincinnatiskyline.jpg" alt="Cincinnati" />
+          <img src="images/cincinnati/queen-city-overture.jpg" alt="Cincinnati" />
           <div class="collection-info">
             <span class="collection-name">Cincinnati</span>
             <span class="collection-count">Prints available</span>
@@ -759,14 +761,14 @@
 
       <div>
         <a href="americana.html" class="collection-card">
-          <img src="images/americana/flag.jpg" alt="Americana" />
+          <img src="images/americana/american-sky.jpg" alt="Americana" />
           <div class="collection-info">
             <span class="collection-name">Americana</span>
             <span class="collection-count">Prints available</span>
           </div>
         </a>
         <a href="american-west.html" class="collection-card">
-          <img src="images/american-west/utahroad.jpg" alt="American West" />
+          <img src="images/american-west/desert-roads.jpg" alt="American West" />
           <div class="collection-info">
             <span class="collection-name">American West</span>
             <span class="collection-count">Prints available</span>
@@ -775,7 +777,7 @@
       </div>
 
       <a href="avian-studies.html" class="collection-card">
-        <img src="images/avian-studies/easternbluebird.jpg" alt="Avian Studies" />
+        <img src="images/avian-studies/quiet-perch.jpg" alt="Avian Studies" />
         <div class="collection-info">
           <span class="collection-name">Avian Studies</span>
           <span class="collection-count">Prints available</span>
@@ -791,12 +793,16 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a>
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="contact.html">Contact</a>
     </p>
     <p style="margin-top: 0.5rem;">
       All images &copy; Deborah Heinlen.  All rights reserved.
     </p>
   </footer>
+
+  <script src="js/cart.js"></script>
 
   <script>
 

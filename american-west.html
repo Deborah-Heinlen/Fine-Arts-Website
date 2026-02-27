@@ -74,7 +74,7 @@
       transform: translateX(-50%);
     }
 
-    .header-contact {
+    .header-cart {
       font-family: 'Jost', sans-serif;
       font-size: 0.65rem;
       font-weight: 300;
@@ -87,7 +87,7 @@
       transition: background 0.25s, color 0.25s;
     }
 
-    .header-contact:hover {
+    .header-cart:hover {
       background: var(--warm-tan);
       color: var(--cream);
     }
@@ -408,15 +408,15 @@
     .print-row[data-print="quiet-shore"] .print-image::after { background: linear-gradient(to right, transparent, #a87820) !important; }
     .print-row.reverse[data-print="quiet-shore"] .print-image::after { background: linear-gradient(to left, transparent, #a87820) !important; }
 
-    /* No. 07 -- Mustang */
-    .print-row[data-print="mustang"] { background: linear-gradient(to right, #a87868 0%, #9a6858 50%, #b09070 100%); }
-    .print-row[data-print="mustang"] .print-text .print-number,
-    .print-row[data-print="mustang"] .print-text .print-caption { color: #f0e8e0; }
-    .print-row[data-print="mustang"] .print-text .print-title { color: #fff8f0; }
-    .print-row[data-print="mustang"] .print-text .btn-view { color: #f0e8e0; border-color: rgba(240, 232, 224, 0.5); }
-    .print-row[data-print="mustang"] .print-text .btn-view::before { background: rgba(180, 130, 100, 0.5); }
-    .print-row[data-print="mustang"] .print-image::after { background: linear-gradient(to right, transparent, #9a6858) !important; }
-    .print-row.reverse[data-print="mustang"] .print-image::after { background: linear-gradient(to left, transparent, #9a6858) !important; }
+    /* No. 07 -- High Desert Mustang */
+    .print-row[data-print="high-desert-mustang"] { background: linear-gradient(to right, #a87868 0%, #9a6858 50%, #b09070 100%); }
+    .print-row[data-print="high-desert-mustang"] .print-text .print-number,
+    .print-row[data-print="high-desert-mustang"] .print-text .print-caption { color: #f0e8e0; }
+    .print-row[data-print="high-desert-mustang"] .print-text .print-title { color: #fff8f0; }
+    .print-row[data-print="high-desert-mustang"] .print-text .btn-view { color: #f0e8e0; border-color: rgba(240, 232, 224, 0.5); }
+    .print-row[data-print="high-desert-mustang"] .print-text .btn-view::before { background: rgba(180, 130, 100, 0.5); }
+    .print-row[data-print="high-desert-mustang"] .print-image::after { background: linear-gradient(to right, transparent, #9a6858) !important; }
+    .print-row.reverse[data-print="high-desert-mustang"] .print-image::after { background: linear-gradient(to left, transparent, #9a6858) !important; }
 
     /* No. 08 -- Blue Channels */
     .print-row[data-print="blue-channels"] { background: linear-gradient(to right, #388898 0%, #2e7888 50%, #607860 100%); }
@@ -665,7 +665,7 @@
       <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
     </a>
     <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
-    <a href="contact.html" class="header-contact">Contact</a>
+    <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -704,28 +704,28 @@
     ════════════════════════════════════════════════════════════ -->
     <div class="hero-slideshow">
       <div class="slide active" data-index="0">
-        <img src="images/american-west/nightstarsutah.jpg" alt="Night Watch by Deborah Heinlen" />
+        <img src="images/american-west/night-watch.jpg" alt="Night Watch by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="1">
-        <img src="images/american-west/utahroad.jpg" alt="Red Rock Light by Deborah Heinlen" />
+        <img src="images/american-west/red-rock-light.jpg" alt="Red Rock Light by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="2">
-        <img src="images/american-west/signpost.jpg" alt="Desert Roads by Deborah Heinlen" class="portrait" />
+        <img src="images/american-west/desert-roads.jpg" alt="Desert Roads by Deborah Heinlen" class="portrait" />
       </div>
       <div class="slide" data-index="3">
-        <img src="images/american-west/oldfordtruck.jpg" alt="Country Roads by Deborah Heinlen" />
+        <img src="images/american-west/country-roads.jpg" alt="Country Roads by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="4">
         <img src="images/american-west/homestead.jpg" alt="Homestead by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="5">
-        <img src="images/american-west/argoniteutah.jpg" alt="Quiet Shore by Deborah Heinlen" />
+        <img src="images/american-west/quiet-shore.jpg" alt="Quiet Shore by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="6">
-        <img src="images/american-west/utahmustang.jpg" alt="Mustang in the High Desert by Deborah Heinlen" />
+        <img src="images/american-west/high-desert-mustang.jpg" alt="High Desert Mustang by Deborah Heinlen" />
       </div>
       <div class="slide" data-index="7">
-        <img src="images/american-west/greatsaltlakedesert.jpg" alt="Blue Channels by Deborah Heinlen" />
+        <img src="images/american-west/blue-channels.jpg" alt="Blue Channels by Deborah Heinlen" />
       </div>
     </div>
   </section>
@@ -750,7 +750,7 @@
     <article class="print-row" data-print="night-watch">
       <div class="print-image">
         <div class="print-frame">
-          <img src="images/american-west/nightstarsutah.jpg" alt="Night Watch fine art print" loading="lazy" />
+          <img src="images/american-west/night-watch.jpg" alt="Night Watch fine art print" loading="lazy" />
         </div>
       </div>
       <div class="print-text">
@@ -759,7 +759,7 @@
           <h2 class="print-title">Night Watch</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"The desert doesn't sleep.<br>It just changes what it's watching."</p>
-          <a href="zzz-american-west-night-sky.html" class="btn-view">View Details</a>
+          <a href="product.html?id=night-watch" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -768,7 +768,7 @@
     <article class="print-row reverse" data-print="red-rock-light">
       <div class="print-image">
         <div class="print-frame">
-          <img src="images/american-west/utahroad.jpg" alt="Red Rock Light fine art print" loading="lazy" />
+          <img src="images/american-west/red-rock-light.jpg" alt="Red Rock Light fine art print" loading="lazy" />
         </div>
       </div>
       <div class="print-text">
@@ -777,7 +777,7 @@
           <h2 class="print-title">Red Rock Light</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Ancient stone holding<br>the last of the day's warmth."</p>
-          <a href="red-rock-light.html" class="btn-view">View Details</a>
+          <a href="product.html?id=red-rock-light" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -786,7 +786,7 @@
     <article class="print-row" data-print="desert-roads">
       <div class="print-image">
         <div class="print-frame portrait">
-          <img src="images/american-west/signpost.jpg" alt="Desert Roads fine art print" loading="lazy" />
+          <img src="images/american-west/desert-roads.jpg" alt="Desert Roads fine art print" loading="lazy" />
         </div>
       </div>
       <div class="print-text">
@@ -795,7 +795,7 @@
           <h2 class="print-title">Desert Roads</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Every direction is<br>a decision out here."</p>
-          <a href="desert-roads.html" class="btn-view">View Details</a>
+          <a href="product.html?id=desert-roads" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -804,7 +804,7 @@
     <article class="print-row reverse" data-print="country-roads">
       <div class="print-image">
         <div class="print-frame">
-          <img src="images/american-west/oldfordtruck.jpg" alt="Country Roads fine art print" loading="lazy" />
+          <img src="images/american-west/country-roads.jpg" alt="Country Roads fine art print" loading="lazy" />
         </div>
       </div>
       <div class="print-text">
@@ -813,7 +813,7 @@
           <h2 class="print-title">Country Roads</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"It didn't need to go anywhere.<br>It had already arrived."</p>
-          <a href="country-roads.html" class="btn-view">View Details</a>
+          <a href="product.html?id=country-roads" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -831,7 +831,7 @@
           <h2 class="print-title">Homestead</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Someone built a life here.<br>The land still remembers."</p>
-          <a href="homestead.html" class="btn-view">View Details</a>
+          <a href="product.html?id=homestead" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -840,7 +840,7 @@
     <article class="print-row reverse" data-print="quiet-shore">
       <div class="print-image">
         <div class="print-frame">
-          <img src="images/american-west/argoniteutah.jpg" alt="Quiet Shore fine art print" loading="lazy" />
+          <img src="images/american-west/quiet-shore.jpg" alt="Quiet Shore fine art print" loading="lazy" />
         </div>
       </div>
       <div class="print-text">
@@ -849,25 +849,25 @@
           <h2 class="print-title">Quiet Shore</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Where the mountains come down<br>to catch their reflection."</p>
-          <a href="quiet-shore.html" class="btn-view">View Details</a>
+          <a href="product.html?id=quiet-shore" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
 
-    <!-- PRINT 07 -- Mustang -->
-    <article class="print-row" data-print="mustang">
+    <!-- PRINT 07 -- High Desert Mustang -->
+    <article class="print-row" data-print="high-desert-mustang">
       <div class="print-image">
         <div class="print-frame">
-          <img src="images/american-west/utahmustang.jpg" alt="Mustang in the High Desert fine art print" loading="lazy" />
+          <img src="images/american-west/high-desert-mustang.jpg" alt="High Desert Mustang fine art print" loading="lazy" />
         </div>
       </div>
       <div class="print-text">
         <div class="print-text-inner">
           <p class="print-number">No. 07 &nbsp;&mdash;&nbsp; American West</p>
-          <h2 class="print-title">Mustang in the<br>High Desert</h2>
+          <h2 class="print-title">High Desert<br>Mustang</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Wild and unhurried,<br>on ground that belongs to no one."</p>
-          <a href="mustang-in-the-high-desert.html" class="btn-view">View Details</a>
+          <a href="product.html?id=high-desert-mustang" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -876,7 +876,7 @@
     <article class="print-row reverse" data-print="blue-channels">
       <div class="print-image">
         <div class="print-frame">
-          <img src="images/american-west/greatsaltlakedesert.jpg" alt="Blue Channels fine art print" loading="lazy" />
+          <img src="images/american-west/blue-channels.jpg" alt="Blue Channels fine art print" loading="lazy" />
         </div>
       </div>
       <div class="print-text">
@@ -885,7 +885,7 @@
           <h2 class="print-title">Blue Channels</h2>
           <div class="print-divider"></div>
           <p class="print-caption">"Water finding its way,<br>the way it always has."</p>
-          <a href="blue-channels.html" class="btn-view">View Details</a>
+          <a href="product.html?id=blue-channels" class="btn-view">View Details</a>
         </div>
       </div>
     </article>
@@ -898,12 +898,16 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a>
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="contact.html">Contact</a>
     </p>
     <p style="margin-top: 0.5rem;">
       All images &copy; Deborah Heinlen.  All rights reserved.
     </p>
   </footer>
+
+  <script src="js/cart.js"></script>
 
   <script>
 

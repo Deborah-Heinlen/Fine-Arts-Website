@@ -104,7 +104,7 @@ const PRODUCTS = {
     collectionPage:  "wildlife.html",
     title:           "Focused Intent",
     caption:         "Everything still.  Everything ready.",
-    description:     "A predator at the edge of action, every sense engaged and every muscle coiled in quiet readiness. Rendered with a watercolor finish from an original photograph, this print captures the electric stillness of a wild animal at its most alive -- present, purposeful, and completely in its element.",
+    description:     "A Bengal Tiger at the edge of action, every sense engaged and every muscle coiled in quiet readiness. Rendered with a watercolor finish from an original photograph, this print captures the electric stillness of a wild animal at its most alive -- present, purposeful, and completely in its element.",
     images: {
       main:    "images/wildlife/focused-intent.jpg",
       room:    "images/mockups/focused-intent/focused-intent-room.jpg",
@@ -160,7 +160,7 @@ const PRODUCTS = {
     collectionPage:  "wildlife.html",
     title:           "Untamed Majesty",
     caption:         "Still, watchful, sovereign.",
-    description:     "A great wild animal rests in the quiet authority of its own presence, its gaze unhurried and absolute. Rendered with a watercolor finish from an original photograph, this print captures the paradox of the wild -- immense power held in perfect stillness, a reminder of everything the natural world still is.",
+    description:     "A majestic lion rests in the quiet authority of its own presence, its gaze unhurried and absolute. Rendered with a watercolor finish from an original photograph, this print captures the paradox of the wild -- immense power held in perfect stillness, a reminder of everything the natural world still is.",
     images: {
       main:    "images/wildlife/untamed-majesty.jpg",
       room:    "images/mockups/untamed-majesty/untamed-majesty-room.jpg",
@@ -190,7 +190,7 @@ const PRODUCTS = {
     collectionPage:  "avian-studies.html",
     title:           "American Glory",
     caption:         "Freedom is not a metaphor when you watch one fly.",
-    description:     "A bald eagle holds its position against an open sky, its white head bright and its gaze fixed on something beyond the frame. Rendered with a watercolor finish from an original photograph, this print is both a portrait of a bird and a reminder of the wild places still left in the world.",
+    description:     "A bald eagle holds its position, its white head bright and its gaze fixed on something beyond the frame. Rendered with a watercolor finish from an original photograph, this print is both a portrait of a bird and a reminder of the wild places still left in the world.",
     images: {
       main:    "images/avian-studies/american-glory.jpg",
       room:    "images/mockups/american-glory/american-glory-room.jpg",
@@ -218,7 +218,7 @@ const PRODUCTS = {
     collectionPage:  "avian-studies.html",
     title:           "Ghost Wing",
     caption:         "Silent as intention.  Swift as thought.",
-    description:     "An owl moves through the dim light on wings that make no sound, its pale form suspended between darkness and air. Rendered with a watercolor finish from an original photograph, this print captures the owl at its most elemental -- a creature of threshold moments, equally at home in shadow and stillness.",
+    description:     "An leucistic hawk moves through the dim light on wings that make no sound, its pale form suspended between darkness and air. Rendered with a watercolor finish from an original photograph, this print captures the owl at its most elemental -- a creature of threshold moments, equally at home in shadow and stillness.",
     images: {
       main:    "images/avian-studies/ghost-wing.jpg",
       room:    "images/mockups/ghost-wing/ghost-wing-room.jpg",
@@ -302,7 +302,7 @@ const PRODUCTS = {
     collectionPage:  "avian-studies.html",
     title:           "Sentinel's Watch",
     caption:         "Standing guard over something only they can see.",
-    description:     "Two birds share a high perch, their attention turned outward in the same direction as if keeping watch over the world below. Rendered with a watercolor finish from an original photograph, this print captures the companionable silence of creatures at ease in their element -- alert, composed, and entirely present.",
+    description:     "An Eastern Bluebird sits on a high perch, its attention turned outward as if keeping watch over the world below. Rendered with a watercolor finish from an original photograph, this print captures the silence of creatures at ease in their element -- alert, composed, and entirely present.",
     images: {
       main:    "images/avian-studies/sentinels-watch.jpg",
       room:    "images/mockups/sentinels-watch/sentinels-watch-room.jpg",
@@ -330,7 +330,7 @@ const PRODUCTS = {
     collectionPage:  "avian-studies.html",
     title:           "Still Waters",
     caption:         "Patience is its own kind of wisdom.",
-    description:     "A wading bird stands motionless at the water's edge, its reflection perfectly doubled in the calm surface below. Rendered with a watercolor finish from an original photograph, this print is a study in stillness -- the practiced patience of a creature that has learned to wait, and wait well.",
+    description:     "A Blue Heron stands motionless at the water's edge, its reflection perfectly doubled in the calm surface below. Rendered with a watercolor finish from an original photograph, this print is a study in stillness -- the practiced patience of a creature that has learned to wait, and wait well.",
     images: {
       main:    "images/avian-studies/still-waters.jpg",
       room:    "images/mockups/still-waters/still-waters-room.jpg",
@@ -358,7 +358,7 @@ const PRODUCTS = {
     collectionPage:  "avian-studies.html",
     title:           "Wings of Glory",
     caption:         "The sky was made for exactly this.",
-    description:     "A large bird spreads its wings to their full magnificent span, caught at the moment of pure aerial freedom. Rendered with a watercolor finish from an original photograph, this print fills a room with the feeling of open sky -- expansive, exhilarating, and impossible to ignore.",
+    description:     "A Bald Eagle spreads its wings preparing for flight. Rendered with a watercolor finish from an original photograph, this print fills a room with the feeling of open sky -- expansive, exhilarating, and impossible to ignore.",
     images: {
       main:    "images/avian-studies/wings-of-glory.jpg",
       room:    "images/mockups/wings-of-glory/wings-of-glory-room.jpg",
@@ -386,7 +386,7 @@ const PRODUCTS = {
     collectionPage:  "avian-studies.html",
     title:           "Winter Red",
     caption:         "Red against white -- the simplest kind of beautiful.",
-    description:     "A male cardinal rests among snow-dusted branches, his crimson plumage vivid against the pale quiet of winter. This watercolor-finished print captures one of nature's most striking contrasts, familiar to anyone who has ever looked out a window on a cold morning and caught their breath.",
+    description:     "A male cardinal rests on a branch, his crimson plumage vivid against the quiet of winter. This watercolor-finished print captures one of nature's most striking contrasts, familiar to anyone who has ever looked out a window on a cold morning and caught their breath.",
     images: {
       main:    "images/avian-studies/winter-red.jpg",
       room:    "images/mockups/winter-red/winter-red-room.jpg",
