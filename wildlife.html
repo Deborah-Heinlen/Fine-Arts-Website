@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildlife | Deborah Heinlen Fine Art</title>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════════
+       CSS VARIABLES -- site-wide colors, do not change
+    ════════════════════════════════════════════════════════════════ */
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: #f2ede8; color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 3rem; background: rgba(242,237,232,0.97); backdrop-filter: blur(8px); border-bottom: 1.5px solid rgba(200,184,154,0.3); }
+    .header-logo { height: 44px; width: auto; display: block; }
+    .header-title { font-family: "lindsey-signature", sans-serif; font-weight: 400; font-style: normal; font-size: 3rem; color: var(--text-dark); text-decoration: none; position: absolute; left: 50%; transform: translateX(-50%); }
+    .header-cart { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; border: 1px solid var(--warm-tan); padding: 0.55rem 1.5rem; transition: background 0.25s, color 0.25s; }
+    .header-cart:hover { background: var(--warm-tan); color: var(--cream); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- Wildlife is marked active
+    ════════════════════════════════════════════════════════════════ */
+    .collections-strip { position: fixed; top: 80px; left: 0; right: 0; z-index: 199; display: flex; align-items: center; justify-content: center; background: rgba(237,232,220,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(200,184,154,0.25); }
+    .strip-link { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; padding: 1.25rem 1.6rem; border-right: 1px solid rgba(200,184,154,0.3); transition: background 0.2s, color 0.2s; }
+    .strip-link:first-child { border-left: 1px solid rgba(200,184,154,0.3); }
+    .strip-link:hover { background: rgba(200,184,154,0.2); color: var(--text-dark); }
+    .strip-link.active { color: var(--text-dark); background: rgba(200,184,154,0.15); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO -- deep earthy palette for Wildlife
+    ════════════════════════════════════════════════════════════════ */
+    .hero { margin-top: 122px; min-height: 88vh; display: grid; grid-template-columns: 1fr 1fr; position: relative; overflow: hidden; }
+    .hero-texture { position: relative; background: radial-gradient(ellipse at 20% 30%, rgba(140,110,70,0.3) 0%, transparent 55%), radial-gradient(ellipse at 80% 70%, rgba(80,100,60,0.2) 0%, transparent 50%), linear-gradient(160deg, #ede8e0 0%, #e4e0d4 50%, #dce4d8 100%); display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 5rem; }
+    .hero-texture::after { content: ''; position: absolute; inset: 0; opacity: 0.025; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 200px 200px; pointer-events: none; }
+    .hero-text { position: relative; z-index: 2; text-align: center; }
+    .hero-breadcrumb { font-family: 'Jost', sans-serif; font-size: 0.68rem; font-weight: 300; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-light); margin-bottom: 2.5rem; }
+    .hero-breadcrumb a { color: inherit; text-decoration: none; transition: color 0.2s; }
+    .hero-breadcrumb a:hover { color: var(--text-mid); }
+    .hero-collection-label { font-family: 'Jost', sans-serif; font-size: 0.68rem; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-mid); margin-bottom: 1rem; opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards; }
+    .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300; color: var(--text-dark); letter-spacing: 0.03em; line-height: 1.0; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.9s ease 0.5s forwards; }
+    .hero-divider { width: 48px; height: 1px; background: var(--warm-tan); margin: 0 auto 1.8rem auto; opacity: 0; animation: fadeUp 0.8s ease 0.7s forwards; }
+    .hero-tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.1rem, 1.8vw, 1.4rem); font-weight: 300; color: var(--text-mid); line-height: 1.6; letter-spacing: 0.02em; opacity: 0; animation: fadeUp 0.9s ease 0.9s forwards; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO SLIDESHOW -- all Wildlife images live in images/wildlife/
+    ════════════════════════════════════════════════════════════════ */
+    .hero-slideshow { position: relative; overflow: hidden; background: radial-gradient(ellipse at 30% 40%, rgba(140,110,70,0.25) 0%, transparent 55%), radial-gradient(ellipse at 70% 70%, rgba(80,100,60,0.2) 0%, transparent 50%), linear-gradient(160deg, #e0d8cc 0%, #d4ccc0 60%, #d8dcd0 100%); display: flex; align-items: center; justify-content: center; }
+    .slide { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 2s ease; }
+    .slide.active { opacity: 1; }
+    .slide img { display: block; width: 62%; max-height: 78vh; object-fit: contain; border-radius: 1px; transform: scale(1); transition: opacity 2s ease, transform 7s ease; filter: drop-shadow(0 8px 32px rgba(80,60,40,0.2)); }
+    .slide img.portrait { width: 42%; }
+    .slide.active img { transform: scale(1.06); }
+    .hero-slideshow::before { content: ''; position: absolute; top: 0; left: 0; width: 140px; height: 100%; background: linear-gradient(to right, #d4ccc0 0%, rgba(212,204,192,0.7) 40%, transparent 100%); z-index: 10; pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, transparent, #1e2818); pointer-events: none; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ═══════════════════════════════════════════════════════════════
+       INTERLUDE -- decorative text band between hero and prints
+    ════════════════════════════════════════════════════════════════ */
+    .interlude { background: #1e2818; text-align: center; padding: 4rem 2rem; border-top: 1px solid rgba(80,100,60,0.25); border-bottom: 1px solid rgba(80,100,60,0.25); }
+    .interlude span { font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; color: #98a888; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINTS SECTION
+    ════════════════════════════════════════════════════════════════ */
+    .prints-section { padding: 0; margin: 0; display: flex; flex-direction: column; background: #1e2818; }
+    .print-row { display: grid; grid-template-columns: 1fr 1fr; min-height: 85vh; opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .print-row.visible { opacity: 1; transform: translateY(0); }
+    .print-row.reverse { direction: rtl; }
+    .print-row.reverse > * { direction: ltr; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT ROW COLORS -- one block per print
+       To add a new print: copy a block, update the data-print name
+       and adjust the colors to suit the new image's mood
+    ════════════════════════════════════════════════════════════════ */
+    /* No. 01 -- Untamed Majesty */
+    .print-row[data-print="untamed-majesty"] { background: linear-gradient(to bottom, #5a3820, #c8a050); }
+    .print-row[data-print="untamed-majesty"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(90,56,32,0.5) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(190,150,70,0.3) 0%, transparent 50%), linear-gradient(160deg, #4a2c18 0%, #3c2410 50%, #9a7830 100%); }
+    .print-row[data-print="untamed-majesty"] .print-text .print-number,
+    .print-row[data-print="untamed-majesty"] .print-text .print-caption { color: #f0dcc0; }
+    .print-row[data-print="untamed-majesty"] .print-text .print-title { color: #fff0d0; }
+    .print-row[data-print="untamed-majesty"] .print-text .btn-view { color: #f0dcc0; border-color: rgba(240,220,192,0.5); }
+    .print-row[data-print="untamed-majesty"] .print-text .btn-view::before { background: rgba(90,56,32,0.5); }
+    .print-row[data-print="untamed-majesty"] .print-image::after { background: linear-gradient(to right, transparent, #3c2410) !important; }
+    .print-row.reverse[data-print="untamed-majesty"] .print-image::after { background: linear-gradient(to left, transparent, #3c2410) !important; }
+
+    /* No. 02 -- Focused Intent */
+    .print-row[data-print="focused-intent"] { background: linear-gradient(to bottom, #4a6838, #c89838); }
+    .print-row[data-print="focused-intent"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(60,100,50,0.5) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(190,150,50,0.3) 0%, transparent 50%), linear-gradient(160deg, #3a5828 0%, #304820 50%, #9a7820 100%); }
+    .print-row[data-print="focused-intent"] .print-text .print-number,
+    .print-row[data-print="focused-intent"] .print-text .print-caption { color: #d8ecc8; }
+    .print-row[data-print="focused-intent"] .print-text .print-title { color: #eefade; }
+    .print-row[data-print="focused-intent"] .print-text .btn-view { color: #d8ecc8; border-color: rgba(216,236,200,0.5); }
+    .print-row[data-print="focused-intent"] .print-text .btn-view::before { background: rgba(60,100,50,0.5); }
+    .print-row[data-print="focused-intent"] .print-image::after { background: linear-gradient(to right, transparent, #304820) !important; }
+    .print-row.reverse[data-print="focused-intent"] .print-image::after { background: linear-gradient(to left, transparent, #304820) !important; }
+
+    /* No. 03 -- Gray Wind */
+    .print-row[data-print="gray-wind"] { background: linear-gradient(to bottom, #485868, #909898); }
+    .print-row[data-print="gray-wind"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(60,80,100,0.5) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(130,150,150,0.3) 0%, transparent 50%), linear-gradient(160deg, #384858 0%, #2e3848 50%, #707878 100%); }
+    .print-row[data-print="gray-wind"] .print-text .print-number,
+    .print-row[data-print="gray-wind"] .print-text .print-caption { color: #d8e4e8; }
+    .print-row[data-print="gray-wind"] .print-text .print-title { color: #eef4f8; }
+    .print-row[data-print="gray-wind"] .print-text .btn-view { color: #d8e4e8; border-color: rgba(216,228,232,0.5); }
+    .print-row[data-print="gray-wind"] .print-text .btn-view::before { background: rgba(60,80,100,0.5); }
+    .print-row[data-print="gray-wind"] .print-image::after { background: linear-gradient(to right, transparent, #2e3848) !important; }
+    .print-row.reverse[data-print="gray-wind"] .print-image::after { background: linear-gradient(to left, transparent, #2e3848) !important; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT IMAGE & TEXT
+    ════════════════════════════════════════════════════════════════ */
+    .print-image { position: relative; overflow: hidden; }
+    .print-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.7s ease; }
+    .print-row:hover .print-image img { transform: scale(1.03); }
+    .print-row:not(.reverse) .print-image::after { content: ''; position: absolute; top: 0; right: 0; width: 100px; height: 100%; z-index: 2; pointer-events: none; }
+    .print-row.reverse .print-image::after { content: ''; position: absolute; top: 0; left: 0; width: 100px; height: 100%; z-index: 2; pointer-events: none; }
+    .print-text { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 5rem 5rem 5rem 4.5rem; overflow: hidden; }
+    .print-text::after { content: ''; position: absolute; inset: 0; opacity: 0.02; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 200px 200px; pointer-events: none; }
+    .print-text-inner { position: relative; z-index: 2; text-align: center; }
+    .print-number { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-light); margin-bottom: 1.5rem; }
+    .print-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 400; color: var(--text-dark); letter-spacing: 0.03em; line-height: 1.05; margin-bottom: 1.5rem; }
+    .print-divider { width: 36px; height: 1px; background: var(--warm-tan); opacity: 0.8; margin: 0 auto 1.5rem auto; }
+    .print-caption { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1rem, 1.4vw, 1.2rem); font-weight: 300; color: var(--text-mid); line-height: 1.7; letter-spacing: 0.02em; margin-bottom: 2.8rem; }
+    .btn-view { display: inline-block; font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 300; letter-spacing: 0.24em; text-transform: uppercase; color: var(--text-dark); text-decoration: none; border: 1px solid rgba(100,80,60,0.35); padding: 0.85rem 2.2rem; transition: background 0.3s, border-color 0.3s, color 0.3s; position: relative; overflow: hidden; }
+    .btn-view::before { content: ''; position: absolute; inset: 0; background: var(--warm-tan); transform: translateX(-100%); transition: transform 0.3s ease; z-index: -1; }
+    .btn-view:hover { border-color: var(--warm-tan); color: var(--text-dark); }
+    .btn-view:hover::before { transform: translateX(0); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+    ════════════════════════════════════════════════════════════════ */
+    .other-collections { background: linear-gradient(to bottom, #304828, #e8e4e0); padding: 6rem 2rem; text-align: center; }
+    .other-collections h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 300; letter-spacing: 0.08em; color: var(--text-dark); margin-bottom: 0.5rem; }
+    .other-collections p { font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 300; letter-spacing: 0.15em; color: var(--text-light); margin-bottom: 3rem; text-transform: uppercase; }
+    .collections-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+    .collection-link { font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; border: 1px solid var(--warm-tan); padding: 0.75rem 2rem; transition: background 0.25s, color 0.25s, border-color 0.25s; }
+    .collection-link:hover { background: var(--warm-tan); border-color: var(--warm-tan); color: var(--cream); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    footer { padding: 2.5rem 3rem; text-align: center; font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 300; letter-spacing: 0.14em; color: var(--text-light); background: #e8e4e0; border-top: 1px solid rgba(200,184,154,0.25); }
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- tablet (max 900px)
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { font-size: 2rem; }
+      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+      .hero { grid-template-columns: 1fr; min-height: auto; margin-top: 110px; }
+      .hero-texture { padding: 4rem 2rem 3rem; min-height: auto; }
+      .hero-slideshow { height: 80vw; }
+      .hero-slideshow::before { display: none; }
+      .hero::after { display: none; }
+      .slide img { width: 75%; max-height: 75vw; }
+      .slide img.portrait { width: 50%; }
+      .print-row, .print-row.reverse { grid-template-columns: 1fr; direction: ltr; min-height: auto; }
+      .print-image { height: 100vw; }
+      .print-row:not(.reverse) .print-image::after, .print-row.reverse .print-image::after { display: none; }
+      .print-text { padding: 3rem 2rem; }
+      .interlude { padding: 2.5rem 1.5rem; }
+      .other-collections { padding: 4rem 1.5rem; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- mobile (max 600px)
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .site-header { padding: 0.75rem 1rem; }
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .hero { margin-top: 68px; }
+      .hero-texture { padding: 3rem 1.5rem 2.5rem; }
+      .hero-title { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+      .hero-breadcrumb { margin-bottom: 1.5rem; }
+      .hero-slideshow { height: 90vw; }
+      .slide img { width: 85%; }
+      .slide img.portrait { width: 60%; }
+      .print-image { height: 85vw; }
+      .print-text { padding: 2.5rem 1.5rem; }
+      .print-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+      .print-caption { font-size: 1rem; }
+      .other-collections { padding: 3rem 1rem; }
+      .collections-row { gap: 0.6rem; }
+      .collection-link { padding: 0.65rem 1.4rem; font-size: 0.65rem; }
+      footer { padding: 2rem 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAIN HEADER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <a href="index.html"><img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" /></a>
+    <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
+    <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- Wildlife is marked active
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="collections-strip">
+    <a href="wildlife.html"          class="strip-link active">Wildlife</a>
+    <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
+    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
+    <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
+    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="american-west.html"     class="strip-link">American West</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO -- update slideshow src paths if you change prints
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-texture">
+      <div class="hero-text">
+        <p class="hero-breadcrumb">
+          <a href="index.html">Home</a> &nbsp;&rsaquo;&nbsp;
+          <a href="index.html#collections">Collections</a> &nbsp;&rsaquo;&nbsp;
+          Wildlife
+        </p>
+        <p class="hero-collection-label">The Collection</p>
+        <h1 class="hero-title">Wildlife</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">Power, presence, and the wild world<br>that reminds us we share this earth.</p>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO SLIDESHOW IMAGES
+         All Wildlife images live in images/wildlife/
+    ════════════════════════════════════════════════════════════ -->
+    <div class="hero-slideshow">
+      <div class="slide active" data-index="0"><img src="images/wildlife/untamed-majesty.jpg" alt="Untamed Majesty by Deborah Heinlen" /></div>
+      <div class="slide"        data-index="1"><img src="images/wildlife/focused-intent.jpg"  alt="Focused Intent by Deborah Heinlen" /></div>
+      <div class="slide"        data-index="2"><img src="images/wildlife/gray-wind.jpg"        alt="Gray Wind by Deborah Heinlen" /></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       INTERLUDE -- update the text inside the span tag if desired
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="interlude"><span>Into the Wild</span></div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PRINTS SECTION
+       To add a new print: copy one full <article> block, update the
+       data-print name, image src, title, caption, and btn-view href.
+       Add a matching color block in the CSS above for the new print.
+       Alternate class="print-row" and class="print-row reverse".
+  ════════════════════════════════════════════════════════════════ -->
+  <main class="prints-section">
+
+    <!-- PRINT 01 -- Untamed Majesty -->
+    <article class="print-row" data-print="untamed-majesty">
+      <div class="print-image"><img src="images/wildlife/untamed-majesty.jpg" alt="Untamed Majesty fine art print" loading="lazy" /></div>
+      <div class="print-text"><div class="print-text-inner">
+        <p class="print-number">No. 01 &nbsp;&mdash;&nbsp; Wildlife</p>
+        <h2 class="print-title">Untamed Majesty</h2>
+        <div class="print-divider"></div>
+        <p class="print-caption">"A gaze that has never once<br>questioned its own authority."</p>
+        <a href="product.html?id=untamed-majesty" class="btn-view">View Details</a>
+      </div></div>
+    </article>
+
+    <!-- PRINT 02 -- Focused Intent -->
+    <article class="print-row reverse" data-print="focused-intent">
+      <div class="print-image"><img src="images/wildlife/focused-intent.jpg" alt="Focused Intent fine art print" loading="lazy" /></div>
+      <div class="print-text"><div class="print-text-inner">
+        <p class="print-number">No. 02 &nbsp;&mdash;&nbsp; Wildlife</p>
+        <h2 class="print-title">Focused Intent</h2>
+        <div class="print-divider"></div>
+        <p class="print-caption">"Everything in its world<br>narrows to a single point."</p>
+        <a href="product.html?id=focused-intent" class="btn-view">View Details</a>
+      </div></div>
+    </article>
+
+    <!-- PRINT 03 -- Gray Wind -->
+    <article class="print-row" data-print="gray-wind">
+      <div class="print-image"><img src="images/wildlife/gray-wind.jpg" alt="Gray Wind fine art print" loading="lazy" /></div>
+      <div class="print-text"><div class="print-text-inner">
+        <p class="print-number">No. 03 &nbsp;&mdash;&nbsp; Wildlife</p>
+        <h2 class="print-title">Gray Wind</h2>
+        <div class="print-divider"></div>
+        <p class="print-caption">"Ghost of the forest,<br>moving the way a rumor does."</p>
+        <a href="product.html?id=gray-wind" class="btn-view">View Details</a>
+      </div></div>
+    </article>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="other-collections">
+    <h2>Explore Further</h2>
+    <p>More collections from Deborah Heinlen Fine Art</p>
+    <nav class="collections-row" aria-label="Other collections">
+      <a href="botanical-studies.html" class="collection-link">Botanical Studies</a>
+      <a href="avian-studies.html"     class="collection-link">Avian Studies</a>
+      <a href="cincinnati.html"        class="collection-link">Cincinnati</a>
+      <a href="americana.html"         class="collection-link">Americana</a>
+      <a href="american-west.html"     class="collection-link">American West</a>
+    </nav>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="contact.html">Contact</a>
+    </p>
+    <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+
+  <script>
+
+    // ═══════════════════════════════════════════════════════════════
+    // FOOTER YEAR -- auto-updates, do not change
+    // ═══════════════════════════════════════════════════════════════
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ═══════════════════════════════════════════════════════════════
+    // HERO SLIDESHOW -- cycles through prints automatically
+    // To change speed: update SLIDE_DURATION (3000 = 3 seconds)
+    // ═══════════════════════════════════════════════════════════════
+    const SLIDE_DURATION = 3000;
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function nextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(nextSlide, SLIDE_DURATION);
+
+    // ═══════════════════════════════════════════════════════════════
+    // SCROLL ANIMATION -- print rows fade in as you scroll down
+    // do not change
+    // ═══════════════════════════════════════════════════════════════
+    const rows = document.querySelectorAll('.print-row');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    rows.forEach(row => observer.observe(row));
+
+  </script>
+
+</body>
+</html>
