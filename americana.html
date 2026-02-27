@@ -415,18 +415,32 @@
     .print-image {
       position: relative;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem;
     }
 
-    .print-image img {
+    .print-frame {
+      width: min(95%, 820px);
+      aspect-ratio: 5 / 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .print-frame.portrait { aspect-ratio: 4 / 5; }
+
+    .print-frame img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
       display: block;
       transition: transform 0.7s ease;
     }
 
-    .print-row:hover .print-image img { transform: scale(1.03); }
+    .print-row:hover .print-frame img { transform: scale(1.03); }
 
     .print-row:not(.reverse) .print-image::after {
       content: '';
@@ -586,7 +600,8 @@
         min-height: auto;
       }
 
-      .print-image { height: 100vw; }
+      .print-image { padding: 2.5rem 1.5rem; }
+      .print-frame { width: min(90%, 420px); }
       .print-row:not(.reverse) .print-image::after,
       .print-row.reverse .print-image::after { display: none; }
       .print-text { padding: 3rem 2rem; }
@@ -609,7 +624,8 @@
       .slide img { width: 85%; }
       .slide img.portrait { width: 60%; }
 
-      .print-image { height: 85vw; }
+      .print-image { padding: 2rem 1rem; }
+      .print-frame { width: min(92%, 340px); }
       .print-text { padding: 2.5rem 1.5rem; }
       .print-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
       .print-caption { font-size: 1rem; }
@@ -700,7 +716,6 @@
       All images &copy; Deborah Heinlen.  All rights reserved.
     </p>
   </footer>
-
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
 
@@ -741,7 +756,9 @@
 
       article.innerHTML = `
         <div class="print-image">
-          <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+          <div class="print-frame">
+            <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+          </div>
         </div>
         <div class="print-text">
           <div class="print-text-inner">

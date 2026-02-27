@@ -176,11 +176,55 @@
     /* ═══════════════════════════════════════════════════════════════
        PRINT IMAGE & TEXT
     ════════════════════════════════════════════════════════════════ */
-    .print-image { position: relative; overflow: hidden; }
-    .print-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.7s ease; }
-    .print-row:hover .print-image img { transform: scale(1.03); }
-    .print-row:not(.reverse) .print-image::after { content: ''; position: absolute; top: 0; right: 0; width: 100px; height: 100%; z-index: 2; pointer-events: none; }
-    .print-row.reverse .print-image::after { content: ''; position: absolute; top: 0; left: 0; width: 100px; height: 100%; z-index: 2; pointer-events: none; }
+    .print-image {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem;
+    }
+
+    .print-frame {
+      width: min(95%, 820px);
+      aspect-ratio: 5 / 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .print-frame.portrait { aspect-ratio: 4 / 5; }
+
+    .print-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      transition: transform 0.7s ease;
+    }
+
+    .print-row:hover .print-frame img { transform: scale(1.03); }
+
+    .print-row:not(.reverse) .print-image::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .print-row.reverse .print-image::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
     .print-text { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 5rem 5rem 5rem 4.5rem; overflow: hidden; }
     .print-text::after { content: ''; position: absolute; inset: 0; opacity: 0.02; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 200px 200px; pointer-events: none; }
     .print-text-inner { position: relative; z-index: 2; text-align: center; }
@@ -226,7 +270,8 @@
       .slide img { width: 75%; max-height: 75vw; }
       .slide img.portrait { width: 50%; }
       .print-row, .print-row.reverse { grid-template-columns: 1fr; direction: ltr; min-height: auto; }
-      .print-image { height: 100vw; }
+      .print-image { padding: 2.5rem 1.5rem; }
+      .print-frame { width: min(90%, 420px); }
       .print-row:not(.reverse) .print-image::after, .print-row.reverse .print-image::after { display: none; }
       .print-text { padding: 3rem 2rem; }
       .interlude { padding: 2.5rem 1.5rem; }
@@ -247,7 +292,8 @@
       .hero-slideshow { height: 90vw; }
       .slide img { width: 85%; }
       .slide img.portrait { width: 60%; }
-      .print-image { height: 85vw; }
+      .print-image { padding: 2rem 1rem; }
+      .print-frame { width: min(92%, 340px); }
       .print-text { padding: 2.5rem 1.5rem; }
       .print-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
       .print-caption { font-size: 1rem; }
@@ -389,7 +435,9 @@
 
       article.innerHTML = `
         <div class="print-image">
-          <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+          <div class="print-frame">
+            <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+          </div>
         </div>
         <div class="print-text">
           <div class="print-text-inner">

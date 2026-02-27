@@ -727,7 +727,7 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="/cdn-cgi/l/email-protection#b6d2d3d4d9c4d7deded3dfd8dad3d8c6ded9c2d9d1c4d7c6decff6d1dbd7dfda98d5d9db"><span class="__cf_email__" data-cfemail="157170777a67747d7d707c7b79707b657d7a617a726774657d6c557278747c793b767a78">[email&#160;protected]</span></a>
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
       &nbsp;&middot;&nbsp;
       <a href="contact.html">Contact</a>
     </p>
@@ -1526,7 +1526,7 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="/cdn-cgi/l/email-protection#b6d2d3d4d9c4d7deded3dfd8dad3d8c6ded9c2d9d1c4d7c6decff6d1dbd7dfda98d5d9db"><span class="__cf_email__" data-cfemail="157170777a67747d7d707c7b79707b657d7a617a726774657d6c557278747c793b767a78">[email&#160;protected]</span></a>
+      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
       &nbsp;&middot;&nbsp;
       <a href="contact.html">Contact</a>
     </p>
@@ -1559,13 +1559,25 @@
       slides[current].classList.add('active');
     }
 
-    setInterval(nextSlide, SLIDE_DURATION);
+    if (slides.length > 1) setInterval(nextSlide, SLIDE_DURATION);
 
     // ═══════════════════════════════════════════════════════════════
     // SCROLL ANIMATION -- print rows fade in as you scroll down
     // do not change
     // ═══════════════════════════════════════════════════════════════
-    const rows = document.querySelectorAll('.print-row');
+    const rows     = document.querySelectorAll('.print-row');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
-        i
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    rows.forEach(row => observer.observe(row));
+
+  </script>
+
+</body>
+</html>
