@@ -727,7 +727,7 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#264243444954474e4e434f484a4348564e495249415447564e5f66414b474f4a0845494b"><span class="__cf_email__" data-cfemail="f99d9c9b968b9891919c9097959c978991968d969e8b98899180b99e94989095d79a9694">[email&#160;protected]</span></a>
       &nbsp;&middot;&nbsp;
       <a href="contact.html">Contact</a>
     </p>
@@ -736,7 +736,7 @@
     </p>
   </footer>
 
-  <script src="js/products.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/products.js"></script>
   <script src="js/cart.js"></script>
 
   <script>
@@ -765,14 +765,21 @@
       article.className    = 'print-row' + (isReverse ? ' reverse' : '');
       article.dataset.print = id;
       article.innerHTML = `
-        <div class="print-image"><img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" /></div>
-        <div class="print-text"><div class="print-text-inner">
-          <p class="print-number">${p.number} &nbsp;&mdash;&nbsp; ${p.collectionLabel}</p>
-          <h2 class="print-title">${p.title}</h2>
-          <div class="print-divider"></div>
-          <p class="print-caption">&ldquo;${p.caption}&rdquo;</p>
-          <a href="product.html?id=${id}" class="btn-view">View Details</a>
-        </div></div>`;
+        <div class="print-image">
+          <div class="print-frame">
+            <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+          </div>
+        </div>
+        <div class="print-text">
+          <div class="print-text-inner">
+            <p class="print-number">${p.number} &nbsp;&mdash;&nbsp; ${p.collectionLabel}</p>
+            <h2 class="print-title">${p.title}</h2>
+            <div class="print-divider"></div>
+            <p class="print-caption">&ldquo;${p.caption}&rdquo;</p>
+            <a href="product.html?id=${id}" class="btn-view">View Details</a>
+          </div>
+        </div>
+      `;
       printsSection.appendChild(article);
     });
 
@@ -1526,7 +1533,7 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#e38786818c91828b8b868a8d8f868d938b8c978c849182938b9aa3848e828a8fcd808c8e"><span class="__cf_email__" data-cfemail="bbdfded9d4c9dad3d3ded2d5d7ded5cbd3d4cfd4dcc9dacbd3c2fbdcd6dad2d795d8d4d6">[email&#160;protected]</span></a>
       &nbsp;&middot;&nbsp;
       <a href="contact.html">Contact</a>
     </p>
@@ -1535,7 +1542,7 @@
     </p>
   </footer>
 
-  <script src="js/products.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/products.js"></script>
   <script src="js/cart.js"></script>
 
   <script>
@@ -1564,20 +1571,4 @@
     // ═══════════════════════════════════════════════════════════════
     // SCROLL ANIMATION -- print rows fade in as you scroll down
     // do not change
-    // ═══════════════════════════════════════════════════════════════
-    const rows     = document.querySelectorAll('.print-row');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 120);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    rows.forEach(row => observer.observe(row));
-
-  </script>
-
-</body>
-</html>
+    // ════════════════════════════
