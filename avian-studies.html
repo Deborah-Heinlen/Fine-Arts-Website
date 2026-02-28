@@ -97,12 +97,18 @@
     .print-row.reverse > * { direction: ltr; }
 
     /* ═══════════════════════════════════════════════════════════════
+       DEFAULT ROW COLOR -- must come BEFORE specific color blocks
+       so that the specific blocks override this fallback
+    ════════════════════════════════════════════════════════════════ */
+    .print-row .print-text { background: linear-gradient(160deg, #ede8dc 0%, #e8e4d8 100%); }
+
+    /* ═══════════════════════════════════════════════════════════════
        PRINT ROW COLORS
     ════════════════════════════════════════════════════════════════ */
 
     /* American Glory */
     .print-row[data-print="american-glory"] { background: linear-gradient(to bottom, #2e3848, #4a6080); }
-    .print-row[data-print="american-glory"] .print-text { background: radial-gradient(ellipse at center, #303848 0%, #2e3848 100%); }
+    .print-row[data-print="american-glory"] .print-text { background: radial-gradient(ellipse at 30% 40%, rgba(50, 60, 80, 0.5) 0%, transparent 60%), radial-gradient(ellipse at 70% 70%, rgba(70, 100, 140, 0.3) 0%, transparent 50%), linear-gradient(160deg, #282e3c 0%, #303848 50%, #3a5068 100%); }
     .print-row[data-print="american-glory"] .print-text .print-number,
     .print-row[data-print="american-glory"] .print-text .print-caption { color: #b8c8d8; }
     .print-row[data-print="american-glory"] .print-text .print-title { color: #dce8f0; }
@@ -179,11 +185,6 @@
     .print-row[data-print="wings-of-glory"] .print-text .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
     .print-row[data-print="wings-of-glory"] .print-text .btn-view::before { background: rgba(100, 160, 210, 0.5); }
     .print-row[data-print="wings-of-glory"] .print-image { background: radial-gradient(ellipse at center, #5888b0 0%, #88b0d8 100%); }
-
-    /* ═══════════════════════════════════════════════════════════════
-       DEFAULT ROW COLOR
-    ════════════════════════════════════════════════════════════════ */
-    .print-row:not([style]) .print-text { background: linear-gradient(160deg, #ede8dc 0%, #e8e4d8 100%); }
 
     /* ═══════════════════════════════════════════════════════════════
        PRINT IMAGE -- padded, aspect-ratio preserved
@@ -337,11 +338,11 @@
   </section>
 
   <footer>
-    <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
+    <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="/cdn-cgi/l/email-protection#e28687808d90838a8a878b8c8e878c928a8d968d859083928a9ba2858f838b8ecc818d8f"><span class="__cf_email__" data-cfemail="adc9c8cfc2dfccc5c5c8c4c3c1c8c3ddc5c2d9c2cadfccddc5d4edcac0ccc4c183cec2c0">[email&#160;protected]</span></a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
   </footer>
 
-  <script src="js/products.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
@@ -406,12 +407,4 @@
     rows.forEach(row => observer.observe(row));
 
     document.addEventListener('contextmenu', function(e) {
-      if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) { e.preventDefault(); }
-    });
-    document.addEventListener('dragstart', function(e) {
-      if (e.target.tagName === 'IMG') { e.preventDefault(); }
-    });
-  </script>
-
-</body>
-</html>
+      if (e.targe

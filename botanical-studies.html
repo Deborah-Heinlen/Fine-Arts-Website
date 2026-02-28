@@ -379,15 +379,6 @@
     }
 
     /* ═══════════════════════════════════════════════════════════════
-       DEFAULT ROW COLOR -- used for any print that doesn't have
-       a specific color block above yet.  Update once you have
-       chosen colors for the new print.
-    ════════════════════════════════════════════════════════════════ */
-    .print-row:not([style]) .print-text {
-      background: linear-gradient(160deg, #ede8dc 0%, #e8e4d8 100%);
-    }
-
-    /* ═══════════════════════════════════════════════════════════════
        PRINT IMAGE -- padded, aspect-ratio preserved
        Images float inside the colored area with breathing room,
        maintaining their natural proportions instead of cropping.
@@ -777,7 +768,7 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#9ffbfafdf0edfef7f7faf6f1f3faf1eff7f0ebf0f8edfeeff7e6dff8f2fef6f3b1fcf0f2"><span class="__cf_email__" data-cfemail="593d3c3b362b3831313c3037353c372931362d363e2b38293120193e34383035773a3634">[email&#160;protected]</span></a>
       &nbsp;&middot;&nbsp;
       <a href="contact.html">Contact</a>
     </p>
@@ -789,7 +780,7 @@
   <!-- ═══════════════════════════════════════════════════════════════
        SCRIPTS
   ════════════════════════════════════════════════════════════════ -->
-  <script src="js/products.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/products.js"></script>
   <script src="js/cart.js"></script>
 
   <script>
@@ -892,18 +883,4 @@
     // Not bulletproof against dev tools, but stops casual copying.
     // ═══════════════════════════════════════════════════════════════
     document.addEventListener('contextmenu', function(e) {
-      if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) {
-        e.preventDefault();
-      }
-    });
-
-    document.addEventListener('dragstart', function(e) {
-      if (e.target.tagName === 'IMG') {
-        e.preventDefault();
-      }
-    });
-
-  </script>
-
-</body>
-</html>
+      if (e.target.tagName === 'IMG' || e.targe

@@ -103,6 +103,12 @@
     .print-row.reverse > * { direction: ltr; }
 
     /* ═══════════════════════════════════════════════════════════════
+       DEFAULT ROW COLOR -- must come BEFORE specific color blocks
+       so that the specific blocks override this fallback
+    ════════════════════════════════════════════════════════════════ */
+    .print-row .print-text { background: linear-gradient(160deg, #ede8dc 0%, #e8e4d8 100%); }
+
+    /* ═══════════════════════════════════════════════════════════════
        PRINT ROW COLORS
     ════════════════════════════════════════════════════════════════ */
 
@@ -148,11 +154,6 @@
       background: radial-gradient(ellipse at 30% 40%, rgba(220, 200, 150, 0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(190, 130, 90, 0.3) 0%, transparent 50%), linear-gradient(160deg, #d8c8a0 0%, #c8b888 50%, #a87050 100%);
     }
     .print-row[data-print="pasture-calm"] .print-image { background: radial-gradient(ellipse at center, #c8b888 0%, #d8c8a0 100%); }
-
-    /* ═══════════════════════════════════════════════════════════════
-       DEFAULT ROW COLOR
-    ════════════════════════════════════════════════════════════════ */
-    .print-row:not([style]) .print-text { background: linear-gradient(160deg, #ede8dc 0%, #e8e4d8 100%); }
 
     /* ═══════════════════════════════════════════════════════════════
        PRINT IMAGE -- padded, aspect-ratio preserved
@@ -308,11 +309,11 @@
   </section>
 
   <footer>
-    <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
+    <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="/cdn-cgi/l/email-protection#92f6f7f0fde0f3fafaf7fbfcfef7fce2fafde6fdf5e0f3e2faebd2f5fff3fbfebcf1fdff"><span class="__cf_email__" data-cfemail="b6d2d3d4d9c4d7deded3dfd8dad3d8c6ded9c2d9d1c4d7c6decff6d1dbd7dfda98d5d9db">[email&#160;protected]</span></a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
   </footer>
 
-  <script src="js/products.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
@@ -377,12 +378,4 @@
     rows.forEach(row => observer.observe(row));
 
     document.addEventListener('contextmenu', function(e) {
-      if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) { e.preventDefault(); }
-    });
-    document.addEventListener('dragstart', function(e) {
-      if (e.target.tagName === 'IMG') { e.preventDefault(); }
-    });
-  </script>
-
-</body>
-</html>
+      if (e.targe
