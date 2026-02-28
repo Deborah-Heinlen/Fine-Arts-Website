@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Botanical Studies | Deborah Heinlen Fine Art</title>
+  <meta name="description" content="Botanical Studies collection by Deborah Heinlen Fine Art -- watercolor-style fine art prints of water lilies, sunflowers, and Eastern redbud blossoms created from original photography.  Available on metal, canvas, and framed." />
 
   <!-- ═══════════════════════════════════════════════════════════════
        FONTS -- do not change
@@ -94,6 +95,7 @@
     /* ═══════════════════════════════════════════════════════════════
        COLLECTIONS STRIP -- do not change
        "Botanical Studies" is marked active on this page
+    ════════════════════════════════════════════════════════════════ -->
     ════════════════════════════════════════════════════════════════ */
     .collections-strip {
       position: fixed;
@@ -263,13 +265,11 @@
       max-height: 78vh;
       object-fit: contain;
       border-radius: 1px;
-      transform: scale(1);
-      transition: opacity 2s ease, transform 7s ease;
+      transition: opacity 2s ease;
       filter: drop-shadow(0 8px 32px rgba(100, 80, 60, 0.15));
     }
 
     .slide img.portrait { width: 42%; }
-    .slide.active img { transform: scale(1.06); }
 
     .hero-slideshow::before {
       content: '';
@@ -353,16 +353,17 @@
        The JavaScript below handles everything else automatically.
     ════════════════════════════════════════════════════════════════ */
 
-    /* Water Lily */
-    .print-row[data-print="water-lily"] { background: linear-gradient(to bottom, #ddeaf0, #e8efd0); }
-    .print-row[data-print="water-lily"] .print-text {
+    /* Waterlily in Bloom */
+    .print-row[data-print="waterlily-in-bloom"] { background: linear-gradient(to bottom, #ddeaf0, #e8efd0); }
+    .print-row[data-print="waterlily-in-bloom"] .print-text {
       background:
         radial-gradient(ellipse at 30% 40%, rgba(150, 200, 220, 0.4) 0%, transparent 60%),
         radial-gradient(ellipse at 70% 70%, rgba(180, 210, 190, 0.3) 0%, transparent 50%),
         linear-gradient(160deg, #d0e8f2 0%, #c8dce8 50%, #d8ecd8 100%);
     }
-    .print-row[data-print="water-lily"] .print-image::after { background: linear-gradient(to right, transparent, #c8dce8) !important; }
-    .print-row.reverse[data-print="water-lily"] .print-image::after { background: linear-gradient(to left, transparent, #c8dce8) !important; }
+    .print-row[data-print="waterlily-in-bloom"] .print-image {
+      background: radial-gradient(ellipse at center, #c8dce8 0%, #d0e8f2 100%);
+    }
 
     /* Golden Hour */
     .print-row[data-print="golden-hour"] { background: linear-gradient(to bottom, #e8efd0, #f5e8e8); }
@@ -372,8 +373,9 @@
         radial-gradient(ellipse at 70% 60%, rgba(200, 220, 150, 0.3) 0%, transparent 50%),
         linear-gradient(160deg, #f0e8b0 0%, #e8e0a0 50%, #f0eab8 100%);
     }
-    .print-row[data-print="golden-hour"] .print-image::after { background: linear-gradient(to right, transparent, #e8e0a0) !important; }
-    .print-row.reverse[data-print="golden-hour"] .print-image::after { background: linear-gradient(to left, transparent, #e8e0a0) !important; }
+    .print-row[data-print="golden-hour"] .print-image {
+      background: radial-gradient(ellipse at center, #e8e0a0 0%, #f0e8b0 100%);
+    }
 
     /* Redbuds in Bloom */
     .print-row[data-print="redbuds-in-bloom"] { background: linear-gradient(to bottom, #f5e8e8, #ede4ec); }
@@ -383,8 +385,9 @@
         radial-gradient(ellipse at 70% 60%, rgba(200, 160, 210, 0.25) 0%, transparent 50%),
         linear-gradient(160deg, #f0d0e0 0%, #e8c8d8 50%, #eed0e8 100%);
     }
-    .print-row[data-print="redbuds-in-bloom"] .print-image::after { background: linear-gradient(to right, transparent, #e8c8d8) !important; }
-    .print-row.reverse[data-print="redbuds-in-bloom"] .print-image::after { background: linear-gradient(to left, transparent, #e8c8d8) !important; }
+    .print-row[data-print="redbuds-in-bloom"] .print-image {
+      background: radial-gradient(ellipse at center, #e8c8d8 0%, #f0d0e0 100%);
+    }
 
     /* ═══════════════════════════════════════════════════════════════
        DEFAULT ROW COLOR -- used for any print that doesn't have
@@ -395,32 +398,29 @@
       background: linear-gradient(160deg, #ede8dc 0%, #e8e4d8 100%);
     }
 
-    .print-image { position: relative; overflow: hidden; }
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT IMAGE -- padded, aspect-ratio preserved
+       Images float inside the colored area with breathing room,
+       maintaining their natural proportions instead of cropping.
+    ════════════════════════════════════════════════════════════════ */
+    .print-image {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+    }
 
     .print-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
       display: block;
-      transition: transform 0.7s ease;
+      width: 100%;
+      max-height: 75vh;
+      aspect-ratio: 5 / 4;
+      object-fit: contain;
+      border-radius: 1px;
+      filter: drop-shadow(0 6px 24px rgba(60, 50, 40, 0.18));
     }
-
-    .print-row:hover .print-image img { transform: scale(1.03); }
-
-    .print-row:not(.reverse) .print-image::after,
-    .print-row.reverse .print-image::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 100px;
-      height: 100%;
-      z-index: 2;
-      pointer-events: none;
-    }
-
-    .print-row:not(.reverse) .print-image::after { right: 0; }
-    .print-row.reverse .print-image::after { left: 0; }
 
     .print-text {
       position: relative;
@@ -569,6 +569,16 @@
       color: var(--cream);
     }
 
+    .collection-link.active {
+      background: rgba(200, 184, 154, 0.15);
+      color: var(--text-dark);
+    }
+
+    .collection-link.active:hover {
+      background: var(--warm-tan);
+      color: var(--cream);
+    }
+
     /* ═══════════════════════════════════════════════════════════════
        FOOTER -- do not change
     ════════════════════════════════════════════════════════════════ */
@@ -611,9 +621,8 @@
         min-height: auto;
       }
 
-      .print-image { height: 100vw; }
-      .print-row:not(.reverse) .print-image::after,
-      .print-row.reverse .print-image::after { display: none; }
+      .print-image { padding: 2rem; }
+      .print-image img { max-height: none; }
       .print-text { padding: 3rem 2rem; }
       .interlude { padding: 2.5rem 1.5rem; }
       .other-collections { padding: 4rem 1.5rem; }
@@ -635,7 +644,7 @@
       .slide img { width: 85%; }
       .slide img.portrait { width: 60%; }
 
-      .print-image { height: 85vw; }
+      .print-image { padding: 1.5rem; }
       .print-text { padding: 2.5rem 1.5rem; }
       .print-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
       .print-caption { font-size: 1rem; }
@@ -668,6 +677,7 @@
        COLLECTIONS STRIP -- Botanical Studies is marked active
   ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
+    <a href="index.html"             class="strip-link">Home</a>
     <a href="wildlife.html"          class="strip-link">Wildlife</a>
     <a href="botanical-studies.html" class="strip-link active">Botanical Studies</a>
     <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
@@ -723,12 +733,14 @@
   <section class="other-collections">
     <h2>Explore Further</h2>
     <p>More collections from Deborah Heinlen Fine Art</p>
-    <nav class="collections-row" aria-label="Other collections">
-      <a href="wildlife.html"      class="collection-link">Wildlife</a>
-      <a href="avian-studies.html" class="collection-link">Avian Studies</a>
-      <a href="cincinnati.html"    class="collection-link">Cincinnati</a>
-      <a href="americana.html"     class="collection-link">Americana</a>
-      <a href="american-west.html" class="collection-link">American West</a>
+    <nav class="collections-row" aria-label="All collections">
+      <a href="index.html"             class="collection-link">Home</a>
+      <a href="wildlife.html"          class="collection-link">Wildlife</a>
+      <a href="botanical-studies.html" class="collection-link active">Botanical Studies</a>
+      <a href="avian-studies.html"     class="collection-link">Avian Studies</a>
+      <a href="cincinnati.html"        class="collection-link">Cincinnati</a>
+      <a href="americana.html"         class="collection-link">Americana</a>
+      <a href="american-west.html"     class="collection-link">American West</a>
     </nav>
   </section>
 
@@ -763,6 +775,7 @@
     // ═══════════════════════════════════════════════════════════════
     // BUILD HERO SLIDESHOW
     // Pulls main image from each product in this collection.
+    // Uses altText from products.js for SEO.
     // No manual updates needed when you add a new print.
     // ═══════════════════════════════════════════════════════════════
     const collectionId  = 'botanical-studies';
@@ -776,14 +789,14 @@
 
       const slide = document.createElement('div');
       slide.className = 'slide' + (i === 0 ? ' active' : '');
-      slide.innerHTML = `<img src="${p.images.main}" alt="${p.title} by Deborah Heinlen" />`;
+      slide.innerHTML = `<img src="${p.images.main}" alt="${p.altText || p.title + ' by Deborah Heinlen'}" />`;
       slideshow.appendChild(slide);
     });
 
     // ═══════════════════════════════════════════════════════════════
     // BUILD PRINT ROWS
     // Alternates left/right layout automatically.
-    // Pulls title, number, caption, image, and product link
+    // Pulls title, number, caption, image, altText, and product link
     // from products.js -- no HTML edits needed for new prints.
     // ═══════════════════════════════════════════════════════════════
     productIds.forEach((id, i) => {
@@ -797,7 +810,7 @@
 
       article.innerHTML = `
         <div class="print-image">
-          <img src="${p.images.main}" alt="${p.title} fine art print" loading="lazy" />
+          <img src="${p.images.main}" alt="${p.altText || p.title + ' fine art print'}" loading="lazy" />
         </div>
         <div class="print-text">
           <div class="print-text-inner">
