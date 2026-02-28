@@ -10,8 +10,8 @@
        Change "American West" to match whichever collection page
        you're working on.  Always keep "| Deborah Heinlen Fine Art"
        at the end so every tab looks consistent.
-  ════════════════════════════════════════════════════════════════ */
-  <title>American West | Deborah Heinlen Fine Art</title>
+  ════════════════════════════════════════════════════════════════ -->
+  <title>Learning Code| Deborah Heinlen Fine Art</title>
 
   <!-- ═══════════════════════════════════════════════════════════════
        META DESCRIPTION  (SEO)
@@ -19,8 +19,8 @@
        search results.  Keep it under 160 characters.  Use two
        dashes (--) instead of em dashes for compatibility.  Two
        spaces after each sentence.
-  ════════════════════════════════════════════════════════════════ */
-  <meta name="description" content="American West collection by Deborah Heinlen Fine Art -- watercolor-style fine art prints of Utah landscapes, wild mustangs, Bonneville Salt Flats, and frontier history created from original photography.  Available on metal, canvas, and framed." />
+  ════════════════════════════════════════════════════════════════ -->
+  <meta name="description" content="Learning Code collection by Deborah Heinlen Fine Art -- watercolor-style fine art prints of Utah landscapes, wild mustangs, Bonneville Salt Flats, and frontier history created from original photography.  Available on metal, canvas, and framed." />
 
   <!-- ═══════════════════════════════════════════════════════════════
        FONTS
@@ -29,7 +29,7 @@
        Adobe Typekit font (lindsey-signature) for the site name.
        DO NOT CHANGE these lines.  If they break, the whole site
        loses its look.
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
@@ -283,7 +283,7 @@
     .hero-tagline {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: clamp(1.1rem, 1.8vw, 1.4rem);  /* ◄── CHANGE TAGLINE SIZE      */
+      font-size: clamp(1.5rem, 1.8vw, 1.4rem);  /* ◄── CHANGE TAGLINE SIZE      */
       font-weight: 300;
       color: var(--text-mid);                     /* ◄── CHANGE TAGLINE COLOR     */
       line-height: 1.6;
@@ -369,7 +369,7 @@
     }
     .interlude span {
       font-family: 'Jost', sans-serif;
-      font-size: 0.72rem;                   /* ◄── CHANGE INTERLUDE TEXT SIZE     */
+      font-size: 5.rem;                   /* ◄── CHANGE INTERLUDE TEXT SIZE     */
       font-weight: 300;
       letter-spacing: 0.28em;
       text-transform: uppercase;
@@ -849,7 +849,7 @@
      Everything above was CSS (how things LOOK).
      Everything below is HTML (what things ARE) and
      JavaScript (how things BEHAVE).
-════════════════════════════════════════════════════════════════ */
+════════════════════════════════════════════════════════════════ -->
 
 <body>
 
@@ -862,7 +862,7 @@
 
        TO CHANGE WHERE THE LOGO LINKS TO:
        Change href="index.html" to whatever page you want.
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
     <a href="index.html"><img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" /></a>
     <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
@@ -880,7 +880,7 @@
        class="strip-link active"
 
        Only ONE link should be active per page.
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
     <a href="index.html"             class="strip-link">Home</a>
     <a href="wildlife.html"          class="strip-link">Wildlife</a>
@@ -905,7 +905,7 @@
 
        TO CHANGE THE TAGLINE:
        Edit the text inside <p class="hero-tagline">
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <section class="hero">
     <div class="hero-texture">
       <div class="hero-text">
@@ -932,7 +932,7 @@
        ─────────────────────────────────────────────────────────────
        TO CHANGE THE INTERLUDE TEXT:
        Edit the text between <span> and </span>.
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <div class="interlude">
     <span>Under Western Skies</span>  <!-- ◄── CHANGE INTERLUDE TEXT HERE -->
   </div>
@@ -950,7 +950,7 @@
           in products.js under this collection's key
        3. Add a color block for it in the CSS above
        4. That's it -- the JavaScript handles the rest!
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <main class="prints-section" id="printsSection"></main>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -958,7 +958,7 @@
        ─────────────────────────────────────────────────────────────
        Same as the collections strip, but at the bottom.
        Mark the current page with class="collection-link active".
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <section class="other-collections">
     <h2>Explore Further</h2>
     <p>More collections from Deborah Heinlen Fine Art</p>
@@ -979,7 +979,7 @@
        TO CHANGE YOUR EMAIL:
        Edit the mailto: link and the visible text.
        The year updates automatically via JavaScript.
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <footer>
     <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
@@ -1006,7 +1006,7 @@
          'avian-studies'
          'cincinnati'
          'americana'
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
@@ -1141,7 +1141,7 @@
        </body>
        </html>
      If you don't see all three, something got truncated.
-════════════════════════════════════════════════════════════════ */
+════════════════════════════════════════════════════════════════ -->
 
 </body>
 </html>

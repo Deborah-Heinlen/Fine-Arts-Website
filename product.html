@@ -421,7 +421,7 @@
 
     .modal-box {
       background: var(--cream);
-      max-width: 680px;
+      max-width: 780px;
       width: 100%;
       max-height: 90vh;
       overflow-y: auto;
@@ -472,6 +472,64 @@
       margin-bottom: 1.8rem;
     }
 
+    /* ── LIVE FRAMED PREVIEW ─────────────────────────────────── */
+    .modal-preview-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .modal-preview-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .modal-preview-frame {
+      padding: 10px;
+      background: #2a2a2a;
+      box-shadow: 0 4px 20px rgba(46, 36, 25, 0.2),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      transition: background 0.4s ease;
+      max-width: 320px;
+      width: 100%;
+    }
+
+    .modal-preview-mat {
+      padding: 18px;
+      background: #f8f6f2;
+      transition: background 0.4s ease;
+    }
+
+    .modal-preview-img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4/3;
+      object-fit: contain;
+      background: white;
+    }
+
+    .modal-preview-selections {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      margin-top: 0.8rem;
+      text-align: center;
+    }
+
+    .modal-preview-selections strong {
+      color: var(--text-mid);
+      font-weight: 400;
+    }
+
+    /* ── MODAL SECTION LABELS ────────────────────────────────── */
     .modal-section-label {
       font-family: 'Jost', sans-serif;
       font-size: 0.65rem;
@@ -484,7 +542,7 @@
 
     .modal-swatch-row {
       display: flex;
-      gap: 0.8rem;
+      gap: 1rem;
       flex-wrap: wrap;
       margin-bottom: 1.8rem;
     }
@@ -493,30 +551,40 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.45rem;
       cursor: pointer;
+      transition: transform 0.15s ease;
     }
 
+    .modal-swatch-item:hover { transform: translateY(-2px); }
+
     .modal-swatch-item img {
-      width: 72px;
-      height: 54px;
+      width: 100px;
+      height: 72px;
       object-fit: cover;
-      border: 2px solid transparent;
-      transition: border-color 0.2s, opacity 0.2s;
-      opacity: 0.7;
+      border: 2.5px solid transparent;
+      transition: border-color 0.2s, opacity 0.2s, box-shadow 0.2s;
+      opacity: 0.75;
     }
+
+    .modal-swatch-item:hover img { opacity: 0.9; }
 
     .modal-swatch-item span {
       font-family: 'Jost', sans-serif;
-      font-size: 0.58rem;
+      font-size: 0.62rem;
       font-weight: 300;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-light);
       text-align: center;
     }
 
-    .modal-swatch-item.selected img { border-color: var(--warm-tan); opacity: 1; }
+    .modal-swatch-item.selected img {
+      border-color: var(--warm-tan);
+      opacity: 1;
+      box-shadow: 0 2px 8px rgba(200, 184, 154, 0.35);
+    }
+
     .modal-swatch-item.selected span { color: var(--text-dark); }
 
     .modal-summary {
@@ -963,7 +1031,9 @@
       .size-price-row { gap: 0.8rem; }
       .trust-section { padding: 3rem 1.5rem; }
       .modal-box { padding: 1.5rem; max-height: 95vh; }
-      .modal-swatch-item img { width: 58px; height: 44px; }
+      .modal-swatch-item img { width: 72px; height: 54px; }
+      .modal-preview-frame { max-width: 240px; padding: 8px; }
+      .modal-preview-mat { padding: 12px; }
       .modal-title { font-size: 1.4rem; }
       .modal-btn-add-cart { padding: 0.85rem 1.8rem; }
       .btn-configure { padding: 0.85rem 1.8rem; }
@@ -1004,7 +1074,7 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       FRAMED MODAL
+       FRAMED MODAL -- enhanced with live preview
   ════════════════════════════════════════════════════════════════ -->
   <div class="modal-overlay" id="framedModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-box">
@@ -1014,6 +1084,17 @@
       <h2 class="modal-title" id="modalTitle">Customize Your Frame</h2>
       <p class="modal-subtitle" id="modalSelectedSize">Select a size above to see your price</p>
       <div class="modal-divider"></div>
+
+      <!-- ── LIVE FRAMED PREVIEW ─────────────────────────────── -->
+      <div class="modal-preview-wrap">
+        <p class="modal-preview-label">Live Preview</p>
+        <div class="modal-preview-frame" id="previewFrame">
+          <div class="modal-preview-mat" id="previewMat">
+            <img class="modal-preview-img" id="previewImg" src="" alt="Framed print preview" />
+          </div>
+        </div>
+        <p class="modal-preview-selections" id="previewSelections">Select a frame and mat color below</p>
+      </div>
 
       <p class="modal-section-label">Choose Frame Color</p>
       <div class="modal-swatch-row" id="frameSwatches"></div>
@@ -1068,6 +1149,26 @@
     const params    = new URLSearchParams(window.location.search);
     const productId = params.get('id');
     const product   = productId ? PRODUCTS[productId] : null;
+
+    // ═══════════════════════════════════════════════════════════════
+    // FRAME + MAT COLOR MAP
+    // Maps each frame/mat label to a CSS color for the live preview.
+    // Adjust these hex values if needed to better match your samples.
+    // ═══════════════════════════════════════════════════════════════
+    const FRAME_COLORS = {
+      'Flat Black':       '#2a2a2a',
+      'Flat White':       '#f0ece4',
+      'Flat Mocha':       '#6b5344',
+      'Natural Basswood': '#c4a882'
+    };
+
+    const MAT_COLORS = {
+      'Polar White':     '#f8f6f2',
+      'White':           '#ffffff',
+      'Steel Blue':      '#6b7d8e',
+      'Chocolate Brown': '#4a3728',
+      'Smoke Gray':      '#8a8580'
+    };
 
     // ═══════════════════════════════════════════════════════════════
     // MARK ACTIVE COLLECTION IN STRIP
@@ -1439,16 +1540,20 @@
       document.getElementById('btn-add-canvas').addEventListener('click', () => addSimpleToCart('canvas'));
 
       // ════════════════════════════════════════════════════════════
-      // MODAL -- framed prints
+      // MODAL -- framed prints with live preview
       // ════════════════════════════════════════════════════════════
-      const modal          = document.getElementById('framedModal');
-      const modalClose     = document.getElementById('modalClose');
-      const openBtn        = document.getElementById('btn-open-modal');
-      const summaryFrame   = document.getElementById('summaryFrame');
-      const summaryMat     = document.getElementById('summaryMat');
-      const modalSubtitle  = document.getElementById('modalSelectedSize');
-      const modalValidation = document.getElementById('modalValidation');
-      const modalAddBtn    = document.getElementById('modalAddToCart');
+      const modal              = document.getElementById('framedModal');
+      const modalClose         = document.getElementById('modalClose');
+      const openBtn            = document.getElementById('btn-open-modal');
+      const summaryFrame       = document.getElementById('summaryFrame');
+      const summaryMat         = document.getElementById('summaryMat');
+      const modalSubtitle      = document.getElementById('modalSelectedSize');
+      const modalValidation    = document.getElementById('modalValidation');
+      const modalAddBtn        = document.getElementById('modalAddToCart');
+      const previewFrameEl     = document.getElementById('previewFrame');
+      const previewMatEl       = document.getElementById('previewMat');
+      const previewImgEl       = document.getElementById('previewImg');
+      const previewSelectionsEl = document.getElementById('previewSelections');
 
       // Build frame swatches in modal
       const frameSwatchesEl = document.getElementById('frameSwatches');
@@ -1472,6 +1577,31 @@
         matSwatchesEl.appendChild(item);
       });
 
+      // ── UPDATE LIVE PREVIEW ───────────────────────────────────
+      function updatePreview() {
+        const selectedFrame = document.querySelector('.modal-swatch-item[data-group="frame"].selected');
+        const selectedMat   = document.querySelector('.modal-swatch-item[data-group="mat"].selected');
+
+        const frameName  = selectedFrame ? selectedFrame.dataset.label : null;
+        const matName    = selectedMat   ? selectedMat.dataset.label   : null;
+        const frameColor = frameName ? FRAME_COLORS[frameName] : '#2a2a2a';
+        const matColor   = matName   ? MAT_COLORS[matName]     : '#f8f6f2';
+
+        previewFrameEl.style.background = frameColor;
+        previewMatEl.style.background   = matColor;
+
+        // Update the text below the preview
+        if (frameName && matName) {
+          previewSelectionsEl.innerHTML = '<strong>' + frameName + '</strong> frame with <strong>' + matName + '</strong> mat';
+        } else if (frameName) {
+          previewSelectionsEl.innerHTML = '<strong>' + frameName + '</strong> frame -- select a mat color';
+        } else if (matName) {
+          previewSelectionsEl.innerHTML = 'Select a frame color -- <strong>' + matName + '</strong> mat';
+        } else {
+          previewSelectionsEl.textContent = 'Select a frame and mat color below';
+        }
+      }
+
       function updateModalSizeLabel() {
         const framedSelect = document.getElementById('select-framed');
         if (!framedSelect) return;
@@ -1480,6 +1610,9 @@
 
       openBtn.addEventListener('click', () => {
         updateModalSizeLabel();
+        previewImgEl.src = product.images.main;
+        previewImgEl.alt = product.title + ' framed preview';
+        updatePreview();
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
       });
@@ -1503,7 +1636,7 @@
         }
       });
 
-      // Swatch selection
+      // Swatch selection -- now also updates the live preview
       document.addEventListener('click', e => {
         const item = e.target.closest('.modal-swatch-item');
         if (!item) return;
@@ -1514,6 +1647,7 @@
         if (group === 'frame') summaryFrame.textContent = item.dataset.label;
         if (group === 'mat')   summaryMat.textContent   = item.dataset.label;
         modalValidation.classList.remove('visible');
+        updatePreview();
       });
 
       // Add framed item to cart -- requires both frame and mat selected
