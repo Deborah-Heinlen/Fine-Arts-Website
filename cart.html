@@ -515,7 +515,7 @@
     <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
     <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
     <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
-    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="americana.html"        class="strip-link">Americana</a>
     <a href="american-west.html"     class="strip-link">American West</a>
   </div>
 
@@ -554,6 +554,16 @@
   <script>
 
     document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ═══════════════════════════════════════════════════════════════
+    // CHECKOUT FUNCTION URL
+    // ═══════════════════════════════════════════════════════════════
+    // UPDATE THIS when your server is set up.  Replace the
+    // placeholder with the real URL of your checkout function.
+    // Example: 'https://your-worker.your-account.workers.dev'
+    // ═══════════════════════════════════════════════════════════════
+
+    const CHECKOUT_URL = 'PASTE_YOUR_FUNCTION_URL_HERE';
 
     // ═══════════════════════════════════════════════════════════════
     // RENDER CART
@@ -620,7 +630,7 @@
             <strong>$${subtotal.toFixed(2)}</strong>
           </div>
           <div class="summary-divider"></div>
-          <p class="summary-note">Shipping and taxes will be calculated at checkout.</p>
+          <p class="summary-note">Shipping is free.  Taxes will be calculated at checkout.</p>
           <button class="btn-checkout" id="checkoutBtn" type="button">Proceed to Checkout</button>
           <a href="index.html" class="continue-link">Continue Shopping</a>
         </aside>
@@ -655,11 +665,48 @@
         });
       });
 
-      // ── CHECKOUT BUTTON ───────────────────────────────────────
-      // TODO: replace this with Stripe session creation call
-      // when Netlify Functions are set up.
-      document.getElementById('checkoutBtn').addEventListener('click', () => {
-        alert('Checkout coming soon -- Stripe integration will be added here.');
+      // ── CHECKOUT BUTTON (STRIPE INTEGRATION) ─────────────────
+      document.getElementById('checkoutBtn').addEventListener('click', async () => {
+
+        const btn = document.getElementById('checkoutBtn');
+
+        // Prevent double-clicks
+        btn.disabled = true;
+        btn.textContent = 'Connecting to Stripe...';
+
+        try {
+
+          // Get the current site URL for success/cancel redirects
+          const baseUrl = window.location.origin + window.location.pathname.replace('cart.html', '');
+
+          // Send cart items to the secure checkout function
+          const response = await fetch(CHECKOUT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              items: cartGet(),
+              successUrl: baseUrl + 'success.html?session_id={CHECKOUT_SESSION_ID}',
+              cancelUrl:  baseUrl + 'cart.html'
+            })
+          });
+
+          const data = await response.json();
+
+          if (data.error) {
+            alert('There was a problem connecting to checkout.  Please try again.');
+            btn.disabled = false;
+            btn.textContent = 'Proceed to Checkout';
+            return;
+          }
+
+          // Redirect customer to Stripe's checkout page
+          window.location.href = data.url;
+
+        } catch (err) {
+          alert('There was a problem connecting to checkout.  Please try again.');
+          btn.disabled = false;
+          btn.textContent = 'Proceed to Checkout';
+        }
       });
     }
 
