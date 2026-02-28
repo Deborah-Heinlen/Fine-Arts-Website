@@ -503,6 +503,61 @@
     }
 
     /* ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+    ════════════════════════════════════════════════════════════════ */
+    .other-collections {
+      background: linear-gradient(to bottom, var(--linen), #e8e4e0);
+      padding: 6rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(200, 184, 154, 0.2);
+    }
+
+    .other-collections h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .other-collections p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+
+    .collections-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .collection-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.75rem 2rem;
+      transition: background 0.25s, color 0.25s, border-color 0.25s;
+    }
+
+    .collection-link:hover {
+      background: var(--warm-tan);
+      border-color: var(--warm-tan);
+      color: var(--cream);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
        FOOTER -- do not change
     ════════════════════════════════════════════════════════════════ */
     footer {
@@ -555,6 +610,8 @@
         grid-template-rows: auto;
         grid-template-columns: 1fr;
       }
+
+      .other-collections { padding: 4rem 1.5rem; }
     }
 
     /* ═══════════════════════════════════════════════════════════════
@@ -600,6 +657,10 @@
       .collection-card img { min-height: 260px; }
       .collection-name { font-size: 1.4rem; }
 
+      .other-collections { padding: 3rem 1rem; }
+      .collections-row { gap: 0.6rem; }
+      .collection-link { padding: 0.65rem 1.4rem; font-size: 0.65rem; }
+
       footer { padding: 2rem 1rem; }
     }
 
@@ -613,7 +674,7 @@
   ════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
     <a href="index.html">
-      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
+      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art logo" class="header-logo" />
     </a>
     <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
     <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
@@ -639,10 +700,18 @@
          update the src attributes below.
     ════════════════════════════════════════════════════════════ -->
     <div id="story-bg">
-      <img class="bg-image active" data-index="0" src="images/botanical-studies/redbuds-in-bloom.jpg" alt="Redbuds in Bloom" />
-      <img class="bg-image"        data-index="1" src="images/american-west/night-watch.jpg"           alt="Night Watch" />
-      <img class="bg-image"        data-index="2" src="images/avian-studies/winter-red.jpg"            alt="Winter Red" />
-      <img class="bg-image"        data-index="3" src="images/avian-studies/american-glory.jpg"        alt="American Glory" />
+      <img class="bg-image active" data-index="0"
+           src="images/botanical-studies/redbuds-in-bloom.jpg"
+           alt="Redbuds in Bloom watercolor fine art print of Eastern Redbud blossoms in Cincinnati spring by Deborah Heinlen" />
+      <img class="bg-image" data-index="1"
+           src="images/american-west/night-watch.jpg"
+           alt="Night Watch watercolor fine art print of the Milky Way over the Utah desert by Deborah Heinlen" />
+      <img class="bg-image" data-index="2"
+           src="images/avian-studies/crimson.jpg"
+           alt="Crimson watercolor fine art print of a Northern Cardinal portrait by Deborah Heinlen" />
+      <img class="bg-image" data-index="3"
+           src="images/avian-studies/american-glory.jpg"
+           alt="American Glory watercolor fine art print of a bald eagle portrait by Deborah Heinlen" />
     </div>
 
     <!-- ═══════════════════════════════════════════════════════════
@@ -665,7 +734,8 @@
       ════════════════════════════════════════════════════════ -->
       <div class="story-card" data-bg="1">
         <div class="card-image-side">
-          <img src="images/wildlife/focused-intent.jpg" alt="Focused Intent" />
+          <img src="images/wildlife/focused-intent.jpg"
+               alt="Focused Intent watercolor fine art print of a Bengal tiger walking toward the viewer by Deborah Heinlen" />
         </div>
         <div class="card-text-side card-text-lion">
           <p>Every image begins in a moment.</p>
@@ -680,7 +750,8 @@
 
       <div class="story-card" data-bg="2">
         <div class="card-image-side">
-          <img src="images/americana/pasture-calm.jpg" alt="Pasture Calm" />
+          <img src="images/americana/biko.jpg"
+               alt="Biko watercolor fine art print of a rescued Thoroughbred horse in Lexington Kentucky by Deborah Heinlen" />
         </div>
         <div class="card-text-side card-text-biko">
           <p>In the field, before the dawn.</p>
@@ -695,7 +766,8 @@
 
       <div class="story-card" data-bg="3">
         <div class="card-image-side">
-          <img src="images/american-west/desert-roads.jpg" alt="Desert Roads" />
+          <img src="images/american-west/red-rock-light.jpg"
+               alt="Red Rock Light watercolor fine art print of a BLM dirt road through Utah red rock canyon country by Deborah Heinlen" />
         </div>
         <div class="card-text-side card-text-utah">
           <p>Part photograph. Part painting.</p>
@@ -735,7 +807,8 @@
     <div class="collections-grid">
 
       <a href="wildlife.html" class="collection-card">
-        <img src="images/wildlife/gray-wind.jpg" alt="Wildlife" />
+        <img src="images/wildlife/pathfinder.jpg"
+             alt="Pathfinder watercolor fine art print of a gray wolf close portrait with golden eyes by Deborah Heinlen" />
         <div class="collection-info">
           <span class="collection-name">Wildlife</span>
           <span class="collection-count">Prints available</span>
@@ -744,14 +817,16 @@
 
       <div>
         <a href="botanical-studies.html" class="collection-card">
-          <img src="images/botanical-studies/waterlily-in-bloom.jpg" alt="Botanical Studies" />
+          <img src="images/botanical-studies/waterlily-in-bloom.jpg"
+               alt="Waterlily in Bloom watercolor fine art print of a purple water lily bud at the Dallas Arboretum by Deborah Heinlen" />
           <div class="collection-info">
             <span class="collection-name">Botanical Studies</span>
             <span class="collection-count">Prints available</span>
           </div>
         </a>
         <a href="cincinnati.html" class="collection-card">
-          <img src="images/cincinnati/queen-city-overture.jpg" alt="Cincinnati" />
+          <img src="images/cincinnati/queen-city-overture.jpg"
+               alt="Queen City Overture watercolor fine art print of Cincinnati Music Hall High Victorian Gothic architecture by Deborah Heinlen" />
           <div class="collection-info">
             <span class="collection-name">Cincinnati</span>
             <span class="collection-count">Prints available</span>
@@ -761,14 +836,16 @@
 
       <div>
         <a href="americana.html" class="collection-card">
-          <img src="images/americana/american-sky.jpg" alt="Americana" />
+          <img src="images/americana/dawns-early-light.jpg"
+               alt="Dawn's Early Light watercolor fine art print of an American flag in Covington Kentucky by Deborah Heinlen" />
           <div class="collection-info">
             <span class="collection-name">Americana</span>
             <span class="collection-count">Prints available</span>
           </div>
         </a>
         <a href="american-west.html" class="collection-card">
-          <img src="images/american-west/desert-roads.jpg" alt="American West" />
+          <img src="images/american-west/crossroads.jpg"
+               alt="Crossroads watercolor fine art print of a weathered signpost near Moab Utah at Little Far West by Deborah Heinlen" />
           <div class="collection-info">
             <span class="collection-name">American West</span>
             <span class="collection-count">Prints available</span>
@@ -777,7 +854,8 @@
       </div>
 
       <a href="avian-studies.html" class="collection-card">
-        <img src="images/avian-studies/quiet-perch.jpg" alt="Avian Studies" />
+        <img src="images/avian-studies/the-mantle.jpg"
+             alt="The Mantle watercolor fine art print of a bald eagle with wings fully spread mantling by Deborah Heinlen" />
         <div class="collection-info">
           <span class="collection-name">Avian Studies</span>
           <span class="collection-count">Prints available</span>
@@ -785,6 +863,22 @@
       </a>
 
     </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="other-collections">
+    <h2>Explore Further</h2>
+    <p>More collections from Deborah Heinlen Fine Art</p>
+    <nav class="collections-row" aria-label="Browse collections">
+      <a href="wildlife.html"          class="collection-link">Wildlife</a>
+      <a href="botanical-studies.html" class="collection-link">Botanical Studies</a>
+      <a href="avian-studies.html"     class="collection-link">Avian Studies</a>
+      <a href="cincinnati.html"        class="collection-link">Cincinnati</a>
+      <a href="americana.html"         class="collection-link">Americana</a>
+      <a href="american-west.html"     class="collection-link">American West</a>
+    </nav>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════
