@@ -496,23 +496,25 @@
       box-shadow: 0 4px 20px rgba(46, 36, 25, 0.2),
                   inset 0 1px 0 rgba(255, 255, 255, 0.06);
       transition: background 0.4s ease;
-      max-width: 320px;
-      width: 100%;
+      display: inline-block;
     }
 
     .modal-preview-mat {
       padding: 18px;
       background: #f8f6f2;
       transition: background 0.4s ease;
+      line-height: 0;
     }
 
     .modal-preview-img {
-      width: 100%;
       display: block;
-      aspect-ratio: 4/3;
-      object-fit: contain;
-      background: white;
+      max-width: 100%;
+      max-height: 280px;
     }
+
+    /* Landscape images get a wider frame, portrait images get a narrower one */
+    .modal-preview-frame.landscape { max-width: 360px; }
+    .modal-preview-frame.portrait  { max-width: 240px; }
 
     .modal-preview-selections {
       font-family: 'Jost', sans-serif;
@@ -1032,8 +1034,11 @@
       .trust-section { padding: 3rem 1.5rem; }
       .modal-box { padding: 1.5rem; max-height: 95vh; }
       .modal-swatch-item img { width: 72px; height: 54px; }
-      .modal-preview-frame { max-width: 240px; padding: 8px; }
+      .modal-preview-frame.landscape { max-width: 260px; }
+      .modal-preview-frame.portrait  { max-width: 180px; }
       .modal-preview-mat { padding: 12px; }
+      .modal-preview-frame { padding: 8px; }
+      .modal-preview-img { max-height: 200px; }
       .modal-title { font-size: 1.4rem; }
       .modal-btn-add-cart { padding: 0.85rem 1.8rem; }
       .btn-configure { padding: 0.85rem 1.8rem; }
@@ -1612,6 +1617,27 @@
         updateModalSizeLabel();
         previewImgEl.src = product.images.main;
         previewImgEl.alt = product.title + ' framed preview';
+
+        // Detect orientation once image loads and apply the right class
+        previewImgEl.onload = function() {
+          previewFrameEl.classList.remove('landscape', 'portrait');
+          if (this.naturalWidth >= this.naturalHeight) {
+            previewFrameEl.classList.add('landscape');
+          } else {
+            previewFrameEl.classList.add('portrait');
+          }
+        };
+
+        // If already cached, fire manually
+        if (previewImgEl.complete && previewImgEl.naturalWidth > 0) {
+          previewFrameEl.classList.remove('landscape', 'portrait');
+          if (previewImgEl.naturalWidth >= previewImgEl.naturalHeight) {
+            previewFrameEl.classList.add('landscape');
+          } else {
+            previewFrameEl.classList.add('portrait');
+          }
+        }
+
         updatePreview();
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
