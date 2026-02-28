@@ -93,9 +93,8 @@
     }
 
     /* ═══════════════════════════════════════════════════════════════
-       COLLECTIONS STRIP -- do not change
+       COLLECTIONS STRIP
        "Botanical Studies" is marked active on this page
-    ════════════════════════════════════════════════════════════════ -->
     ════════════════════════════════════════════════════════════════ */
     .collections-strip {
       position: fixed;
@@ -128,13 +127,12 @@
     .strip-link.active { color: var(--text-dark); background: rgba(200, 184, 154, 0.15); }
 
     /* ═══════════════════════════════════════════════════════════════
-       HERO -- two-column layout with text left, slideshow right
+       HERO -- stacked layout with text above, slideshow below
     ════════════════════════════════════════════════════════════════ */
     .hero {
       margin-top: 122px;
-      min-height: 88vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
       position: relative;
       overflow: hidden;
     }
@@ -148,7 +146,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 5rem 4rem 5rem 5rem;
+      align-items: center;
+      padding: 4.5rem 3rem 3.5rem;
     }
 
     .hero-texture::after {
@@ -238,6 +237,7 @@
     .hero-slideshow {
       position: relative;
       overflow: hidden;
+      height: 65vh;
       background:
         radial-gradient(ellipse at 30% 40%, rgba(200, 180, 210, 0.25) 0%, transparent 55%),
         radial-gradient(ellipse at 70% 70%, rgba(180, 200, 190, 0.2) 0%, transparent 50%),
@@ -261,26 +261,15 @@
 
     .slide img {
       display: block;
-      width: 62%;
-      max-height: 78vh;
+      max-width: 55%;
+      max-height: 58vh;
       object-fit: contain;
       border-radius: 1px;
       transition: opacity 2s ease;
       filter: drop-shadow(0 8px 32px rgba(100, 80, 60, 0.15));
     }
 
-    .slide img.portrait { width: 42%; }
-
-    .hero-slideshow::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 140px;
-      height: 100%;
-      background: linear-gradient(to right, #ede8f0 0%, rgba(237, 232, 240, 0.7) 40%, transparent 100%);
-      z-index: 10;
-      pointer-events: none;
-    }
+    .slide img.portrait { max-width: 35%; }
 
     .hero::after {
       content: '';
@@ -515,6 +504,45 @@
     .btn-view:hover::before { transform: translateX(0); }
 
     /* ═══════════════════════════════════════════════════════════════
+       IMAGE PROTECTION
+       Prevents casual right-click saving, drag-and-drop, and
+       long-press saving on mobile.  Applies automatically to all
+       images on the page, including ones built by JavaScript.
+       Not foolproof against developer tools, but stops the vast
+       majority of casual copying.
+    ════════════════════════════════════════════════════════════════ */
+    img {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+      pointer-events: none;
+    }
+
+    /* Re-enable pointer events on interactive elements */
+    a, button, .btn-view, .header-cart, .strip-link, .collection-link {
+      pointer-events: auto;
+    }
+
+    /* Transparent overlay on print row images to block direct access */
+    .print-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+    }
+
+    /* Transparent overlay on hero slideshow images */
+    .slide::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
        EXPLORE FURTHER
     ════════════════════════════════════════════════════════════════ */
     .other-collections {
@@ -606,13 +634,12 @@
       .collections-strip { flex-wrap: wrap; top: 62px; }
       .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
 
-      .hero { grid-template-columns: 1fr; min-height: auto; margin-top: 110px; }
-      .hero-texture { padding: 4rem 2rem 3rem; min-height: auto; }
-      .hero-slideshow { height: 80vw; }
-      .hero-slideshow::before { display: none; }
+      .hero { margin-top: 110px; }
+      .hero-texture { padding: 3.5rem 2rem 2.5rem; }
+      .hero-slideshow { height: 55vw; }
       .hero::after { display: none; }
-      .slide img { width: 75%; max-height: 75vw; }
-      .slide img.portrait { width: 50%; }
+      .slide img { max-width: 65%; max-height: 50vw; }
+      .slide img.portrait { max-width: 45%; }
 
       .print-row,
       .print-row.reverse {
@@ -637,12 +664,12 @@
       .collections-strip { display: none; }
 
       .hero { margin-top: 68px; }
-      .hero-texture { padding: 3rem 1.5rem 2.5rem; }
+      .hero-texture { padding: 2.5rem 1.5rem 2rem; }
       .hero-title { font-size: clamp(2.4rem, 10vw, 3.5rem); }
       .hero-breadcrumb { margin-bottom: 1.5rem; }
-      .hero-slideshow { height: 90vw; }
-      .slide img { width: 85%; }
-      .slide img.portrait { width: 60%; }
+      .hero-slideshow { height: 70vw; }
+      .slide img { max-width: 80%; }
+      .slide img.portrait { max-width: 55%; }
 
       .print-image { padding: 1.5rem; }
       .print-text { padding: 2.5rem 1.5rem; }
@@ -687,7 +714,7 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       HERO
+       HERO -- text centered above slideshow
   ════════════════════════════════════════════════════════════════ -->
   <section class="hero">
     <div class="hero-texture">
@@ -856,6 +883,25 @@
     }, { threshold: 0.12 });
 
     rows.forEach(row => observer.observe(row));
+
+    // ═══════════════════════════════════════════════════════════════
+    // IMAGE PROTECTION
+    // Blocks right-click context menu on images, prevents drag
+    // saving, and disables long-press save on mobile.  Applies
+    // automatically to all images including dynamically built ones.
+    // Not bulletproof against dev tools, but stops casual copying.
+    // ═══════════════════════════════════════════════════════════════
+    document.addEventListener('contextmenu', function(e) {
+      if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) {
+        e.preventDefault();
+      }
+    });
+
+    document.addEventListener('dragstart', function(e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    });
 
   </script>
 
