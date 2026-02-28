@@ -8,7 +8,7 @@
 
   <!-- ═══════════════════════════════════════════════════════════════
        FONTS -- do not change
-  ════════════════════════════════════════════════════════════════ */
+  ════════════════════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
@@ -262,11 +262,11 @@
   </section>
 
   <footer>
-    <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="/cdn-cgi/l/email-protection#1f7b7a7d706d7e77777a7671737a716f77706b70786d7e6f77665f78727e7673317c7072"><span class="__cf_email__" data-cfemail="ed89888f829f8c85858884838188839d858299828a9f8c9d8594ad8a808c8481c38e8280">[email&#160;protected]</span></a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
+    <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/products.js"></script>
+  <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
@@ -331,4 +331,12 @@
     rows.forEach(row => observer.observe(row));
 
     document.addEventListener('contextmenu', function(e) {
-      if (e.targe
+      if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) { e.preventDefault(); }
+    });
+    document.addEventListener('dragstart', function(e) {
+      if (e.target.tagName === 'IMG') { e.preventDefault(); }
+    });
+  </script>
+
+</body>
+</html>
