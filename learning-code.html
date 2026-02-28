@@ -10,7 +10,7 @@
        Change "American West" to match whichever collection page
        you're working on.  Always keep "| Deborah Heinlen Fine Art"
        at the end so every tab looks consistent.
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <title>American West | Deborah Heinlen Fine Art</title>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -19,7 +19,7 @@
        search results.  Keep it under 160 characters.  Use two
        dashes (--) instead of em dashes for compatibility.  Two
        spaces after each sentence.
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <meta name="description" content="American West collection by Deborah Heinlen Fine Art -- watercolor-style fine art prints of Utah landscapes, wild mustangs, Bonneville Salt Flats, and frontier history created from original photography.  Available on metal, canvas, and framed." />
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -29,7 +29,7 @@
        Adobe Typekit font (lindsey-signature) for the site name.
        DO NOT CHANGE these lines.  If they break, the whole site
        loses its look.
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
@@ -64,7 +64,7 @@
        GLOBAL RESET
        This just makes sure every browser starts from the same
        baseline.  DO NOT CHANGE.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { background: #f2ede8; color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
@@ -84,7 +84,7 @@
 
        DO NOT CHANGE z-index (200) -- that keeps the header
        on top of everything else.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .site-header {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -150,7 +150,7 @@
 
        TO CHANGE SPACING BETWEEN LINKS:
        Change padding: 1.25rem 1.6rem on .strip-link.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .collections-strip {
       position: fixed;
       top: 80px;                             /* sits right below the header       */
@@ -195,7 +195,7 @@
        PADDING (white space around the text):
        Change padding on .hero-texture.  Currently:
        4.5rem top, 3rem left/right, 3.5rem bottom.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .hero {
       margin-top: 122px;                    /* pushes content below fixed header + strip */
       display: flex;
@@ -308,7 +308,7 @@
        TO CHANGE CROSSFADE SPEED:
        Change transition: opacity 2s ease on .slide and .slide img.
        2s = 2 seconds.  Bigger number = slower fade.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .hero-slideshow {
       position: relative;
       overflow: hidden;
@@ -359,7 +359,7 @@
 
        TO CHANGE INTERLUDE BACKGROUND:
        Change background: var(--linen) here.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .interlude {
       background: var(--linen);              /* ◄── CHANGE INTERLUDE BG HERE      */
       text-align: center;
@@ -386,7 +386,7 @@
        The background color you see here (#2a2a4a) is a fallback.
        It only shows if a product doesn't have its own color block
        defined.  You'll almost never see it.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .prints-section {
       padding: 0; margin: 0;
       display: flex;
@@ -454,7 +454,7 @@
        .print-row[data-print="my-new-print"] .print-text .btn-view { color: #f0e0d0; border-color: rgba(240, 224, 208, 0.5); }
        .print-row[data-print="my-new-print"] .print-text .btn-view::before { background: rgba(180, 100, 60, 0.5); }
        ─────────────────────────────────────────────────────────────
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
 
     /* ──── Blue Channels ──────────────────────────────────────── */
     .print-row[data-print="blue-channels"] {
@@ -551,7 +551,7 @@
        TO CHANGE IMAGE SHADOW:
        Edit the filter: drop-shadow() line.
        Format: drop-shadow(x-offset y-offset blur-radius color)
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .print-image {
       position: relative;
       overflow: hidden;
@@ -579,7 +579,7 @@
        TO CHANGE TEXT PANEL PADDING:
        Change padding: 5rem 5rem 5rem 4.5rem.
        Format: top right bottom left.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .print-text {
       position: relative;
       display: flex;
@@ -648,7 +648,7 @@
 
        TO CHANGE BUTTON BORDER:
        Change border: 1px solid ...
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .btn-view {
       display: inline-block;
       font-family: 'Jost', sans-serif;
@@ -702,7 +702,7 @@
        ⚠️  This won't stop a determined developer, but it stops
        95% of casual image theft.  DO NOT remove any of these
        four layers.
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     /* Layer 1: Make all images non-interactive */
     img {
       -webkit-user-select: none;
@@ -725,7 +725,7 @@
        TO CHANGE BACKGROUND: change background: var(--linen)
        TO ADD/REMOVE COLLECTIONS: edit the HTML nav below
        TO MARK CURRENT PAGE: add class="collection-link active"
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     .other-collections {
       background: var(--linen);              /* ◄── CHANGE EXPLORE BG HERE        */
       padding: 6rem 2rem;
@@ -771,7 +771,7 @@
        ─────────────────────────────────────────────────────────────
        TO CHANGE FOOTER BACKGROUND: change background: #e8e4e0
        TO CHANGE FOOTER TEXT SIZE: change font-size: 0.7rem
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     footer {
       padding: 2.5rem 3rem;
       text-align: center;
@@ -799,7 +799,7 @@
        - The slideshow gets shorter
        - Padding gets smaller
        - The collections strip wraps or hides
-    ════════════════════════════════════════════════════════════════ -->
+    ════════════════════════════════════════════════════════════════ */
     @media (max-width: 900px) {
       .site-header { padding: 0.9rem 1.5rem; }
       .header-title { font-size: 2rem; }
@@ -849,7 +849,7 @@
      Everything above was CSS (how things LOOK).
      Everything below is HTML (what things ARE) and
      JavaScript (how things BEHAVE).
-════════════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════════════════════════ */
 
 <body>
 
@@ -862,7 +862,7 @@
 
        TO CHANGE WHERE THE LOGO LINKS TO:
        Change href="index.html" to whatever page you want.
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <header class="site-header">
     <a href="index.html"><img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" /></a>
     <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
@@ -880,7 +880,7 @@
        class="strip-link active"
 
        Only ONE link should be active per page.
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <div class="collections-strip">
     <a href="index.html"             class="strip-link">Home</a>
     <a href="wildlife.html"          class="strip-link">Wildlife</a>
@@ -905,7 +905,7 @@
 
        TO CHANGE THE TAGLINE:
        Edit the text inside <p class="hero-tagline">
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <section class="hero">
     <div class="hero-texture">
       <div class="hero-text">
@@ -932,7 +932,7 @@
        ─────────────────────────────────────────────────────────────
        TO CHANGE THE INTERLUDE TEXT:
        Edit the text between <span> and </span>.
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <div class="interlude">
     <span>Under Western Skies</span>  <!-- ◄── CHANGE INTERLUDE TEXT HERE -->
   </div>
@@ -950,7 +950,7 @@
           in products.js under this collection's key
        3. Add a color block for it in the CSS above
        4. That's it -- the JavaScript handles the rest!
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <main class="prints-section" id="printsSection"></main>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -958,7 +958,7 @@
        ─────────────────────────────────────────────────────────────
        Same as the collections strip, but at the bottom.
        Mark the current page with class="collection-link active".
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <section class="other-collections">
     <h2>Explore Further</h2>
     <p>More collections from Deborah Heinlen Fine Art</p>
@@ -979,7 +979,7 @@
        TO CHANGE YOUR EMAIL:
        Edit the mailto: link and the visible text.
        The year updates automatically via JavaScript.
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <footer>
     <p>&copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp; <a href="mailto:deborahheinlenphotography@gmail.com">deborahheinlenphotography@gmail.com</a> &nbsp;&middot;&nbsp; <a href="contact.html">Contact</a></p>
     <p style="margin-top: 0.5rem;">All images &copy; Deborah Heinlen.  All rights reserved.</p>
@@ -1006,7 +1006,7 @@
          'avian-studies'
          'cincinnati'
          'americana'
-  ════════════════════════════════════════════════════════════════ -->
+  ════════════════════════════════════════════════════════════════ */
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
@@ -1141,7 +1141,7 @@
        </body>
        </html>
      If you don't see all three, something got truncated.
-════════════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════════════════════════ */
 
 </body>
 </html>
