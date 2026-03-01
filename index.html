@@ -703,9 +703,12 @@
     }
     /* Layer 2: Re-enable clicks on navigation elements */
     a, button, .btn-view, .header-cart, .strip-link, .collection-link { pointer-events: auto; }
+    
     /* Layer 3: Invisible overlays that sit on top of images */
-    .print-image::before { content: ''; position: absolute; inset: 0; z-index: 3; }
-    .slide::after { content: ''; position: absolute; inset: 0; z-index: 3; }
+      
+    .card-image-side::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+.collection-card::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+#story-bg::before { content: ''; position: absolute; inset: 0; z-index: 3; }
       
 
   </style>
@@ -996,9 +999,9 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
       
-        document.addEventListener('contextmenu', function(e) {
-      if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) { e.preventDefault(); }
-    });
+     document.addEventListener('contextmenu', function(e) {
+  if (e.target.tagName === 'IMG' || e.target.closest('.card-image-side') || e.target.closest('.collection-card') || e.target.closest('#story-bg')) { e.preventDefault(); }
+});
     document.addEventListener('dragstart', function(e) {
       if (e.target.tagName === 'IMG') { e.preventDefault(); }
     });
