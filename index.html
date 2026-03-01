@@ -663,6 +663,50 @@
 
       footer { padding: 2rem 1rem; }
     }
+      
+        /* ═══════════════════════════════════════════════════════════════
+       IMAGE PROTECTION  ★★★  IMPORTANT -- DO NOT REMOVE  ★★★
+       ─────────────────────────────────────────────────────────────
+       This is a multi-layer system that prevents visitors from
+       copying, downloading, or right-click-saving your images.
+
+       Layer 1: CSS on all <img> tags
+         - pointer-events: none  = can't click on images
+         - user-select: none     = can't select/highlight images
+         - user-drag: none       = can't drag images to desktop
+         - touch-callout: none   = prevents "Save Image" on mobile
+
+       Layer 2: Re-enable clicks on things that NEED to be clickable
+         (links, buttons, nav items)
+
+       Layer 3: Invisible overlays
+         - .print-image::before  = covers each artwork image
+         - .slide::after         = covers each slideshow image
+
+       Layer 4: JavaScript (at the bottom of this file)
+         - Blocks right-click on images
+         - Blocks drag-and-drop on images
+
+       ⚠️  This won't stop a determined developer, but it stops
+       95% of casual image theft.  DO NOT remove any of these
+       four layers.
+    ════════════════════════════════════════════════════════════════ */
+    /* Layer 1: Make all images non-interactive */
+    img {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+      pointer-events: none;
+    }
+    /* Layer 2: Re-enable clicks on navigation elements */
+    a, button, .btn-view, .header-cart, .strip-link, .collection-link { pointer-events: auto; }
+    /* Layer 3: Invisible overlays that sit on top of images */
+    .print-image::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+    .slide::after { content: ''; position: absolute; inset: 0; z-index: 3; }
+      
 
   </style>
 </head>
