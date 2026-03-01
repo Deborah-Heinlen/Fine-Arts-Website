@@ -999,8 +999,8 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
       
-     document.addEventListener('contextmenu', function(e) {
-  if (e.target.tagName === 'IMG' || e.target.closest('.card-image-side') || e.target.closest('.collection-card') || e.target.closest('#story-section')) { e.preventDefault(); }
+ document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
 });
     document.addEventListener('dragstart', function(e) {
       if (e.target.tagName === 'IMG') { e.preventDefault(); }
