@@ -561,8 +561,8 @@
     .modal-swatch-item:hover { transform: translateY(-2px); }
 
     .modal-swatch-item img {
-      width: 100px;
-      height: 72px;
+      width: 120px;
+      height: 86px;
       object-fit: cover;
       border: 2.5px solid transparent;
       transition: border-color 0.2s, opacity 0.2s, box-shadow 0.2s;
@@ -1033,7 +1033,7 @@
       .size-price-row { gap: 0.8rem; }
       .trust-section { padding: 3rem 1.5rem; }
       .modal-box { padding: 1.5rem; max-height: 95vh; }
-      .modal-swatch-item img { width: 72px; height: 54px; }
+      .modal-swatch-item img { width: 86px; height: 62px; }
       .modal-preview-frame.landscape { max-width: 260px; }
       .modal-preview-frame.portrait  { max-width: 180px; }
       .modal-preview-mat { padding: 12px; }
@@ -1044,6 +1044,24 @@
       .btn-configure { padding: 0.85rem 1.8rem; }
     }
 
+      
+      /* ═══════════════════════════════════════════════════════════════
+   IMAGE PROTECTION
+════════════════════════════════════════════════════════════════ */
+/* Layer 1: Make all images non-interactive */
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  pointer-events: none;
+}
+/* Layer 2: Re-enable clicks on interactive elements */
+a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch-item, .gallery-thumb, .gallery-main { pointer-events: auto; }
+      
+      
   </style>
 </head>
 
@@ -1123,11 +1141,10 @@
        FOOTER
   ════════════════════════════════════════════════════════════════ -->
   <footer>
-    <p style="margin-bottom: 0.8rem;">
-      <a href="contact.html" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about a print?  We'd love to hear from you.</a>
-    </p>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="mailto:deborah@deborahheinlenphotography.com">deborah@deborahheinlenphotography.com</a>
+      &nbsp;&middot;&nbsp;
       <a href="contact.html">Contact</a>
     </p>
     <p style="margin-top: 0.5rem;">
@@ -1162,18 +1179,18 @@
     // Adjust these hex values if needed to better match your samples.
     // ═══════════════════════════════════════════════════════════════
     const FRAME_COLORS = {
-      'Flat Black':       '#2a2a2a',
-      'Flat White':       '#f0ece4',
+      'Flat Black':       '#28252e',
+      'Flat White':       '#eeeced',
       'Flat Mocha':       '#6b5344',
-      'Natural Basswood': '#c4a882'
+      'Natural Basswood': '#eabb8f'
     };
 
     const MAT_COLORS = {
-      'Polar White':     '#f8f6f2',
-      'White':           '#ffffff',
-      'Steel Blue':      '#6b7d8e',
-      'Chocolate Brown': '#4a3728',
-      'Smoke Gray':      '#8a8580'
+      'Polar White':     '#f5f6fb',
+      'White':           '#f9f3e7',
+      'Steel Blue':      '#4f6a7d',
+      'Chocolate Brown': '#604335',
+      'Smoke Gray':      '#575958'
     };
 
     // ═══════════════════════════════════════════════════════════════
@@ -1433,7 +1450,7 @@
           <div class="trust-block">
             <h3>Quality Guarantee</h3>
             <p>Every print is produced to the highest archival standards and hand-inspected before shipping.  If your print arrives damaged, contact us within 7 days and we will make it right.<br /><br />
-            <a href="mailto:deborahheinlenphotography@gmail.com">Contact Deborah</a></p>
+            <a href="mailto:deborah@deborahheinlenphotography.com">Contact Deborah</a></p>
           </div>
           <div class="trust-block">
             <h3>Policies</h3>
@@ -1676,6 +1693,14 @@
         modalValidation.classList.remove('visible');
         updatePreview();
       });
+        
+        document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+document.addEventListener('dragstart', function(e) {
+  if (e.target.tagName === 'IMG') { e.preventDefault(); }
+});
+        
 
       // Add framed item to cart -- requires both frame and mat selected
       modalAddBtn.addEventListener('click', () => {
