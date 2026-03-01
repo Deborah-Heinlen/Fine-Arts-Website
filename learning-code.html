@@ -1097,13 +1097,15 @@
 
     /* ──────────────────────────────────────────────────────────── */
     /* IMAGE PROTECTION (Layer 4 -- JavaScript)                     */
-    /* Blocks right-click and drag on images.                       */
+    /* Blocks right-click and drag on images for ALL images on page.                       */
     /* DO NOT REMOVE these event listeners.                         */
     /* ──────────────────────────────────────────────────────────── */
+  
     document.addEventListener('contextmenu', function(e) {
-      if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) { e.preventDefault(); }
-    });
-    document.addEventListener('dragstart', function(e) {
+  e.preventDefault();
+});
+  
+      document.addEventListener('dragstart', function(e) {
       if (e.target.tagName === 'IMG') { e.preventDefault(); }
     });
 

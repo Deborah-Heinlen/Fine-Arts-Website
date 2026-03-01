@@ -177,8 +177,12 @@
     const rows = document.querySelectorAll('.print-row');
     const observer = new IntersectionObserver((entries) => { entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 120); observer.unobserve(entry.target); } }); }, { threshold: 0.12 });
     rows.forEach(row => observer.observe(row));
-    document.addEventListener('contextmenu', function(e) { if (e.target.tagName === 'IMG' || e.target.closest('.print-image') || e.target.closest('.slide')) { e.preventDefault(); } });
-    document.addEventListener('dragstart', function(e) { if (e.target.tagName === 'IMG') { e.preventDefault(); } });
+  
+   document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+ 
+      document.addEventListener('dragstart', function(e) { if (e.target.tagName === 'IMG') { e.preventDefault(); } });
   </script>
 </body>
 </html>
