@@ -182,7 +182,7 @@ const PRODUCTS = {
       framed:  "images/mockups/untamed-majesty/untamed-majesty-framed.jpg",
       canvas:  "images/mockups/untamed-majesty/untamed-majesty-canvas.jpg",
       metal:   "images/mockups/untamed-majesty/untamed-majesty-metal.jpg",
-        original: "images/originals/untamed-majesty.jpg
+        original: "images/originals/untamed-majesty.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
