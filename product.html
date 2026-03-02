@@ -1404,14 +1404,15 @@
             <p class="print-caption">&ldquo;${product.caption}&rdquo;</p>
             <p class="print-description">${product.description}</p>
 
+          <!-- MOBILE MEDIUM PREVIEW -- shown only on small screens -->
+            ${mobileMediumPreview}
+
             <div class="medium-tabs" role="tablist">
               <button class="medium-tab active" data-medium="metal"  role="tab">Metal</button>
               <button class="medium-tab"        data-medium="canvas" role="tab">Canvas</button>
               <button class="medium-tab"        data-medium="framed" role="tab">Framed</button>
             </div>
 
-            <!-- MOBILE MEDIUM PREVIEW -- shown only on small screens -->
-            ${mobileMediumPreview}
 
             <!-- METAL PANEL -->
             <div id="panel-metal" class="medium-panel">
