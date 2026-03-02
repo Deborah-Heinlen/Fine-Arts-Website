@@ -29,7 +29,8 @@ const PRODUCTS = {
       room:    "images/mockups/waterlily-in-bloom/waterlily-in-bloom-room.jpg",
       framed:  "images/mockups/waterlily-in-bloom/waterlily-in-bloom-framed.jpg",
       canvas:  "images/mockups/waterlily-in-bloom/waterlily-in-bloom-canvas.jpg",
-      metal:   "images/mockups/waterlily-in-bloom/waterlily-in-bloom-metal.jpg"
+      metal:   "images/mockups/waterlily-in-bloom/waterlily-in-bloom-metal.jpg",
+      original: "images/originals/waterlily-in-bloom.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -58,7 +59,8 @@ const PRODUCTS = {
       room:    "images/mockups/golden-hour/golden-hour-room.jpg",
       framed:  "images/mockups/golden-hour/golden-hour-framed.jpg",
       canvas:  "images/mockups/golden-hour/golden-hour-canvas.jpg",
-      metal:   "images/mockups/golden-hour/golden-hour-metal.jpg"
+      metal:   "images/mockups/golden-hour/golden-hour-metal.jpg",
+      original: "images/originals/golden-hour.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -87,7 +89,8 @@ const PRODUCTS = {
       room:    "images/mockups/redbuds-in-bloom/redbuds-in-bloom-room.jpg",
       framed:  "images/mockups/redbuds-in-bloom/redbuds-in-bloom-framed.jpg",
       canvas:  "images/mockups/redbuds-in-bloom/redbuds-in-bloom-canvas.jpg",
-      metal:   "images/mockups/redbuds-in-bloom/redbuds-in-bloom-metal.jpg"
+      metal:   "images/mockups/redbuds-in-bloom/redbuds-in-bloom-metal.jpg",
+        original: "images/originals/redbuds.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -118,7 +121,8 @@ const PRODUCTS = {
       room:    "images/mockups/focused-intent/focused-intent-room.jpg",
       framed:  "images/mockups/focused-intent/focused-intent-framed.jpg",
       canvas:  "images/mockups/focused-intent/focused-intent-canvas.jpg",
-      metal:   "images/mockups/focused-intent/focused-intent-metal.jpg"
+      metal:   "images/mockups/focused-intent/focused-intent-metal.jpg",
+        original: "images/originals/focused-intent.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -147,7 +151,8 @@ const PRODUCTS = {
       room:    "images/mockups/pathfinder/pathfinder-room.jpg",
       framed:  "images/mockups/pathfinder/pathfinder-framed.jpg",
       canvas:  "images/mockups/pathfinder/pathfinder-canvas.jpg",
-      metal:   "images/mockups/pathfinder/pathfinder-metal.jpg"
+      metal:   "images/mockups/pathfinder/pathfinder-metal.jpg",
+        original: "images/originals/pathfinder.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -176,7 +181,8 @@ const PRODUCTS = {
       room:    "images/mockups/untamed-majesty/untamed-majesty-room.jpg",
       framed:  "images/mockups/untamed-majesty/untamed-majesty-framed.jpg",
       canvas:  "images/mockups/untamed-majesty/untamed-majesty-canvas.jpg",
-      metal:   "images/mockups/untamed-majesty/untamed-majesty-metal.jpg"
+      metal:   "images/mockups/untamed-majesty/untamed-majesty-metal.jpg",
+        original: "images/originals/untamed-majesty.jpg
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -207,7 +213,8 @@ const PRODUCTS = {
       room:    "images/mockups/american-glory/american-glory-room.jpg",
       framed:  "images/mockups/american-glory/american-glory-framed.jpg",
       canvas:  "images/mockups/american-glory/american-glory-canvas.jpg",
-      metal:   "images/mockups/american-glory/american-glory-metal.jpg"
+      metal:   "images/mockups/american-glory/american-glory-metal.jpg",
+        original: "images/originals/american-glory.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -236,7 +243,8 @@ const PRODUCTS = {
       room:    "images/mockups/isis/isis-room.jpg",
       framed:  "images/mockups/isis/isis-framed.jpg",
       canvas:  "images/mockups/isis/isis-canvas.jpg",
-      metal:   "images/mockups/isis/isis-metal.jpg"
+      metal:   "images/mockups/isis/isis-metal.jpg",
+        original: "images/originals/isis.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -265,7 +273,8 @@ const PRODUCTS = {
       room:    "images/mockups/apollo/apollo-room.jpg",
       framed:  "images/mockups/apollo/apollo-framed.jpg",
       canvas:  "images/mockups/apollo/apollo-canvas.jpg",
-      metal:   "images/mockups/apollo/apollo-metal.jpg"
+      metal:   "images/mockups/apollo/apollo-metal.jpg",
+        original: "images/originals/apollo.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -294,7 +303,8 @@ const PRODUCTS = {
       room:    "images/mockups/quiet-perch/quiet-perch-room.jpg",
       framed:  "images/mockups/quiet-perch/quiet-perch-framed.jpg",
       canvas:  "images/mockups/quiet-perch/quiet-perch-canvas.jpg",
-      metal:   "images/mockups/quiet-perch/quiet-perch-metal.jpg"
+      metal:   "images/mockups/quiet-perch/quiet-perch-metal.jpg",
+        original: "images/originals/quiet-perch.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -323,7 +333,8 @@ const PRODUCTS = {
       room:    "images/mockups/sentinels-watch/sentinels-watch-room.jpg",
       framed:  "images/mockups/sentinels-watch/sentinels-watch-framed.jpg",
       canvas:  "images/mockups/sentinels-watch/sentinels-watch-canvas.jpg",
-      metal:   "images/mockups/sentinels-watch/sentinels-watch-metal.jpg"
+      metal:   "images/mockups/sentinels-watch/sentinels-watch-metal.jpg",
+        original: "images/originals/sentinels-watch.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -352,7 +363,8 @@ const PRODUCTS = {
       room:    "images/mockups/still-waters/still-waters-room.jpg",
       framed:  "images/mockups/still-waters/still-waters-framed.jpg",
       canvas:  "images/mockups/still-waters/still-waters-canvas.jpg",
-      metal:   "images/mockups/still-waters/still-waters-metal.jpg"
+      metal:   "images/mockups/still-waters/still-waters-metal.jpg",
+        original: "images/originals/still-waters.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -381,7 +393,8 @@ const PRODUCTS = {
       room:    "images/mockups/the-mantle/the-mantle-room.jpg",
       framed:  "images/mockups/the-mantle/the-mantle-framed.jpg",
       canvas:  "images/mockups/the-mantle/the-mantle-canvas.jpg",
-      metal:   "images/mockups/the-mantle/the-mantle-metal.jpg"
+      metal:   "images/mockups/the-mantle/the-mantle-metal.jpg",
+        original: "images/originals/the-mantle.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -410,7 +423,8 @@ const PRODUCTS = {
       room:    "images/mockups/crimson/crimson-room.jpg",
       framed:  "images/mockups/crimson/crimson-framed.jpg",
       canvas:  "images/mockups/crimson/crimson-canvas.jpg",
-      metal:   "images/mockups/crimson/crimson-metal.jpg"
+      metal:   "images/mockups/crimson/crimson-metal.jpg",
+        original: "images/originals/crimson.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -441,7 +455,8 @@ const PRODUCTS = {
       room:    "images/mockups/ault-park-ascent/ault-park-ascent-room.jpg",
       framed:  "images/mockups/ault-park-ascent/ault-park-ascent-framed.jpg",
       canvas:  "images/mockups/ault-park-ascent/ault-park-ascent-canvas.jpg",
-      metal:   "images/mockups/ault-park-ascent/ault-park-ascent-metal.jpg"
+      metal:   "images/mockups/ault-park-ascent/ault-park-ascent-metal.jpg",
+        original: "images/originals/ault-park-ascent.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -470,7 +485,8 @@ const PRODUCTS = {
       room:    "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-room.jpg",
       framed:  "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-framed.jpg",
       canvas:  "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-canvas.jpg",
-      metal:   "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-metal.jpg"
+      metal:   "images/mockups/gateway-to-the-queen-city/gateway-to-the-queen-city-metal.jpg",
+        original: "images/originals/gateway-to-the-queen-city.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -499,7 +515,8 @@ const PRODUCTS = {
       room:    "images/mockups/incline-to-the-mount/incline-to-the-mount-room.jpg",
       framed:  "images/mockups/incline-to-the-mount/incline-to-the-mount-framed.jpg",
       canvas:  "images/mockups/incline-to-the-mount/incline-to-the-mount-canvas.jpg",
-      metal:   "images/mockups/incline-to-the-mount/incline-to-the-mount-metal.jpg"
+      metal:   "images/mockups/incline-to-the-mount/incline-to-the-mount-metal.jpg",
+        original: "images/originals/incline-to-the-mount.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -528,7 +545,8 @@ const PRODUCTS = {
       room:    "images/mockups/love-the-cov/love-the-cov-room.jpg",
       framed:  "images/mockups/love-the-cov/love-the-cov-framed.jpg",
       canvas:  "images/mockups/love-the-cov/love-the-cov-canvas.jpg",
-      metal:   "images/mockups/love-the-cov/love-the-cov-metal.jpg"
+      metal:   "images/mockups/love-the-cov/love-the-cov-metal.jpg",
+        original: "images/originals/love-the-cov.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -557,7 +575,8 @@ const PRODUCTS = {
       room:    "images/mockups/queen-city-overture/queen-city-overture-room.jpg",
       framed:  "images/mockups/queen-city-overture/queen-city-overture-framed.jpg",
       canvas:  "images/mockups/queen-city-overture/queen-city-overture-canvas.jpg",
-      metal:   "images/mockups/queen-city-overture/queen-city-overture-metal.jpg"
+      metal:   "images/mockups/queen-city-overture/queen-city-overture-metal.jpg",
+        original: "images/originals/queen-city-overture.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -586,7 +605,8 @@ const PRODUCTS = {
       room:    "images/mockups/the-grand-terminal/the-grand-terminal-room.jpg",
       framed:  "images/mockups/the-grand-terminal/the-grand-terminal-framed.jpg",
       canvas:  "images/mockups/the-grand-terminal/the-grand-terminal-canvas.jpg",
-      metal:   "images/mockups/the-grand-terminal/the-grand-terminal-metal.jpg"
+      metal:   "images/mockups/the-grand-terminal/the-grand-terminal-metal.jpg",
+        original: "images/originals/the-grand-terminal.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -615,7 +635,8 @@ const PRODUCTS = {
       room:    "images/mockups/the-queens-crown/the-queens-crown-room.jpg",
       framed:  "images/mockups/the-queens-crown/the-queens-crown-framed.jpg",
       canvas:  "images/mockups/the-queens-crown/the-queens-crown-canvas.jpg",
-      metal:   "images/mockups/the-queens-crown/the-queens-crown-metal.jpg"
+      metal:   "images/mockups/the-queens-crown/the-queens-crown-metal.jpg",
+        original: "images/originals/the-queens-crown.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -646,7 +667,8 @@ const PRODUCTS = {
       room:    "images/mockups/dawns-early-light/dawns-early-light-room.jpg",
       framed:  "images/mockups/dawns-early-light/dawns-early-light-framed.jpg",
       canvas:  "images/mockups/dawns-early-light/dawns-early-light-canvas.jpg",
-      metal:   "images/mockups/dawns-early-light/dawns-early-light-metal.jpg"
+      metal:   "images/mockups/dawns-early-light/dawns-early-light-metal.jpg",
+        original: "images/originals/dawns-early-light.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -675,7 +697,8 @@ const PRODUCTS = {
       room:    "images/mockups/biko/biko-room.jpg",
       framed:  "images/mockups/biko/biko-framed.jpg",
       canvas:  "images/mockups/biko/biko-canvas.jpg",
-      metal:   "images/mockups/biko/biko-metal.jpg"
+      metal:   "images/mockups/biko/biko-metal.jpg",
+        original: "images/originals/biko.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -704,7 +727,8 @@ const PRODUCTS = {
       room:    "images/mockups/lakeside-solitude/lakeside-solitude-room.jpg",
       framed:  "images/mockups/lakeside-solitude/lakeside-solitude-framed.jpg",
       canvas:  "images/mockups/lakeside-solitude/lakeside-solitude-canvas.jpg",
-      metal:   "images/mockups/lakeside-solitude/lakeside-solitude-metal.jpg"
+      metal:   "images/mockups/lakeside-solitude/lakeside-solitude-metal.jpg",
+        original: "images/originals/lakeside-solitude.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -733,7 +757,8 @@ const PRODUCTS = {
       room:    "images/mockups/pasture-calm/pasture-calm-room.jpg",
       framed:  "images/mockups/pasture-calm/pasture-calm-framed.jpg",
       canvas:  "images/mockups/pasture-calm/pasture-calm-canvas.jpg",
-      metal:   "images/mockups/pasture-calm/pasture-calm-metal.jpg"
+      metal:   "images/mockups/pasture-calm/pasture-calm-metal.jpg",
+        original: "images/originals/pasture-calm.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -764,7 +789,8 @@ const PRODUCTS = {
       room:    "images/mockups/blue-channels/blue-channels-room.jpg",
       framed:  "images/mockups/blue-channels/blue-channels-framed.jpg",
       canvas:  "images/mockups/blue-channels/blue-channels-canvas.jpg",
-      metal:   "images/mockups/blue-channels/blue-channels-metal.jpg"
+      metal:   "images/mockups/blue-channels/blue-channels-metal.jpg",
+        original: "images/originals/blue-channels.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -793,7 +819,8 @@ const PRODUCTS = {
       room:    "images/mockups/forgotten-miles/forgotten-miles-room.jpg",
       framed:  "images/mockups/forgotten-miles/forgotten-miles-framed.jpg",
       canvas:  "images/mockups/forgotten-miles/forgotten-miles-canvas.jpg",
-      metal:   "images/mockups/forgotten-miles/forgotten-miles-metal.jpg"
+      metal:   "images/mockups/forgotten-miles/forgotten-miles-metal.jpg",
+        original: "images/originals/forgotten-miles.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -822,7 +849,8 @@ const PRODUCTS = {
       room:    "images/mockups/crossroads/crossroads-room.jpg",
       framed:  "images/mockups/crossroads/crossroads-framed.jpg",
       canvas:  "images/mockups/crossroads/crossroads-canvas.jpg",
-      metal:   "images/mockups/crossroads/crossroads-metal.jpg"
+      metal:   "images/mockups/crossroads/crossroads-metal.jpg",
+        original: "images/originals/crossroads.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -851,7 +879,8 @@ const PRODUCTS = {
       room:    "images/mockups/homestead/homestead-room.jpg",
       framed:  "images/mockups/homestead/homestead-framed.jpg",
       canvas:  "images/mockups/homestead/homestead-canvas.jpg",
-      metal:   "images/mockups/homestead/homestead-metal.jpg"
+      metal:   "images/mockups/homestead/homestead-metal.jpg",
+        original: "images/originals/homestead.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -880,7 +909,8 @@ const PRODUCTS = {
       room:    "images/mockups/high-desert-mustang/high-desert-mustang-room.jpg",
       framed:  "images/mockups/high-desert-mustang/high-desert-mustang-framed.jpg",
       canvas:  "images/mockups/high-desert-mustang/high-desert-mustang-canvas.jpg",
-      metal:   "images/mockups/high-desert-mustang/high-desert-mustang-metal.jpg"
+      metal:   "images/mockups/high-desert-mustang/high-desert-mustang-metal.jpg",
+        original: "images/originals/high-desert-mustang.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -909,7 +939,8 @@ const PRODUCTS = {
       room:    "images/mockups/night-watch/night-watch-room.jpg",
       framed:  "images/mockups/night-watch/night-watch-framed.jpg",
       canvas:  "images/mockups/night-watch/night-watch-canvas.jpg",
-      metal:   "images/mockups/night-watch/night-watch-metal.jpg"
+      metal:   "images/mockups/night-watch/night-watch-metal.jpg",
+        original: "images/originals/night-watch.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -938,7 +969,8 @@ const PRODUCTS = {
       room:    "images/mockups/quiet-shore/quiet-shore-room.jpg",
       framed:  "images/mockups/quiet-shore/quiet-shore-framed.jpg",
       canvas:  "images/mockups/quiet-shore/quiet-shore-canvas.jpg",
-      metal:   "images/mockups/quiet-shore/quiet-shore-metal.jpg"
+      metal:   "images/mockups/quiet-shore/quiet-shore-metal.jpg",
+        original: "images/originals/quiet-shore.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -967,7 +999,8 @@ const PRODUCTS = {
       room:    "images/mockups/red-rock-light/red-rock-light-room.jpg",
       framed:  "images/mockups/red-rock-light/red-rock-light-framed.jpg",
       canvas:  "images/mockups/red-rock-light/red-rock-light-canvas.jpg",
-      metal:   "images/mockups/red-rock-light/red-rock-light-metal.jpg"
+      metal:   "images/mockups/red-rock-light/red-rock-light-metal.jpg",
+        original: "images/originals/red-rock-light.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },

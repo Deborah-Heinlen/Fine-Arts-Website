@@ -998,6 +998,76 @@
     .not-found a:hover { background: var(--warm-tan); color: var(--cream); }
 
     /* ═══════════════════════════════════════════════════════════════
+       BEFORE & AFTER -- photograph to watercolor comparison
+    ════════════════════════════════════════════════════════════════ */
+    .before-after-section {
+      padding: 0 3rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .before-after-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .before-after-img-wrap {
+      position: relative;
+      background: var(--linen);
+      overflow: hidden;
+    }
+
+    .before-after-img-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 0.75rem;
+      object-fit: contain;
+    }
+
+    .before-after-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 0.6rem 0;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      background: linear-gradient(transparent, rgba(237, 232, 220, 0.9));
+    }
+
+    .before-after-text {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .before-after-text p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MOBILE MEDIUM PREVIEW -- only visible on small screens
+    ════════════════════════════════════════════════════════════════ */
+    .mobile-medium-preview {
+      display: none;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
        RESPONSIVE
     ════════════════════════════════════════════════════════════════ */
     @media (max-width: 900px) {
@@ -1022,6 +1092,41 @@
       .back-section { padding: 3rem 1.5rem; }
       .breadcrumb { padding: 1rem 1.5rem 0; }
       .modal-box { padding: 2rem; }
+
+      /* ── MOBILE: show inline medium preview ────────────────── */
+      .mobile-medium-preview {
+        display: block;
+        margin-bottom: 1.2rem;
+        background: var(--linen);
+        padding: 0.5rem;
+        text-align: center;
+        cursor: pointer;
+        transition: opacity 0.4s ease;
+      }
+
+      .mobile-medium-preview img {
+        display: block;
+        width: 100%;
+        max-height: 280px;
+        object-fit: contain;
+      }
+
+      .mobile-medium-preview-label {
+        font-family: 'Jost', sans-serif;
+        font-size: 0.58rem;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--text-light);
+        margin-top: 0.4rem;
+      }
+
+      /* ── MOBILE: before/after stacks vertically ────────────── */
+      .before-after-section { padding: 0 1.5rem 2rem; }
+      .before-after-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
     }
 
     @media (max-width: 600px) {
@@ -1045,21 +1150,21 @@
     }
 
       
-      /* ═══════════════════════════════════════════════════════════════
-   IMAGE PROTECTION
-════════════════════════════════════════════════════════════════ */
-/* Layer 1: Make all images non-interactive */
-img {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  -webkit-touch-callout: none;
-  pointer-events: none;
-}
-/* Layer 2: Re-enable clicks on interactive elements */
-a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch-item, .gallery-thumb, .gallery-main { pointer-events: auto; }
+    /* ═══════════════════════════════════════════════════════════════
+       IMAGE PROTECTION
+    ════════════════════════════════════════════════════════════════ */
+    /* Layer 1: Make all images non-interactive */
+    img {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+      pointer-events: none;
+    }
+    /* Layer 2: Re-enable clicks on interactive elements */
+    a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch-item, .gallery-thumb, .gallery-main, .mobile-medium-preview { pointer-events: auto; }
       
       
   </style>
@@ -1246,6 +1351,35 @@ a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch
         <img src="${product.images.metal}"  alt="${product.title} metal print sample" data-thumb="${product.images.metal}" />
       `;
 
+      // ── BUILD BEFORE/AFTER SECTION (only if original exists) ──
+      const beforeAfterHTML = product.images.original ? `
+        <div class="section-divider"><span>The Transformation</span></div>
+
+        <section class="before-after-section">
+          <div class="before-after-grid">
+            <div class="before-after-img-wrap">
+              <img src="${product.images.original}" alt="${product.title} - original photograph" />
+              <span class="before-after-label">Original Photograph</span>
+            </div>
+            <div class="before-after-img-wrap">
+              <img src="${product.images.main}" alt="${product.title} - watercolor print" />
+              <span class="before-after-label">Watercolor Print</span>
+            </div>
+          </div>
+          <div class="before-after-text">
+            <p>Each watercolor print begins as an original photograph captured on location.  Through careful artistic editing, the image is transformed into the fine art watercolor you see here.</p>
+          </div>
+        </section>
+      ` : '';
+
+      // ── BUILD MOBILE MEDIUM PREVIEW (inline thumbnail) ────────
+      const mobileMediumPreview = `
+        <div class="mobile-medium-preview" id="mobileMediumPreview" title="Tap to view in gallery">
+          <img id="mobileMediumImg" src="${product.images.metal}" alt="${product.title} - selected medium preview" />
+          <p class="mobile-medium-preview-label" id="mobileMediumLabel">Metal Print Preview</p>
+        </div>
+      `;
+
       // ── INJECT PAGE HTML ──────────────────────────────────────
       pageWrap.innerHTML = `
 
@@ -1275,6 +1409,9 @@ a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch
               <button class="medium-tab"        data-medium="canvas" role="tab">Canvas</button>
               <button class="medium-tab"        data-medium="framed" role="tab">Framed</button>
             </div>
+
+            <!-- MOBILE MEDIUM PREVIEW -- shown only on small screens -->
+            ${mobileMediumPreview}
 
             <!-- METAL PANEL -->
             <div id="panel-metal" class="medium-panel">
@@ -1314,6 +1451,8 @@ a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch
 
           </div>
         </section>
+
+        ${beforeAfterHTML}
 
         <div class="section-divider"><span>Size Guide</span></div>
 
@@ -1504,22 +1643,60 @@ a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch
       const panels = document.querySelectorAll('.medium-panel');
       const mediumImageIndex = { metal: 4, canvas: 3, framed: 2 };
 
+      // ── MEDIUM IMAGE SOURCES (for mobile preview) ─────────────
+      const mediumImageSrc = {
+        metal:  product.images.metal,
+        canvas: product.images.canvas,
+        framed: product.images.framed
+      };
+
+      const mediumLabelText = {
+        metal:  'Metal Print Preview',
+        canvas: 'Canvas Wrap Preview',
+        framed: 'Framed Print Preview'
+      };
+
       tabs.forEach(tab => {
         tab.addEventListener('click', () => {
+          const medium = tab.dataset.medium;
+
           tabs.forEach(t => t.classList.remove('active'));
           panels.forEach(p => p.style.display = 'none');
           tab.classList.add('active');
-          document.getElementById('panel-' + tab.dataset.medium).style.display = 'block';
+          document.getElementById('panel-' + medium).style.display = 'block';
 
-          const idx       = mediumImageIndex[tab.dataset.medium];
+          // Update main gallery (desktop)
+          const idx       = mediumImageIndex[medium];
           const allImgs   = document.querySelectorAll('#galleryMain img');
           const allThumbs = document.querySelectorAll('.gallery-thumb');
           allImgs.forEach(g => g.classList.remove('active'));
           allThumbs.forEach(t => t.classList.remove('active'));
           if (allImgs[idx])   allImgs[idx].classList.add('active');
           if (allThumbs[idx]) allThumbs[idx].classList.add('active');
+
+          // Update mobile inline preview
+          const mobileImg   = document.getElementById('mobileMediumImg');
+          const mobileLabel = document.getElementById('mobileMediumLabel');
+          if (mobileImg) {
+            mobileImg.src = mediumImageSrc[medium];
+            mobileImg.alt = product.title + ' - ' + mediumLabelText[medium].toLowerCase();
+          }
+          if (mobileLabel) {
+            mobileLabel.textContent = mediumLabelText[medium];
+          }
         });
       });
+
+      // ── MOBILE PREVIEW TAP: scroll to gallery ─────────────────
+      const mobilePreview = document.getElementById('mobileMediumPreview');
+      if (mobilePreview) {
+        mobilePreview.addEventListener('click', () => {
+          const gallery = document.getElementById('galleryMain');
+          if (gallery) {
+            gallery.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+      }
 
       // ════════════════════════════════════════════════════════════
       // SIZE DROPDOWNS -- update price display
@@ -1694,12 +1871,12 @@ a, button, .btn-view, .header-cart, .strip-link, .collection-link, .modal-swatch
         updatePreview();
       });
         
-        document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-});
-document.addEventListener('dragstart', function(e) {
-  if (e.target.tagName === 'IMG') { e.preventDefault(); }
-});
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
+      document.addEventListener('dragstart', function(e) {
+        if (e.target.tagName === 'IMG') { e.preventDefault(); }
+      });
         
 
       // Add framed item to cart -- requires both frame and mat selected
