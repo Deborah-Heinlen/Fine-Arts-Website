@@ -212,7 +212,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/american-glory.jpg",
       room:    "images/mockups/american-glory-room.jpg",
       framed:  "images/mockups/american-glory-framed.jpg",
-      canvas:  "images/mockups/american-glory-canvas.jpg",
+      canvas:  "images/mockups/american-glory-canvas-wrap.jpg",
       metal:   "images/mockups/american-glory-metal.jpg",
         original: "images/originals/american-glory.jpg"
     },
