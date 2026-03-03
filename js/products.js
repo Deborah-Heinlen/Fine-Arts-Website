@@ -28,7 +28,7 @@ const PRODUCTS = {
       main:    "images/botanical-studies/waterlily-in-bloom.jpg",
       room:    "images/mockups/waterlily-in-bloom-room.jpg",
       framed:  "images/mockups/waterlily-in-bloom-framed.jpg",
-      canvas:  "images/mockups/waterlily-in-bloom-canvas.jpg",
+      canvas:  "images/mockups/waterlily-in-bloom-canvas-wrap.jpg",
       metal:   "images/mockups/waterlily-in-bloom-metal.jpg",
       original: "images/originals/waterlily-in-bloom.jpg"
     },
@@ -58,7 +58,7 @@ const PRODUCTS = {
       main:    "images/botanical-studies/golden-hour.jpg",
       room:    "images/mockups/golden-hour-room.jpg",
       framed:  "images/mockups/golden-hour-framed.jpg",
-      canvas:  "images/mockups/golden-hour-canvas.jpg",
+      canvas:  "images/mockups/golden-hour-canvas-wrap.jpg",
       metal:   "images/mockups/golden-hour-metal.jpg",
       original: "images/originals/golden-hour.jpg"
     },
@@ -88,7 +88,7 @@ const PRODUCTS = {
       main:    "images/botanical-studies/redbuds-in-bloom.jpg",
       room:    "images/mockups/redbuds-in-bloom-room.jpg",
       framed:  "images/mockups/redbuds-in-bloom-framed.jpg",
-      canvas:  "images/mockups/redbuds-in-bloom-canvas.jpg",
+      canvas:  "images/mockups/redbuds-in-bloom-canvas-wrap.jpg",
       metal:   "images/mockups/redbuds-in-bloom-metal.jpg",
         original: "images/originals/redbuds.jpg"
     },
@@ -120,7 +120,7 @@ const PRODUCTS = {
       main:    "images/wildlife/focused-intent.jpg",
       room:    "images/mockups/focused-intent-room.jpg",
       framed:  "images/mockups/focused-intent-framed.jpg",
-      canvas:  "images/mockups/focused-intent-canvas.jpg",
+      canvas:  "images/mockups/focused-intent-canvas-wrap.jpg",
       metal:   "images/mockups/focused-intent-metal.jpg",
         original: "images/originals/focused-intent.jpg"
     },
@@ -150,7 +150,7 @@ const PRODUCTS = {
       main:    "images/wildlife/pathfinder.jpg",
       room:    "images/mockups/pathfinder-room.jpg",
       framed:  "images/mockups/pathfinder-framed.jpg",
-      canvas:  "images/mockups/pathfinder-canvas.jpg",
+      canvas:  "images/mockups/pathfinder-canvas-wrap.jpg",
       metal:   "images/mockups/pathfinder-metal.jpg",
         original: "images/originals/pathfinder.jpg"
     },
@@ -180,7 +180,7 @@ const PRODUCTS = {
       main:    "images/wildlife/untamed-majesty.jpg",
       room:    "images/mockups/untamed-majesty-room.jpg",
       framed:  "images/mockups/untamed-majesty-framed.jpg",
-      canvas:  "images/mockups/untamed-majesty-canvas.jpg",
+      canvas:  "images/mockups/untamed-majesty-canvas-wrap.jpg",
       metal:   "images/mockups/untamed-majesty-metal.jpg",
         original: "images/originals/untamed-majesty.jpg"
     },
@@ -242,7 +242,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/isis.jpg",
       room:    "images/mockups/isis-room.jpg",
       framed:  "images/mockups/isis-framed.jpg",
-      canvas:  "images/mockups/isis-canvas.jpg",
+      canvas:  "images/mockups/isis-canvas-wrap.jpg",
       metal:   "images/mockups/isis-metal.jpg",
         original: "images/originals/isis.jpg"
     },
@@ -272,7 +272,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/apollo.jpg",
       room:    "images/mockups/apollo-room.jpg",
       framed:  "images/mockups/apollo-framed.jpg",
-      canvas:  "images/mockups/apollo-canvas.jpg",
+      canvas:  "images/mockups/apollo-canvas-wrap.jpg",
       metal:   "images/mockups/apollo-metal.jpg",
         original: "images/originals/apollo.jpg"
     },
@@ -302,7 +302,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/quiet-perch.jpg",
       room:    "images/mockups/quiet-perch-room.jpg",
       framed:  "images/mockups/quiet-perch-framed.jpg",
-      canvas:  "images/mockups/quiet-perch-canvas.jpg",
+      canvas:  "images/mockups/quiet-perch-canvas-wrap.jpg",
       metal:   "images/mockups/quiet-perch-metal.jpg",
         original: "images/originals/quiet-perch.jpg"
     },
@@ -332,7 +332,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/sentinels-watch.jpg",
       room:    "images/mockups/sentinels-watch-room.jpg",
       framed:  "images/mockups/sentinels-watch-framed.jpg",
-      canvas:  "images/mockups/sentinels-watch-canvas.jpg",
+      canvas:  "images/mockups/sentinels-watch-canvas-wrap.jpg",
       metal:   "images/mockups/sentinels-watch-metal.jpg",
         original: "images/originals/sentinels-watch.jpg"
     },
@@ -362,7 +362,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/still-waters.jpg",
       room:    "images/mockups/still-waters-room.jpg",
       framed:  "images/mockups/still-waters-framed.jpg",
-      canvas:  "images/mockups/still-waters-canvas.jpg",
+      canvas:  "images/mockups/still-waters-canvas-wrap.jpg",
       metal:   "images/mockups/still-waters-metal.jpg",
         original: "images/originals/still-waters.jpg"
     },
@@ -392,7 +392,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/the-mantle.jpg",
       room:    "images/mockups/the-mantle-room.jpg",
       framed:  "images/mockups/the-mantle-framed.jpg",
-      canvas:  "images/mockups/the-mantle-canvas.jpg",
+      canvas:  "images/mockups/the-mantle-canvas-wrap.jpg",
       metal:   "images/mockups/the-mantle-metal.jpg",
         original: "images/originals/the-mantle.jpg"
     },
@@ -422,7 +422,7 @@ const PRODUCTS = {
       main:    "images/avian-studies/crimson.jpg",
       room:    "images/mockups/crimson-room.jpg",
       framed:  "images/mockups/crimson-framed.jpg",
-      canvas:  "images/mockups/crimson-canvas.jpg",
+      canvas:  "images/mockups/crimson-canvas-wrap.jpg",
       metal:   "images/mockups/crimson-metal.jpg",
         original: "images/originals/crimson.jpg"
     },
@@ -454,7 +454,7 @@ const PRODUCTS = {
       main:    "images/cincinnati/ault-park-ascent.jpg",
       room:    "images/mockups/ault-park-ascent-room.jpg",
       framed:  "images/mockups/ault-park-ascent-framed.jpg",
-      canvas:  "images/mockups/ault-park-ascent-canvas.jpg",
+      canvas:  "images/mockups/ault-park-ascent-canvas-wrap.jpg",
       metal:   "images/mockups/ault-park-ascent-metal.jpg",
         original: "images/originals/ault-park-ascent.jpg"
     },
@@ -484,7 +484,7 @@ const PRODUCTS = {
       main:    "images/cincinnati/gateway-to-the-queen-city.jpg",
       room:    "images/mockups/gateway-to-the-queen-city-room.jpg",
       framed:  "images/mockups/gateway-to-the-queen-city-framed.jpg",
-      canvas:  "images/mockups/gateway-to-the-queen-city-canvas.jpg",
+      canvas:  "images/mockups/gateway-to-the-queen-city-canvas-wrap.jpg",
       metal:   "images/mockups/gateway-to-the-queen-city-metal.jpg",
         original: "images/originals/gateway-to-the-queen-city.jpg"
     },
@@ -514,7 +514,7 @@ const PRODUCTS = {
       main:    "images/cincinnati/incline-to-the-mount.jpg",
       room:    "images/mockups/incline-to-the-mount-room.jpg",
       framed:  "images/mockups/incline-to-the-mount-framed.jpg",
-      canvas:  "images/mockups/incline-to-the-mount-canvas.jpg",
+      canvas:  "images/mockups/incline-to-the-mount-canvas-wrap.jpg",
       metal:   "images/mockups/incline-to-the-mount-metal.jpg",
         original: "images/originals/incline-to-the-mount.jpg"
     },
@@ -544,7 +544,7 @@ const PRODUCTS = {
       main:    "images/cincinnati/love-the-cov.jpg",
       room:    "images/mockups/love-the-cov-room.jpg",
       framed:  "images/mockups/love-the-cov-framed.jpg",
-      canvas:  "images/mockups/love-the-cov-canvas.jpg",
+      canvas:  "images/mockups/love-the-cov-canvas-wrap.jpg",
       metal:   "images/mockups/love-the-cov-metal.jpg",
         original: "images/originals/love-the-cov.jpg"
     },
@@ -574,7 +574,7 @@ const PRODUCTS = {
       main:    "images/cincinnati/queen-city-overture.jpg",
       room:    "images/mockups/queen-city-overture-room.jpg",
       framed:  "images/mockups/queen-city-overture-framed.jpg",
-      canvas:  "images/mockups/queen-city-overture-canvas.jpg",
+      canvas:  "images/mockups/queen-city-overture-canvas-wrap.jpg",
       metal:   "images/mockups/queen-city-overture-metal.jpg",
         original: "images/originals/queen-city-overture.jpg"
     },
@@ -604,7 +604,7 @@ const PRODUCTS = {
       main:    "images/cincinnati/the-grand-terminal.jpg",
       room:    "images/mockups/the-grand-terminal-room.jpg",
       framed:  "images/mockups/the-grand-terminal-framed.jpg",
-      canvas:  "images/mockups/the-grand-terminal-canvas.jpg",
+      canvas:  "images/mockups/the-grand-terminal-canvas-wrap.jpg",
       metal:   "images/mockups/the-grand-terminal-metal.jpg",
         original: "images/originals/the-grand-terminal.jpg"
     },
@@ -634,7 +634,7 @@ const PRODUCTS = {
       main:    "images/cincinnati/the-queens-crown.jpg",
       room:    "images/mockups/the-queens-crown-room.jpg",
       framed:  "images/mockups/the-queens-crown-framed.jpg",
-      canvas:  "images/mockups/the-queens-crown-canvas.jpg",
+      canvas:  "images/mockups/the-queens-crown-canvas-wrap.jpg",
       metal:   "images/mockups/the-queens-crown-metal.jpg",
         original: "images/originals/the-queens-crown.jpg"
     },
@@ -666,7 +666,7 @@ const PRODUCTS = {
       main:    "images/americana/dawns-early-light.jpg",
       room:    "images/mockups/dawns-early-light-room.jpg",
       framed:  "images/mockups/dawns-early-light-framed.jpg",
-      canvas:  "images/mockups/dawns-early-light-canvas.jpg",
+      canvas:  "images/mockups/dawns-early-light-canvas-wrap.jpg",
       metal:   "images/mockups/dawns-early-light-metal.jpg",
         original: "images/originals/dawns-early-light.jpg"
     },
@@ -696,7 +696,7 @@ const PRODUCTS = {
       main:    "images/americana/biko.jpg",
       room:    "images/mockups/biko-room.jpg",
       framed:  "images/mockups/biko-framed.jpg",
-      canvas:  "images/mockups/biko-canvas.jpg",
+      canvas:  "images/mockups/biko-canvas-wrap.jpg",
       metal:   "images/mockups/biko-metal.jpg",
         original: "images/originals/biko.jpg"
     },
@@ -726,7 +726,7 @@ const PRODUCTS = {
       main:    "images/americana/lakeside-solitude.jpg",
       room:    "images/mockups/lakeside-solitude-room.jpg",
       framed:  "images/mockups/lakeside-solitude-framed.jpg",
-      canvas:  "images/mockups/lakeside-solitude-canvas.jpg",
+      canvas:  "images/mockups/lakeside-solitude-canvas-wrap.jpg",
       metal:   "images/mockups/lakeside-solitude-metal.jpg",
         original: "images/originals/lakeside-solitude.jpg"
     },
@@ -756,7 +756,7 @@ const PRODUCTS = {
       main:    "images/americana/pasture-calm.jpg",
       room:    "images/mockups/pasture-calm-room.jpg",
       framed:  "images/mockups/pasture-calm-framed.jpg",
-      canvas:  "images/mockups/pasture-calm-canvas.jpg",
+      canvas:  "images/mockups/pasture-calm-canvas-wrap.jpg",
       metal:   "images/mockups/pasture-calm-metal.jpg",
         original: "images/originals/pasture-calm.jpg"
     },
@@ -788,7 +788,7 @@ const PRODUCTS = {
       main:    "images/american-west/blue-channels.jpg",
       room:    "images/mockups/blue-channels-room.jpg",
       framed:  "images/mockups/blue-channels-framed.jpg",
-      canvas:  "images/mockups/blue-channels-canvas.jpg",
+      canvas:  "images/mockups/blue-channels-canvas-wrap.jpg",
       metal:   "images/mockups/blue-channels-metal.jpg",
         original: "images/originals/blue-channels.jpg"
     },
@@ -818,7 +818,7 @@ const PRODUCTS = {
       main:    "images/american-west/forgotten-miles.jpg",
       room:    "images/mockups/forgotten-miles-room.jpg",
       framed:  "images/mockups/forgotten-miles-framed.jpg",
-      canvas:  "images/mockups/forgotten-miles-canvas.jpg",
+      canvas:  "images/mockups/forgotten-miles-canvas-wrap.jpg",
       metal:   "images/mockups/forgotten-miles-metal.jpg",
         original: "images/originals/forgotten-miles.jpg"
     },
@@ -848,7 +848,7 @@ const PRODUCTS = {
       main:    "images/american-west/crossroads.jpg",
       room:    "images/mockups/crossroads-room.jpg",
       framed:  "images/mockups/crossroads-framed.jpg",
-      canvas:  "images/mockups/crossroads-canvas.jpg",
+      canvas:  "images/mockups/crossroads-canvas-wrap.jpg",
       metal:   "images/mockups/crossroads-metal.jpg",
         original: "images/originals/crossroads.jpg"
     },
@@ -878,7 +878,7 @@ const PRODUCTS = {
       main:    "images/american-west/homestead.jpg",
       room:    "images/mockups/homestead-room.jpg",
       framed:  "images/mockups/homestead-framed.jpg",
-      canvas:  "images/mockups/homestead-canvas.jpg",
+      canvas:  "images/mockups/homestead-canvas-wrap.jpg",
       metal:   "images/mockups/homestead-metal.jpg",
         original: "images/originals/homestead.jpg"
     },
@@ -908,7 +908,7 @@ const PRODUCTS = {
       main:    "images/american-west/high-desert-mustang.jpg",
       room:    "images/mockups/high-desert-mustang-room.jpg",
       framed:  "images/mockups/high-desert-mustang-framed.jpg",
-      canvas:  "images/mockups/high-desert-mustang-canvas.jpg",
+      canvas:  "images/mockups/high-desert-mustang-canvas-wrap.jpg",
       metal:   "images/mockups/high-desert-mustang-metal.jpg",
         original: "images/originals/high-desert-mustang.jpg"
     },
@@ -938,7 +938,7 @@ const PRODUCTS = {
       main:    "images/american-west/night-watch.jpg",
       room:    "images/mockups/night-watch-room.jpg",
       framed:  "images/mockups/night-watch-framed.jpg",
-      canvas:  "images/mockups/night-watch-canvas.jpg",
+      canvas:  "images/mockups/night-watch-canvas-wrap.jpg",
       metal:   "images/mockups/night-watch-metal.jpg",
         original: "images/originals/night-watch.jpg"
     },
@@ -968,7 +968,7 @@ const PRODUCTS = {
       main:    "images/american-west/quiet-shore.jpg",
       room:    "images/mockups/quiet-shore-room.jpg",
       framed:  "images/mockups/quiet-shore-framed.jpg",
-      canvas:  "images/mockups/quiet-shore-canvas.jpg",
+      canvas:  "images/mockups/quiet-shore-canvas-wrap.jpg",
       metal:   "images/mockups/quiet-shore-metal.jpg",
         original: "images/originals/quiet-shore.jpg"
     },
@@ -998,7 +998,7 @@ const PRODUCTS = {
       main:    "images/american-west/red-rock-light.jpg",
       room:    "images/mockups/red-rock-light-room.jpg",
       framed:  "images/mockups/red-rock-light-framed.jpg",
-      canvas:  "images/mockups/red-rock-light-canvas.jpg",
+      canvas:  "images/mockups/red-rock-light-canvas-wrap.jpg",
       metal:   "images/mockups/red-rock-light-metal.jpg",
         original: "images/originals/red-rock-light.jpg"
     },
