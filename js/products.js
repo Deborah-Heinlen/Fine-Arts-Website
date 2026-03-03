@@ -210,10 +210,10 @@ const PRODUCTS = {
     description:     "The bald eagle was nearly gone.  By 1963, hunting and DDT poisoning had reduced the breeding population in the lower 48 states to fewer than 500 nesting pairs -- a symbol of the nation pushed to the edge of extinction.  The recovery that followed is one of conservation's greatest achievements.  Removed from the endangered species list in 2007, bald eagles are now making a remarkable comeback along the Ohio River, where lucky observers catch glimpses of a bird that once seemed lost forever.  That wingspan can reach eight feet.  They mate for life, return to the same nest year after year, and add to it until some nests weigh over a ton.  Benjamin Franklin famously preferred the wild turkey for the national symbol, calling the eagle a bird of bad moral character.  He was outvoted.  Rendered with a watercolor finish from an original photograph, this portrait captures the eagle exactly as Franklin's opponents imagined it -- still, watchful, and absolutely certain of its place in the world.",
     images: {
       main:    "images/avian-studies/american-glory.jpg",
-      room:    "images/mockups/american-glory/american-glory-room.jpg",
-      framed:  "images/mockups/american-glory/american-glory-framed.jpg",
-      canvas:  "images/mockups/american-glory/american-glory-canvas.jpg",
-      metal:   "images/mockups/american-glory/american-glory-metal.jpg",
+      room:    "images/mockups/american-glory-room.jpg",
+      framed:  "images/mockups/american-glory-framed.jpg",
+      canvas:  "images/mockups/american-glory-canvas.jpg",
+      metal:   "images/mockups/american-glory-metal.jpg",
         original: "images/originals/american-glory.jpg"
     },
     prices: {
