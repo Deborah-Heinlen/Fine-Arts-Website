@@ -200,7 +200,7 @@ const PRODUCTS = {
 
   "american-glory": {
     id:              "american-glory",
-    number:          "No. 01",
+    number:          "No. 02",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -230,7 +230,7 @@ const PRODUCTS = {
 
   "isis": {
     id:              "isis",
-    number:          "No. 02",
+    number:          "No. 06",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -260,7 +260,7 @@ const PRODUCTS = {
 
   "apollo": {
     id:              "apollo",
-    number:          "No. 03",
+    number:          "No. 08",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -290,7 +290,7 @@ const PRODUCTS = {
 
   "quiet-perch": {
     id:              "quiet-perch",
-    number:          "No. 04",
+    number:          "No. 11",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -320,7 +320,7 @@ const PRODUCTS = {
 
   "sentinels-watch": {
     id:              "sentinels-watch",
-    number:          "No. 05",
+    number:          "No. 12",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -350,7 +350,7 @@ const PRODUCTS = {
 
   "still-waters": {
     id:              "still-waters",
-    number:          "No. 06",
+    number:          "No. 13",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -380,7 +380,7 @@ const PRODUCTS = {
 
   "the-mantle": {
     id:              "the-mantle",
-    number:          "No. 07",
+    number:          "No. 04",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -410,7 +410,7 @@ const PRODUCTS = {
 
   "crimson": {
     id:              "crimson",
-    number:          "No. 08",
+    number:          "No. 01",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -650,20 +650,20 @@ const PRODUCTS = {
     }
   },
 
-  // ── AMERICANA ────────────────────────────────────────────────
+  // ── Cincinnati ────────────────────────────────────────────────
 
   "dawns-early-light": {
     id:              "dawns-early-light",
-    number:          "No. 01",
-    collection:      "americana",
-    collectionLabel: "Americana",
-    collectionPage:  "americana.html",
+    number:          "No. 08",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
     title:           "Dawn's Early Light",
     caption:         "Not just a flag.  A promise of freedom.",
     altText:         "American flag watercolor print -- flag flying against blue sky in Covington Kentucky",
     description:     "On the morning of September 14, 1814, Francis Scott Key watched the bombardment of Fort McHenry from a ship in Baltimore Harbor and saw, through the smoke and early light, that the American flag was still flying.  The flag that inspired him was 30 by 42 feet -- so large it was designed to be seen from a distance.  His poem became a song, and in 1931 that song became the national anthem.  The flag in this photograph flies today in Covington, Kentucky, across the river from the city that has always understood what it means to be at the crossroads of the American story.  Rendered with a watercolor finish from an original photograph, this print captures the flag as Key saw it -- bright against an uncertain sky, the stars holding their position exactly as they always have.",
     images: {
-      main:    "images/americana/dawns-early-light.jpg",
+      main:    "images/cincinnati/dawns-early-light.jpg",
       room:    "images/mockups/dawns-early-light-room.jpg",
       framed:  "images/mockups/dawns-early-light-framed.jpg",
       canvas:  "images/mockups/dawns-early-light-canvas-wrap.jpg",
@@ -684,16 +684,16 @@ const PRODUCTS = {
 
   "biko": {
     id:              "biko",
-    number:          "No. 02",
-    collection:      "americana",
-    collectionLabel: "Americana",
-    collectionPage:  "americana.html",
+    number:          "No. 01",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
     title:           "Biko",
     caption:         "The joy of retirement.",
     altText:         "Thoroughbred horse watercolor print -- rescued Thoroughbred Biko grazing in a Lexington Kentucky pasture",
     description:     "The Thoroughbred is built for one thing -- speed -- and the racing industry does not always make room for what comes after.  But Lexington, Kentucky has a rescue community that does.  Organizations like the Secretariat Center and New Vocations have made the region a leader in Thoroughbred aftercare, giving horses like this one a second chapter that looks nothing like the first.  Biko was rescued from abuse by a friend, and he carries himself with the quiet dignity of an animal who has found exactly where he belongs.  This print is dedicated to Biko, and to Theo -- my own off-the-track Thoroughbred, a dressage partner who earned five first-place finishes at the Kentucky Horse Park before we said goodbye in the fall of 2024.  Rendered with a watercolor finish from an original photograph taken in Lexington, Kentucky, this print is for everyone who has ever earned a Thoroughbred's trust and understood what a privilege that is.",
     images: {
-      main:    "images/americana/biko.jpg",
+      main:    "images/horse-country/biko.jpg",
       room:    "images/mockups/biko-room.jpg",
       framed:  "images/mockups/biko-framed.jpg",
       canvas:  "images/mockups/biko-canvas-wrap.jpg",
@@ -714,16 +714,16 @@ const PRODUCTS = {
 
   "lakeside-solitude": {
     id:              "lakeside-solitude",
-    number:          "No. 03",
-    collection:      "americana",
-    collectionLabel: "Americana",
-    collectionPage:  "americana.html",
+    number:          "No. 04",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
     title:           "Lakeside Solitude",
     caption:         "The water knows how to keep a secret.",
     altText:         "Red canoe pond watercolor print -- red canoe resting at the shore of a still pond in Burlington Kentucky",
     description:     "Some photographs happen because you plan them.  Others happen because you finally pull over.  This pond sits along a narrow road in Burlington, Kentucky -- passed every day, admired every day, photographed on the one day patience finally ran out.  That red canoe rested at the shore in the full green of a Kentucky summer, perfectly still, perfectly placed, as if it had always known it was worth stopping for.  The scenery along any road changes with every passing day -- the light shifts, the seasons turn, the water rises and falls -- and most of it disappears without anyone ever stopping to notice.  Rendered with a watercolor finish from an original photograph, this print is a small reminder that the most beautiful things are often the ones you pass every day without stopping.  Until the day you do.",
     images: {
-      main:    "images/americana/lakeside-solitude.jpg",
+      main:    "images/landscapes/lakeside-solitude.jpg",
       room:    "images/mockups/lakeside-solitude-room.jpg",
       framed:  "images/mockups/lakeside-solitude-framed.jpg",
       canvas:  "images/mockups/lakeside-solitude-canvas-wrap.jpg",
@@ -745,15 +745,15 @@ const PRODUCTS = {
   "pasture-calm": {
     id:              "pasture-calm",
     number:          "No. 04",
-    collection:      "americana",
-    collectionLabel: "Americana",
-    collectionPage:  "americana.html",
+    collection:      "american-west",
+    collectionLabel: "American West",
+    collectionPage:  "american-west.html",
     title:           "Pasture Calm",
     caption:         "The original American cattle.",
     altText:         "Texas Longhorn watercolor print -- Longhorn cattle portrait at Bluegrass Stockyards in Lexington Kentucky",
     description:     "The Texas Longhorn has been part of the American story since Spanish explorers brought cattle to the Americas in the 1490s.  For centuries they roamed the open range, developing a hardiness and adaptability that no other breed could match -- lean, resourceful, and built to survive conditions that would defeat almost anything else.  By the late 1800s they were the iconic cattle of the great American cattle drives, millions of them moving north along the Chisholm Trail from Texas to Kansas railheads, their distinctive horizontal horns visible for miles across the open plains.  By the early twentieth century they were nearly gone -- replaced by meatier breeds and pushed off the range by fences and farms.  The United States government stepped in during the 1920s to establish a conservation herd, saving one of America's most historic breeds from extinction.  Photographed at the Bluegrass Stockyards in Lexington, Kentucky and rendered with a watercolor finish, this portrait captures a Texas Longhorn doing what they have always done best -- occupying whatever ground they're on with complete and unhurried authority.",
     images: {
-      main:    "images/americana/pasture-calm.jpg",
+      main:    "images/american-west/pasture-calm.jpg",
       room:    "images/mockups/pasture-calm-room.jpg",
       framed:  "images/mockups/pasture-calm-framed.jpg",
       canvas:  "images/mockups/pasture-calm-canvas-wrap.jpg",
@@ -776,16 +776,16 @@ const PRODUCTS = {
 
   "blue-channels": {
     id:              "blue-channels",
-    number:          "No. 01",
-    collection:      "american-west",
-    collectionLabel: "American West",
-    collectionPage:  "american-west.html",
+    number:          "No. 02",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
     title:           "Blue Channels",
     caption:         "What the lake left behind.",
     altText:         "Bonneville Salt Flats watercolor print -- vivid blue brine channels on white salt crust with Utah mountains in the distance",
     description:     "What looks like another world is actually the ghost of one.  The Bonneville Salt Flats in Utah are what remains of ancient Lake Bonneville -- a prehistoric inland sea that covered much of Utah and parts of Nevada and Idaho, as large as Lake Michigan at its peak some 14,500 years ago.  When the lake receded it left behind a thick crust of salt and minerals so vast and so perfectly flat that the curvature of the earth is visible from ground level.  Those vivid blue channels are not rivers -- they are brine channels, water so saturated with dissolved salt that it reflects the sky in a color that seems almost impossible against the white crust surrounding it.  The mountains in the distance are the same ones that once rose above the shoreline of that ancient sea.  Rendered with a watercolor finish from an original photograph, this print captures a landscape that has been ten thousand years in the making -- still and vast and completely indifferent to the passage of time.",
     images: {
-      main:    "images/american-west/blue-channels.jpg",
+      main:    "images/landscapes/blue-channels.jpg",
       room:    "images/mockups/blue-channels-room.jpg",
       framed:  "images/mockups/blue-channels-framed.jpg",
       canvas:  "images/mockups/blue-channels-canvas-wrap.jpg",
@@ -806,7 +806,7 @@ const PRODUCTS = {
 
   "forgotten-miles": {
     id:              "forgotten-miles",
-    number:          "No. 02",
+    number:          "No. 01",
     collection:      "american-west",
     collectionLabel: "American West",
     collectionPage:  "american-west.html",
@@ -836,7 +836,7 @@ const PRODUCTS = {
 
   "crossroads": {
     id:              "crossroads",
-    number:          "No. 03",
+    number:          "No. 02",
     collection:      "american-west",
     collectionLabel: "American West",
     collectionPage:  "american-west.html",
@@ -866,7 +866,7 @@ const PRODUCTS = {
 
   "homestead": {
     id:              "homestead",
-    number:          "No. 04",
+    number:          "No. 03",
     collection:      "american-west",
     collectionLabel: "American West",
     collectionPage:  "american-west.html",
@@ -896,16 +896,16 @@ const PRODUCTS = {
 
   "high-desert-mustang": {
     id:              "high-desert-mustang",
-    number:          "No. 05",
-    collection:      "american-west",
-    collectionLabel: "American West",
-    collectionPage:  "american-west.html",
+    number:          "No. 09",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
     title:           "High Desert Mustang",
     caption:         "The original American wild.",
     altText:         "Wild mustang watercolor print -- lone horse standing in golden high desert grass with snow-capped Utah mountains",
     description:     "The wild mustang is one of the most enduring symbols of the American West -- and one of its most complicated stories.  Descended from horses brought to the Americas by Spanish conquistadors in the 1500s, mustangs have roamed the open range for five centuries, as much a part of the western landscape as the mountains and the sage.  At their peak there were an estimated two million of them.  Fewer than 80,000 remain today, managed and monitored on the same Bureau of Land Management lands where this one was found.  Mustangs typically travel in family bands -- a dominant mare, her offspring, a stallion keeping watch at the edges.  This one was alone.  Standing in the golden high desert grass of rural Utah, the snow-capped mountains rising behind him, he offered no explanation for his solitude and required none.  Some stories are never told.  Rendered with a watercolor finish from an original photograph, this print captures a moment of accidental grace -- a lone mustang on the open range, exactly where he belongs, entirely on his own terms.",
     images: {
-      main:    "images/american-west/high-desert-mustang.jpg",
+      main:    "images/horse-country/high-desert-mustang.jpg",
       room:    "images/mockups/high-desert-mustang-room.jpg",
       framed:  "images/mockups/high-desert-mustang-framed.jpg",
       canvas:  "images/mockups/high-desert-mustang-canvas-wrap.jpg",
@@ -926,16 +926,16 @@ const PRODUCTS = {
 
   "night-watch": {
     id:              "night-watch",
-    number:          "No. 06",
-    collection:      "american-west",
-    collectionLabel: "American West",
-    collectionPage:  "american-west.html",
+    number:          "No. 07",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
     title:           "Night Watch",
     caption:         "The deeper the dark, the brighter the beauty.",
     altText:         "Utah night sky watercolor print -- Milky Way and Pleiades over illuminated bare tree using light painting technique",
     description:     "For most of human history, this is what the night looked like.  The Pleiades -- the Seven Sisters -- visible on the right, recognized and named by virtually every culture on earth for thousands of years, used by Native American tribes throughout the West as a calendar, a compass, and a source of story.  The Milky Way visible to everyone, everywhere, every clear night.  That world is largely gone now -- light pollution has stolen the dark sky from more than eighty percent of the world's population, and most people alive today have never seen a night like this one.  Utah is one of the last places in the continental United States where it still exists.  It has more International Dark Sky Parks than any other state, and on a clear mountain night the stars still perform exactly as they have for ten thousand years.  This image was made in the mountains of Utah using light painting -- a long exposure technique that illuminates the foreground with hand-held light while the camera drinks in the sky above.  The bare tree glows against the darkness exactly as it did that night, reaching toward a sky that most of the world has forgotten how to see.  Rendered with a watercolor finish from an original photograph, this print is a reminder of what the night used to be -- and in a few rare places, still is.",
     images: {
-      main:    "images/american-west/night-watch.jpg",
+      main:    "images/landscapes/night-watch.jpg",
       room:    "images/mockups/night-watch-room.jpg",
       framed:  "images/mockups/night-watch-framed.jpg",
       canvas:  "images/mockups/night-watch-canvas-wrap.jpg",
@@ -956,16 +956,16 @@ const PRODUCTS = {
 
   "quiet-shore": {
     id:              "quiet-shore",
-    number:          "No. 07",
-    collection:      "american-west",
-    collectionLabel: "American West",
-    collectionPage:  "american-west.html",
+    number:          "No. 05",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
     title:           "Quiet Shore",
     caption:         "Still water.  Deep history.",
     altText:         "Utah mountain reflection watercolor print -- Cedar Mountains reflected in still water with golden marsh grass",
     description:     "This is one of the quietest places in Utah -- and one of the most storied.  The still water in the foreground reflects the Cedar Mountains, a 45-mile range whose name is itself a small piece of history -- early pioneers who settled this country called the juniper trees cedars, and the name stuck long after the mistake was recognized.  The ghost town of Aragonite sits nearby, named for the mineral once mined from these hills, now uninhabited and almost entirely gone.  The road that runs through here is the Hastings Cutoff -- the same route the Donner Party followed in 1846 on their ill-fated journey west, their wagons becoming mired in the mud just below the salt crust a few miles from this very spot.  None of that history is visible in this image.  What remains is the water, the mountains, the golden marsh grass, and a silence so complete it is almost impossible to believe the stories buried beneath it.  Rendered with a watercolor finish from an original photograph, this print captures a landscape that has seen everything and gives nothing away.",
     images: {
-      main:    "images/american-west/quiet-shore.jpg",
+      main:    "images/landscapes/quiet-shore.jpg",
       room:    "images/mockups/quiet-shore-room.jpg",
       framed:  "images/mockups/quiet-shore-framed.jpg",
       canvas:  "images/mockups/quiet-shore-canvas-wrap.jpg",
@@ -986,16 +986,16 @@ const PRODUCTS = {
 
   "red-rock-light": {
     id:              "red-rock-light",
-    number:          "No. 08",
-    collection:      "american-west",
-    collectionLabel: "American West",
-    collectionPage:  "american-west.html",
+    number:          "No. 06",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
     title:           "Red Rock Light",
     caption:         "The road doesn't need a name.  Neither does the feeling.",
     altText:         "Utah red rock road watercolor print -- BLM dirt road leading toward red and white sandstone cliffs with sagebrush",
     description:     "The road doesn't have a name.  It doesn't need one.  Bureau of Land Management roads like this one thread through millions of acres of public land across the American West -- unpaved, unmarked, and leading toward some of the most extraordinary geology on earth.  Those red and white cliffs are Entrada and Navajo Sandstone, laid down 150 to 200 million years ago when this part of Utah was a vast desert of shifting dunes.  The red comes from iron oxide -- rust, essentially -- that coated every grain of sand as it was deposited, layer by layer, era by era, until the earth compressed it all into the striped canyon walls you see today.  Each horizontal band is a different chapter of time, readable to anyone patient enough to look.  The sagebrush and juniper flanking the road have been here considerably less long -- only a few thousand years -- but they belong to this landscape as completely as the rock itself.  Rendered with a watercolor finish from an original photograph taken along a BLM road in rural Utah, this print captures the particular feeling of a road that goes somewhere worth going -- and the particular freedom of being the one driving it.",
     images: {
-      main:    "images/american-west/red-rock-light.jpg",
+      main:    "images/landscapes/red-rock-light.jpg",
       room:    "images/mockups/red-rock-light-room.jpg",
       framed:  "images/mockups/red-rock-light-framed.jpg",
       canvas:  "images/mockups/red-rock-light-canvas-wrap.jpg",
@@ -1012,8 +1012,518 @@ const PRODUCTS = {
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
-  }
-
+  },
+    
+  "stargazer": {
+    id:              "stargazer",
+    number:          "No. 04",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Stargazer",
+    caption:         "Some flowers don't wait to be noticed.",
+    altText:         "Stargazer lily watercolor print -- vivid pink and white Stargazer lily in full bloom with deep magenta stripes and golden stamens",
+    description:     "The Stargazer lily did not exist before 1978.  It was created by a California lily breeder named Leslie Woodriff, who spent years crossing Oriental and Asiatic varieties to produce a bloom that faced upward toward the sky rather than drooping like most lilies of its kind.  He named it Stargazer for exactly that reason.  It became one of the best-selling cut flowers in the world within a decade of its introduction, its fragrance so powerful that a single bloom can scent an entire room.  The deep magenta stripes radiating from the center follow the same Fibonacci geometry found in sunflowers and pinecones -- nature's preferred organizational pattern, present in nearly every flower that has ever opened.  Photographed in close detail and rendered with a watercolor finish from an original photograph, this print captures the Stargazer at full bloom -- every petal a small argument for paying closer attention to the things that grow quietly around us.",
+    images: {
+      main:    "images/botanical-studies/stargazer.jpg",
+      room:    "images/mockups/stargazer-room.jpg",
+      framed:  "images/mockups/stargazer-framed.jpg",
+      canvas:  "images/mockups/stargazer-canvas-wrap.jpg",
+      metal:   "images/mockups/stargazer-metal.jpg",
+        original: "images/originals/stargazer.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "blue-flax": {
+    id:              "blue-flax",
+    number:          "No. 05",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Blue Flax",
+    caption:         "Delicate by design.  Resilient by nature.",
+    altText:         "Blue flax wildflower watercolor print -- delicate sky-blue five-petaled blossoms on slender stems against a soft neutral background",
+    description:     "Blue flax has been part of the North American landscape for thousands of years, long before the botanist Frederick Pursh formally described it in 1814 and named it for Meriwether Lewis, who collected specimens along the Missouri River during the Corps of Discovery expedition.  Each individual blossom lasts only a single day -- opening in the morning, falling by afternoon -- but the plant produces new flowers continuously through the season, so the display never stops.  Native to the western United States and the Great Plains, it has naturalized across much of North America, appearing in meadows and roadsides with the kind of quiet persistence that easy beauty often hides.  The blue is not quite sky blue and not quite violet -- it shifts depending on the light, the time of day, and the angle from which you find it.  Rendered with a watercolor finish from an original photograph, this print captures a small cluster of blue flax at its most unguarded -- a few blooms and their buds on a pale ground, simple and completely certain of themselves.",
+    images: {
+      main:    "images/botanical-studies/blue-flax.jpg",
+      room:    "images/mockups/blue-flax-room.jpg",
+      framed:  "images/mockups/blue-flax-framed.jpg",
+      canvas:  "images/mockups/blue-flax-canvas-wrap.jpg",
+      metal:   "images/mockups/blue-flax-metal.jpg",
+        original: "images/originals/blue-flax.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    
+   "firefox": {
+    id:              "firefox",
+    number:          "No. 04",
+    collection:      "wildlife",
+    collectionLabel: "Wildlife",
+    collectionPage:  "wildlife.html",
+    title:           "Firefox",
+    caption:         "The original.  The one worth knowing.",
+    altText:         "Red panda watercolor print -- russet-furred red panda with alert dark eyes and striped tail perched on a branch with soft green background",
+    description:     "The red panda was described by Western science in 1825, nearly fifty years before anyone in the outside world had heard of the giant panda.  It was the original panda -- its name coming from the Nepali word 'ponya,' and its nickname 'firefox' predating any browser by more than a century.  Despite sharing a love of bamboo and a range that overlaps across the forests of the Himalayas and southwestern China, the red panda and the giant panda are not closely related.  The red panda is the only living member of its own family, Ailuridae, an evolutionary original with no close relatives anywhere on earth.  Fewer than 10,000 are estimated to remain in the wild, their numbers declining as the mountain forests they depend on shrink and fragment.  That expression -- alert, a little skeptical, entirely self-possessed -- is characteristic of an animal that has been doing things its own way for millions of years.  Rendered with a watercolor finish from an original photograph, this portrait introduces you to one of nature's most distinctive and least understood originals.",
+    images: {
+      main:    "images/wildlife/firefox.jpg",
+      room:    "images/mockups/firefox-room.jpg",
+      framed:  "images/mockups/firefox-framed.jpg",
+      canvas:  "images/mockups/firefox-canvas-wrap.jpg",
+      metal:   "images/mockups/firefox-metal.jpg",
+      original: "images/originals/firefox.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+   "rose-and-rust": {
+    id:              "rose-and-rust",
+    number:          "No. 03",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Rose and Rust",
+    caption:         "Softer in color.  Equal in song.",
+    altText:         "Female Northern cardinal watercolor print -- warm brown and rose-tinted female cardinal with orange bill perched on a winter branch",
+    description:     "The female Northern Cardinal is almost always the one people overlook.  He arrives first, he is louder in color, he takes the obvious perch.  She is quieter in plumage -- warm brown and buff with just enough red in the crest and wing to remind you what she is -- but in one important way she is his equal and then some.  The female Northern Cardinal sings, which is unusual among North American songbirds where only the male typically vocalizes.  She sings while sitting on the nest, likely to communicate with her mate about food delivery.  Her song is as complex and musical as his, and she has her own territorial calls.  That orange bill is the same on both -- bright, heavy, and perfectly designed for cracking open seeds that would defeat a smaller beak.  Rendered with a watercolor finish from an original photograph, this portrait asks you to look at the one who doesn't announce herself -- and to notice, once you do, how much you had been missing.",
+    images: {
+      main:    "images/avian-studies/rose-and-rust.jpg",
+      room:    "images/mockups/rose-and-rust-room.jpg",
+      framed:  "images/mockups/rose-and-rust-framed.jpg",
+      canvas:  "images/mockups/rose-and-rust-canvas-wrap.jpg",
+      metal:   "images/mockups/rose-and-rust-metal.jpg",
+      original: "images/originals/rose-and-rust.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },  
+    
+  "the-redbird": {
+    id:              "the-redbird",
+    number:          "No. 05",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "The Redbird",
+    caption:         "Unmistakable at any distance.",
+    altText:         "Northern cardinal watercolor print -- vivid red male cardinal perched on a weathered wooden rail against a soft green background",
+    description:     "The Northern Cardinal gets its name from the Roman Catholic cardinals whose brilliant red robes were as recognizable in the Old World as this bird is in the New.  The male is one of the only songbirds in North America clothed entirely in red -- no stripes, no patches, no hedging -- just that complete, unambiguous declaration of color against whatever background he chooses.  He is the state bird of seven states, including both Ohio and Kentucky, a distinction earned not by committee but by the simple fact that he is impossible to overlook and impossible to forget.  Unlike most migratory songbirds, the Northern Cardinal stays through winter, a flash of living red against snow and bare branches that has been stopping people mid-stride for centuries.  Photographed perched on a weathered wooden rail and rendered with a watercolor finish from an original photograph, this portrait puts you face to face with one of the most recognized birds in North America -- still, watchful, and entirely at home exactly where he is.",
+    images: {
+      main:    "images/avian-studies/the-redbird.jpg",
+      room:    "images/mockups/the-redbird-room.jpg",
+      framed:  "images/mockups/the-redbird-framed.jpg",
+      canvas:  "images/mockups/the-redbird-canvas-wrap.jpg",
+      metal:   "images/mockups/the-redbird-metal.jpg",
+      original: "images/originals/the-redbird.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "hidden-fire": {
+    id:              "hidden-fire",
+    number:          "No. 07",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Hidden Fire",
+    caption:         "Red finds a way to show through anything.",
+    altText:         "Northern cardinal watercolor print -- brilliant red male cardinal perched among green leafy branches in dappled light",
+    description:     "The Northern Cardinal male does not migrate, does not molt into a duller winter plumage, and does not apologize for being exactly as vivid in February as he is in July.  That consistency is part of what makes him so beloved -- he is the same bird in every season, the same declaration of red against whatever the world puts behind him.  The green branches surrounding him here are not background -- they are context, the cardinal's preferred habitat of woodland edges and dense shrubby cover where he can move quickly between open feeding areas and sheltered perches.  He defends his territory by song as much as by presence, one of the most recognizable voices in the North American dawn chorus.  Cardinals were once trapped and sold as cage birds in the United States -- a practice that continued until the Migratory Bird Treaty Act of 1918 finally made it illegal.  Rendered with a watercolor finish from an original photograph, this print captures him in his element -- brilliant, unhurried, and entirely on his own terms.",
+    images: {
+      main:    "images/avian-studies/hidden-fire.jpg",
+      room:    "images/mockups/hidden-fire-room.jpg",
+      framed:  "images/mockups/hidden-fire-framed.jpg",
+      canvas:  "images/mockups/hidden-fire-canvas-wrap.jpg",
+      metal:   "images/mockups/hidden-fire-metal.jpg",
+      original: "images/originals/hidden-fire.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "full-sail": {
+    id:              "full-sail",
+    number:          "No. 09",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Full Sail",
+    caption:         "Built for speed.  Built for beauty.  Built for both.",
+    altText:         "Tree swallow watercolor print -- iridescent blue-green tree swallow photographed in full flight with wings outstretched against open sky.",
+    description:     "The Tree Swallow is one of the most acrobatic fliers in North America, capable of turns and reversals at speed that seem to defy physics -- and this image catches it at full wing extension, every primary feather spread and readable against a soft watercolor sky.  That iridescent blue-green is not pigment in the conventional sense.  It is structural color, produced by the microscopic arrangement of the feather's surface, which reflects light differently depending on the angle -- shifting from deep blue to turquoise to almost green as the bird moves.  Tree Swallows are among the first migratory birds to return in spring, arriving in the Ohio and Kentucky region as early as late February, often before the insects they depend on are reliably flying.  They survive cold snaps by switching temporarily to berries -- a dietary flexibility rare among swallows and one of the reasons they can push the season further than almost any of their relatives.  Rendered with a watercolor finish from an original photograph, this print captures a single perfect moment of flight -- wings out, the air entirely cooperative, everything working exactly as it was designed to.",
+    images: {
+      main:    "images/avian-studies/full-sail.jpg",
+      room:    "images/mockups/full-sail-room.jpg",
+      framed:  "images/mockups/full-sail-framed.jpg",
+      canvas:  "images/mockups/full-sail-canvas-wrap.jpg",
+      metal:   "images/mockups/hidden-full-sail.jpg",
+      original: "images/originals/full-sail.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "night-shift": {
+    id:              "night-shift",
+    number:          "No. 10",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Night Shift",
+    caption:         "Twelve hours of dark.  Not a moment wasted.",
+    altText:         "Great horned owl watercolor print -- great horned owl with intense yellow eyes and prominent ear tufts on a dark woodland perch.",
+    description:     "The Great Horned Owl is one of the most powerful and adaptable raptors in North America -- and one of the most perfectly engineered for the work it does.  Those tufts are not ears.  They are feathers, used for communication and camouflage, arranged to break up the owl's silhouette against the bark of the trees where it roosts.  The actual ears are asymmetrical openings on either side of the skull, positioned at slightly different heights so the brain can triangulate the exact location of a sound in three dimensions -- a system so precise that a Great Horned Owl can locate and strike prey beneath a foot of snow in complete darkness.  It can rotate its head 270 degrees, compensating for eyes that are fixed in the skull and so large relative to its body that they cannot move.  The Great Horned Owl will eat almost anything -- rabbits, skunks, house cats, other raptors, Canada geese -- and is the only animal that regularly preys on skunks.  Rendered with a watercolor finish from an original photograph, this portrait captures a bird that has heard everything going on around it and is choosing, for the moment, not to act.",
+    images: {
+      main:    "images/avian-studies/night-shift.jpg",
+      room:    "images/mockups/night-shift-room.jpg",
+      framed:  "images/mockups/night-shift-framed.jpg",
+      canvas:  "images/mockups/night-shift-canvas-wrap.jpg",
+      metal:   "images/mockups/night-shift-metal.jpg",
+      original: "images/originals/night-shift.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+      
+   "ancient-falls": {
+    id:              "ancient-falls",
+    number:          "No. 01",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Ancient Falls",
+    caption:         "The water found its way long before the path did.",
+    altText:         "Hocking Hills waterfall watercolor print -- cascading waterfall over ancient Black Hand Sandstone into a mossy gorge in southeastern Ohio",
+    description:     "Hocking Hills State Park sits in the sandstone hill country of southeastern Ohio, carved over thousands of years by water finding its way through Black Hand Sandstone -- a formation laid down roughly 320 million years ago when this part of North America lay beneath a shallow coastal sea.  What looks like a waterfall in a remote wilderness is less than two hours from Cincinnati, tucked into a gorge thick with hemlock and fern that stays cool and green even in the height of summer.  The waterfall feeds a plunge pool at the base, the mist from the falling water keeping the surrounding rock perpetually damp and the moss perpetually alive.  The hemlock trees that line this gorge are old growth, survivors of an era before logging reached this particular hollow -- some of them hundreds of years old, their roots finding purchase in the sandstone walls the same way water does, patiently and without hurry.  Rendered with a watercolor finish from an original photograph, this print captures one of Ohio's most extraordinary natural places -- ancient, quiet, and worth every mile of the drive.",
+    images: {
+      main:    "images/landscapes/ancient-falls.jpg",
+      room:    "images/mockups/ancient-falls-room.jpg",
+      framed:  "images/mockups/ancient-falls-framed.jpg",
+      canvas:  "images/mockups/ancient-falls-canvas-wrap.jpg",
+      metal:   "images/mockups/ancient-falls-metal.jpg",
+      original: "images/originals/ancient-falls.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "bluegrass-summer": {
+    id:              "bluegrass-summer",
+    number:          "No. 03",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Bluegrass Summer",
+    caption:         "Not a state of mind.  An actual place that looks exactly like this.",
+    altText:         "Kentucky bluegrass watercolor print -- rolling green pastures with white fence and still pond under a wide summer sky.",
+    description:     "The Bluegrass Region of Kentucky is named for a grass that is not actually blue.  Kentucky bluegrass produces small bluish-purple buds in spring that give the fields a blue cast from a distance -- but what you see here, in the full green of a Kentucky summer, is what the region looks like for most of the year.  Rolling limestone-rich hills, ponds fed by springs, white fences threading between pastures, the particular deep green that comes from soil built up over millennia on a foundation of karst.  That limestone is the key to everything -- it filters the water, enriches the grass, and has made this region the center of American Thoroughbred breeding for over two centuries.  Roughly half of all active North American Thoroughbreds trace their Kentucky roots directly to the farms and fields of this landscape.  The white animal grazing in the middle distance is a small piece of a much larger story, one that has been unfolding on these hills since Daniel Boone first described this country as a second paradise.  Rendered with a watercolor finish from an original photograph, this print captures a Kentucky summer afternoon exactly as it looks when you pull over and give it your full attention.",
+    images: {
+      main:    "images/landscapes/bluegrass-summer.jpg",
+      room:    "images/mockups/bluegrass-summer-room.jpg",
+      framed:  "images/mockups/bluegrass-summer-framed.jpg",
+      canvas:  "images/mockups/bluegrass-summer-canvas-wrap.jpg",
+      metal:   "images/mockups/bluegrass-summer-metal.jpg",
+      original: "images/originals/bluegrass-summer.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "kindred": {
+    id:              "kindred",
+    number:          "No. 02",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "Kindred",
+    caption:         "Trust built over years.  Shown in a moment.",
+    altText:         "Thoroughbred horse watercolor print -- two horses nuzzling nose to nose in a winter pasture with dark bare trees behind them",
+    description:     "Horses are among the most socially complex of all domesticated animals, and the bond between two horses that have chosen each other is one of the most consistent and recognizable relationships in the animal world.  They groom each other, stand together in all weather, grieve when separated, and in documented cases have refused to eat after the loss of a companion.  The word 'kindred' comes from the Old English for family -- those bound by blood or by bond -- and this is exactly what that looks like.  The palomino and the chestnut stand together with their heads touching, the dark background of bare winter trees framing them in the particular warm light that comes just before the cold sets in.  There is nothing performed about this.  They are simply where they want to be, with the one they want to be with.  Rendered with a watercolor finish from an original photograph, this print captures a moment of equine connection so plain and so complete that it requires no explanation from either of them.",
+    images: {
+      main:    "images/horse-country/kindred.jpg",
+      room:    "images/mockups/kindred-room.jpg",
+      framed:  "images/mockups/kindred-framed.jpg",
+      canvas:  "images/mockups/kindred-canvas-wrap.jpg",
+      metal:   "images/mockups/kindred-metal.jpg",
+        original: "images/originals/kindred.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "eye-to-eye": {
+    id:              "eye-to-eye",
+    number:          "No. 03",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "Eye to Eye",
+    caption:         "Horses decide in a moment whether you're worth their attention.  This one decided.",
+    altText:        "Thoroughbred horse watercolor print -- chestnut horse with blaze facing directly toward camera in close portrait",
+    description:     "The horse in this portrait is looking directly at you, and that is not an accident.  Horses decide very quickly whether a person is worth their attention, and the ones who have been treated well tend to greet curiosity with curiosity -- holding eye contact, reading the face in front of them, making a judgment that happens faster than you can track.  The chestnut coat in this image catches the light from directly ahead, the bokeh of the autumn trees behind going soft and warm, everything in the composition pointing toward that face and those eyes.  The blaze -- the white marking running down the center of the face -- is as individual as a fingerprint.  No two blazes are exactly alike, and experienced horsemen can identify individual animals by them from a considerable distance.  This horse is built heavily through the neck and chest, a frame that suggests draft blood somewhere in the lineage, the kind of quiet power that doesn't need to announce itself.  Rendered with a watercolor finish from an original photograph, this portrait puts you exactly where the title says -- looking directly into the face of an animal that has decided you are worth a moment of its complete attention.",
+    images: {
+      main:    "images/horse-country/eye-to-eye.jpg",
+      room:    "images/mockups/eye-to-eye-room.jpg",
+      framed:  "images/mockups/eye-to-eye-framed.jpg",
+      canvas:  "images/mockups/eye-to-eye-canvas-wrap.jpg",
+      metal:   "images/mockups/eye-to-eye-metal.jpg",
+        original: "images/originals/eye-to-eye.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+     
+    "the-lookout": {
+    id:              "the-lookout",
+    number:          "No. 04",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "The Lookout",
+    caption:         "Always aware.  Never alarmed.",
+    altText:         "Thoroughbred horse watercolor print -- chestnut horse in side profile standing alert in a soft green summer pasture",
+    description:     "The chestnut horse is not the most common color in the Thoroughbred world, but it is one of the oldest -- a warm reddish-brown coat produced by a recessive gene that has been present in horses since long before anyone was breeding them intentionally.  This one carries it well.  That neck, the set of the ears, the alert eye turned slightly toward the camera -- this is a horse that is aware of everything in its immediate environment and has decided, for the moment, that none of it requires action.  Horses have nearly 360-degree vision, with only two small blind spots -- directly in front of the nose and directly behind the tail -- and they process their surroundings constantly, their ears rotating independently to locate sounds the way a satellite dish tracks a signal.  The soft green background here is the kind of open pasture that horses evolved to read -- flat, visible, nowhere for a predator to hide.  Rendered with a watercolor finish from an original photograph, this portrait captures a horse in its preferred state -- aware, unhurried, and completely in charge of its own attention.",
+    images: {
+      main:    "images/horse-country/the-lookout.jpg",
+      room:    "images/mockups/the-lookout-room.jpg",
+      framed:  "images/mockups/the-lookout-framed.jpg",
+      canvas:  "images/mockups/the-lookout-canvas-wrap.jpg",
+      metal:   "images/mockups/the-lookout-metal.jpg",
+        original: "images/originals/the-lookout.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "three-wide": {
+    id:              "three-wide",
+    number:          "No. 05",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "Three Wide",
+    caption:         "When there's no room to spare, every inch is everything.",
+    altText:         "Thoroughbred horse racing watercolor print -- three racehorses mid-stride in green checkered and blue silks at Belterra Park",
+    description:     "Three horses, three jockeys, three entirely different ideas about who is going to win.  Belterra Park opened in 1999 on the banks of the Ohio River in Anderson Township, bringing Thoroughbred racing back to the Cincinnati area after a long absence and establishing itself as one of the premier racing venues in the region.  The dirt track that looks so simple from the grandstand is anything but -- its composition, moisture content, and maintenance affect every race run on it, and the horses that learn to read it fastest are the ones who run on it best.  In this moment the outcome is genuinely undecided.  The green-silked jockey on the left has the inside position.  The checkered silks in the center has the whip raised.  The blue silks on the right has the angle.  The dirt flying behind them is the sound you can almost hear from here.  Rendered with a watercolor finish from an original photograph taken at Belterra Park, this print puts you at the rail for the moment before everything is decided.",
+    images: {
+      main:    "images/horse-country/three-wide.jpg",
+      room:    "images/mockups/three-wide-room.jpg",
+      framed:  "images/mockups/three-wide-framed.jpg",
+      canvas:  "images/mockups/three-wide-canvas-wrap.jpg",
+      metal:   "images/mockups/three-wide-metal.jpg",
+        original: "images/originals/three-wide.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "the-win": {
+    id:              "the-win",
+    number:          "No. 06",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "The Win",
+    caption:         "This is what it looks like the moment everything is decided.",
+    altText:         "Thoroughbred horse racing watercolor print -- three racehorses driving toward the finish line with jockey in red and white silks celebrating",
+    description:     "This is what it looks like at the exact moment everything is decided.  The jockey in the red and white silks has the whip raised high -- not urging now, but celebrating, the finish line already behind him, the race already his.  The two horses flanking him on either side are still running, still fighting for position, still in the race that he has already won.  Belterra Park in Anderson Township, Ohio has been the home of Cincinnati-area Thoroughbred racing since 1999, and moments like this one are why people keep coming back to the rail.  The crowd behind the wire fence is a blur.  The building beyond them is barely there.  Nothing in this image exists except the finish line that was just crossed and the man on the horse who crossed it first.  Thoroughbred racing has been called the sport of kings, which understates what it costs and overstates who benefits -- but it does not overstate what it looks like at this exact moment.  Rendered with a watercolor finish from an original photograph taken at Belterra Park, this print captures the win -- the raised whip, the open celebration, the brief and brilliant moment when everything went exactly right.",
+    images: {
+      main:    "images/horse-country/the-win.jpg",
+      room:    "images/mockups/the-win-room.jpg",
+      framed:  "images/mockups/the-win-framed.jpg",
+      canvas:  "images/mockups/the-win-canvas-wrap.jpg",
+      metal:   "images/mockups/the-win-metal.jpg",
+        original: "images/originals/the-win.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "nose-to-nose": {
+    id:              "nose-to-nose",
+    number:          "No. 07",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "Nose to Nose",
+    caption:         "At speed, a length is a lifetime.",
+    altText:         "Thoroughbred horse racing watercolor print -- two racehorses neck and neck with numbers 7 and 4 visible in a close finish",
+    description:     "In Thoroughbred racing, a nose is an official margin of victory -- the smallest winning distance recognized, smaller than a head, smaller than a neck, smaller than the length of time it takes to register what you are seeing.  At Belterra Park in Anderson Township, Ohio, this is the kind of race that keeps people at the rail long after the favorite has finished comfortably in front.  Horse number seven and horse number four are running as if they share a single intention -- bodies at full extension, legs out of phase, each one occupying exactly the space the other one wants.  The jockey in the checkered silks is not looking at number four.  Number four's jockey is not looking at number seven.  They are both looking at where they are going, because at this speed there is no time to look anywhere else.  Rendered with a watercolor finish from an original photograph taken at Belterra Park, this print captures the particular drama of a race that will be decided by something smaller than a breath.",
+    images: {
+      main:    "images/horse-country/nose-to-nose.jpg",
+      room:    "images/mockups/nose-to-nose-room.jpg",
+      framed:  "images/mockups/nose-to-nose-framed.jpg",
+      canvas:  "images/mockups/nose-to-nose-canvas-wrap.jpg",
+      metal:   "images/mockups/nose-to-nose-metal.jpg",
+        original: "images/originals/nose-to-nose.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "in-the-clear": {
+    id:              "in-the-clear",
+    number:          "No. 02",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "In the Clear",
+    caption:         "Once you're ahead, all you hear is your own hoofbeats.",
+    altText:         "Thoroughbred horse racing watercolor print -- lone racehorse number 5 in green silks pulling ahead on the track at Belterra Park",
+    description:     "There is a moment in every race when one horse simply opens up a lead that the others cannot answer.  Number five has found that moment.  The green silks match the number on the saddle cloth and the color of the turf beyond the rail -- everything in this image pointing forward, everything in motion, the dirt kicking up behind hooves that are covering ground faster than they appear to be.  Belterra Park in Anderson Township, Ohio sits on the banks of the Ohio River, its backstretch visible from the Kentucky side on a clear day.  The horses that run here are Thoroughbreds -- a breed developed in England in the 17th and 18th centuries by crossing native mares with three founding Arabian stallions, every registered Thoroughbred alive today traceable through an unbroken line to one of those three horses.  What looks like open track ahead of number five is actually the hardest part of the race -- holding the lead when the pack behind you has everything to gain and nothing to lose.  Rendered with a watercolor finish from an original photograph taken at Belterra Park, this print captures the moment when the race becomes a conversation between one horse and the clock.",
+    images: {
+      main:    "images/horse-country/in-the-clear.jpg",
+      room:    "images/mockups/in-the-clear-room.jpg",
+      framed:  "images/mockups/in-the-clear-framed.jpg",
+      canvas:  "images/mockups/in-the-clear-canvas-wrap.jpg",
+      metal:   "images/mockups/in-the-clear-metal.jpg",
+        original: "images/originals/in-the-clear.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
 };
 
 
@@ -1028,22 +1538,30 @@ const COLLECTIONS = {
   "botanical-studies": [
     "waterlily-in-bloom",
     "golden-hour",
-    "redbuds-in-bloom"
+    "redbuds-in-bloom",
+    "stargazer",
+    "blue-flax"
   ],
   "wildlife": [
     "focused-intent",
     "pathfinder",
-    "untamed-majesty"
+    "untamed-majesty",
+    "firefox"
   ],
   "avian-studies": [
+    "crimson",
     "american-glory",
+    "rose-and-rust",    
+    "the-mantle",
+    "the-redbird",  
     "isis",
+    "hidden-fire",
     "apollo",
+    "full-sail",
+    "night-shift",  
     "quiet-perch",
     "sentinels-watch",
-    "still-waters",
-    "the-mantle",
-    "crimson"
+    "still-waters"
   ],
   "cincinnati": [
     "ault-park-ascent",
@@ -1052,24 +1570,35 @@ const COLLECTIONS = {
     "love-the-cov",
     "queen-city-overture",
     "the-grand-terminal",
-    "the-queens-crown"
-  ],
-  "americana": [
-    "dawns-early-light",
-    "biko",
-    "lakeside-solitude",
-    "pasture-calm"
+    "the-queens-crown",
+    "dawns-early-light"
   ],
   "american-west": [
-    "blue-channels",
     "forgotten-miles",
     "crossroads",
     "homestead",
-    "high-desert-mustang",
-    "night-watch",
-    "quiet-shore",
-    "red-rock-light"
-  ]
+    "pasture-calm"
+  ],
+    "landscapes": [
+    "ancient-falls",
+    "blue-channels",
+    "bluegrass-summer",
+    "lakeside-solitude",
+    "quiet-shore",   
+    "red-rock-light",    
+    "night-watch" 
+  ],
+    "horse-country": [
+    "biko",
+    "kindred",    
+    "eye-to-eye",
+    "the-lookout", 
+    "three-wide",
+    "the-win",
+    "nose-to-nose",
+    "in-the-clear",    
+    "high-desert-mustang"  
+   ]
 };
 
 
