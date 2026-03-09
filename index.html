@@ -377,9 +377,6 @@
       background: var(--cream);
     }
 
-     /* ══════════════════════════════════════════
-      Captured. Transformed. Created
-      ══════════════════════════════════════════ */  
     .about-section h2 {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 300;
@@ -389,9 +386,6 @@
       margin-bottom: 1.4rem;
     }
 
-    /* ══════════════════════════════════════════
-      Every Print Begins..... 
-      ══════════════════════════════════════════ */  
     .about-section p {
       font-family: 'Jost', sans-serif;
       font-weight: 300;
@@ -402,7 +396,7 @@
     }
 
     /* ═══════════════════════════════════════════════════════════════
-       COLLECTIONS GRID
+       COLLECTIONS GRID -- 7 collections, 4+3 layout
     ════════════════════════════════════════════════════════════════ */
     .collections {
       position: relative;
@@ -422,33 +416,23 @@
       margin-bottom: 2.5rem;
     }
 
-    .collections-grid {
+    /* Top row: 4 equal cards */
+    .collections-row-top {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: auto auto;
+      grid-template-columns: repeat(4, 1fr);
       gap: 1.2rem;
       max-width: 1300px;
+      margin: 0 auto 1.2rem auto;
+    }
+
+    /* Bottom row: 3 slightly wider cards, centered */
+    .collections-row-bottom {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      max-width: 975px;
       margin: 0 auto;
     }
-
-    .collections-grid > .collection-card:first-child {
-      grid-row: 1 / 3;
-      grid-column: 1 / 2;
-    }
-
-    .collections-grid > .collection-card:last-child {
-      grid-row: 1 / 3;
-      grid-column: 4 / 5;
-    }
-
-    .collections-grid > div {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      gap: 1.2rem;
-      align-self: stretch;
-    }
-
-    .collections-grid > div .collection-card { height: 100%; }
 
     .collection-card {
       position: relative;
@@ -457,13 +441,13 @@
       text-decoration: none;
       display: block;
       background: var(--linen);
+      aspect-ratio: 4 / 3;
     }
 
     .collection-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      min-height: 200px;
       display: block;
       filter: saturate(0.85);
       transition: transform 0.8s ease, filter 0.8s ease;
@@ -606,16 +590,8 @@
       .story-final-text { padding: 2rem 1.5rem; }
 
       .collections { padding: 4rem 1.5rem 5rem; }
-      .collections-grid { grid-template-columns: 1fr 1fr; }
-      .collections-grid > .collection-card:first-child,
-      .collections-grid > .collection-card:last-child {
-        grid-row: auto;
-        grid-column: auto;
-      }
-      .collections-grid > div {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-      }
+      .collections-row-top { grid-template-columns: repeat(2, 1fr); }
+      .collections-row-bottom { grid-template-columns: repeat(2, 1fr); max-width: 100%; }
 
       .other-collections { padding: 4rem 1.5rem; }
     }
@@ -649,18 +625,8 @@
 
       .collections { padding: 3rem 1rem 4rem; }
       .collections-label { font-size: 1.1rem; letter-spacing: 0.2em; }
-      .collections-grid { grid-template-columns: 1fr; gap: 0.8rem; }
-      .collections-grid > .collection-card:first-child,
-      .collections-grid > .collection-card:last-child {
-        grid-row: auto;
-        grid-column: auto;
-      }
-      .collections-grid > div {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-        gap: 0.8rem;
-      }
-      .collection-card img { min-height: 260px; }
+      .collections-row-top,
+      .collections-row-bottom { grid-template-columns: 1fr; max-width: 100%; }
       .collection-name { font-size: 1.4rem; }
 
       .other-collections { padding: 3rem 1rem; }
@@ -669,35 +635,10 @@
 
       footer { padding: 2rem 1rem; }
     }
-      
-        /* ═══════════════════════════════════════════════════════════════
-       IMAGE PROTECTION  ★★★  IMPORTANT -- DO NOT REMOVE  ★★★
-       ─────────────────────────────────────────────────────────────
-       This is a multi-layer system that prevents visitors from
-       copying, downloading, or right-click-saving your images.
 
-       Layer 1: CSS on all <img> tags
-         - pointer-events: none  = can't click on images
-         - user-select: none     = can't select/highlight images
-         - user-drag: none       = can't drag images to desktop
-         - touch-callout: none   = prevents "Save Image" on mobile
-
-       Layer 2: Re-enable clicks on things that NEED to be clickable
-         (links, buttons, nav items)
-
-       Layer 3: Invisible overlays
-         - .print-image::before  = covers each artwork image
-         - .slide::after         = covers each slideshow image
-
-       Layer 4: JavaScript (at the bottom of this file)
-         - Blocks right-click on images
-         - Blocks drag-and-drop on images
-
-       ⚠️  This won't stop a determined developer, but it stops
-       95% of casual image theft.  DO NOT remove any of these
-       four layers.
+    /* ═══════════════════════════════════════════════════════════════
+       IMAGE PROTECTION  -- DO NOT REMOVE
     ════════════════════════════════════════════════════════════════ */
-    /* Layer 1: Make all images non-interactive */
     img {
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -707,15 +648,10 @@
       -webkit-touch-callout: none;
       pointer-events: none;
     }
-    /* Layer 2: Re-enable clicks on navigation elements */
     a, button, .btn-view, .header-cart, .strip-link, .collection-link { pointer-events: auto; }
-    
-    /* Layer 3: Invisible overlays that sit on top of images */
-      
     .card-image-side::before { content: ''; position: absolute; inset: 0; z-index: 3; }
-.collection-card::before { content: ''; position: absolute; inset: 0; z-index: 3; }
-#story-bg::before { content: ''; position: absolute; inset: 0; z-index: 3; }
-      
+    .collection-card::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+    #story-bg::before { content: ''; position: absolute; inset: 0; z-index: 3; }
 
   </style>
 </head>
@@ -737,11 +673,13 @@
        COLLECTIONS STRIP -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
+    <a href="index.html"             class="strip-link">Home</a>
     <a href="wildlife.html"          class="strip-link">Wildlife</a>
     <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
     <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
     <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
-    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="horse-country.html"     class="strip-link">Horse Country</a>
+    <a href="landscapes.html"        class="strip-link">Landscapes</a>
     <a href="american-west.html"     class="strip-link">American West</a>
   </div>
 
@@ -757,7 +695,7 @@
            src="images/botanical-studies/redbuds-in-bloom.jpg"
            alt="Redbuds in Bloom watercolor fine art print of Eastern Redbud blossoms in Cincinnati spring by Deborah Heinlen" />
       <img class="bg-image" data-index="1"
-           src="images/american-west/night-watch.jpg"
+           src="images/landscapes/night-watch.jpg"
            alt="Night Watch watercolor fine art print of the Milky Way over the Utah desert by Deborah Heinlen" />
       <img class="bg-image" data-index="2"
            src="images/avian-studies/crimson.jpg"
@@ -803,7 +741,7 @@
 
       <div class="story-card" data-bg="2">
         <div class="card-image-side">
-          <img src="images/americana/biko.jpg"
+          <img src="images/horse-country/biko.jpg"
                alt="Biko watercolor fine art print of a rescued Thoroughbred horse in Lexington Kentucky by Deborah Heinlen" />
         </div>
         <div class="card-text-side card-text-biko">
@@ -819,11 +757,11 @@
 
       <div class="story-card" data-bg="3">
         <div class="card-image-side">
-          <img src="images/american-west/red-rock-light.jpg"
-               alt="Red Rock Light watercolor fine art print of a BLM dirt road through Utah red rock canyon country by Deborah Heinlen" />
+          <img src="images/landscapes/night-watch.jpg"
+               alt="Night Watch watercolor fine art print of the Milky Way over the Utah desert by Deborah Heinlen" />
         </div>
         <div class="card-text-side card-text-utah">
-          <p>Part photograph. Part painting.</p>
+          <p>Part photograph.  Part painting.</p>
         </div>
       </div>
 
@@ -851,13 +789,15 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       COLLECTIONS GRID
+       COLLECTIONS GRID -- 7 collections, 4 top + 3 bottom
        To update the representative image for each collection:
        update the src attribute on the img tag inside that card.
   ════════════════════════════════════════════════════════════════ -->
   <section class="collections" id="collections">
     <p class="collections-label">Browse the Collections</p>
-    <div class="collections-grid">
+
+    <!-- Top row: 4 collections -->
+    <div class="collections-row-top">
 
       <a href="wildlife.html" class="collection-card">
         <img src="images/wildlife/pathfinder.jpg"
@@ -868,40 +808,16 @@
         </div>
       </a>
 
-      <div>
-        <a href="botanical-studies.html" class="collection-card">
-          <img src="images/botanical-studies/waterlily-in-bloom.jpg"
-               alt="Waterlily in Bloom watercolor fine art print of a purple water lily bud at the Dallas Arboretum by Deborah Heinlen" />
-          <div class="collection-info">
-            <span class="collection-name">Botanical Studies</span>
-            <span class="collection-count"></span>
-          </div>
-        </a>
-        <a href="cincinnati.html" class="collection-card">
-          <img src="images/cincinnati/queen-city-overture.jpg"
-               alt="Queen City Overture watercolor fine art print of Cincinnati Music Hall High Victorian Gothic architecture by Deborah Heinlen" />
-          <div class="collection-info">
-            <span class="collection-name">Cincinnati</span>
-            <span class="collection-count"></span>
-          </div>
-        </a>
-        <a href="horse-country.html" class="collection-card">
-          <img src="images/horse-country/biko.jpg"
-               alt="Biko watercolor fine art print of a thoroughbred horse by Deborah Heinlen" />
-          <div class="collection-info">
-            <span class="collection-name">Horse Country</span>
-            <span class="collection-count"></span>
-          </div>
-        </a>
-        <a href="american-west.html" class="collection-card">
-          <img src="images/american-west/crossroads.jpg"
-               alt="Crossroads watercolor fine art print of a weathered signpost near Moab Utah at Little Far West by Deborah Heinlen" />
-          <div class="collection-info">
-            <span class="collection-name">American West</span>
-            <span class="collection-count"></span>
-          </div>
-        </a>
-        <a href="avian-studies.html" class="collection-card">
+      <a href="botanical-studies.html" class="collection-card">
+        <img src="images/botanical-studies/waterlily-in-bloom.jpg"
+             alt="Waterlily in Bloom watercolor fine art print of a purple water lily bud at the Dallas Arboretum by Deborah Heinlen" />
+        <div class="collection-info">
+          <span class="collection-name">Botanical Studies</span>
+          <span class="collection-count"></span>
+        </div>
+      </a>
+
+      <a href="avian-studies.html" class="collection-card">
         <img src="images/avian-studies/the-mantle.jpg"
              alt="The Mantle watercolor fine art print of a bald eagle with wings fully spread mantling by Deborah Heinlen" />
         <div class="collection-info">
@@ -909,10 +825,50 @@
           <span class="collection-count"></span>
         </div>
       </a>
+
+      <a href="cincinnati.html" class="collection-card">
+        <img src="images/cincinnati/queen-city-overture.jpg"
+             alt="Queen City Overture watercolor fine art print of Cincinnati Music Hall High Victorian Gothic architecture by Deborah Heinlen" />
+        <div class="collection-info">
+          <span class="collection-name">Cincinnati</span>
+          <span class="collection-count"></span>
+        </div>
+      </a>
+
     </div>
-      
-      
-      
+
+    <!-- Bottom row: 3 collections, centered -->
+    <div class="collections-row-bottom">
+
+      <a href="horse-country.html" class="collection-card">
+        <img src="images/horse-country/biko.jpg"
+             alt="Biko watercolor fine art print of a rescued Thoroughbred horse in Lexington Kentucky by Deborah Heinlen" />
+        <div class="collection-info">
+          <span class="collection-name">Horse Country</span>
+          <span class="collection-count"></span>
+        </div>
+      </a>
+
+      <a href="landscapes.html" class="collection-card">
+        <img src="images/landscapes/blue-channels.jpg"
+             alt="Blue Channels watercolor fine art print of water channels in the Great Salt Lake of Utah by Deborah Heinlen" />
+        <div class="collection-info">
+          <span class="collection-name">Landscapes</span>
+          <span class="collection-count"></span>
+        </div>
+      </a>
+
+      <a href="american-west.html" class="collection-card">
+        <img src="images/american-west/crossroads.jpg"
+             alt="Crossroads watercolor fine art print of a weathered signpost near Moab Utah at Little Far West by Deborah Heinlen" />
+        <div class="collection-info">
+          <span class="collection-name">American West</span>
+          <span class="collection-count"></span>
+        </div>
+      </a>
+
+    </div>
+
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -922,14 +878,13 @@
     <h2>Explore Further</h2>
     <p>More collections from Deborah Heinlen Fine Art</p>
     <nav class="collections-row" aria-label="All collections">
-      <a href="index.html"             class="collection-link">Home</a>
       <a href="wildlife.html"          class="collection-link">Wildlife</a>
       <a href="botanical-studies.html" class="collection-link">Botanical Studies</a>
       <a href="avian-studies.html"     class="collection-link">Avian Studies</a>
       <a href="cincinnati.html"        class="collection-link">Cincinnati</a>
-      <a href="landscapes.html"         class="collection-link">Landscapes</a>
-      <a href="american-west.html"     class="collection-link">American West</a>
       <a href="horse-country.html"     class="collection-link">Horse Country</a>
+      <a href="landscapes.html"        class="collection-link">Landscapes</a>
+      <a href="american-west.html"     class="collection-link">American West</a>
     </nav>
   </section>
 
@@ -1003,10 +958,10 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
-      
- document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-});
+
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
     document.addEventListener('dragstart', function(e) {
       if (e.target.tagName === 'IMG') { e.preventDefault(); }
     });
