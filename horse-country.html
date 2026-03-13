@@ -46,6 +46,7 @@
     @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
     .interlude { background: var(--linen); text-align: center; padding: 4rem 2rem; border-top: 1px solid rgba(200, 184, 154, 0.25); border-bottom: 1px solid rgba(200, 184, 154, 0.25); }
     .interlude span { font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-light); }
+      
     .prints-section { padding: 0; margin: 0; display: flex; flex-direction: column; background: #304878; }
     .print-row { display: grid; grid-template-columns: 1fr 1fr; min-height: 85vh; opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .print-row.visible { opacity: 1; transform: translateY(0); }
@@ -57,9 +58,10 @@
     /* Kindred*/
     .print-row[data-print="kindred"] { background: linear-gradient(to right, #304878 0%, #3a5898 50%, #5878b8 100%); }
     .print-row[data-print="kindred"] .print-text .print-number,
-    .print-row[data-print="kindred"] .print-text .print-caption { color: #c8d8f0; }
-    .print-row[data-print="kindred"] .print-text .print-title { color: #e0ecff; }
-    .print-row[data-print="kindred"] .print-text .btn-view { color: #c8d8f0; border-color: rgba(200, 216, 240, 0.5); }
+    .print-row[data-print="kindred"] .print-text .print-caption { color: #d0e8c0; }
+    .print-row[data-print="kindred"] .print-text .print-title { color: #d0e8c0; }
+    .print-row[data-print="kindred"] .print-text .btn-view { color: #d0e8c0; }
+      border-color: rgba(200, 216, 240, 0.5); }
     .print-row[data-print="kindred"] .print-text .btn-view::before { background: rgba(50, 80, 160, 0.5); }
 
     /* Biko */
@@ -119,11 +121,20 @@
     .print-row[data-print="high-desert-mustang"] .print-text .btn-view::before { background: rgba(60, 100, 50, 0.5); }
 
     /* The Lookout-- light warm, dark text default */
-    .print-row[data-print="the-lookout"] { background: linear-gradient(to right, #e8dcc0 0%, #d8c8a0 50%, #c89070 100%); }
+    .print-row[data-print="the-lookout"] { background: linear-gradient(to right, #733A2D 0%, #c89070 50%, #c89070 100%); }
+    .print-row[data-print="the-lookout"] .print-text .print-number,
+    .print-row[data-print="the-lookout"] .print-text .print-caption { color: #d0e8c0; }
+    .print-row[data-print="the-lookout"] .print-text .print-title { color: #e8f8d8; }
+    .print-row[data-print="the-lookout"] .print-text .btn-view { color: #d0e8c0; border-color: rgba(208, 232, 192, 0.5); }
+    .print-row[data-print="the-lookout"] .print-text .btn-view::before { background: rgba(60, 100, 50, 0.5); }
+      
+      
+      
 
     .print-image { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 3rem; background: transparent; }
     .print-image img { display: block; width: 100%; max-height: 75vh; aspect-ratio: 5 / 4; object-fit: contain; border-radius: 1px; filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.25)); }
     .print-text { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 5rem 5rem 5rem 4.5rem; overflow: hidden; background: transparent; }
+      
     .print-text::after { content: ''; position: absolute; inset: 0; opacity: 0.02; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 200px 200px; pointer-events: none; }
     .print-text-inner { position: relative; z-index: 2; text-align: center; }
     .print-number { font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-light); margin-bottom: 1.5rem; }

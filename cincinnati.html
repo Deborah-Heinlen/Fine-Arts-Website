@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
   <style>
     :root { --cream: #f5f0e8; --linen: #ede8dc; --warm-tan: #c8b89a; --text-dark: #2e2419; --text-mid: #6b5c4a; --text-light: #9e8e7a; }
+      
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { background: #f2ede8; color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
@@ -55,58 +56,60 @@
     /* The Queen's Crown */
     .print-row[data-print="the-queens-crown"] { background: linear-gradient(to right, #3c5870 0%, #4a6880 50%, #6a5830 100%); }
     .print-row[data-print="the-queens-crown"] .print-text .print-number,
-    .print-row[data-print="the-queens-crown"] .print-text .print-caption { color: #d8e8f0; }
-    .print-row[data-print="the-queens-crown"] .print-text .print-title { color: #eef6fa; }
-    .print-row[data-print="the-queens-crown"] .print-text .btn-view { color: #d8e8f0; border-color: rgba(216, 232, 240, 0.5); }
+    .print-row[data-print="the-queens-crown"] .print-text .print-caption { color: #ede8dc; }
+    .print-row[data-print="the-queens-crown"] .print-text .print-title { color: #ede8dc; }
+    .print-row[data-print="the-queens-crown"] .print-text .btn-view { color: #ede8dc; border-color: rgba(216, 232, 240, 0.5); }
     .print-row[data-print="the-queens-crown"] .print-text .btn-view::before { background: rgba(70, 110, 160, 0.5); }
 
     /* Gateway to the Queen City */
     .print-row[data-print="gateway-to-the-queen-city"] { background: linear-gradient(to right, #b88430 0%, #a87428 50%, #6888a8 100%); }
     .print-row[data-print="gateway-to-the-queen-city"] .print-text .print-number,
-    .print-row[data-print="gateway-to-the-queen-city"] .print-text .print-caption { color: #f0e8d8; }
-    .print-row[data-print="gateway-to-the-queen-city"] .print-text .print-title { color: #fff8e8; }
-    .print-row[data-print="gateway-to-the-queen-city"] .print-text .btn-view { color: #f0e8d8; border-color: rgba(240, 232, 216, 0.5); }
+    .print-row[data-print="gateway-to-the-queen-city"] .print-text .print-caption { color: #ede8dc; }
+    .print-row[data-print="gateway-to-the-queen-city"] .print-text .print-title { color: #ede8dc; }
+    .print-row[data-print="gateway-to-the-queen-city"] .print-text .btn-view { color: #ede8dc; border-color: rgba(240, 232, 216, 0.5); }
     .print-row[data-print="gateway-to-the-queen-city"] .print-text .btn-view::before { background: rgba(180, 130, 40, 0.5); }
 
     /* Queen City Overture */
     .print-row[data-print="queen-city-overture"] { background: linear-gradient(to right, #7078a8 0%, #6068a0 50%, #8890b8 100%); }
     .print-row[data-print="queen-city-overture"] .print-text .print-number,
-    .print-row[data-print="queen-city-overture"] .print-text .print-caption { color: #e8e8f4; }
-    .print-row[data-print="queen-city-overture"] .print-text .print-title { color: #f4f4ff; }
-    .print-row[data-print="queen-city-overture"] .print-text .btn-view { color: #e8e8f4; border-color: rgba(232, 232, 244, 0.5); }
+    .print-row[data-print="queen-city-overture"] .print-text .print-caption { color: #ede8dc; }
+    .print-row[data-print="queen-city-overture"] .print-text .print-title { color: #ede8dc; }
+    .print-row[data-print="queen-city-overture"] .print-text .btn-view { color: #ede8dc; border-color: rgba(232, 232, 244, 0.5); }
     .print-row[data-print="queen-city-overture"] .print-text .btn-view::before { background: rgba(110, 120, 180, 0.5); }
 
     /* Love the Cov */
     .print-row[data-print="love-the-cov"] { background: linear-gradient(to right, #7078a8 0%, #6068a0 50%, #a07878 100%); }
     .print-row[data-print="love-the-cov"] .print-text .print-number,
-    .print-row[data-print="love-the-cov"] .print-text .print-caption { color: #e8e8f4; }
-    .print-row[data-print="love-the-cov"] .print-text .print-title { color: #f4f4ff; }
-    .print-row[data-print="love-the-cov"] .print-text .btn-view { color: #e8e8f4; border-color: rgba(232, 232, 244, 0.5); }
+    .print-row[data-print="love-the-cov"] .print-text .print-caption { color: #ede8dc; }
+    .print-row[data-print="love-the-cov"] .print-text .print-title { color: #ede8dc; }
+    .print-row[data-print="love-the-cov"] .print-text .btn-view { color: #ede8dc; border-color: rgba(232, 232, 244, 0.5); }
     .print-row[data-print="love-the-cov"] .print-text .btn-view::before { background: rgba(110, 120, 180, 0.5); }
 
     /* The Grand Terminal */
     .print-row[data-print="the-grand-terminal"] { background: linear-gradient(to right, #607850 0%, #587048 50%, #789068 100%); }
     .print-row[data-print="the-grand-terminal"] .print-text .print-number,
-    .print-row[data-print="the-grand-terminal"] .print-text .print-caption { color: #e0ead8; }
-    .print-row[data-print="the-grand-terminal"] .print-text .print-title { color: #eef6e8; }
-    .print-row[data-print="the-grand-terminal"] .print-text .btn-view { color: #e0ead8; border-color: rgba(224, 234, 216, 0.5); }
+    .print-row[data-print="the-grand-terminal"] .print-text .print-caption { color: #ede8dc; }
+    .print-row[data-print="the-grand-terminal"] .print-text .print-title { color: #ede8dc; }
+    .print-row[data-print="the-grand-terminal"] .print-text .btn-view { color: #ede8dc; border-color: rgba(224, 234, 216, 0.5); }
     .print-row[data-print="the-grand-terminal"] .print-text .btn-view::before { background: rgba(100, 140, 90, 0.5); }
 
     /* Ault Park Ascent */
     .print-row[data-print="ault-park-ascent"] { background: linear-gradient(to right, #385838 0%, #304830 50%, #486848 100%); }
     .print-row[data-print="ault-park-ascent"] .print-text .print-number,
-    .print-row[data-print="ault-park-ascent"] .print-text .print-caption { color: #d8eed8; }
-    .print-row[data-print="ault-park-ascent"] .print-text .print-title { color: #eefaee; }
-    .print-row[data-print="ault-park-ascent"] .print-text .btn-view { color: #d8eed8; border-color: rgba(216, 238, 216, 0.5); }
+    .print-row[data-print="ault-park-ascent"] .print-text .print-caption { color: #ede8dc; }
+    .print-row[data-print="ault-park-ascent"] .print-text .print-title { color: #ede8dc; }
+    .print-row[data-print="ault-park-ascent"] .print-text .btn-view { color: #ede8dc; border-color: rgba(216, 238, 216, 0.5); }
     .print-row[data-print="ault-park-ascent"] .print-text .btn-view::before { background: rgba(60, 110, 60, 0.5); }
 
-    /* Incline to the Mount */
-    .print-row[data-print="incline-to-the-mount"] { background: linear-gradient(to right, #904030 0%, #803828 50%, #a05040 100%); }
-    .print-row[data-print="incline-to-the-mount"] .print-text .print-number,
-    .print-row[data-print="incline-to-the-mount"] .print-text .print-caption { color: #f0e0d0; }
-    .print-row[data-print="incline-to-the-mount"] .print-text .print-title { color: #fff0e0; }
-    .print-row[data-print="incline-to-the-mount"] .print-text .btn-view { color: #f0e0d0; border-color: rgba(240, 224, 208, 0.5); }
-    .print-row[data-print="incline-to-the-mount"] .print-text .btn-view::before { background: rgba(160, 80, 60, 0.5); }
+  
+      /* Dawn's Early Light */
+    .print-row[data-print="dawns-early-light"] { background: linear-gradient(to right, #0468BF 0%, #0B8AD9 50%, #3D9DD9 100%); }
+    .print-row[data-print="dawns-early-light"] .print-text .print-number,
+    .print-row[data-print="dawns-early-light"] .print-text .print-caption { color: #ede8dc; }
+    .print-row[data-print="dawns-early-light"] .print-text .print-title { color: #ede8dc; }
+    .print-row[data-print="dawns-early-light"] .print-text .btn-view { color: #ede8dc; border-color: rgba(240, 224, 208, 0.5); }
+    .print-row[data-print="dawns-early-light"] .print-text .btn-view::before { background: #0468BF66; }
+      
 
     .print-image { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 3rem; background: transparent; }
     .print-image img { display: block; width: 100%; max-height: 75vh; aspect-ratio: 5 / 4; object-fit: contain; border-radius: 1px; filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.25)); }
