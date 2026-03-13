@@ -10,7 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
   <style>
-    :root { --cream: #f5f0e8; --linen: #ede8dc; --warm-tan: #c8b89a; --text-dark: #2e2419; --text-mid: #6b5c4a; --text-light: #9e8e7a; }
+    :root { 
+        --cream: #f5f0e8; 
+        --linen: #ede8dc; 
+        --warm-tan: #c8b89a; 
+        --text-dark: #2e2419; 
+        --text-mid: #6b5c4a; 
+        --text-light: #9e8e7a; }
+      
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { background: #f2ede8; color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
@@ -58,14 +65,13 @@
    /* firefox-- warm golden, dark text default */
      .print-row[data-print="firefox"] { background: linear-gradient(to right, #d8c090 0%, #BF6A39 50%, #8C452B 100%); }  
       
-    .print-row[data-print="focused-intent"] .print-text .print-number,
-    .print-row[data-print="focused-intent"] .print-text .print-caption { color: cream; }
-    .print-row[data-print="focused-intent"] .print-text .print-title { color: cream; }
-    .print-row[data-print="focused-intent"] .print-text .btn-view { color: cream; border-color: rgba(58, 72, 40, 0.4); }
-    .print-row[data-print="focused-intent"] .print-text .btn-view::before { background: rgba(130, 160, 100, 0.4); }
+    .print-row[data-print="firefox"] .print-text .print-number,
+    .print-row[data-print="firefox"] .print-text .print-caption { color: cream; }
+    .print-row[data-print="firefox"] .print-text .print-title { color: cream; }
+    .print-row[data-print="firefox"] .print-text .btn-view { color: cream; border-color: rgba(58, 72, 40, 0.4); }
+    .print-row[data-print="firefox"] .print-text .btn-view::before { background: rgba(130, 160, 100, 0.4); }
       
       
-    
 
     /* Focused Intent -- sage green, dark text overrides */
     .print-row[data-print="focused-intent"] { background: linear-gradient(to right, #c8d8b0 0%, #b8c8a0 50%, #d8c890 100%); }
