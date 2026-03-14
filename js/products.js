@@ -166,36 +166,6 @@ const PRODUCTS = {
     }
   },
     
-    "first-fire": {
-    id:              "first-fire",
-    number:          "No. 06",
-    collection:      "botanical-studies",
-    collectionLabel: "Botanical Studies",
-    collectionPage:  "botanical-studies.html",
-    title:           "First Fire",
-    caption:         "The first one back. Always.",
-    altText:         "Fireweed watercolor print -- tall magenta-pink flower spikes of Alaskan fireweed in full bloom against soft green hills and a pale cloudy sky in Denali, Alaska",
-    description:     "Fireweed is the official state flower of Alaska, and it earned that distinction the hard way.  When wildfire moves through the boreal forest and leaves nothing but ash and silence, fireweed is the first living thing to return -- sometimes within weeks, covering scorched ground in a blaze of magenta-pink that signals the land is already healing.  Its name is not metaphor.  It is a record of what this plant does.  Each tall spike blooms from the bottom upward, one tier of blossoms at a time, and Alaskans have long used it as a calendar -- when the flowers reach the top of the spike, summer has six weeks left.  The entire plant is edible, and fireweed honey, produced by bees who work the blooms all season, is considered a delicacy across the north.  The feathery seeds travel on the wind for miles, finding every place that needs a beginning.  Rendered with a watercolor finish from an original photograph taken in Denali, Alaska, this print captures fireweed at the height of its season -- tall, unhurried, and completely certain that it belongs exactly where it stands.",
-    images: {
-      main:    "images/botanical-studies/first-fire.jpg",
-      room:    "images/mockups/first-fire-room.jpg",
-      framed:  "images/mockups/first-fire-framed.jpg",
-      canvas:  "images/mockups/first-fire-canvas-wrap.jpg",
-      metal:   "images/mockups/first-fire-metal.jpg",
-        original: "images/originals/first-fire.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
      "hilo-gold": {
     id:              "hilo-gold",
     number:          "No. 07",
@@ -1832,7 +1802,6 @@ const COLLECTIONS = {
     "redbuds-in-bloom",
     "stargazer",
     "blue-flax",
-    "first-fire",
     "hilo-gold",
     "kohala-fire",
     "lowcountry-red",
