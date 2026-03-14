@@ -1885,7 +1885,7 @@ const COLLECTIONS = {
     "quiet-shore",   
     "red-rock-light",    
     "night-watch",
-    "the-long-meld",
+    "the-long-melt",
     "reflections-of-wonder"
   ],
     "horse-country": [
