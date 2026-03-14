@@ -208,8 +208,8 @@ const PRODUCTS = {
     description:     "Wedelia did not start out Hawaiian.  Native to Mexico and Central America, it arrived on the islands the way so many things do -- carried, planted, and eventually released into a landscape that suited it so completely that it simply never left.  It is everywhere near Hilo now, a low cheerful ground cover that runs along roadsides and spills over garden edges with the easy confidence of something that has long since stopped asking permission.  Most people walk past it without a second glance.  It is too familiar to be remarkable, too common to be celebrated -- which is exactly the kind of oversight that a camera can correct.  Seen up close, that single yellow blossom is as precisely constructed as any flower in a formal garden, its petals arranged with the same mathematical care that nature applies to everything it makes.  The broad rounded leaves surrounding it catch and hold the soft diffused light that Hilo's famously generous rainfall produces.  Rendered with a watercolor finish from an original photograph taken near Hilo on the Big Island of Hawaii, this print is a quiet argument for looking down once in a while -- for noticing what has been there all along.",
     images: {
       main:    "images/botanical-studies/hilo-gold.jpg",
-      room:    "images/mockups/hilo-gold.jpg",
-      framed:  "images/mockups/hilo-gold.jpg",
+      room:    "images/mockups/hilo-gold-room.jpg",
+      framed:  "images/mockups/hilo-gold-framed.jpg",
       canvas:  "images/mockups/hilo-gold-canvas-wrap.jpg",
       metal:   "images/mockups/hilo-gold-metal.jpg",
         original: "images/originals/hilo-gold.jpg"
@@ -876,8 +876,8 @@ const PRODUCTS = {
     description:     "The saffron finch did not arrive in Hawaii by accident.  Native to South America, where it ranges from Colombia to Argentina, it was introduced to the Hawaiian Islands decades ago and has made itself entirely at home -- particularly on the Big Island, where it is now one of the more reliably cheerful sights in the landscape.  That yellow is not subtle.  The saffron finch wears it the way the sun wears it -- completely, without apology, as if there were never any other option.  The orange-red cap that gives the male his most distinctive feature deepens with age, a signal of experience that other finches apparently find worth paying attention to.  These two share a branch with the easy familiarity of birds who have long since decided the world is large enough for both of them.  Neither is performing.  Neither is particularly concerned with being watched.  Saffron finches are seed eaters, ground foragers by nature, but this pair has found a higher vantage point and seems to be in no hurry to leave it.  Rendered with a watercolor finish from an original photograph taken on the Big Island of Hawaii, this print captures a moment of uncomplicated and completely golden companionship.",
     images: {
       main:    "images/avian-studies/island-gold.jpg",
-      room:    "images/mockups/island-gold.jpg",
-      framed:  "images/mockups/island-gold.jpg",
+      room:    "images/mockups/island-gold-room.jpg",
+      framed:  "images/mockups/island-gold-framed.jpg",
       canvas:  "images/mockups/island-gold-canvas-wrap.jpg",
       metal:   "images/mockups/island-gold-metal.jpg",
         original: "images/originals/island-gold.jpg"
@@ -1764,9 +1764,9 @@ const PRODUCTS = {
     altText:         "Kenai Fjords glacier watercolor print -- massive blue tidewater glacier flowing between rust-colored canyon walls toward calm water in Kenai Fjords National Park, Alaska",
     description:     "The glacier you are looking at has been moving toward the sea for thousands of years, and it has never once been in a hurry.  Tidewater glaciers like this one in Kenai Fjords National Park are rivers of ice -- born in the snowfields high above, compressed over centuries into something ancient and dense, moving downhill under their own impossible weight at a pace measured in feet per day.  That blue is not a trick of the light.  Glacial ice is so compressed that it absorbs every color in the spectrum except blue, which it reflects back in shades that have no equivalent anywhere else in the natural world.  The rust and gold of the canyon walls on either side are the exposed bedrock the glacier has been carving for millennia, scraping and reshaping the Alaskan coastline one slow inch at a time.  Kenai Fjords National Park holds over 40 glaciers, and every one of them is a record of time written in ice and stone.  Rendered with a watercolor finish from an original photograph taken from the water in Kenai Fjords, this print captures a landscape that has been becoming itself since long before anyone was there to see it.",
     images: {
-      main:    "images/botanical-studies/the-long-melt.jpg",
-      room:    "images/mockups/the-long-melt.jpg",
-      framed:  "images/mockups/the-long-melt.jpg",
+      main:    "images/landscapes/the-long-melt.jpg",
+      room:    "images/mockups/the-long-melt-room.jpg",
+      framed:  "images/mockups/the-long-melt-framed.jpg",
       canvas:  "images/mockups/the-long-melt-canvas-wrap.jpg",
       metal:   "images/mockups/the-long-melt-metal.jpg",
         original: "images/originals/the-long-melt.jpg"
@@ -1795,8 +1795,8 @@ const PRODUCTS = {
     description:     "The Athabascan people named this mountain Denali -- the great one -- and left it at that, which turns out to have been the right call.  At 20,310 feet, it is the highest peak in North America, and on a clear day in Denali National Park it dominates the horizon in a way that makes every other landscape feel like a rehearsal.  Wonder Lake sits at mile 85 of the Denali Park Road, shallow and glacier-fed, cold enough and quiet enough on calm mornings to produce a reflection this precise -- the mountain and the sky doubled, the clouds above and below the same clouds, the peaks above and below the same peaks.  There is no road noise here.  No crowds.  Just the water, the mountain, and the particular silence that only exists in places this far from everything else.  The park protects six million acres of wilderness around it, most of it roadless, most of it unchanged since the ice retreated twelve thousand years ago.  Rendered with a watercolor finish from an original photograph taken at Wonder Lake in Denali National Park, this print captures the moment when the mountain becomes its own mirror -- and the silence has a shape you can almost see.",
     images: {
       main:    "images/landscapes/reflections-of-wonder.jpg",
-      room:    "images/mockups/reflections-of-wonder.jpg",
-      framed:  "images/mockups/reflections-of-wonder.jpg",
+      room:    "images/mockups/reflections-of-wonder-room.jpg",
+      framed:  "images/mockups/reflections-of-wonder-framed.jpg",
       canvas:  "images/mockups/reflections-of-wonder-canvas-wrap.jpg",
       metal:   "images/mockups/reflections-of-wonder-metal.jpg",
         original: "images/originals/reflections-of-wonder.jpg"
@@ -1812,12 +1812,6 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },    
-    
-
-    
-    
-
-    
     
 
     
@@ -1837,7 +1831,13 @@ const COLLECTIONS = {
     "golden-hour",
     "redbuds-in-bloom",
     "stargazer",
-    "blue-flax"
+    "blue-flax",
+    "first-fire",
+    "hilo-gold",
+    "kohala-fire",
+    "lowcountry-red",
+    "cloud-forest-crimson",
+    "lavender-and-light"
   ],
   "wildlife": [
     "focused-intent",
@@ -1858,7 +1858,8 @@ const COLLECTIONS = {
     "night-shift",  
     "quiet-perch",
     "sentinels-watch",
-    "still-waters"
+    "still-waters",
+    "island-gold"
   ],
   "cincinnati": [
     "ault-park-ascent",
@@ -1883,7 +1884,9 @@ const COLLECTIONS = {
     "lakeside-solitude",
     "quiet-shore",   
     "red-rock-light",    
-    "night-watch" 
+    "night-watch",
+    "the-long-meld",
+    "reflections-of-wonder"
   ],
     "horse-country": [
     "biko",
