@@ -11,6 +11,8 @@
 // ═══════════════════════════════════════════════════════════════
 
 const PRODUCTS = {
+    
+    
 
   // ── BOTANICAL STUDIES ────────────────────────────────────────
 
@@ -103,6 +105,248 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
+    
+  "blue-flax": {
+    id:              "blue-flax",
+    number:          "No. 05",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Blue Flax",
+    caption:         "Delicate by design.  Resilient by nature.",
+    altText:         "Blue flax wildflower watercolor print -- delicate sky-blue five-petaled blossoms on slender stems against a soft neutral background",
+    description:     "Blue flax has been part of the North American landscape for thousands of years, long before the botanist Frederick Pursh formally described it in 1814 and named it for Meriwether Lewis, who collected specimens along the Missouri River during the Corps of Discovery expedition.  Each individual blossom lasts only a single day -- opening in the morning, falling by afternoon -- but the plant produces new flowers continuously through the season, so the display never stops.  Native to the western United States and the Great Plains, it has naturalized across much of North America, appearing in meadows and roadsides with the kind of quiet persistence that easy beauty often hides.  The blue is not quite sky blue and not quite violet -- it shifts depending on the light, the time of day, and the angle from which you find it.  Rendered with a watercolor finish from an original photograph, this print captures a small cluster of blue flax at its most unguarded -- a few blooms and their buds on a pale ground, simple and completely certain of themselves.",
+    images: {
+      main:    "images/botanical-studies/blue-flax.jpg",
+      room:    "images/mockups/blue-flax-room.jpg",
+      framed:  "images/mockups/blue-flax-framed.jpg",
+      canvas:  "images/mockups/blue-flax-canvas-wrap.jpg",
+      metal:   "images/mockups/blue-flax-metal.jpg",
+        original: "images/originals/blue-flax.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+   "stargazer": {
+    id:              "stargazer",
+    number:          "No. 04",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Stargazer",
+    caption:         "Some flowers don't wait to be noticed.",
+    altText:         "Stargazer lily watercolor print -- vivid pink and white Stargazer lily in full bloom with deep magenta stripes and golden stamens",
+    description:     "The Stargazer lily did not exist before 1978.  It was created by a California lily breeder named Leslie Woodriff, who spent years crossing Oriental and Asiatic varieties to produce a bloom that faced upward toward the sky rather than drooping like most lilies of its kind.  He named it Stargazer for exactly that reason.  It became one of the best-selling cut flowers in the world within a decade of its introduction, its fragrance so powerful that a single bloom can scent an entire room.  The deep magenta stripes radiating from the center follow the same Fibonacci geometry found in sunflowers and pinecones -- nature's preferred organizational pattern, present in nearly every flower that has ever opened.  Photographed in close detail and rendered with a watercolor finish from an original photograph, this print captures the Stargazer at full bloom -- every petal a small argument for paying closer attention to the things that grow quietly around us.",
+    images: {
+      main:    "images/botanical-studies/stargazer.jpg",
+      room:    "images/mockups/stargazer-room.jpg",
+      framed:  "images/mockups/stargazer-framed.jpg",
+      canvas:  "images/mockups/stargazer-canvas-wrap.jpg",
+      metal:   "images/mockups/stargazer-metal.jpg",
+        original: "images/originals/stargazer.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "first-fire": {
+    id:              "first-fire",
+    number:          "No. 06",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "First Fire",
+    caption:         "The first one back. Always.",
+    altText:         "Fireweed watercolor print -- tall magenta-pink flower spikes of Alaskan fireweed in full bloom against soft green hills and a pale cloudy sky in Denali, Alaska",
+    description:     "Fireweed is the official state flower of Alaska, and it earned that distinction the hard way.  When wildfire moves through the boreal forest and leaves nothing but ash and silence, fireweed is the first living thing to return -- sometimes within weeks, covering scorched ground in a blaze of magenta-pink that signals the land is already healing.  Its name is not metaphor.  It is a record of what this plant does.  Each tall spike blooms from the bottom upward, one tier of blossoms at a time, and Alaskans have long used it as a calendar -- when the flowers reach the top of the spike, summer has six weeks left.  The entire plant is edible, and fireweed honey, produced by bees who work the blooms all season, is considered a delicacy across the north.  The feathery seeds travel on the wind for miles, finding every place that needs a beginning.  Rendered with a watercolor finish from an original photograph taken in Denali, Alaska, this print captures fireweed at the height of its season -- tall, unhurried, and completely certain that it belongs exactly where it stands.",
+    images: {
+      main:    "images/botanical-studies/first-fire.jpg",
+      room:    "images/mockups/first-fire-room.jpg",
+      framed:  "images/mockups/first-fire-framed.jpg",
+      canvas:  "images/mockups/first-fire-canvas-wrap.jpg",
+      metal:   "images/mockups/first-fire-metal.jpg",
+        original: "images/originals/first-fire.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+     "hilo-gold": {
+    id:              "hilo-gold",
+    number:          "No. 07",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Hilo Gold",
+    caption:         "Too cheerful to be overlooked. Too common to be appreciated. Until now.",
+    altText:         "Wedelia watercolor print -- single bright yellow wedelia blossom surrounded by broad green leaves photographed near Hilo on the Big Island of Hawaii",
+    description:     "Wedelia did not start out Hawaiian.  Native to Mexico and Central America, it arrived on the islands the way so many things do -- carried, planted, and eventually released into a landscape that suited it so completely that it simply never left.  It is everywhere near Hilo now, a low cheerful ground cover that runs along roadsides and spills over garden edges with the easy confidence of something that has long since stopped asking permission.  Most people walk past it without a second glance.  It is too familiar to be remarkable, too common to be celebrated -- which is exactly the kind of oversight that a camera can correct.  Seen up close, that single yellow blossom is as precisely constructed as any flower in a formal garden, its petals arranged with the same mathematical care that nature applies to everything it makes.  The broad rounded leaves surrounding it catch and hold the soft diffused light that Hilo's famously generous rainfall produces.  Rendered with a watercolor finish from an original photograph taken near Hilo on the Big Island of Hawaii, this print is a quiet argument for looking down once in a while -- for noticing what has been there all along.",
+    images: {
+      main:    "images/botanical-studies/hilo-gold.jpg",
+      room:    "images/mockups/hilo-gold.jpg",
+      framed:  "images/mockups/hilo-gold.jpg",
+      canvas:  "images/mockups/hilo-gold-canvas-wrap.jpg",
+      metal:   "images/mockups/hilo-gold-metal.jpg",
+        original: "images/originals/hilo-gold.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },    
+    
+    "kohala-fire": {
+    id:              "kohala-fire",
+    number:          "No. 08",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Kohala Fire",
+    caption:         "Soft enough to bloom. Strong enough to grow in lava.",
+    altText:         "Ice plant watercolor print -- vibrant pink ice plant flower in full bloom nestled among thick blue-green succulent leaves in the lava fields of the Kohala Coast, Hawaii",
+    description:     "The Kohala Coast on the western edge of the Big Island is not where you expect to find a flower this extravagant.  This is dry country -- black lava fields stretching to the sea, the sun direct and unfiltered, the ground beneath your feet the same hardened volcanic rock that ancient Hawaiians carved with petroglyphs centuries ago.  The Puako Petroglyph Archaeological Preserve holds one of the largest collections of those carvings in the Pacific, figures and symbols pressed into lava by people who understood that this landscape demanded something permanent.  Ice plant understood the same thing.  A succulent by nature, it stores water in those thick waxy leaves precisely because the ground around it offers so little.  The bloom it produces in exchange for that patience is almost unreasonably beautiful -- a hot pink starburst with a warm yellow center, every petal catching the Kohala light as if it were designed specifically to be seen against black rock.  It was.  Rendered with a watercolor finish from an original photograph taken in the lava fields near the Puako Petroglyphs on the Big Island of Hawaii, this print captures a flower that has made its peace with difficult ground -- and decided to be spectacular anyway.",
+    images: {
+      main:    "images/botanical-studies/kohala-fire.jpg",
+      room:    "images/mockups/kohala-fire-room.jpg",
+      framed:  "images/mockups/kohala-fire-framed.jpg",
+      canvas:  "images/mockups/kohala-fire-canvas-wrap.jpg",
+      metal:   "images/mockups/kohala-fire-metal.jpg",
+        original: "images/originals/kohala-fire.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "lowcountry-red": {
+    id:              "lowcountry-red",
+    number:          "No. 09",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Lowcountry Red",
+    caption:         "One day to bloom. No time to be anything but magnificent.",
+    altText:         "Tropical hibiscus watercolor print -- deep red-orange tropical hibiscus bloom with yellow stamens against rich dark green foliage photographed in Hilton Head, South Carolina",
+    description:     "The tropical hibiscus has been cultivated for so long and carried so far from its original home in Asia that botanists are no longer entirely certain where it started.  What they do know is that it has made itself at home in warm, humid places all over the world -- and the South Carolina Lowcountry, with its salt air and generous heat, suits it perfectly.  Each individual bloom lasts exactly one day.  It opens in the morning, reaches full extravagance by midday, and is gone by evening -- which means the plant you are looking at is not being dramatic.  It is simply making the most of the time it has.  The deep red-orange of this particular bloom is produced by pigments called anthocyanins, the same compounds that color autumn leaves and dark berries, here concentrated into something that seems almost to generate its own light against the dark green behind it.  The long staminal column rising from the center -- that distinctive architectural detail that makes hibiscus unmistakable -- carries both pollen and pistil, the flower pollinating itself if nothing else arrives in time.  Rendered with a watercolor finish from an original photograph taken in Hilton Head, South Carolina, this print captures a single day's worth of effort -- which turns out to be more than enough.",
+    images: {
+      main:    "images/botanical-studies/lowcountry-red.jpg",
+      room:    "images/mockups/lowcountry-red-room.jpg",
+      framed:  "images/mockups/lowcountry-red-framed.jpg",
+      canvas:  "images/mockups/lowcountry-red-canvas-wrap.jpg",
+      metal:   "images/mockups/lowcountry-red-metal.jpg",
+        original: "images/originals/lowcountry-red.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "cloud-forest-crimson": {
+    id:              "cloud-forest-crimson",
+    number:          "No. 10",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Cloud Forest Crimson",
+    caption:         "In a world of green and mist, one color announces itself.",
+    altText:         "Red ginger watercolor print -- deep crimson red ginger spike rising between broad tropical leaves in the Mauna Kea Cloud Forest Bioreserve near Hilo, Hawaii",
+    description:     "The Mauna Kea Cloud Forest Bioreserve exists in a world between worlds -- high enough on the slopes of the mountain to catch the clouds as they move through, low enough to sustain a lush and dripping tropical forest that feels nothing like the volcanic coastline below.  It is cool here, and quiet, and everything is green in approximately seventeen different ways.  Into all of that, red ginger announces itself in crimson.  Red ginger is not native to Hawaii.  Originally from Malaysia, it arrived on the islands and adapted so completely to the wet, warm conditions of places like this that it has become one of the defining flowers of the Hawaiian landscape.  That dramatic crimson spike is not actually the flower -- it is a series of bracts, modified leaves whose deep color attracts the pollinators that find the small true flowers tucked between them.  The whole structure can last for weeks, which is unusual in a world where most tropical blooms measure their lives in days.  Rendered with a watercolor finish from an original photograph taken in the Mauna Kea Cloud Forest Bioreserve near Hilo, this print captures a flower that has found its place in one of the most remarkable ecosystems on earth -- and made itself entirely at home.",
+    images: {
+      main:    "images/botanical-studies/cloud-forest-crimson.jpg",
+      room:    "images/mockups/cloud-forest-crimson-room.jpg",
+      framed:  "images/mockups/cloud-forest-crimson-framed.jpg",
+      canvas:  "images/mockups/cloud-forest-crimson-canvas-wrap.jpg",
+      metal:   "images/mockups/cloud-forest-crimson-metal.jpg",
+        original: "images/originals/cloud-forest-crimson.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "lavender-and-light": {
+    id:              "lavender-and-light",
+    number:          "No. 11",
+    collection:      "botanical-studies",
+    collectionLabel: "Botanical Studies",
+    collectionPage:  "botanical-studies.html",
+    title:           "Lavender and Light",
+    caption:         "Every petal a study in how much color can live in one place.",
+    altText:         "Bearded iris watercolor print -- pale lavender bearded iris with deep purple veining and golden center photographed at Waipio Valley Lookout on the Big Island of Hawaii",
+    description:     "The bearded iris has been cultivated by humans for at least three thousand years.  Ancient Egyptians grew it in temple gardens.  The French made it the model for the fleur-de-lis.  Renaissance painters used it as a symbol of the Virgin Mary.  And yet for all of that history, the flower itself has never needed any of it -- it is entirely sufficient on its own terms.  What makes the bearded iris unmistakable is that fuzzy stripe of color running down the center of each lower petal, the beard that gives the flower both its name and its most distinctive character.  In this bloom the coloring moves from pale lavender at the outer edges inward through deeper purple veining to a warm golden heart, the whole thing lit from within in a way that watercolor renders with particular grace.  This image was photographed at the Waipio Valley Lookout on the Big Island of Hawaii -- a place the Hawaiian people have considered sacred for centuries, a valley of waterfalls and taro fields visible far below, the kind of place that puts everything into a certain quiet perspective.  Rendered with a watercolor finish from an original photograph taken at Waipio Valley, this print captures a flower that has traveled through three thousand years of human history and arrived, still perfect, at the edge of one of the most beautiful places on earth.",
+    images: {
+      main:    "images/botanical-studies/lavender-and-light.jpg",
+      room:    "images/mockups/lavender-and-light-room.jpg",
+      framed:  "images/mockups/lavender-and-light-framed.jpg",
+      canvas:  "images/mockups/lavender-and-light-canvas-wrap.jpg",
+      metal:   "images/mockups/lavender-and-light-metal.jpg",
+        original: "images/originals/lavender-and-light.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    
 
   // ── WILDLIFE ─────────────────────────────────────────────────
 
@@ -196,7 +440,39 @@ const PRODUCTS = {
     }
   },
 
-  // ── AVIAN STUDIES ────────────────────────────────────────────
+   "firefox": {
+    id:              "firefox",
+    number:          "No. 04",
+    collection:      "wildlife",
+    collectionLabel: "Wildlife",
+    collectionPage:  "wildlife.html",
+    title:           "Firefox",
+    caption:         "The original.  The one worth knowing.",
+    altText:         "Red panda watercolor print -- russet-furred red panda with alert dark eyes and striped tail perched on a branch with soft green background",
+    description:     "The red panda was described by Western science in 1825, nearly fifty years before anyone in the outside world had heard of the giant panda.  It was the original panda -- its name coming from the Nepali word 'ponya,' and its nickname 'firefox' predating any browser by more than a century.  Despite sharing a love of bamboo and a range that overlaps across the forests of the Himalayas and southwestern China, the red panda and the giant panda are not closely related.  The red panda is the only living member of its own family, Ailuridae, an evolutionary original with no close relatives anywhere on earth.  Fewer than 10,000 are estimated to remain in the wild, their numbers declining as the mountain forests they depend on shrink and fragment.  That expression -- alert, a little skeptical, entirely self-possessed -- is characteristic of an animal that has been doing things its own way for millions of years.  Rendered with a watercolor finish from an original photograph, this portrait introduces you to one of nature's most distinctive and least understood originals.",
+    images: {
+      main:    "images/wildlife/firefox.jpg",
+      room:    "images/mockups/firefox-room.jpg",
+      framed:  "images/mockups/firefox-framed.jpg",
+      canvas:  "images/mockups/firefox-canvas-wrap.jpg",
+      metal:   "images/mockups/firefox-metal.jpg",
+      original: "images/originals/firefox.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    
+    
+    // ── AVIAN STUDIES ────────────────────────────────────────────
 
   "american-glory": {
     id:              "american-glory",
@@ -317,7 +593,7 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
-
+    
   "sentinels-watch": {
     id:              "sentinels-watch",
     number:          "No. 12",
@@ -437,6 +713,188 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
+    
+    "rose-and-rust": {
+    id:              "rose-and-rust",
+    number:          "No. 03",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Rose and Rust",
+    caption:         "Softer in color.  Equal in song.",
+    altText:         "Female Northern cardinal watercolor print -- warm brown and rose-tinted female cardinal with orange bill perched on a winter branch",
+    description:     "The female Northern Cardinal is almost always the one people overlook.  He arrives first, he is louder in color, he takes the obvious perch.  She is quieter in plumage -- warm brown and buff with just enough red in the crest and wing to remind you what she is -- but in one important way she is his equal and then some.  The female Northern Cardinal sings, which is unusual among North American songbirds where only the male typically vocalizes.  She sings while sitting on the nest, likely to communicate with her mate about food delivery.  Her song is as complex and musical as his, and she has her own territorial calls.  That orange bill is the same on both -- bright, heavy, and perfectly designed for cracking open seeds that would defeat a smaller beak.  Rendered with a watercolor finish from an original photograph, this portrait asks you to look at the one who doesn't announce herself -- and to notice, once you do, how much you had been missing.",
+    images: {
+      main:    "images/avian-studies/rose-and-rust.jpg",
+      room:    "images/mockups/rose-and-rust-room.jpg",
+      framed:  "images/mockups/rose-and-rust-framed.jpg",
+      canvas:  "images/mockups/rose-and-rust-canvas-wrap.jpg",
+      metal:   "images/mockups/rose-and-rust-metal.jpg",
+      original: "images/originals/rose-and-rust.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },  
+    
+    "the-redbird": {
+    id:              "the-redbird",
+    number:          "No. 05",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "The Redbird",
+    caption:         "Unmistakable at any distance.",
+    altText:         "Northern cardinal watercolor print -- vivid red male cardinal perched on a weathered wooden rail against a soft green background",
+    description:     "The Northern Cardinal gets its name from the Roman Catholic cardinals whose brilliant red robes were as recognizable in the Old World as this bird is in the New.  The male is one of the only songbirds in North America clothed entirely in red -- no stripes, no patches, no hedging -- just that complete, unambiguous declaration of color against whatever background he chooses.  He is the state bird of seven states, including both Ohio and Kentucky, a distinction earned not by committee but by the simple fact that he is impossible to overlook and impossible to forget.  Unlike most migratory songbirds, the Northern Cardinal stays through winter, a flash of living red against snow and bare branches that has been stopping people mid-stride for centuries.  Photographed perched on a weathered wooden rail and rendered with a watercolor finish from an original photograph, this portrait puts you face to face with one of the most recognized birds in North America -- still, watchful, and entirely at home exactly where he is.",
+    images: {
+      main:    "images/avian-studies/the-redbird.jpg",
+      room:    "images/mockups/the-redbird-room.jpg",
+      framed:  "images/mockups/the-redbird-framed.jpg",
+      canvas:  "images/mockups/the-redbird-canvas-wrap.jpg",
+      metal:   "images/mockups/the-redbird-metal.jpg",
+      original: "images/originals/the-redbird.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "hidden-fire": {
+    id:              "hidden-fire",
+    number:          "No. 07",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Hidden Fire",
+    caption:         "Red finds a way to show through anything.",
+    altText:         "Northern cardinal watercolor print -- brilliant red male cardinal perched among green leafy branches in dappled light",
+    description:     "The Northern Cardinal male does not migrate, does not molt into a duller winter plumage, and does not apologize for being exactly as vivid in February as he is in July.  That consistency is part of what makes him so beloved -- he is the same bird in every season, the same declaration of red against whatever the world puts behind him.  The green branches surrounding him here are not background -- they are context, the cardinal's preferred habitat of woodland edges and dense shrubby cover where he can move quickly between open feeding areas and sheltered perches.  He defends his territory by song as much as by presence, one of the most recognizable voices in the North American dawn chorus.  Cardinals were once trapped and sold as cage birds in the United States -- a practice that continued until the Migratory Bird Treaty Act of 1918 finally made it illegal.  Rendered with a watercolor finish from an original photograph, this print captures him in his element -- brilliant, unhurried, and entirely on his own terms.",
+    images: {
+      main:    "images/avian-studies/hidden-fire.jpg",
+      room:    "images/mockups/hidden-fire-room.jpg",
+      framed:  "images/mockups/hidden-fire-framed.jpg",
+      canvas:  "images/mockups/hidden-fire-canvas-wrap.jpg",
+      metal:   "images/mockups/hidden-fire-metal.jpg",
+      original: "images/originals/hidden-fire.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "full-sail": {
+    id:              "full-sail",
+    number:          "No. 09",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Full Sail",
+    caption:         "Built for speed.  Built for beauty.  Built for both.",
+    altText:         "Tree swallow watercolor print -- iridescent blue-green tree swallow photographed in full flight with wings outstretched against open sky.",
+    description:     "The Tree Swallow is one of the most acrobatic fliers in North America, capable of turns and reversals at speed that seem to defy physics -- and this image catches it at full wing extension, every primary feather spread and readable against a soft watercolor sky.  That iridescent blue-green is not pigment in the conventional sense.  It is structural color, produced by the microscopic arrangement of the feather's surface, which reflects light differently depending on the angle -- shifting from deep blue to turquoise to almost green as the bird moves.  Tree Swallows are among the first migratory birds to return in spring, arriving in the Ohio and Kentucky region as early as late February, often before the insects they depend on are reliably flying.  They survive cold snaps by switching temporarily to berries -- a dietary flexibility rare among swallows and one of the reasons they can push the season further than almost any of their relatives.  Rendered with a watercolor finish from an original photograph, this print captures a single perfect moment of flight -- wings out, the air entirely cooperative, everything working exactly as it was designed to.",
+    images: {
+      main:    "images/avian-studies/full-sail.jpg",
+      room:    "images/mockups/full-sail-room.jpg",
+      framed:  "images/mockups/full-sail-framed.jpg",
+      canvas:  "images/mockups/full-sail-canvas-wrap.jpg",
+      metal:   "images/mockups/hidden-full-sail.jpg",
+      original: "images/originals/full-sail.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "night-shift": {
+    id:              "night-shift",
+    number:          "No. 10",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Night Shift",
+    caption:         "Twelve hours of dark.  Not a moment wasted.",
+    altText:         "Great horned owl watercolor print -- great horned owl with intense yellow eyes and prominent ear tufts on a dark woodland perch.",
+    description:     "The Great Horned Owl is one of the most powerful and adaptable raptors in North America -- and one of the most perfectly engineered for the work it does.  Those tufts are not ears.  They are feathers, used for communication and camouflage, arranged to break up the owl's silhouette against the bark of the trees where it roosts.  The actual ears are asymmetrical openings on either side of the skull, positioned at slightly different heights so the brain can triangulate the exact location of a sound in three dimensions -- a system so precise that a Great Horned Owl can locate and strike prey beneath a foot of snow in complete darkness.  It can rotate its head 270 degrees, compensating for eyes that are fixed in the skull and so large relative to its body that they cannot move.  The Great Horned Owl will eat almost anything -- rabbits, skunks, house cats, other raptors, Canada geese -- and is the only animal that regularly preys on skunks.  Rendered with a watercolor finish from an original photograph, this portrait captures a bird that has heard everything going on around it and is choosing, for the moment, not to act.",
+    images: {
+      main:    "images/avian-studies/night-shift.jpg",
+      room:    "images/mockups/night-shift-room.jpg",
+      framed:  "images/mockups/night-shift-framed.jpg",
+      canvas:  "images/mockups/night-shift-canvas-wrap.jpg",
+      metal:   "images/mockups/night-shift-metal.jpg",
+      original: "images/originals/night-shift.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+     "island-gold": {
+    id:              "island-gold",
+    number:          "No. 14",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Island Gold",
+    caption:         "Twice the color. Half the noise.",
+    altText:         "Saffron finch watercolor print -- two brilliant yellow saffron finches with orange-red caps perched side by side on a weathered branch in Hawaii",
+    description:     "The saffron finch did not arrive in Hawaii by accident.  Native to South America, where it ranges from Colombia to Argentina, it was introduced to the Hawaiian Islands decades ago and has made itself entirely at home -- particularly on the Big Island, where it is now one of the more reliably cheerful sights in the landscape.  That yellow is not subtle.  The saffron finch wears it the way the sun wears it -- completely, without apology, as if there were never any other option.  The orange-red cap that gives the male his most distinctive feature deepens with age, a signal of experience that other finches apparently find worth paying attention to.  These two share a branch with the easy familiarity of birds who have long since decided the world is large enough for both of them.  Neither is performing.  Neither is particularly concerned with being watched.  Saffron finches are seed eaters, ground foragers by nature, but this pair has found a higher vantage point and seems to be in no hurry to leave it.  Rendered with a watercolor finish from an original photograph taken on the Big Island of Hawaii, this print captures a moment of uncomplicated and completely golden companionship.",
+    images: {
+      main:    "images/avian-studies/island-gold.jpg",
+      room:    "images/mockups/island-gold.jpg",
+      framed:  "images/mockups/island-gold.jpg",
+      canvas:  "images/mockups/island-gold-canvas-wrap.jpg",
+      metal:   "images/mockups/island-gold-metal.jpg",
+        original: "images/originals/island-gold.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },      
+      
+
 
   // ── CINCINNATI ───────────────────────────────────────────────
 
@@ -650,8 +1108,6 @@ const PRODUCTS = {
     }
   },
 
-  // ── Cincinnati ────────────────────────────────────────────────
-
   "dawns-early-light": {
     id:              "dawns-early-light",
     number:          "No. 08",
@@ -681,128 +1137,12 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
-
-  "biko": {
-    id:              "biko",
-    number:          "No. 01",
-    collection:      "horse-country",
-    collectionLabel: "Horse Country",
-    collectionPage:  "horse-country.html",
-    title:           "Biko",
-    caption:         "The joy of retirement.",
-    altText:         "Thoroughbred horse watercolor print -- rescued Thoroughbred Biko grazing in a Lexington Kentucky pasture",
-    description:     "The Thoroughbred is built for one thing -- speed -- and the racing industry does not always make room for what comes after.  But Lexington, Kentucky has a rescue community that does.  Organizations like the Secretariat Center and New Vocations have made the region a leader in Thoroughbred aftercare, giving horses like this one a second chapter that looks nothing like the first.  Biko was rescued from abuse by a friend, and he carries himself with the quiet dignity of an animal who has found exactly where he belongs.  This print is dedicated to Biko, and to Theo -- my own off-the-track Thoroughbred, a dressage partner who earned five first-place finishes at the Kentucky Horse Park before we said goodbye in the fall of 2024.  Rendered with a watercolor finish from an original photograph taken in Lexington, Kentucky, this print is for everyone who has ever earned a Thoroughbred's trust and understood what a privilege that is.",
-    images: {
-      main:    "images/horse-country/biko.jpg",
-      room:    "images/mockups/biko-room.jpg",
-      framed:  "images/mockups/biko-framed.jpg",
-      canvas:  "images/mockups/biko-canvas-wrap.jpg",
-      metal:   "images/mockups/biko-metal.jpg",
-        original: "images/originals/biko.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-  "lakeside-solitude": {
-    id:              "lakeside-solitude",
-    number:          "No. 04",
-    collection:      "landscapes",
-    collectionLabel: "Landscapes",
-    collectionPage:  "landscapes.html",
-    title:           "Lakeside Solitude",
-    caption:         "The water knows how to keep a secret.",
-    altText:         "Red canoe pond watercolor print -- red canoe resting at the shore of a still pond in Burlington Kentucky",
-    description:     "Some photographs happen because you plan them.  Others happen because you finally pull over.  This pond sits along a narrow road in Burlington, Kentucky -- passed every day, admired every day, photographed on the one day patience finally ran out.  That red canoe rested at the shore in the full green of a Kentucky summer, perfectly still, perfectly placed, as if it had always known it was worth stopping for.  The scenery along any road changes with every passing day -- the light shifts, the seasons turn, the water rises and falls -- and most of it disappears without anyone ever stopping to notice.  Rendered with a watercolor finish from an original photograph, this print is a small reminder that the most beautiful things are often the ones you pass every day without stopping.  Until the day you do.",
-    images: {
-      main:    "images/landscapes/lakeside-solitude.jpg",
-      room:    "images/mockups/lakeside-solitude-room.jpg",
-      framed:  "images/mockups/lakeside-solitude-framed.jpg",
-      canvas:  "images/mockups/lakeside-solitude-canvas-wrap.jpg",
-      metal:   "images/mockups/lakeside-solitude-metal.jpg",
-        original: "images/originals/lakeside-solitude.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-  "pasture-calm": {
-    id:              "pasture-calm",
-    number:          "No. 04",
-    collection:      "american-west",
-    collectionLabel: "American West",
-    collectionPage:  "american-west.html",
-    title:           "Pasture Calm",
-    caption:         "The original American cattle.",
-    altText:         "Texas Longhorn watercolor print -- Longhorn cattle portrait at Bluegrass Stockyards in Lexington Kentucky",
-    description:     "The Texas Longhorn has been part of the American story since Spanish explorers brought cattle to the Americas in the 1490s.  For centuries they roamed the open range, developing a hardiness and adaptability that no other breed could match -- lean, resourceful, and built to survive conditions that would defeat almost anything else.  By the late 1800s they were the iconic cattle of the great American cattle drives, millions of them moving north along the Chisholm Trail from Texas to Kansas railheads, their distinctive horizontal horns visible for miles across the open plains.  By the early twentieth century they were nearly gone -- replaced by meatier breeds and pushed off the range by fences and farms.  The United States government stepped in during the 1920s to establish a conservation herd, saving one of America's most historic breeds from extinction.  Photographed at the Bluegrass Stockyards in Lexington, Kentucky and rendered with a watercolor finish, this portrait captures a Texas Longhorn doing what they have always done best -- occupying whatever ground they're on with complete and unhurried authority.",
-    images: {
-      main:    "images/american-west/pasture-calm.jpg",
-      room:    "images/mockups/pasture-calm-room.jpg",
-      framed:  "images/mockups/pasture-calm-framed.jpg",
-      canvas:  "images/mockups/pasture-calm-canvas-wrap.jpg",
-      metal:   "images/mockups/pasture-calm-metal.jpg",
-        original: "images/originals/pasture-calm.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
+    
+    
 
   // ── AMERICAN WEST ────────────────────────────────────────────
 
-  "blue-channels": {
-    id:              "blue-channels",
-    number:          "No. 02",
-    collection:      "landscapes",
-    collectionLabel: "Landscapes",
-    collectionPage:  "landscapes.html",
-    title:           "Blue Channels",
-    caption:         "What the lake left behind.",
-    altText:         "Bonneville Salt Flats watercolor print -- vivid blue brine channels on white salt crust with Utah mountains in the distance",
-    description:     "What looks like another world is actually the ghost of one.  The Bonneville Salt Flats in Utah are what remains of ancient Lake Bonneville -- a prehistoric inland sea that covered much of Utah and parts of Nevada and Idaho, as large as Lake Michigan at its peak some 14,500 years ago.  When the lake receded it left behind a thick crust of salt and minerals so vast and so perfectly flat that the curvature of the earth is visible from ground level.  Those vivid blue channels are not rivers -- they are brine channels, water so saturated with dissolved salt that it reflects the sky in a color that seems almost impossible against the white crust surrounding it.  The mountains in the distance are the same ones that once rose above the shoreline of that ancient sea.  Rendered with a watercolor finish from an original photograph, this print captures a landscape that has been ten thousand years in the making -- still and vast and completely indifferent to the passage of time.",
-    images: {
-      main:    "images/landscapes/blue-channels.jpg",
-      room:    "images/mockups/blue-channels-room.jpg",
-      framed:  "images/mockups/blue-channels-framed.jpg",
-      canvas:  "images/mockups/blue-channels-canvas-wrap.jpg",
-      metal:   "images/mockups/blue-channels-metal.jpg",
-        original: "images/originals/blue-channels.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
+
 
   "forgotten-miles": {
     id:              "forgotten-miles",
@@ -893,415 +1233,59 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
+    
+  "pasture-calm": {
+    id:              "pasture-calm",
+    number:          "No. 04",
+    collection:      "american-west",
+    collectionLabel: "American West",
+    collectionPage:  "american-west.html",
+    title:           "Pasture Calm",
+    caption:         "The original American cattle.",
+    altText:         "Texas Longhorn watercolor print -- Longhorn cattle portrait at Bluegrass Stockyards in Lexington Kentucky",
+    description:     "The Texas Longhorn has been part of the American story since Spanish explorers brought cattle to the Americas in the 1490s.  For centuries they roamed the open range, developing a hardiness and adaptability that no other breed could match -- lean, resourceful, and built to survive conditions that would defeat almost anything else.  By the late 1800s they were the iconic cattle of the great American cattle drives, millions of them moving north along the Chisholm Trail from Texas to Kansas railheads, their distinctive horizontal horns visible for miles across the open plains.  By the early twentieth century they were nearly gone -- replaced by meatier breeds and pushed off the range by fences and farms.  The United States government stepped in during the 1920s to establish a conservation herd, saving one of America's most historic breeds from extinction.  Photographed at the Bluegrass Stockyards in Lexington, Kentucky and rendered with a watercolor finish, this portrait captures a Texas Longhorn doing what they have always done best -- occupying whatever ground they're on with complete and unhurried authority.",
+    images: {
+      main:    "images/american-west/pasture-calm.jpg",
+      room:    "images/mockups/pasture-calm-room.jpg",
+      framed:  "images/mockups/pasture-calm-framed.jpg",
+      canvas:  "images/mockups/pasture-calm-canvas-wrap.jpg",
+      metal:   "images/mockups/pasture-calm-metal.jpg",
+        original: "images/originals/pasture-calm.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
 
-  "high-desert-mustang": {
-    id:              "high-desert-mustang",
-    number:          "No. 09",
+
+
+    
+      // ── HORSE COUNTRY ────────────────────────────────────────────
+    
+    "biko": {
+    id:              "biko",
+    number:          "No. 01",
     collection:      "horse-country",
     collectionLabel: "Horse Country",
     collectionPage:  "horse-country.html",
-    title:           "High Desert Mustang",
-    caption:         "The original American wild.",
-    altText:         "Wild mustang watercolor print -- lone horse standing in golden high desert grass with snow-capped Utah mountains",
-    description:     "The wild mustang is one of the most enduring symbols of the American West -- and one of its most complicated stories.  Descended from horses brought to the Americas by Spanish conquistadors in the 1500s, mustangs have roamed the open range for five centuries, as much a part of the western landscape as the mountains and the sage.  At their peak there were an estimated two million of them.  Fewer than 80,000 remain today, managed and monitored on the same Bureau of Land Management lands where this one was found.  Mustangs typically travel in family bands -- a dominant mare, her offspring, a stallion keeping watch at the edges.  This one was alone.  Standing in the golden high desert grass of rural Utah, the snow-capped mountains rising behind him, he offered no explanation for his solitude and required none.  Some stories are never told.  Rendered with a watercolor finish from an original photograph, this print captures a moment of accidental grace -- a lone mustang on the open range, exactly where he belongs, entirely on his own terms.",
+    title:           "Biko",
+    caption:         "The joy of retirement.",
+    altText:         "Thoroughbred horse watercolor print -- rescued Thoroughbred Biko grazing in a Lexington Kentucky pasture",
+    description:     "The Thoroughbred is built for one thing -- speed -- and the racing industry does not always make room for what comes after.  But Lexington, Kentucky has a rescue community that does.  Organizations like the Secretariat Center and New Vocations have made the region a leader in Thoroughbred aftercare, giving horses like this one a second chapter that looks nothing like the first.  Biko was rescued from abuse by a friend, and he carries himself with the quiet dignity of an animal who has found exactly where he belongs.  This print is dedicated to Biko, and to Theo -- my own off-the-track Thoroughbred, a dressage partner who earned five first-place finishes at the Kentucky Horse Park before we said goodbye in the fall of 2024.  Rendered with a watercolor finish from an original photograph taken in Lexington, Kentucky, this print is for everyone who has ever earned a Thoroughbred's trust and understood what a privilege that is.",
     images: {
-      main:    "images/horse-country/high-desert-mustang.jpg",
-      room:    "images/mockups/high-desert-mustang-room.jpg",
-      framed:  "images/mockups/high-desert-mustang-framed.jpg",
-      canvas:  "images/mockups/high-desert-mustang-canvas-wrap.jpg",
-      metal:   "images/mockups/high-desert-mustang-metal.jpg",
-        original: "images/originals/high-desert-mustang.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-  "night-watch": {
-    id:              "night-watch",
-    number:          "No. 07",
-    collection:      "landscapes",
-    collectionLabel: "Landscapes",
-    collectionPage:  "landscapes.html",
-    title:           "Night Watch",
-    caption:         "The deeper the dark, the brighter the beauty.",
-    altText:         "Utah night sky watercolor print -- Milky Way and Pleiades over illuminated bare tree using light painting technique",
-    description:     "For most of human history, this is what the night looked like.  The Pleiades -- the Seven Sisters -- visible on the right, recognized and named by virtually every culture on earth for thousands of years, used by Native American tribes throughout the West as a calendar, a compass, and a source of story.  The Milky Way visible to everyone, everywhere, every clear night.  That world is largely gone now -- light pollution has stolen the dark sky from more than eighty percent of the world's population, and most people alive today have never seen a night like this one.  Utah is one of the last places in the continental United States where it still exists.  It has more International Dark Sky Parks than any other state, and on a clear mountain night the stars still perform exactly as they have for ten thousand years.  This image was made in the mountains of Utah using light painting -- a long exposure technique that illuminates the foreground with hand-held light while the camera drinks in the sky above.  The bare tree glows against the darkness exactly as it did that night, reaching toward a sky that most of the world has forgotten how to see.  Rendered with a watercolor finish from an original photograph, this print is a reminder of what the night used to be -- and in a few rare places, still is.",
-    images: {
-      main:    "images/landscapes/night-watch.jpg",
-      room:    "images/mockups/night-watch-room.jpg",
-      framed:  "images/mockups/night-watch-framed.jpg",
-      canvas:  "images/mockups/night-watch-canvas-wrap.jpg",
-      metal:   "images/mockups/night-watch-metal.jpg",
-        original: "images/originals/night-watch.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-  "quiet-shore": {
-    id:              "quiet-shore",
-    number:          "No. 05",
-    collection:      "landscapes",
-    collectionLabel: "Landscapes",
-    collectionPage:  "landscapes.html",
-    title:           "Quiet Shore",
-    caption:         "Still water.  Deep history.",
-    altText:         "Utah mountain reflection watercolor print -- Cedar Mountains reflected in still water with golden marsh grass",
-    description:     "This is one of the quietest places in Utah -- and one of the most storied.  The still water in the foreground reflects the Cedar Mountains, a 45-mile range whose name is itself a small piece of history -- early pioneers who settled this country called the juniper trees cedars, and the name stuck long after the mistake was recognized.  The ghost town of Aragonite sits nearby, named for the mineral once mined from these hills, now uninhabited and almost entirely gone.  The road that runs through here is the Hastings Cutoff -- the same route the Donner Party followed in 1846 on their ill-fated journey west, their wagons becoming mired in the mud just below the salt crust a few miles from this very spot.  None of that history is visible in this image.  What remains is the water, the mountains, the golden marsh grass, and a silence so complete it is almost impossible to believe the stories buried beneath it.  Rendered with a watercolor finish from an original photograph, this print captures a landscape that has seen everything and gives nothing away.",
-    images: {
-      main:    "images/landscapes/quiet-shore.jpg",
-      room:    "images/mockups/quiet-shore-room.jpg",
-      framed:  "images/mockups/quiet-shore-framed.jpg",
-      canvas:  "images/mockups/quiet-shore-canvas-wrap.jpg",
-      metal:   "images/mockups/quiet-shore-metal.jpg",
-        original: "images/originals/quiet-shore.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-  "red-rock-light": {
-    id:              "red-rock-light",
-    number:          "No. 06",
-    collection:      "landscapes",
-    collectionLabel: "Landscapes",
-    collectionPage:  "landscapes.html",
-    title:           "Red Rock Light",
-    caption:         "The road doesn't need a name.  Neither does the feeling.",
-    altText:         "Utah red rock road watercolor print -- BLM dirt road leading toward red and white sandstone cliffs with sagebrush",
-    description:     "The road doesn't have a name.  It doesn't need one.  Bureau of Land Management roads like this one thread through millions of acres of public land across the American West -- unpaved, unmarked, and leading toward some of the most extraordinary geology on earth.  Those red and white cliffs are Entrada and Navajo Sandstone, laid down 150 to 200 million years ago when this part of Utah was a vast desert of shifting dunes.  The red comes from iron oxide -- rust, essentially -- that coated every grain of sand as it was deposited, layer by layer, era by era, until the earth compressed it all into the striped canyon walls you see today.  Each horizontal band is a different chapter of time, readable to anyone patient enough to look.  The sagebrush and juniper flanking the road have been here considerably less long -- only a few thousand years -- but they belong to this landscape as completely as the rock itself.  Rendered with a watercolor finish from an original photograph taken along a BLM road in rural Utah, this print captures the particular feeling of a road that goes somewhere worth going -- and the particular freedom of being the one driving it.",
-    images: {
-      main:    "images/landscapes/red-rock-light.jpg",
-      room:    "images/mockups/red-rock-light-room.jpg",
-      framed:  "images/mockups/red-rock-light-framed.jpg",
-      canvas:  "images/mockups/red-rock-light-canvas-wrap.jpg",
-      metal:   "images/mockups/red-rock-light-metal.jpg",
-        original: "images/originals/red-rock-light.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-  "stargazer": {
-    id:              "stargazer",
-    number:          "No. 04",
-    collection:      "botanical-studies",
-    collectionLabel: "Botanical Studies",
-    collectionPage:  "botanical-studies.html",
-    title:           "Stargazer",
-    caption:         "Some flowers don't wait to be noticed.",
-    altText:         "Stargazer lily watercolor print -- vivid pink and white Stargazer lily in full bloom with deep magenta stripes and golden stamens",
-    description:     "The Stargazer lily did not exist before 1978.  It was created by a California lily breeder named Leslie Woodriff, who spent years crossing Oriental and Asiatic varieties to produce a bloom that faced upward toward the sky rather than drooping like most lilies of its kind.  He named it Stargazer for exactly that reason.  It became one of the best-selling cut flowers in the world within a decade of its introduction, its fragrance so powerful that a single bloom can scent an entire room.  The deep magenta stripes radiating from the center follow the same Fibonacci geometry found in sunflowers and pinecones -- nature's preferred organizational pattern, present in nearly every flower that has ever opened.  Photographed in close detail and rendered with a watercolor finish from an original photograph, this print captures the Stargazer at full bloom -- every petal a small argument for paying closer attention to the things that grow quietly around us.",
-    images: {
-      main:    "images/botanical-studies/stargazer.jpg",
-      room:    "images/mockups/stargazer-room.jpg",
-      framed:  "images/mockups/stargazer-framed.jpg",
-      canvas:  "images/mockups/stargazer-canvas-wrap.jpg",
-      metal:   "images/mockups/stargazer-metal.jpg",
-        original: "images/originals/stargazer.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-    "blue-flax": {
-    id:              "blue-flax",
-    number:          "No. 05",
-    collection:      "botanical-studies",
-    collectionLabel: "Botanical Studies",
-    collectionPage:  "botanical-studies.html",
-    title:           "Blue Flax",
-    caption:         "Delicate by design.  Resilient by nature.",
-    altText:         "Blue flax wildflower watercolor print -- delicate sky-blue five-petaled blossoms on slender stems against a soft neutral background",
-    description:     "Blue flax has been part of the North American landscape for thousands of years, long before the botanist Frederick Pursh formally described it in 1814 and named it for Meriwether Lewis, who collected specimens along the Missouri River during the Corps of Discovery expedition.  Each individual blossom lasts only a single day -- opening in the morning, falling by afternoon -- but the plant produces new flowers continuously through the season, so the display never stops.  Native to the western United States and the Great Plains, it has naturalized across much of North America, appearing in meadows and roadsides with the kind of quiet persistence that easy beauty often hides.  The blue is not quite sky blue and not quite violet -- it shifts depending on the light, the time of day, and the angle from which you find it.  Rendered with a watercolor finish from an original photograph, this print captures a small cluster of blue flax at its most unguarded -- a few blooms and their buds on a pale ground, simple and completely certain of themselves.",
-    images: {
-      main:    "images/botanical-studies/blue-flax.jpg",
-      room:    "images/mockups/blue-flax-room.jpg",
-      framed:  "images/mockups/blue-flax-framed.jpg",
-      canvas:  "images/mockups/blue-flax-canvas-wrap.jpg",
-      metal:   "images/mockups/blue-flax-metal.jpg",
-        original: "images/originals/blue-flax.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-    
-   "firefox": {
-    id:              "firefox",
-    number:          "No. 04",
-    collection:      "wildlife",
-    collectionLabel: "Wildlife",
-    collectionPage:  "wildlife.html",
-    title:           "Firefox",
-    caption:         "The original.  The one worth knowing.",
-    altText:         "Red panda watercolor print -- russet-furred red panda with alert dark eyes and striped tail perched on a branch with soft green background",
-    description:     "The red panda was described by Western science in 1825, nearly fifty years before anyone in the outside world had heard of the giant panda.  It was the original panda -- its name coming from the Nepali word 'ponya,' and its nickname 'firefox' predating any browser by more than a century.  Despite sharing a love of bamboo and a range that overlaps across the forests of the Himalayas and southwestern China, the red panda and the giant panda are not closely related.  The red panda is the only living member of its own family, Ailuridae, an evolutionary original with no close relatives anywhere on earth.  Fewer than 10,000 are estimated to remain in the wild, their numbers declining as the mountain forests they depend on shrink and fragment.  That expression -- alert, a little skeptical, entirely self-possessed -- is characteristic of an animal that has been doing things its own way for millions of years.  Rendered with a watercolor finish from an original photograph, this portrait introduces you to one of nature's most distinctive and least understood originals.",
-    images: {
-      main:    "images/wildlife/firefox.jpg",
-      room:    "images/mockups/firefox-room.jpg",
-      framed:  "images/mockups/firefox-framed.jpg",
-      canvas:  "images/mockups/firefox-canvas-wrap.jpg",
-      metal:   "images/mockups/firefox-metal.jpg",
-      original: "images/originals/firefox.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-   "rose-and-rust": {
-    id:              "rose-and-rust",
-    number:          "No. 03",
-    collection:      "avian-studies",
-    collectionLabel: "Avian Studies",
-    collectionPage:  "avian-studies.html",
-    title:           "Rose and Rust",
-    caption:         "Softer in color.  Equal in song.",
-    altText:         "Female Northern cardinal watercolor print -- warm brown and rose-tinted female cardinal with orange bill perched on a winter branch",
-    description:     "The female Northern Cardinal is almost always the one people overlook.  He arrives first, he is louder in color, he takes the obvious perch.  She is quieter in plumage -- warm brown and buff with just enough red in the crest and wing to remind you what she is -- but in one important way she is his equal and then some.  The female Northern Cardinal sings, which is unusual among North American songbirds where only the male typically vocalizes.  She sings while sitting on the nest, likely to communicate with her mate about food delivery.  Her song is as complex and musical as his, and she has her own territorial calls.  That orange bill is the same on both -- bright, heavy, and perfectly designed for cracking open seeds that would defeat a smaller beak.  Rendered with a watercolor finish from an original photograph, this portrait asks you to look at the one who doesn't announce herself -- and to notice, once you do, how much you had been missing.",
-    images: {
-      main:    "images/avian-studies/rose-and-rust.jpg",
-      room:    "images/mockups/rose-and-rust-room.jpg",
-      framed:  "images/mockups/rose-and-rust-framed.jpg",
-      canvas:  "images/mockups/rose-and-rust-canvas-wrap.jpg",
-      metal:   "images/mockups/rose-and-rust-metal.jpg",
-      original: "images/originals/rose-and-rust.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },  
-    
-  "the-redbird": {
-    id:              "the-redbird",
-    number:          "No. 05",
-    collection:      "avian-studies",
-    collectionLabel: "Avian Studies",
-    collectionPage:  "avian-studies.html",
-    title:           "The Redbird",
-    caption:         "Unmistakable at any distance.",
-    altText:         "Northern cardinal watercolor print -- vivid red male cardinal perched on a weathered wooden rail against a soft green background",
-    description:     "The Northern Cardinal gets its name from the Roman Catholic cardinals whose brilliant red robes were as recognizable in the Old World as this bird is in the New.  The male is one of the only songbirds in North America clothed entirely in red -- no stripes, no patches, no hedging -- just that complete, unambiguous declaration of color against whatever background he chooses.  He is the state bird of seven states, including both Ohio and Kentucky, a distinction earned not by committee but by the simple fact that he is impossible to overlook and impossible to forget.  Unlike most migratory songbirds, the Northern Cardinal stays through winter, a flash of living red against snow and bare branches that has been stopping people mid-stride for centuries.  Photographed perched on a weathered wooden rail and rendered with a watercolor finish from an original photograph, this portrait puts you face to face with one of the most recognized birds in North America -- still, watchful, and entirely at home exactly where he is.",
-    images: {
-      main:    "images/avian-studies/the-redbird.jpg",
-      room:    "images/mockups/the-redbird-room.jpg",
-      framed:  "images/mockups/the-redbird-framed.jpg",
-      canvas:  "images/mockups/the-redbird-canvas-wrap.jpg",
-      metal:   "images/mockups/the-redbird-metal.jpg",
-      original: "images/originals/the-redbird.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-    "hidden-fire": {
-    id:              "hidden-fire",
-    number:          "No. 07",
-    collection:      "avian-studies",
-    collectionLabel: "Avian Studies",
-    collectionPage:  "avian-studies.html",
-    title:           "Hidden Fire",
-    caption:         "Red finds a way to show through anything.",
-    altText:         "Northern cardinal watercolor print -- brilliant red male cardinal perched among green leafy branches in dappled light",
-    description:     "The Northern Cardinal male does not migrate, does not molt into a duller winter plumage, and does not apologize for being exactly as vivid in February as he is in July.  That consistency is part of what makes him so beloved -- he is the same bird in every season, the same declaration of red against whatever the world puts behind him.  The green branches surrounding him here are not background -- they are context, the cardinal's preferred habitat of woodland edges and dense shrubby cover where he can move quickly between open feeding areas and sheltered perches.  He defends his territory by song as much as by presence, one of the most recognizable voices in the North American dawn chorus.  Cardinals were once trapped and sold as cage birds in the United States -- a practice that continued until the Migratory Bird Treaty Act of 1918 finally made it illegal.  Rendered with a watercolor finish from an original photograph, this print captures him in his element -- brilliant, unhurried, and entirely on his own terms.",
-    images: {
-      main:    "images/avian-studies/hidden-fire.jpg",
-      room:    "images/mockups/hidden-fire-room.jpg",
-      framed:  "images/mockups/hidden-fire-framed.jpg",
-      canvas:  "images/mockups/hidden-fire-canvas-wrap.jpg",
-      metal:   "images/mockups/hidden-fire-metal.jpg",
-      original: "images/originals/hidden-fire.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-    "full-sail": {
-    id:              "full-sail",
-    number:          "No. 09",
-    collection:      "avian-studies",
-    collectionLabel: "Avian Studies",
-    collectionPage:  "avian-studies.html",
-    title:           "Full Sail",
-    caption:         "Built for speed.  Built for beauty.  Built for both.",
-    altText:         "Tree swallow watercolor print -- iridescent blue-green tree swallow photographed in full flight with wings outstretched against open sky.",
-    description:     "The Tree Swallow is one of the most acrobatic fliers in North America, capable of turns and reversals at speed that seem to defy physics -- and this image catches it at full wing extension, every primary feather spread and readable against a soft watercolor sky.  That iridescent blue-green is not pigment in the conventional sense.  It is structural color, produced by the microscopic arrangement of the feather's surface, which reflects light differently depending on the angle -- shifting from deep blue to turquoise to almost green as the bird moves.  Tree Swallows are among the first migratory birds to return in spring, arriving in the Ohio and Kentucky region as early as late February, often before the insects they depend on are reliably flying.  They survive cold snaps by switching temporarily to berries -- a dietary flexibility rare among swallows and one of the reasons they can push the season further than almost any of their relatives.  Rendered with a watercolor finish from an original photograph, this print captures a single perfect moment of flight -- wings out, the air entirely cooperative, everything working exactly as it was designed to.",
-    images: {
-      main:    "images/avian-studies/full-sail.jpg",
-      room:    "images/mockups/full-sail-room.jpg",
-      framed:  "images/mockups/full-sail-framed.jpg",
-      canvas:  "images/mockups/full-sail-canvas-wrap.jpg",
-      metal:   "images/mockups/hidden-full-sail.jpg",
-      original: "images/originals/full-sail.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-    "night-shift": {
-    id:              "night-shift",
-    number:          "No. 10",
-    collection:      "avian-studies",
-    collectionLabel: "Avian Studies",
-    collectionPage:  "avian-studies.html",
-    title:           "Night Shift",
-    caption:         "Twelve hours of dark.  Not a moment wasted.",
-    altText:         "Great horned owl watercolor print -- great horned owl with intense yellow eyes and prominent ear tufts on a dark woodland perch.",
-    description:     "The Great Horned Owl is one of the most powerful and adaptable raptors in North America -- and one of the most perfectly engineered for the work it does.  Those tufts are not ears.  They are feathers, used for communication and camouflage, arranged to break up the owl's silhouette against the bark of the trees where it roosts.  The actual ears are asymmetrical openings on either side of the skull, positioned at slightly different heights so the brain can triangulate the exact location of a sound in three dimensions -- a system so precise that a Great Horned Owl can locate and strike prey beneath a foot of snow in complete darkness.  It can rotate its head 270 degrees, compensating for eyes that are fixed in the skull and so large relative to its body that they cannot move.  The Great Horned Owl will eat almost anything -- rabbits, skunks, house cats, other raptors, Canada geese -- and is the only animal that regularly preys on skunks.  Rendered with a watercolor finish from an original photograph, this portrait captures a bird that has heard everything going on around it and is choosing, for the moment, not to act.",
-    images: {
-      main:    "images/avian-studies/night-shift.jpg",
-      room:    "images/mockups/night-shift-room.jpg",
-      framed:  "images/mockups/night-shift-framed.jpg",
-      canvas:  "images/mockups/night-shift-canvas-wrap.jpg",
-      metal:   "images/mockups/night-shift-metal.jpg",
-      original: "images/originals/night-shift.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-      
-   "ancient-falls": {
-    id:              "ancient-falls",
-    number:          "No. 01",
-    collection:      "landscapes",
-    collectionLabel: "Landscapes",
-    collectionPage:  "landscapes.html",
-    title:           "Ancient Falls",
-    caption:         "The water found its way long before the path did.",
-    altText:         "Hocking Hills waterfall watercolor print -- cascading waterfall over ancient Black Hand Sandstone into a mossy gorge in southeastern Ohio",
-    description:     "Hocking Hills State Park sits in the sandstone hill country of southeastern Ohio, carved over thousands of years by water finding its way through Black Hand Sandstone -- a formation laid down roughly 320 million years ago when this part of North America lay beneath a shallow coastal sea.  What looks like a waterfall in a remote wilderness is less than two hours from Cincinnati, tucked into a gorge thick with hemlock and fern that stays cool and green even in the height of summer.  The waterfall feeds a plunge pool at the base, the mist from the falling water keeping the surrounding rock perpetually damp and the moss perpetually alive.  The hemlock trees that line this gorge are old growth, survivors of an era before logging reached this particular hollow -- some of them hundreds of years old, their roots finding purchase in the sandstone walls the same way water does, patiently and without hurry.  Rendered with a watercolor finish from an original photograph, this print captures one of Ohio's most extraordinary natural places -- ancient, quiet, and worth every mile of the drive.",
-    images: {
-      main:    "images/landscapes/ancient-falls.jpg",
-      room:    "images/mockups/ancient-falls-room.jpg",
-      framed:  "images/mockups/ancient-falls-framed.jpg",
-      canvas:  "images/mockups/ancient-falls-canvas-wrap.jpg",
-      metal:   "images/mockups/ancient-falls-metal.jpg",
-      original: "images/originals/ancient-falls.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-    
-    "bluegrass-summer": {
-    id:              "bluegrass-summer",
-    number:          "No. 03",
-    collection:      "landscapes",
-    collectionLabel: "Landscapes",
-    collectionPage:  "landscapes.html",
-    title:           "Bluegrass Summer",
-    caption:         "Not a state of mind.  An actual place that looks exactly like this.",
-    altText:         "Kentucky bluegrass watercolor print -- rolling green pastures with white fence and still pond under a wide summer sky.",
-    description:     "The Bluegrass Region of Kentucky is named for a grass that is not actually blue.  Kentucky bluegrass produces small bluish-purple buds in spring that give the fields a blue cast from a distance -- but what you see here, in the full green of a Kentucky summer, is what the region looks like for most of the year.  Rolling limestone-rich hills, ponds fed by springs, white fences threading between pastures, the particular deep green that comes from soil built up over millennia on a foundation of karst.  That limestone is the key to everything -- it filters the water, enriches the grass, and has made this region the center of American Thoroughbred breeding for over two centuries.  Roughly half of all active North American Thoroughbreds trace their Kentucky roots directly to the farms and fields of this landscape.  The white animal grazing in the middle distance is a small piece of a much larger story, one that has been unfolding on these hills since Daniel Boone first described this country as a second paradise.  Rendered with a watercolor finish from an original photograph, this print captures a Kentucky summer afternoon exactly as it looks when you pull over and give it your full attention.",
-    images: {
-      main:    "images/landscapes/bluegrass-summer.jpg",
-      room:    "images/mockups/bluegrass-summer-room.jpg",
-      framed:  "images/mockups/bluegrass-summer-framed.jpg",
-      canvas:  "images/mockups/bluegrass-summer-canvas-wrap.jpg",
-      metal:   "images/mockups/bluegrass-summer-metal.jpg",
-      original: "images/originals/bluegrass-summer.jpg"
+      main:    "images/horse-country/biko.jpg",
+      room:    "images/mockups/biko-room.jpg",
+      framed:  "images/mockups/biko-framed.jpg",
+      canvas:  "images/mockups/biko-canvas-wrap.jpg",
+      metal:   "images/mockups/biko-metal.jpg",
+        original: "images/originals/biko.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1524,6 +1508,319 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
+    
+    "high-desert-mustang": {
+    id:              "high-desert-mustang",
+    number:          "No. 09",
+    collection:      "horse-country",
+    collectionLabel: "Horse Country",
+    collectionPage:  "horse-country.html",
+    title:           "High Desert Mustang",
+    caption:         "The original American wild.",
+    altText:         "Wild mustang watercolor print -- lone horse standing in golden high desert grass with snow-capped Utah mountains",
+    description:     "The wild mustang is one of the most enduring symbols of the American West -- and one of its most complicated stories.  Descended from horses brought to the Americas by Spanish conquistadors in the 1500s, mustangs have roamed the open range for five centuries, as much a part of the western landscape as the mountains and the sage.  At their peak there were an estimated two million of them.  Fewer than 80,000 remain today, managed and monitored on the same Bureau of Land Management lands where this one was found.  Mustangs typically travel in family bands -- a dominant mare, her offspring, a stallion keeping watch at the edges.  This one was alone.  Standing in the golden high desert grass of rural Utah, the snow-capped mountains rising behind him, he offered no explanation for his solitude and required none.  Some stories are never told.  Rendered with a watercolor finish from an original photograph, this print captures a moment of accidental grace -- a lone mustang on the open range, exactly where he belongs, entirely on his own terms.",
+    images: {
+      main:    "images/horse-country/high-desert-mustang.jpg",
+      room:    "images/mockups/high-desert-mustang-room.jpg",
+      framed:  "images/mockups/high-desert-mustang-framed.jpg",
+      canvas:  "images/mockups/high-desert-mustang-canvas-wrap.jpg",
+      metal:   "images/mockups/high-desert-mustang-metal.jpg",
+        original: "images/originals/high-desert-mustang.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+
+    
+    
+     // ── LANDSCAPES ────────────────────────────────────────────
+
+    "ancient-falls": {
+    id:              "ancient-falls",
+    number:          "No. 01",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Ancient Falls",
+    caption:         "The water found its way long before the path did.",
+    altText:         "Hocking Hills waterfall watercolor print -- cascading waterfall over ancient Black Hand Sandstone into a mossy gorge in southeastern Ohio",
+    description:     "Hocking Hills State Park sits in the sandstone hill country of southeastern Ohio, carved over thousands of years by water finding its way through Black Hand Sandstone -- a formation laid down roughly 320 million years ago when this part of North America lay beneath a shallow coastal sea.  What looks like a waterfall in a remote wilderness is less than two hours from Cincinnati, tucked into a gorge thick with hemlock and fern that stays cool and green even in the height of summer.  The waterfall feeds a plunge pool at the base, the mist from the falling water keeping the surrounding rock perpetually damp and the moss perpetually alive.  The hemlock trees that line this gorge are old growth, survivors of an era before logging reached this particular hollow -- some of them hundreds of years old, their roots finding purchase in the sandstone walls the same way water does, patiently and without hurry.  Rendered with a watercolor finish from an original photograph, this print captures one of Ohio's most extraordinary natural places -- ancient, quiet, and worth every mile of the drive.",
+    images: {
+      main:    "images/landscapes/ancient-falls.jpg",
+      room:    "images/mockups/ancient-falls-room.jpg",
+      framed:  "images/mockups/ancient-falls-framed.jpg",
+      canvas:  "images/mockups/ancient-falls-canvas-wrap.jpg",
+      metal:   "images/mockups/ancient-falls-metal.jpg",
+      original: "images/originals/ancient-falls.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "bluegrass-summer": {
+    id:              "bluegrass-summer",
+    number:          "No. 03",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Bluegrass Summer",
+    caption:         "Not a state of mind.  An actual place that looks exactly like this.",
+    altText:         "Kentucky bluegrass watercolor print -- rolling green pastures with white fence and still pond under a wide summer sky.",
+    description:     "The Bluegrass Region of Kentucky is named for a grass that is not actually blue.  Kentucky bluegrass produces small bluish-purple buds in spring that give the fields a blue cast from a distance -- but what you see here, in the full green of a Kentucky summer, is what the region looks like for most of the year.  Rolling limestone-rich hills, ponds fed by springs, white fences threading between pastures, the particular deep green that comes from soil built up over millennia on a foundation of karst.  That limestone is the key to everything -- it filters the water, enriches the grass, and has made this region the center of American Thoroughbred breeding for over two centuries.  Roughly half of all active North American Thoroughbreds trace their Kentucky roots directly to the farms and fields of this landscape.  The white animal grazing in the middle distance is a small piece of a much larger story, one that has been unfolding on these hills since Daniel Boone first described this country as a second paradise.  Rendered with a watercolor finish from an original photograph, this print captures a Kentucky summer afternoon exactly as it looks when you pull over and give it your full attention.",
+    images: {
+      main:    "images/landscapes/bluegrass-summer.jpg",
+      room:    "images/mockups/bluegrass-summer-room.jpg",
+      framed:  "images/mockups/bluegrass-summer-framed.jpg",
+      canvas:  "images/mockups/bluegrass-summer-canvas-wrap.jpg",
+      metal:   "images/mockups/bluegrass-summer-metal.jpg",
+      original: "images/originals/bluegrass-summer.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },    
+    
+    "night-watch": {
+    id:              "night-watch",
+    number:          "No. 07",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Night Watch",
+    caption:         "The deeper the dark, the brighter the beauty.",
+    altText:         "Utah night sky watercolor print -- Milky Way and Pleiades over illuminated bare tree using light painting technique",
+    description:     "For most of human history, this is what the night looked like.  The Pleiades -- the Seven Sisters -- visible on the right, recognized and named by virtually every culture on earth for thousands of years, used by Native American tribes throughout the West as a calendar, a compass, and a source of story.  The Milky Way visible to everyone, everywhere, every clear night.  That world is largely gone now -- light pollution has stolen the dark sky from more than eighty percent of the world's population, and most people alive today have never seen a night like this one.  Utah is one of the last places in the continental United States where it still exists.  It has more International Dark Sky Parks than any other state, and on a clear mountain night the stars still perform exactly as they have for ten thousand years.  This image was made in the mountains of Utah using light painting -- a long exposure technique that illuminates the foreground with hand-held light while the camera drinks in the sky above.  The bare tree glows against the darkness exactly as it did that night, reaching toward a sky that most of the world has forgotten how to see.  Rendered with a watercolor finish from an original photograph, this print is a reminder of what the night used to be -- and in a few rare places, still is.",
+    images: {
+      main:    "images/landscapes/night-watch.jpg",
+      room:    "images/mockups/night-watch-room.jpg",
+      framed:  "images/mockups/night-watch-framed.jpg",
+      canvas:  "images/mockups/night-watch-canvas-wrap.jpg",
+      metal:   "images/mockups/night-watch-metal.jpg",
+        original: "images/originals/night-watch.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "blue-channels": {
+    id:              "blue-channels",
+    number:          "No. 02",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Blue Channels",
+    caption:         "What the lake left behind.",
+    altText:         "Bonneville Salt Flats watercolor print -- vivid blue brine channels on white salt crust with Utah mountains in the distance",
+    description:     "What looks like another world is actually the ghost of one.  The Bonneville Salt Flats in Utah are what remains of ancient Lake Bonneville -- a prehistoric inland sea that covered much of Utah and parts of Nevada and Idaho, as large as Lake Michigan at its peak some 14,500 years ago.  When the lake receded it left behind a thick crust of salt and minerals so vast and so perfectly flat that the curvature of the earth is visible from ground level.  Those vivid blue channels are not rivers -- they are brine channels, water so saturated with dissolved salt that it reflects the sky in a color that seems almost impossible against the white crust surrounding it.  The mountains in the distance are the same ones that once rose above the shoreline of that ancient sea.  Rendered with a watercolor finish from an original photograph, this print captures a landscape that has been ten thousand years in the making -- still and vast and completely indifferent to the passage of time.",
+    images: {
+      main:    "images/landscapes/blue-channels.jpg",
+      room:    "images/mockups/blue-channels-room.jpg",
+      framed:  "images/mockups/blue-channels-framed.jpg",
+      canvas:  "images/mockups/blue-channels-canvas-wrap.jpg",
+      metal:   "images/mockups/blue-channels-metal.jpg",
+        original: "images/originals/blue-channels.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+
+    "quiet-shore": {
+    id:              "quiet-shore",
+    number:          "No. 05",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Quiet Shore",
+    caption:         "Still water.  Deep history.",
+    altText:         "Utah mountain reflection watercolor print -- Cedar Mountains reflected in still water with golden marsh grass",
+    description:     "This is one of the quietest places in Utah -- and one of the most storied.  The still water in the foreground reflects the Cedar Mountains, a 45-mile range whose name is itself a small piece of history -- early pioneers who settled this country called the juniper trees cedars, and the name stuck long after the mistake was recognized.  The ghost town of Aragonite sits nearby, named for the mineral once mined from these hills, now uninhabited and almost entirely gone.  The road that runs through here is the Hastings Cutoff -- the same route the Donner Party followed in 1846 on their ill-fated journey west, their wagons becoming mired in the mud just below the salt crust a few miles from this very spot.  None of that history is visible in this image.  What remains is the water, the mountains, the golden marsh grass, and a silence so complete it is almost impossible to believe the stories buried beneath it.  Rendered with a watercolor finish from an original photograph, this print captures a landscape that has seen everything and gives nothing away.",
+    images: {
+      main:    "images/landscapes/quiet-shore.jpg",
+      room:    "images/mockups/quiet-shore-room.jpg",
+      framed:  "images/mockups/quiet-shore-framed.jpg",
+      canvas:  "images/mockups/quiet-shore-canvas-wrap.jpg",
+      metal:   "images/mockups/quiet-shore-metal.jpg",
+        original: "images/originals/quiet-shore.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+
+    "red-rock-light": {
+    id:              "red-rock-light",
+    number:          "No. 06",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Red Rock Light",
+    caption:         "The road doesn't need a name.  Neither does the feeling.",
+    altText:         "Utah red rock road watercolor print -- BLM dirt road leading toward red and white sandstone cliffs with sagebrush",
+    description:     "The road doesn't have a name.  It doesn't need one.  Bureau of Land Management roads like this one thread through millions of acres of public land across the American West -- unpaved, unmarked, and leading toward some of the most extraordinary geology on earth.  Those red and white cliffs are Entrada and Navajo Sandstone, laid down 150 to 200 million years ago when this part of Utah was a vast desert of shifting dunes.  The red comes from iron oxide -- rust, essentially -- that coated every grain of sand as it was deposited, layer by layer, era by era, until the earth compressed it all into the striped canyon walls you see today.  Each horizontal band is a different chapter of time, readable to anyone patient enough to look.  The sagebrush and juniper flanking the road have been here considerably less long -- only a few thousand years -- but they belong to this landscape as completely as the rock itself.  Rendered with a watercolor finish from an original photograph taken along a BLM road in rural Utah, this print captures the particular feeling of a road that goes somewhere worth going -- and the particular freedom of being the one driving it.",
+    images: {
+      main:    "images/landscapes/red-rock-light.jpg",
+      room:    "images/mockups/red-rock-light-room.jpg",
+      framed:  "images/mockups/red-rock-light-framed.jpg",
+      canvas:  "images/mockups/red-rock-light-canvas-wrap.jpg",
+      metal:   "images/mockups/red-rock-light-metal.jpg",
+        original: "images/originals/red-rock-light.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "lakeside-solitude": {
+    id:              "lakeside-solitude",
+    number:          "No. 04",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Lakeside Solitude",
+    caption:         "The water knows how to keep a secret.",
+    altText:         "Red canoe pond watercolor print -- red canoe resting at the shore of a still pond in Burlington Kentucky",
+    description:     "Some photographs happen because you plan them.  Others happen because you finally pull over.  This pond sits along a narrow road in Burlington, Kentucky -- passed every day, admired every day, photographed on the one day patience finally ran out.  That red canoe rested at the shore in the full green of a Kentucky summer, perfectly still, perfectly placed, as if it had always known it was worth stopping for.  The scenery along any road changes with every passing day -- the light shifts, the seasons turn, the water rises and falls -- and most of it disappears without anyone ever stopping to notice.  Rendered with a watercolor finish from an original photograph, this print is a small reminder that the most beautiful things are often the ones you pass every day without stopping.  Until the day you do.",
+    images: {
+      main:    "images/landscapes/lakeside-solitude.jpg",
+      room:    "images/mockups/lakeside-solitude-room.jpg",
+      framed:  "images/mockups/lakeside-solitude-framed.jpg",
+      canvas:  "images/mockups/lakeside-solitude-canvas-wrap.jpg",
+      metal:   "images/mockups/lakeside-solitude-metal.jpg",
+        original: "images/originals/lakeside-solitude.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    "the-long-melt": {
+    id:              "the-long-melt",
+    number:          "No. 08",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "The Long Melt",
+    caption:         "Ten thousand years of patience, moving toward the sea.",
+    altText:         "Kenai Fjords glacier watercolor print -- massive blue tidewater glacier flowing between rust-colored canyon walls toward calm water in Kenai Fjords National Park, Alaska",
+    description:     "The glacier you are looking at has been moving toward the sea for thousands of years, and it has never once been in a hurry.  Tidewater glaciers like this one in Kenai Fjords National Park are rivers of ice -- born in the snowfields high above, compressed over centuries into something ancient and dense, moving downhill under their own impossible weight at a pace measured in feet per day.  That blue is not a trick of the light.  Glacial ice is so compressed that it absorbs every color in the spectrum except blue, which it reflects back in shades that have no equivalent anywhere else in the natural world.  The rust and gold of the canyon walls on either side are the exposed bedrock the glacier has been carving for millennia, scraping and reshaping the Alaskan coastline one slow inch at a time.  Kenai Fjords National Park holds over 40 glaciers, and every one of them is a record of time written in ice and stone.  Rendered with a watercolor finish from an original photograph taken from the water in Kenai Fjords, this print captures a landscape that has been becoming itself since long before anyone was there to see it.",
+    images: {
+      main:    "images/botanical-studies/the-long-melt.jpg",
+      room:    "images/mockups/the-long-melt.jpg",
+      framed:  "images/mockups/the-long-melt.jpg",
+      canvas:  "images/mockups/the-long-melt-canvas-wrap.jpg",
+      metal:   "images/mockups/the-long-melt-metal.jpg",
+        original: "images/originals/the-long-melt.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },  
+       
+   "reflections-of-wonder": {
+    id:              "reflections-of-wonder",
+    number:          "No. 09",
+    collection:      "landscapes",
+    collectionLabel: "Landscapes",
+    collectionPage:  "landscapes.html",
+    title:           "Reflections of Wonder",
+    caption:         "Some places are so large they can only be understood in reflection.",
+    altText:         "Denali watercolor print -- snow-capped Mount McKinley and Alaska Range reflected in the still water of Wonder Lake in Denali National Park, Alaska",
+    description:     "The Athabascan people named this mountain Denali -- the great one -- and left it at that, which turns out to have been the right call.  At 20,310 feet, it is the highest peak in North America, and on a clear day in Denali National Park it dominates the horizon in a way that makes every other landscape feel like a rehearsal.  Wonder Lake sits at mile 85 of the Denali Park Road, shallow and glacier-fed, cold enough and quiet enough on calm mornings to produce a reflection this precise -- the mountain and the sky doubled, the clouds above and below the same clouds, the peaks above and below the same peaks.  There is no road noise here.  No crowds.  Just the water, the mountain, and the particular silence that only exists in places this far from everything else.  The park protects six million acres of wilderness around it, most of it roadless, most of it unchanged since the ice retreated twelve thousand years ago.  Rendered with a watercolor finish from an original photograph taken at Wonder Lake in Denali National Park, this print captures the moment when the mountain becomes its own mirror -- and the silence has a shape you can almost see.",
+    images: {
+      main:    "images/landscapes/reflections-of-wonder.jpg",
+      room:    "images/mockups/reflections-of-wonder.jpg",
+      framed:  "images/mockups/reflections-of-wonder.jpg",
+      canvas:  "images/mockups/reflections-of-wonder-canvas-wrap.jpg",
+      metal:   "images/mockups/reflections-of-wonder-metal.jpg",
+        original: "images/originals/reflections-of-wonder.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },    
+    
+
+    
+    
+
+    
+    
+
+    
 };
 
 
