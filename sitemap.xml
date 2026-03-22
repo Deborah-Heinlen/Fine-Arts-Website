@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ═══════════════════════════════════════════════════════════
-       CORE PAGES
-  ════════════════════════════════════════════════════════════ -->
+  <!-- CORE PAGES -->
 
   <url>
     <loc>https://www.heinlenfineart.com/index.html</loc>
@@ -26,9 +24,7 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       COLLECTION PAGES
-  ════════════════════════════════════════════════════════════ -->
+  <!-- COLLECTION PAGES -->
 
   <url>
     <loc>https://www.heinlenfineart.com/botanical-studies.html</loc>
@@ -79,9 +75,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PRODUCT PAGES -- BOTANICAL STUDIES (10)
-  ════════════════════════════════════════════════════════════ -->
+  <!-- PRODUCT PAGES - BOTANICAL STUDIES -->
 
   <url>
     <loc>https://www.heinlenfineart.com/product.html?id=waterlily-in-bloom</loc>
@@ -153,9 +147,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PRODUCT PAGES -- WILDLIFE (4)
-  ════════════════════════════════════════════════════════════ -->
+  <!-- PRODUCT PAGES - WILDLIFE -->
 
   <url>
     <loc>https://www.heinlenfineart.com/product.html?id=focused-intent</loc>
@@ -185,9 +177,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PRODUCT PAGES -- AVIAN STUDIES (14)
-  ════════════════════════════════════════════════════════════ -->
+  <!-- PRODUCT PAGES - AVIAN STUDIES -->
 
   <url>
     <loc>https://www.heinlenfineart.com/product.html?id=crimson</loc>
@@ -287,9 +277,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PRODUCT PAGES -- CINCINNATI (8)
-  ════════════════════════════════════════════════════════════ -->
+  <!-- PRODUCT PAGES - CINCINNATI -->
 
   <url>
     <loc>https://www.heinlenfineart.com/product.html?id=ault-park-ascent</loc>
@@ -347,9 +335,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PRODUCT PAGES -- AMERICAN WEST (4)
-  ════════════════════════════════════════════════════════════ -->
+  <!-- PRODUCT PAGES - AMERICAN WEST -->
 
   <url>
     <loc>https://www.heinlenfineart.com/product.html?id=forgotten-miles</loc>
@@ -379,9 +365,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PRODUCT PAGES -- LANDSCAPES (9)
-  ════════════════════════════════════════════════════════════ -->
+  <!-- PRODUCT PAGES - LANDSCAPES -->
 
   <url>
     <loc>https://www.heinlenfineart.com/product.html?id=ancient-falls</loc>
@@ -446,9 +430,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PRODUCT PAGES -- HORSE COUNTRY (9)
-  ════════════════════════════════════════════════════════════ -->
+  <!-- PRODUCT PAGES - HORSE COUNTRY -->
 
   <url>
     <loc>https://www.heinlenfineart.com/product.html?id=biko</loc>
