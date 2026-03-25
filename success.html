@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <!-- SUCCESS PAGE -->    
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-4SMWQ4CMPS');
-</script>
-    
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE IDENTITY -- Order Confirmed
+  ════════════════════════════════════════════════════════════════ -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Order Confirmed | Heinlen Fine Art</title>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4SMWQ4CMPS');
+  </script>
 
   <!-- ═══════════════════════════════════════════════════════════════
        FONTS -- do not change
@@ -42,17 +44,10 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--cream);
-      color: var(--text-dark);
-      font-family: 'Jost', sans-serif;
-      font-weight: 300;
-      overflow-x: hidden;
-    }
+    body { background: var(--cream); color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
 
     /* ═══════════════════════════════════════════════════════════════
-       MAIN HEADER -- do not change
+       HEADER -- do not change
     ════════════════════════════════════════════════════════════════ */
     .site-header {
       position: fixed;
@@ -67,11 +62,7 @@
       border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
     }
 
-    .header-logo {
-      height: 100px;
-      width: auto;
-      display: block;
-    }
+    .header-logo { height: 90px; width: auto; display: block; }
 
     .header-title {
       font-family: "lindsey-signature", sans-serif;
@@ -101,18 +92,64 @@
       align-items: center;
       gap: 0.5rem;
     }
+    .header-cart:hover { background: var(--warm-tan); color: var(--cream); }
 
-    .header-cart:hover {
-      background: var(--warm-tan);
-      color: var(--cream);
+    /* ═══════════════════════════════════════════════════════════════
+       MOBILE HAMBURGER MENU
+    ════════════════════════════════════════════════════════════════ */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
     }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text-mid);
+      transition: all 0.3s;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--linen);
+      z-index: 198;
+      overflow-y: auto;
+      padding: 120px 2rem 3rem;
+    }
+
+    .mobile-nav.open { display: block; }
+
+    .mobile-nav a {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid #d8cfc4;
+      transition: color 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--text-dark); }
 
     /* ═══════════════════════════════════════════════════════════════
        COLLECTIONS STRIP -- do not change
     ════════════════════════════════════════════════════════════════ */
     .collections-strip {
       position: fixed;
-      top: 80px;
+      top: 130px;
       left: 0; right: 0;
       z-index: 199;
       display: flex;
@@ -135,15 +172,15 @@
       border-right: 1px solid rgba(200, 184, 154, 0.3);
       transition: background 0.2s, color 0.2s;
     }
-
     .strip-link:first-child { border-left: 1px solid rgba(200, 184, 154, 0.3); }
     .strip-link:hover { background: rgba(200, 184, 154, 0.2); color: var(--text-dark); }
 
     /* ═══════════════════════════════════════════════════════════════
        SUCCESS PAGE
+       margin-top must clear the fixed header + collections strip
     ════════════════════════════════════════════════════════════════ */
     .success-page {
-      margin-top: 122px;
+      margin-top: 175px;
       min-height: 60vh;
       display: flex;
       flex-direction: column;
@@ -212,14 +249,10 @@
       padding: 0.75rem 2rem;
       transition: background 0.25s, color 0.25s;
     }
-
-    .success-page a:hover {
-      background: var(--warm-tan);
-      color: var(--cream);
-    }
+    .success-page a:hover { background: var(--warm-tan); color: var(--cream); }
 
     /* ═══════════════════════════════════════════════════════════════
-       FOOTER
+       FOOTER -- do not change
     ════════════════════════════════════════════════════════════════ */
     footer {
       padding: 2.5rem 3rem;
@@ -232,55 +265,75 @@
       background: #e8e4e0;
       border-top: 1px solid rgba(200, 184, 154, 0.25);
     }
-
     footer a { color: var(--text-light); text-decoration: none; }
     footer a:hover { color: var(--text-mid); }
 
     /* ═══════════════════════════════════════════════════════════════
-       RESPONSIVE
+       RESPONSIVE -- tablet (max 900px)
     ════════════════════════════════════════════════════════════════ */
     @media (max-width: 900px) {
       .site-header { padding: 0.9rem 1.5rem; }
       .header-title { font-size: 1.8rem; }
-      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .collections-strip { flex-wrap: wrap; top: 119px; }
       .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
-      .success-page { margin-top: 110px; }
+      .success-page { margin-top: 165px; }
     }
 
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- mobile (max 600px)
+    ════════════════════════════════════════════════════════════════ */
     @media (max-width: 600px) {
+      .site-header { padding: 0.75rem 1rem; }
       .header-title { display: none; }
       .collections-strip { display: none; }
-      .success-page { margin-top: 68px; padding: 3rem 1.5rem; }
+      .mobile-menu-btn { display: flex; }
+      .success-page { margin-top: 120px; padding: 3rem 1.5rem; }
       footer { padding: 2rem 1rem; }
     }
 
   </style>
 </head>
-
 <body>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       MAIN HEADER -- do not change
+       HEADER -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
     <a href="index.html">
       <img src="images/favicon.png" alt="Heinlen Fine Art" class="header-logo" />
     </a>
     <a href="index.html" class="header-title">Heinlen Fine Art</a>
-    <a href="cart.html" class="header-cart">
-      Cart <span id="cartCount"></span>
-    </a>
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       COLLECTIONS STRIP
+       MOBILE NAV PANEL -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="wildlife.html">Wildlife</a>
+    <a href="botanical-studies.html">Botanical Studies</a>
+    <a href="avian-studies.html">Avian Studies</a>
+    <a href="cincinnati.html">Cincinnati</a>
+    <a href="horse-country.html">Horse Country</a>
+    <a href="landscapes.html">Landscapes</a>
+    <a href="american-west.html">American West</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
+    <a href="index.html"             class="strip-link">Home</a>
     <a href="wildlife.html"          class="strip-link">Wildlife</a>
     <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
     <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
     <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
-    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="horse-country.html"     class="strip-link">Horse Country</a>
+    <a href="landscapes.html"        class="strip-link">Landscapes</a>
     <a href="american-west.html"     class="strip-link">American West</a>
   </div>
 
@@ -288,19 +341,13 @@
        SUCCESS CONTENT
   ════════════════════════════════════════════════════════════════ -->
   <main class="success-page">
-
     <div class="success-icon">
       <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
     </div>
-
     <h1>Thank You for Your Order</h1>
-
     <p>Your fine art prints are on their way.  You will receive a confirmation email from Stripe with your order details shortly.</p>
-
     <p class="success-note">Each print is produced to order and carefully inspected before shipping.  Most orders ship within 5 to 10 business days.</p>
-
     <a href="index.html">Continue Browsing the Collections</a>
-
   </main>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -319,19 +366,42 @@
     </p>
   </footer>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════════ -->
   <script src="js/cart.js"></script>
-
   <script>
+
+    // ── MOBILE MENU ──────────────────────────────────────────────
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      mobileBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded', false);
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ── FOOTER YEAR -- auto-updates, do not change ───────────────
     document.getElementById('yr').textContent = new Date().getFullYear();
 
-    // ── CLEAR THE CART AFTER SUCCESSFUL PAYMENT ─────────────
-    // Only clears if the customer actually came from Stripe
+    // ── CLEAR CART AFTER SUCCESSFUL PAYMENT ─────────────────────
+    // Only clears if the customer came from Stripe
     // (Stripe adds a session_id to the URL).
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('session_id')) {
       localStorage.removeItem('dhfa_cart');
       cartUpdateBadge();
     }
+
   </script>
 
 </body>
