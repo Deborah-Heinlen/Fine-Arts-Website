@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <!-- PRIVACY POLICY -->    
-    
-    <!-- Favicon -->
-<link rel="icon" type="image/png" href="/images/favicon.png" />
-<link rel="apple-touch-icon" href="/images/favicon.png" />
 
-<!-- Open Graph / Social Media Preview -->
-<meta property="og:title" content="Heinlen Fine Art" />
-<meta property="og:description" content="Watercolor fine art prints of wildlife, botanicals, birds, landscapes, and more.  Every print begins as a photograph." />
-<meta property="og:image" content="https://heinlenfineart.com/images/banner-social.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://heinlenfineart.com/privacy-policy" />
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4SMWQ4CMPS');
-</script>
-    
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE IDENTITY -- Privacy Policy
+  ════════════════════════════════════════════════════════════════ -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       PAGE TITLE
-  ════════════════════════════════════════════════════════════════ -->
   <title>Privacy Policy | Heinlen Fine Art</title>
+  <link rel="canonical" href="https://heinlenfineart.com/privacy-policy" />
 
   <!-- ═══════════════════════════════════════════════════════════════
-       FONTS -- same as rest of site, do not change
+       FAVICON
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/favicon.png" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       OPEN GRAPH / SOCIAL MEDIA PREVIEW
+  ════════════════════════════════════════════════════════════════ -->
+  <meta property="og:title" content="Privacy Policy | Heinlen Fine Art" />
+  <meta property="og:description" content="Watercolor fine art prints of wildlife, botanicals, birds, landscapes, and more.  Every print begins as a photograph." />
+  <meta property="og:image" content="https://heinlenfineart.com/images/banner-social.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heinlenfineart.com/privacy-policy" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4SMWQ4CMPS');
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,17 +62,10 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--cream);
-      color: var(--text-dark);
-      font-family: 'Jost', sans-serif;
-      font-weight: 300;
-      overflow-x: hidden;
-    }
+    body { background: var(--cream); color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
 
     /* ═══════════════════════════════════════════════════════════════
-       MAIN HEADER -- matches all other pages, do not change
+       HEADER -- do not change
     ════════════════════════════════════════════════════════════════ */
     .site-header {
       position: fixed;
@@ -84,11 +80,7 @@
       border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
     }
 
-    .header-logo {
-      height: 100px;
-      width: auto;
-      display: block;
-    }
+    .header-logo { height: 90px; width: auto; display: block; }
 
     .header-title {
       font-family: "lindsey-signature", sans-serif;
@@ -115,18 +107,64 @@
       padding: 0.55rem 1.5rem;
       transition: background 0.25s, color 0.25s;
     }
-
-    .header-contact:hover {
-      background: var(--warm-tan);
-      color: var(--cream);
-    }
+    .header-contact:hover { background: var(--warm-tan); color: var(--cream); }
 
     /* ═══════════════════════════════════════════════════════════════
-       COLLECTIONS STRIP -- matches all other pages, do not change
+       MOBILE HAMBURGER MENU
+    ════════════════════════════════════════════════════════════════ */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text-mid);
+      transition: all 0.3s;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--linen);
+      z-index: 198;
+      overflow-y: auto;
+      padding: 120px 2rem 3rem;
+    }
+
+    .mobile-nav.open { display: block; }
+
+    .mobile-nav a {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid #d8cfc4;
+      transition: color 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- do not change
     ════════════════════════════════════════════════════════════════ */
     .collections-strip {
       position: fixed;
-      top: 80px;
+      top: 130px;
       left: 0; right: 0;
       z-index: 199;
       display: flex;
@@ -149,19 +187,17 @@
       border-right: 1px solid rgba(200, 184, 154, 0.3);
       transition: background 0.2s, color 0.2s;
     }
-
     .strip-link:first-child { border-left: 1px solid rgba(200, 184, 154, 0.3); }
     .strip-link:hover { background: rgba(200, 184, 154, 0.2); color: var(--text-dark); }
 
     /* ═══════════════════════════════════════════════════════════════
-       PAGE WRAPPER -- pushes content below fixed header + strip
+       PAGE WRAPPER
+       margin-top must clear the fixed header + collections strip
     ════════════════════════════════════════════════════════════════ */
-    .page-wrap {
-      margin-top: 122px;
-    }
+    .page-wrap { margin-top: 175px; }
 
     /* ═══════════════════════════════════════════════════════════════
-       POLICY PAGE LAYOUT
+       POLICY HERO
     ════════════════════════════════════════════════════════════════ */
     .policy-hero {
       padding: 5rem 3rem 3rem;
@@ -177,15 +213,6 @@
       text-transform: uppercase;
       color: var(--text-light);
       margin-bottom: 1rem;
-    }
-
-    .policy-last-updated {
-      font-family: 'Jost', sans-serif;
-      font-size: 0.68rem;
-      font-weight: 300;
-      letter-spacing: 0.15em;
-      color: var(--text-light);
-      margin-top: 1.2rem;
     }
 
     .policy-title {
@@ -205,25 +232,31 @@
       margin: 0 auto;
     }
 
+    .policy-last-updated {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-top: 1.2rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       POLICY CONTENT
+    ════════════════════════════════════════════════════════════════ */
     .policy-content {
       max-width: 780px;
       margin: 0 auto;
       padding: 4rem 3rem 6rem;
     }
 
-    /* ═══════════════════════════════════════════════════════════════
-       POLICY SECTIONS
-    ════════════════════════════════════════════════════════════════ */
     .policy-section {
       margin-bottom: 3rem;
       padding-bottom: 3rem;
       border-bottom: 1px solid rgba(200, 184, 154, 0.2);
     }
 
-    .policy-section:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-    }
+    .policy-section:last-child { border-bottom: none; margin-bottom: 0; }
 
     .policy-section h2 {
       font-family: 'Cormorant Garamond', serif;
@@ -246,9 +279,6 @@
 
     .policy-section p:last-child { margin-bottom: 0; }
 
-    /* ═══════════════════════════════════════════════════════════════
-       DATA LIST -- used for the types of data collected sections
-    ════════════════════════════════════════════════════════════════ */
     .policy-section .data-category {
       font-family: 'Jost', sans-serif;
       font-size: 0.78rem;
@@ -259,11 +289,7 @@
       margin: 1.2rem 0 0.6rem;
     }
 
-    .policy-list {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 1rem;
-    }
+    .policy-list { list-style: none; padding: 0; margin-bottom: 1rem; }
 
     .policy-list li {
       font-family: 'Jost', sans-serif;
@@ -292,11 +318,10 @@
       text-underline-offset: 3px;
       transition: color 0.2s;
     }
-
     .policy-section a:hover { color: var(--text-dark); }
 
     /* ═══════════════════════════════════════════════════════════════
-       FOOTER -- matches all other pages, do not change
+       FOOTER -- do not change
     ════════════════════════════════════════════════════════════════ */
     footer {
       padding: 2.5rem 3rem;
@@ -309,60 +334,85 @@
       background: #e8e4e0;
       border-top: 1px solid rgba(200, 184, 154, 0.25);
     }
-
     footer a { color: var(--text-light); text-decoration: none; }
     footer a:hover { color: var(--text-mid); }
 
     /* ═══════════════════════════════════════════════════════════════
-       RESPONSIVE
+       RESPONSIVE -- tablet (max 900px)
     ════════════════════════════════════════════════════════════════ */
     @media (max-width: 900px) {
       .site-header { padding: 0.9rem 1.5rem; }
       .header-title { font-size: 1.8rem; }
-      .collections-strip { flex-wrap: wrap; top: 62px; }
+      .collections-strip { flex-wrap: wrap; top: 119px; }
       .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
-      .page-wrap { margin-top: 110px; }
+      .page-wrap { margin-top: 165px; }
       .policy-hero { padding: 3rem 1.5rem 2rem; }
       .policy-content { padding: 3rem 1.5rem 4rem; }
     }
 
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- mobile (max 600px)
+    ════════════════════════════════════════════════════════════════ */
     @media (max-width: 600px) {
+      .site-header { padding: 0.75rem 1rem; }
       .header-title { display: none; }
       .collections-strip { display: none; }
-      .page-wrap { margin-top: 68px; }
+      .mobile-menu-btn { display: flex; }
+      .page-wrap { margin-top: 120px; }
+      footer { padding: 2rem 1rem; }
     }
 
   </style>
 </head>
-
 <body>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       MAIN HEADER -- do not change
+       HEADER -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
     <a href="index.html">
       <img src="images/favicon.png" alt="Heinlen Fine Art" class="header-logo" />
     </a>
     <a href="index.html" class="header-title">Heinlen Fine Art</a>
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <a href="contact.html" class="header-contact">Contact</a>
   </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MOBILE NAV PANEL -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="wildlife.html">Wildlife</a>
+    <a href="botanical-studies.html">Botanical Studies</a>
+    <a href="avian-studies.html">Avian Studies</a>
+    <a href="cincinnati.html">Cincinnati</a>
+    <a href="horse-country.html">Horse Country</a>
+    <a href="landscapes.html">Landscapes</a>
+    <a href="american-west.html">American West</a>
+  </nav>
 
   <!-- ═══════════════════════════════════════════════════════════════
        COLLECTIONS STRIP -- no active link on policy pages
   ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
+    <a href="index.html"             class="strip-link">Home</a>
     <a href="wildlife.html"          class="strip-link">Wildlife</a>
     <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
     <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
     <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
-    <a href="americana.html"         class="strip-link">Americana</a>
+    <a href="horse-country.html"     class="strip-link">Horse Country</a>
+    <a href="landscapes.html"        class="strip-link">Landscapes</a>
     <a href="american-west.html"     class="strip-link">American West</a>
   </div>
 
   <div class="page-wrap">
 
-    <!-- PAGE HERO -->
+    <!-- ═══════════════════════════════════════════════════════════
+         PAGE HERO
+    ══════════════════════════════════════════════════════════════ -->
     <div class="policy-hero">
       <p class="policy-eyebrow">Heinlen Fine Art</p>
       <h1 class="policy-title">Privacy Policy</h1>
@@ -370,7 +420,11 @@
       <p class="policy-last-updated">Last updated: February 7, 2026</p>
     </div>
 
-    <!-- POLICY CONTENT -->
+    <!-- ═══════════════════════════════════════════════════════════
+         POLICY CONTENT
+         To update this policy, edit the text within each
+         .policy-section block below.
+    ══════════════════════════════════════════════════════════════ -->
     <div class="policy-content">
 
       <div class="policy-section">
@@ -403,7 +457,6 @@
           place an order for photography services or fine art prints, or sign up
           for our marketing lists.  This may include:
         </p>
-
         <p class="data-category">Information you provide to us</p>
         <ul class="policy-list">
           <li>Full name</li>
@@ -412,7 +465,6 @@
           <li>Phone number</li>
           <li>Payment information (processed securely by our payment partners)</li>
         </ul>
-
         <p class="data-category">Information collected automatically</p>
         <ul class="policy-list">
           <li>Purchase and cart history</li>
@@ -421,7 +473,6 @@
           <li>Cookie and pixel data</li>
           <li>Location data</li>
         </ul>
-
         <p class="data-category">Information from third parties</p>
         <ul class="policy-list">
           <li>Fraud detection and credit data</li>
@@ -537,13 +588,12 @@
       </div>
 
     </div><!-- end .policy-content -->
-
   </div><!-- end .page-wrap -->
 
   <!-- ═══════════════════════════════════════════════════════════════
        FOOTER -- do not change
   ════════════════════════════════════════════════════════════════ -->
- <footer>
+  <footer>
     <p style="margin-bottom: 0.8rem;">
       <a href="contact.html" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about a print?  We'd love to hear from you.</a>
     </p>
@@ -556,8 +606,32 @@
     </p>
   </footer>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════════ -->
   <script>
+
+    // ── MOBILE MENU ──────────────────────────────────────────────
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      mobileBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded', false);
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ── FOOTER YEAR -- auto-updates, do not change ───────────────
     document.getElementById('yr').textContent = new Date().getFullYear();
+
   </script>
 
 </body>
