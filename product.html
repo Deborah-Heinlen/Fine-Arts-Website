@@ -9,7 +9,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fine Art Print | Heinlen Fine Art</title>
-  <link rel="canonical" href="https://heinlenfineart.com/product" />
+<meta name="description" content="Watercolor fine art print by Deborah Heinlen." />
+<link rel="canonical" href="https://heinlenfineart.com/product" />
 
   <!-- ═══════════════════════════════════════════════════════════════
        FAVICON
@@ -1156,7 +1157,9 @@
     } else {
 
       // Update page title
-      document.title = product.title + ' | ' + product.collectionLabel + ' | Heinlen Fine Art';
+    document.title = product.title + ' | ' + product.collectionLabel + ' | Heinlen Fine Art';
+document.querySelector('meta[name="description"]').setAttribute('content', product.description);
+document.querySelector('link[rel="canonical"]').setAttribute('href', 'https://heinlenfineart.com/product.html?id=' + productId);
 
       // Build size option HTML for each medium
       const metalOptions  = Object.entries(product.prices.metal).map(([val, price]) =>
