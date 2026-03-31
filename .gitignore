@@ -1,0 +1,13 @@
+# Mac system files
+.DS_Store
+._*
+._.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Git internal
+._.git
+
+# Editor files
+*.swp
+*.swo
