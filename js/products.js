@@ -1516,7 +1516,7 @@ const PRODUCTS = {
     collectionLabel: "Horse Country",
     collectionPage:  "horse-country.html",
     title:           "New Beginnings",
-    caption:         "Every season starts with something new..",
+    caption:         "Every season starts with something new.",
     altText:         "Mare and foal watercolor print -- chestnut foal standing close beside a dapple grey mare in a green Kentucky pasture at Woodstock Farm in Lexington, Kentucky",
     description:     "There is no more hopeful sight in horse country than a foal finding its place in the world.  This chestnut foal, nestled close to its grey mare at Woodstock Farm in Lexington, Kentucky, was photographed in the early weeks of life -- still discovering, still learning, still entirely dependent on the quiet strength standing beside it.  Thoroughbred foals are born knowing almost nothing and learn almost everything in the first hours and days -- how to stand, how to nurse, how to follow, how to trust.  The mare knows her job without being told.  She has positioned herself close, patient and unhurried, exactly as nature intended.  Woodstock Farm sits in the heart of the Bluegrass region, where the limestone-rich soil and rolling green pastures have produced some of the greatest racehorses in history.  The foal may race someday, may carry a name that ends up in a record book somewhere -- but in this moment none of that exists yet.  In this moment there is only a mare, a foal, and a green Kentucky spring that has all the time in the world.  Rendered with a watercolor finish from an original photograph, this print is for everyone who has ever witnessed a beginning and understood what a privilege that is.",
     images: {
@@ -1894,7 +1894,8 @@ const COLLECTIONS = {
     "the-win",
     "nose-to-nose",
     "in-the-clear",    
-    "high-desert-mustang"  
+    "high-desert-mustang",
+    "new-beginnings"
    ]
 };
 
