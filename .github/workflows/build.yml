@@ -28,4 +28,4 @@ jobs:
           git config user.email "github-actions@github.com"
           git add products/
           git diff --staged --quiet || git commit -m "Auto-generate product pages"
-          git push// JavaScript Document
+          git push
