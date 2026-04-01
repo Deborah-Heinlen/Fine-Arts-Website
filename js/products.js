@@ -1788,7 +1788,7 @@ const PRODUCTS = {
     collectionLabel: "Landscapes",
     collectionPage:  "landscapes.html",
     title:           "Reflections of Wonder",
-    caption:         "Some places are so large they can only be understood in reflection.",
+    caption:         "Some places are so large they can only be understood in the reflection.",
     altText:         "Denali watercolor print -- snow-capped Mount McKinley and Alaska Range reflected in the still water of Wonder Lake in Denali National Park, Alaska",
     description:     "The Athabascan people named this mountain Denali -- the great one -- and left it at that, which turns out to have been the right call.  At 20,310 feet, it is the highest peak in North America, and on a clear day in Denali National Park it dominates the horizon in a way that makes every other landscape feel like a rehearsal.  Wonder Lake sits at mile 85 of the Denali Park Road, shallow and glacier-fed, cold enough and quiet enough on calm mornings to produce a reflection this precise -- the mountain and the sky doubled, the clouds above and below the same clouds, the peaks above and below the same peaks.  There is no road noise here.  No crowds.  Just the water, the mountain, and the particular silence that only exists in places this far from everything else.  The park protects six million acres of wilderness around it, most of it roadless, most of it unchanged since the ice retreated twelve thousand years ago.  Rendered with a watercolor finish from an original photograph taken at Wonder Lake in Denali National Park, this print captures the moment when the mountain becomes its own mirror -- and the silence has a shape you can almost see.",
     images: {
