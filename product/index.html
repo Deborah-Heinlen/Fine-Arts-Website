@@ -1175,11 +1175,11 @@
 
       // Build gallery images
       const galleryImgs = `
-        <img src="${product.images.main}"   alt="${product.title} fine art print" class="active" data-thumb="${product.images.main}" />
-        <img src="${product.images.room}"   alt="${product.title} shown in a room setting" data-thumb="${product.images.room}" />
-        <img src="${product.images.framed}" alt="${product.title} framed print sample" data-thumb="${product.images.framed}" />
-        <img src="${product.images.canvas}" alt="${product.title} canvas wrap sample" data-thumb="${product.images.canvas}" />
-        <img src="${product.images.metal}"  alt="${product.title} metal print sample" data-thumb="${product.images.metal}" />
+        <img src="../${product.images.main}"   alt="${product.title} fine art print" class="active" data-thumb="../${product.images.main}" />
+        <img src="../${product.images.room}"   alt="${product.title} shown in a room setting" data-thumb="../${product.images.room}" />
+        <img src="../${product.images.framed}" alt="${product.title} framed print sample" data-thumb="../${product.images.framed}" />
+        <img src="../${product.images.canvas}" alt="${product.title} canvas wrap sample" data-thumb="../${product.images.canvas}" />
+        <img src="../${product.images.metal}"  alt="${product.title} metal print sample" data-thumb="../${product.images.metal}" />
       `;
 
       // Build before/after section (only if original photo exists)
@@ -1188,11 +1188,11 @@
         <section class="before-after-section">
           <div class="before-after-grid">
             <div class="before-after-img-wrap">
-              <img src="${product.images.original}" alt="${product.title} - original photograph" />
+              <img src="../${product.images.original}" alt="${product.title} - original photograph" />
               <span class="before-after-label">Original Photograph</span>
             </div>
             <div class="before-after-img-wrap">
-              <img src="${product.images.main}" alt="${product.title} - watercolor print" />
+              <img src="../${product.images.main}" alt="${product.title} - watercolor print" />
               <span class="before-after-label">Watercolor Print</span>
             </div>
           </div>
@@ -1205,7 +1205,7 @@
       // Build mobile medium preview
       const mobileMediumPreview = `
         <div class="mobile-medium-preview" id="mobileMediumPreview" title="Tap to view in gallery">
-          <img id="mobileMediumImg" src="${product.images.metal}" alt="${product.title} - selected medium preview" />
+          <img id="mobileMediumImg" src="../${product.images.metal}" alt="${product.title} - selected medium preview" />
           <p class="mobile-medium-preview-label" id="mobileMediumLabel">Metal Print Preview</p>
         </div>
       `;
@@ -1422,7 +1422,7 @@
       const tabs   = document.querySelectorAll('.medium-tab');
       const panels = document.querySelectorAll('.medium-panel');
       const mediumImageIndex = { metal: 4, canvas: 3, framed: 2 };
-      const mediumImageSrc   = { metal: product.images.metal, canvas: product.images.canvas, framed: product.images.framed };
+      const mediumImageSrc   = { metal: '../' + product.images.metal, canvas: '../' + product.images.canvas, framed: '../' + product.images.framed };
       const mediumLabelText  = { metal: 'Metal Print Preview', canvas: 'Canvas Wrap Preview', framed: 'Framed Print Preview' };
 
       tabs.forEach(tab => {
@@ -1481,7 +1481,7 @@
           sizeKey:    val,
           sizeLabel:  product.sizeLabels[medium][val],
           price:      product.prices[medium][val],
-          image:      product.images.main,
+          image:      '../' + product.images.main,
           frameColor: null,
           matColor:   null
         });
@@ -1551,7 +1551,7 @@
 
       openBtn.addEventListener('click', () => {
         updateModalSizeLabel();
-        previewImgEl.src = product.images.main;
+        previewImgEl.src = '../' + product.images.main;
         previewImgEl.alt = product.title + ' framed preview';
         previewImgEl.onload = function() {
           previewFrameEl.classList.remove('landscape', 'portrait');
@@ -1601,7 +1601,7 @@
           sizeKey:    val,
           sizeLabel:  product.sizeLabels.framed[val],
           price:      product.prices.framed[val],
-          image:      product.images.main,
+          image:      '../' + product.images.main,
           frameColor: selectedFrame.dataset.label,
           matColor:   selectedMat.dataset.label
         });
