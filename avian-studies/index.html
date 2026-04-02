@@ -1,0 +1,925 @@
+<!-- ═══════════════════════════════════════════════════════════════
+     AVIAN STUDIES COLLECTION -- index.html
+     Location: /avian-studies/index.html
+     Canonical: https://heinlenfineart.com/avian-studies
+════════════════════════════════════════════════════════════════ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE IDENTITY -- Avian Studies
+  ════════════════════════════════════════════════════════════════ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avian Studies | Heinlen Fine Art</title>
+  <meta name="description" content="Avian Studies collection by Heinlen Fine Art -- watercolor-style fine art prints of eagles, herons, cardinals, and songbirds created from original photography.  Available on metal, canvas, and framed." />
+  <link rel="canonical" href="https://heinlenfineart.com/avian-studies" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FAVICON
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="apple-touch-icon" href="../images/favicon.png" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       OPEN GRAPH / SOCIAL MEDIA PREVIEW
+  ════════════════════════════════════════════════════════════════ -->
+  <meta property="og:title" content="Avian Studies | Heinlen Fine Art" />
+  <meta property="og:description" content="Watercolor fine art prints of eagles, herons, cardinals, and songbirds.  Every print begins as a photograph." />
+  <meta property="og:image" content="https://heinlenfineart.com/images/banner-social.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heinlenfineart.com/avian-studies" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4SMWQ4CMPS');
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
+
+  <style>
+
+    /* ═══════════════════════════════════════════════════════════════
+       CSS VARIABLES -- site-wide colors, do not change
+    ════════════════════════════════════════════════════════════════ */
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: #f2ede8; color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HEADER -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(242, 237, 232, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .header-logo { height: 90px; width: auto; display: block; }
+
+    .header-title {
+      font-family: "lindsey-signature", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      letter-spacing: 0em;
+      color: var(--text-dark);
+      text-decoration: none;
+      text-transform: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-cart {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 1.5rem;
+      transition: background 0.25s, color 0.25s;
+    }
+    .header-cart:hover { background: var(--warm-tan); color: var(--cream); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MOBILE HAMBURGER MENU
+    ════════════════════════════════════════════════════════════════ */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text-mid);
+      transition: all 0.3s;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--linen);
+      z-index: 198;
+      overflow-y: auto;
+      padding: 120px 2rem 3rem;
+    }
+
+    .mobile-nav.open { display: block; }
+
+    .mobile-nav a {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid #d8cfc4;
+      transition: color 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    .collections-strip {
+      position: fixed;
+      top: 130px;
+      left: 0; right: 0;
+      z-index: 199;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(237, 232, 220, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .strip-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1.25rem 1.6rem;
+      border-right: 1px solid rgba(200, 184, 154, 0.3);
+      transition: background 0.2s, color 0.2s;
+    }
+    .strip-link:first-child { border-left: 1px solid rgba(200, 184, 154, 0.3); }
+    .strip-link:hover { background: rgba(200, 184, 154, 0.2); color: var(--text-dark); }
+    .strip-link.active { color: var(--text-dark); background: rgba(200, 184, 154, 0.15); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO -- page title + slideshow
+       margin-top must clear the fixed header + collections strip
+    ════════════════════════════════════════════════════════════════ */
+    .hero {
+      margin-top: 175px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-texture {
+      position: relative;
+      background: var(--linen);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4.5rem 3rem 3.5rem;
+    }
+
+    .hero-texture::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .hero-text { position: relative; z-index: 2; text-align: center; }
+
+    .hero-breadcrumb {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+    }
+    .hero-breadcrumb a { color: inherit; text-decoration: none; transition: color 0.2s; }
+    .hero-breadcrumb a:hover { color: var(--text-mid); }
+
+    .hero-collection-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.0;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.5s forwards;
+    }
+
+    .hero-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin: 0 auto 1.8rem auto;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.7s forwards;
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.9s forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO SLIDESHOW
+    ════════════════════════════════════════════════════════════════ */
+    .hero-slideshow {
+      position: relative;
+      overflow: hidden;
+      height: 65vh;
+      background: var(--linen);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+    .slide.active { opacity: 1; }
+
+    .slide img {
+      display: block;
+      max-width: 55%;
+      max-height: 58vh;
+      object-fit: contain;
+      border-radius: 1px;
+      transition: opacity 2s ease;
+      filter: drop-shadow(0 8px 32px rgba(100, 80, 60, 0.15));
+    }
+    .slide img.portrait { max-width: 35%; }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, var(--linen));
+      pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       INTERLUDE BAR
+    ════════════════════════════════════════════════════════════════ */
+    .interlude {
+      background: var(--linen);
+      text-align: center;
+      padding: 4rem 2rem;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+    .interlude span {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINTS SECTION -- individual product rows
+    ════════════════════════════════════════════════════════════════ */
+    .prints-section {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: #2e3848;
+    }
+
+    .print-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 85vh;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .print-row.visible { opacity: 1; transform: translateY(0); }
+    .print-row.reverse { direction: rtl; }
+    .print-row.reverse > * { direction: ltr; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT ROW COLORS
+    ════════════════════════════════════════════════════════════════ */
+    .print-row[data-print="american-glory"] { background: linear-gradient(to right, #403D39 0%, #6C7173 50%, #BFBFBD 100%); }
+    .print-row[data-print="american-glory"] .print-number,
+    .print-row[data-print="american-glory"] .print-caption { color: #b8c8d8; }
+    .print-row[data-print="american-glory"] .print-title { color: #dce8f0; }
+    .print-row[data-print="american-glory"] .btn-view { color: #b8c8d8; border-color: rgba(184, 200, 216, 0.5); }
+    .print-row[data-print="american-glory"] .btn-view::before { background: #403D3966; }
+
+    .print-row[data-print="crimson"] { background: linear-gradient(to right, #855C5B 25%, #966C6B 75%, #A87F7E 100%); }
+    .print-row[data-print="crimson"] .print-number,
+    .print-row[data-print="crimson"] .print-caption { color: #c8dcc8; }
+    .print-row[data-print="crimson"] .print-title { color: #e0f0e0; }
+    .print-row[data-print="crimson"] .btn-view { color: #c8dcc8; border-color: rgba(200, 220, 200, 0.5); }
+    .print-row[data-print="crimson"] .btn-view::before { background: #A87F7E66; }
+
+    .print-row[data-print="isis"] { background: linear-gradient(to right, #4E6383 0%, #60799F 50%, #99A9C2 100%); }
+    .print-row[data-print="isis"] .print-number,
+    .print-row[data-print="isis"] .print-caption { color: #e8e0d8; }
+    .print-row[data-print="isis"] .print-title { color: #f4f0ec; }
+    .print-row[data-print="isis"] .btn-view { color: #e8e0d8; border-color: rgba(232, 224, 216, 0.5); }
+    .print-row[data-print="isis"] .btn-view::before { background-color: #99A9C266; }
+
+    .print-row[data-print="apollo"] { background: linear-gradient(to right, #595047 0%, #8C837B 50%, #D9D0C7 100%); }
+    .print-row[data-print="apollo"] .print-number,
+    .print-row[data-print="apollo"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="apollo"] .print-title { color: #eef8ff; }
+    .print-row[data-print="apollo"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="apollo"] .btn-view::before { background-color: #59504766; }
+
+    .print-row[data-print="quiet-perch"] { background: linear-gradient(to right, #B3A8A8 0%, #887777 50%, #665858 100%); }
+    .print-row[data-print="quiet-perch"] .print-number,
+    .print-row[data-print="quiet-perch"] .print-caption { color: #e0ecd8; }
+    .print-row[data-print="quiet-perch"] .print-title { color: #f0f8ec; }
+    .print-row[data-print="quiet-perch"] .btn-view { color: #e0ecd8; border-color: rgba(224, 236, 216, 0.5); }
+    .print-row[data-print="quiet-perch"] .btn-view::before { background-color: #B3A8A866; }
+
+    .print-row[data-print="sentinels-watch"] { background: linear-gradient(to right, #596587 0%, #808CAC 50%, #B8BFD1 100%); }
+    .print-row[data-print="sentinels-watch"] .print-number,
+    .print-row[data-print="sentinels-watch"] .print-caption { color: #d0e4f4; }
+    .print-row[data-print="sentinels-watch"] .print-title { color: #e8f4ff; }
+    .print-row[data-print="sentinels-watch"] .btn-view { color: #d0e4f4; border-color: rgba(208, 228, 244, 0.5); }
+    .print-row[data-print="sentinels-watch"] .btn-view::before { background-color: #404A6366; }
+
+    .print-row[data-print="still-waters"] { background: linear-gradient(to right, #B7A376 0%, #897648 50%, #54482C 100%); }
+    .print-row[data-print="still-waters"] .print-number,
+    .print-row[data-print="still-waters"] .print-caption { color: #f0e8c8; }
+    .print-row[data-print="still-waters"] .print-title { color: #fff8d8; }
+    .print-row[data-print="still-waters"] .btn-view { color: #f0e8c8; border-color: rgba(240, 232, 200, 0.5); }
+    .print-row[data-print="still-waters"] .btn-view::before { background-color: #B7A37666; }
+
+    .print-row[data-print="the-mantle"] { background: linear-gradient(to right, #C7A266 0%, #C7A266 50%, #D3B688 100%); }
+    .print-row[data-print="the-mantle"] .print-number,
+    .print-row[data-print="the-mantle"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="the-mantle"] .print-title { color: #eef8ff; }
+    .print-row[data-print="the-mantle"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="the-mantle"] .btn-view::before { background-color: #D3B68866; }
+
+    .print-row[data-print="rose-and-rust"] { background: linear-gradient(to right, #986867 0%, #A87F7E 50%, #BD9E9E 100%); }
+    .print-row[data-print="rose-and-rust"] .print-number,
+    .print-row[data-print="rose-and-rust"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="rose-and-rust"] .print-title { color: #eef8ff; }
+    .print-row[data-print="rose-and-rust"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="rose-and-rust"] .btn-view::before { background-color: #98686766; }
+
+    .print-row[data-print="the-redbird"] { background: linear-gradient(to right, #C59696 0%, #B57878 85%, #A86262 100%); }
+    .print-row[data-print="the-redbird"] .print-number,
+    .print-row[data-print="the-redbird"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="the-redbird"] .print-title { color: #eef8ff; }
+    .print-row[data-print="the-redbird"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="the-redbird"] .btn-view::before { background-color: #D5B3B366; }
+
+    .print-row[data-print="hidden-fire"] { background: linear-gradient(to right, #D9B0B1 0%, #BB7273 50%, #8D4445 100%); }
+    .print-row[data-print="hidden-fire"] .print-number,
+    .print-row[data-print="hidden-fire"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="hidden-fire"] .print-title { color: #eef8ff; }
+    .print-row[data-print="hidden-fire"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="hidden-fire"] .btn-view::before { background-color: #54282966; }
+
+    .print-row[data-print="full-sail"] { background: linear-gradient(to right, #143259 0%, #4D5D73 50%, #BAC8D9 100%); }
+    .print-row[data-print="full-sail"] .print-number,
+    .print-row[data-print="full-sail"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="full-sail"] .print-title { color: #eef8ff; }
+    .print-row[data-print="full-sail"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="full-sail"] .btn-view::before { background-color: #BAC8D966; }
+
+    .print-row[data-print="night-shift"] { background: linear-gradient(to right, #736D5D 0%, #A69E86 50%, #BDB29E 100%); }
+    .print-row[data-print="night-shift"] .print-number,
+    .print-row[data-print="night-shift"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="night-shift"] .print-title { color: #eef8ff; }
+    .print-row[data-print="night-shift"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="night-shift"] .btn-view::before { background-color: #736D5D66; }
+
+    .print-row[data-print="island-gold"] { background: linear-gradient(to right, #143259 0%, #4D5D73 50%, #BAC8D9 100%); }
+    .print-row[data-print="island-gold"] .print-number,
+    .print-row[data-print="island-gold"] .print-caption { color: #d8ecf8; }
+    .print-row[data-print="island-gold"] .print-title { color: #eef8ff; }
+    .print-row[data-print="island-gold"] .btn-view { color: #d8ecf8; border-color: rgba(216, 236, 248, 0.5); }
+    .print-row[data-print="island-gold"] .btn-view::before { background-color: #14325966; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       PRINT IMAGE & TEXT PANELS
+    ════════════════════════════════════════════════════════════════ */
+    .print-image {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      background: transparent;
+    }
+
+    .print-image img {
+      display: block;
+      width: 100%;
+      max-height: 75vh;
+      aspect-ratio: 5 / 4;
+      object-fit: contain;
+      border-radius: 1px;
+      filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.25));
+    }
+
+    .print-text {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 5rem 5rem 4.5rem;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .print-text::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .print-text-inner { position: relative; z-index: 2; text-align: center; }
+
+    .print-number {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .print-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+
+    .print-divider {
+      width: 36px;
+      height: 1px;
+      background: var(--warm-tan);
+      opacity: 0.8;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .print-caption {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      margin-bottom: 2.8rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       VIEW DETAILS BUTTON
+    ════════════════════════════════════════════════════════════════ */
+    .btn-view {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      text-decoration: none;
+      border: 1px solid rgba(100, 80, 60, 0.35);
+      padding: 0.85rem 2.2rem;
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-view::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--warm-tan);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+    .btn-view:hover { border-color: var(--warm-tan); color: var(--text-dark); }
+    .btn-view:hover::before { transform: translateX(0); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+    ════════════════════════════════════════════════════════════════ */
+    .other-collections {
+      background: var(--linen);
+      padding: 6rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(200, 184, 154, 0.2);
+    }
+    .other-collections h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+    .other-collections p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+    .collections-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+    .collection-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.75rem 2rem;
+      transition: background 0.25s, color 0.25s, border-color 0.25s;
+    }
+    .collection-link:hover { background: var(--warm-tan); border-color: var(--warm-tan); color: var(--cream); }
+    .collection-link.active { background: rgba(200, 184, 154, 0.15); color: var(--text-dark); }
+    .collection-link.active:hover { background: var(--warm-tan); color: var(--cream); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    footer {
+      padding: 2.5rem 3rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      background: #e8e4e0;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       IMAGE PROTECTION -- DO NOT REMOVE
+    ════════════════════════════════════════════════════════════════ */
+    img { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-drag: none; -webkit-touch-callout: none; pointer-events: none; }
+    a, button, .btn-view, .header-cart, .strip-link, .collection-link { pointer-events: auto; }
+    .print-image::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+    .slide::after { content: ''; position: absolute; inset: 0; z-index: 3; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- tablet (max 900px)
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { display: none; }
+      .collections-strip { flex-wrap: wrap; top: 119px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+      .hero { margin-top: 165px; }
+      .hero-texture { padding: 3.5rem 2rem 2.5rem; }
+      .hero-slideshow { height: 55vw; }
+      .hero::after { display: none; }
+      .slide img { max-width: 65%; max-height: 50vw; }
+      .slide img.portrait { max-width: 45%; }
+      .print-row, .print-row.reverse { grid-template-columns: 1fr; direction: ltr; min-height: auto; }
+      .print-image { padding: 2rem; }
+      .print-image img { max-height: none; }
+      .print-text { padding: 3rem 2rem; }
+      .interlude { padding: 2.5rem 1.5rem; }
+      .other-collections { padding: 4rem 1.5rem; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- mobile (max 600px)
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .site-header { padding: 0.75rem 1rem; }
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .mobile-menu-btn { display: flex; }
+      .hero { margin-top: 120px; }
+      .hero-texture { padding: 2.5rem 1.5rem 2rem; }
+      .hero-title { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+      .hero-breadcrumb { margin-bottom: 1.5rem; }
+      .hero-slideshow { height: 70vw; }
+      .slide img { max-width: 80%; }
+      .slide img.portrait { max-width: 55%; }
+      .print-image { padding: 1.5rem; }
+      .print-text { padding: 2.5rem 1.5rem; }
+      .print-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+      .print-caption { font-size: 1rem; }
+      .other-collections { padding: 3rem 1rem; }
+      .other-collections h2 { font-size: 1.4rem; }
+      .collections-row { gap: 0.6rem; }
+      .collection-link { padding: 0.65rem 1.4rem; font-size: 0.65rem; }
+      footer { padding: 2rem 1rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HEADER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <a href="../index.html">
+      <img src="../images/favicon.png" alt="Heinlen Fine Art" class="header-logo" />
+    </a>
+    <a href="../index.html" class="header-title">Heinlen Fine Art</a>
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="../cart/" class="header-cart">Cart <span id="cartCount"></span></a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MOBILE NAV PANEL -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="../wildlife/">Wildlife</a>
+    <a href="../botanical-studies/">Botanical Studies</a>
+    <a href="../avian-studies/">Avian Studies</a>
+    <a href="../cincinnati/">Cincinnati</a>
+    <a href="../horse-country/">Horse Country</a>
+    <a href="../landscapes/">Landscapes</a>
+    <a href="../american-west/">American West</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="collections-strip">
+    <a href="../index.html"             class="strip-link">Home</a>
+    <a href="../wildlife/"              class="strip-link">Wildlife</a>
+    <a href="../botanical-studies/"     class="strip-link">Botanical Studies</a>
+    <a href="../avian-studies/"         class="strip-link active">Avian Studies</a>
+    <a href="../cincinnati/"            class="strip-link">Cincinnati</a>
+    <a href="../horse-country/"         class="strip-link">Horse Country</a>
+    <a href="../landscapes/"            class="strip-link">Landscapes</a>
+    <a href="../american-west/"         class="strip-link">American West</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO -- collection title + rotating slideshow
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-texture">
+      <div class="hero-text">
+        <p class="hero-breadcrumb">
+          <a href="../index.html">Home</a> &nbsp;&rsaquo;&nbsp;
+          <a href="../index.html#collections">Collections</a> &nbsp;&rsaquo;&nbsp;
+          Avian Studies
+        </p>
+        <p class="hero-collection-label">The Collection</p>
+        <h1 class="hero-title">Avian<br>Studies</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">In the moment before flight,<br>everything is possible.</p>
+      </div>
+    </div>
+    <div class="hero-slideshow" id="heroSlideshow"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       INTERLUDE BAR
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="interlude">
+    <span>On the Wing</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PRINTS SECTION
+       Populated automatically by products.js -- do not edit here.
+  ════════════════════════════════════════════════════════════════ -->
+  <main class="prints-section" id="printsSection"></main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="other-collections">
+    <h2>Explore Further</h2>
+    <p>More collections from Heinlen Fine Art</p>
+    <nav class="collections-row" aria-label="All collections">
+      <a href="../index.html"             class="collection-link">Home</a>
+      <a href="../wildlife/"              class="collection-link">Wildlife</a>
+      <a href="../botanical-studies/"     class="collection-link">Botanical Studies</a>
+      <a href="../avian-studies/"         class="collection-link active">Avian Studies</a>
+      <a href="../cincinnati/"            class="collection-link">Cincinnati</a>
+      <a href="../horse-country/"         class="collection-link">Horse Country</a>
+      <a href="../landscapes/"            class="collection-link">Landscapes</a>
+      <a href="../american-west/"         class="collection-link">American West</a>
+    </nav>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <p style="margin-bottom: 0.8rem;">
+      <a href="../contact/" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about a print?  We'd love to hear from you.</a>
+    </p>
+    <p>
+      &copy; <span id="yr"></span> Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="../contact/">Contact</a>
+    </p>
+    <p style="margin-top: 0.5rem;">
+      All images &copy; Deborah Heinlen.  All rights reserved.
+    </p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════════ -->
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
+  <script>
+
+    // ── MOBILE MENU ──────────────────────────────────────────────
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      mobileBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded', false);
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ── FOOTER YEAR -- auto-updates, do not change ───────────────
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ── PRODUCTS -- populated from products.js, do not change ────
+    const collectionId  = 'avian-studies';
+    const productIds    = COLLECTIONS[collectionId] || [];
+    const slideshow     = document.getElementById('heroSlideshow');
+    const printsSection = document.getElementById('printsSection');
+
+    productIds.forEach((id, i) => {
+      const p = PRODUCTS[id];
+      if (!p) return;
+      const slide = document.createElement('div');
+      slide.className = 'slide' + (i === 0 ? ' active' : '');
+      slide.innerHTML = `<img src="../${p.images.main}" alt="${p.altText || p.title + ' by Deborah Heinlen'}" />`;
+      slideshow.appendChild(slide);
+    });
+
+    productIds.forEach((id, i) => {
+      const p = PRODUCTS[id];
+      if (!p) return;
+      const isReverse = i % 2 !== 0;
+      const article = document.createElement('article');
+      article.className = 'print-row' + (isReverse ? ' reverse' : '');
+      article.dataset.print = id;
+      article.innerHTML = `
+        <div class="print-image">
+          <img src="../${p.images.main}" alt="${p.altText || p.title + ' fine art print'}" loading="lazy" />
+        </div>
+        <div class="print-text">
+          <div class="print-text-inner">
+            <p class="print-number">${p.number} &nbsp;&mdash;&nbsp; ${p.collectionLabel}</p>
+            <h2 class="print-title">${p.title}</h2>
+            <div class="print-divider"></div>
+            <p class="print-caption">&ldquo;${p.caption}&rdquo;</p>
+            <a href="../product/?id=${id}" class="btn-view">View Details</a>
+          </div>
+        </div>`;
+      printsSection.appendChild(article);
+    });
+
+    // ── SLIDESHOW ────────────────────────────────────────────────
+    const SLIDE_DURATION = 3000;
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function nextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+    if (slides.length > 1) setInterval(nextSlide, SLIDE_DURATION);
+
+    // ── SCROLL ANIMATION on print rows ──────────────────────────
+    const rows = document.querySelectorAll('.print-row');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    rows.forEach(row => observer.observe(row));
+
+    // ── IMAGE PROTECTION -- DO NOT REMOVE ───────────────────────
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.addEventListener('dragstart', function(e) {
+      if (e.target.tagName === 'IMG') { e.preventDefault(); }
+    });
+
+  </script>
+</body>
+</html>
