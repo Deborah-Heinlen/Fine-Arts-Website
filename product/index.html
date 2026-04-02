@@ -1349,7 +1349,7 @@
                   <div class="swatch-row">
                     ${FRAME_OPTIONS.map(f => `
                       <div class="swatch-item">
-                        <img src="${f.img}" alt="${f.label} frame" loading="lazy" />
+                        <img src="../${f.img}" alt="${f.label} frame" loading="lazy" />
                         <span>${f.label}</span>
                       </div>`).join('')}
                   </div>
@@ -1357,7 +1357,7 @@
                   <div class="swatch-row">
                     ${MAT_OPTIONS.map(m => `
                       <div class="swatch-item">
-                        <img src="${m.img}" alt="${m.label} mat" loading="lazy" />
+                        <img src="../${m.img}" alt="${m.label} mat" loading="lazy" />
                         <span>${m.label}</span>
                       </div>`).join('')}
                   </div>
@@ -1510,7 +1510,7 @@
         item.className = 'modal-swatch-item';
         item.dataset.group = 'frame';
         item.dataset.label = opt.label;
-        item.innerHTML = `<img src="${opt.img}" alt="${opt.label} frame" /><span>${opt.label}</span>`;
+        item.innerHTML = `<img src="../${opt.img}" alt="${opt.label} frame" /><span>${opt.label}</span>`;
         frameSwatchesEl.appendChild(item);
       });
 
@@ -1521,7 +1521,7 @@
         item.className = 'modal-swatch-item';
         item.dataset.group = 'mat';
         item.dataset.label = opt.label;
-        item.innerHTML = `<img src="${opt.img}" alt="${opt.label} mat" /><span>${opt.label}</span>`;
+        item.innerHTML = `<img src="../${opt.img}" alt="${opt.label} mat" /><span>${opt.label}</span>`;
         matSwatchesEl.appendChild(item);
       });
 
