@@ -868,39 +868,9 @@ const PRODUCTS = {
 
   // ── CINCINNATI ───────────────────────────────────────────────
 
-  "ault-park-ascent": {
-    id:              "ault-park-ascent",
-    number:          "No. 01",
-    collection:      "cincinnati",
-    collectionLabel: "Cincinnati",
-    collectionPage:  "cincinnati.html",
-    title:           "Ault Park Ascent",
-    caption:         "The kind of beautiful that keeps on giving.",
-    altText:         "Ault Park Cincinnati watercolor print -- grand neoclassical stone steps with summer flowers and dramatic sky",
-    description:     "Levi and Susan Ault gave Cincinnati a gift in 1911 -- 224 acres of hillside land in Hyde Park that would become one of the city's most beloved green spaces.  The neoclassical pavilion that crowns those grand stone steps was built in 1930 and has been listed on the National Register of Historic Places ever since, its formal architecture a reminder of an era that believed public spaces should be genuinely beautiful.  For nearly a century Cincinnatians have climbed these steps for weddings, celebrations, and quiet afternoon walks -- the seasonal plantings at the base replanted each year by volunteers who understand that some things are worth maintaining.  Photographed in the summer of 2025 and rendered with a watercolor finish, this print captures Ault Park at its most generous -- the flowers in full bloom, the sky dramatic overhead, the steps waiting for whoever comes next.",
-    images: {
-      main:    "images/cincinnati/ault-park-ascent.jpg",
-      room:    "images/mockups/ault-park-ascent-room.jpg",
-      framed:  "images/mockups/ault-park-ascent-framed.jpg",
-      canvas:  "images/mockups/ault-park-ascent-canvas-wrap.jpg",
-      metal:   "images/mockups/ault-park-ascent-metal.jpg",
-        original: "images/originals/ault-park-ascent.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-  "gateway-to-the-queen-city": {
+    "gateway-to-the-queen-city": {
     id:              "gateway-to-the-queen-city",
-    number:          "No. 02",
+    number:          "No. 01",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -926,25 +896,27 @@ const PRODUCTS = {
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
-  },
-
-  "incline-to-the-mount": {
-    id:              "incline-to-the-mount",
-    number:          "No. 03",
+  },    
+    
+  
+      "heart-of-the-city": {
+    id:              "heart-of-the-city",
+    number:          "No. 02",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
-    title:           "Incline to the Mount",
-    caption:         "Still climbing, in memory.",
-    altText:         "Cincinnati incline railway watercolor print -- miniature display of historic Mt Adams incline at Krohn Conservatory",
-    description:     "Cincinnati was once a city of inclines.  At its peak in the late nineteenth century, the Queen City operated more incline railways than any city in the world -- steep mechanical lifts that carried passengers and freight from the riverfront up to the hilltop neighborhoods that defined the city's character.  The Mt. Adams Incline ran from 1876 to 1948, connecting the bustling streets below to the heights of one of Cincinnati's most beloved neighborhoods before the automobile made it obsolete.  All of the inclines are gone now.  What remains are photographs, memories, and this -- a lovingly crafted miniature display at Cincinnati's Krohn Conservatory in Eden Park, where that little red car still makes its climb through a Victorian Cincinnati that exists only in model form.  Rendered with a watercolor finish from an original photograph, this print captures something twice removed from the present -- a photograph of a memory of a city that was.",
+    title:           "Heart of the City",
+    caption:         "She has stood at the center of Cincinnati since 1871.",
+    altText:         "Tyler Davidson Fountain watercolor print -- the historic bronze Genius of Water statue atop the Tyler Davidson Fountain on Fountain Square in downtown Cincinnati, with water cascading from her outstretched arms",
+    description:     "She has stood at the center of Cincinnati since 1871, arms outstretched, water pouring from her hands in every direction, a gesture of abundance and welcome that has defined Fountain Square for over 150 years. The Tyler Davidson Fountain was a gift to the city from businessman Henry Probasco, given in memory of his business partner and brother-in-law Tyler Davidson. Designed by August von Kreling and cast in Munich, the central figure  known as the Genius of Water, stands atop a tiered bronze basin surrounded by figures representing the many uses of water in daily life: the farmer, the fisherman, the mother, the firefighter.  Cincinnati was a city built on water. The Ohio River made it a trading capital and the Miami and Erie Canal connected it to the Great Lakes. The fountain honored all of that with a single figure and a single gesture, hands open, water catching the light in every direction. Fountain Square has been the city's gathering place ever since, for concerts, celebrations, and ordinary lunch breaks, and she has watched all of it from the center, exactly where she was placed. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most enduring icons at her most luminous.",
+
     images: {
-      main:    "images/cincinnati/incline-to-the-mount.jpg",
-      room:    "images/mockups/incline-to-the-mount-room.jpg",
-      framed:  "images/mockups/incline-to-the-mount-framed.jpg",
-      canvas:  "images/mockups/incline-to-the-mount-canvas-wrap.jpg",
-      metal:   "images/mockups/incline-to-the-mount-metal.jpg",
-        original: "images/originals/incline-to-the-mount.jpg"
+      main:    "images/cincinnati/heart-of-the-city.jpg",
+      room:    "images/mockups/heart-of-the-city-room.jpg",
+      framed:  "images/mockups/heart-of-the-city-framed.jpg",
+      canvas:  "images/mockups/heart-of-the-city-canvas-wrap.jpg",
+      metal:   "images/mockups/heart-of-the-city-metal.jpg",
+        original: "images/originals/heart-of-the-city.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -958,9 +930,10 @@ const PRODUCTS = {
     }
   },
 
+
   "love-the-cov": {
     id:              "love-the-cov",
-    number:          "No. 04",
+    number:          "No. 03",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -990,7 +963,7 @@ const PRODUCTS = {
 
   "queen-city-overture": {
     id:              "queen-city-overture",
-    number:          "No. 05",
+    number:          "No. 04",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1020,7 +993,7 @@ const PRODUCTS = {
 
   "the-grand-terminal": {
     id:              "the-grand-terminal",
-    number:          "No. 06",
+    number:          "No. 05",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1050,7 +1023,7 @@ const PRODUCTS = {
 
   "the-queens-crown": {
     id:              "the-queens-crown",
-    number:          "No. 07",
+    number:          "No. 06",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1078,40 +1051,11 @@ const PRODUCTS = {
     }
   },
 
-  "dawns-early-light": {
-    id:              "dawns-early-light",
-    number:          "No. 08",
-    collection:      "cincinnati",
-    collectionLabel: "Cincinnati",
-    collectionPage:  "cincinnati.html",
-    title:           "Dawn's Early Light",
-    caption:         "Not just a flag.  A promise of freedom.",
-    altText:         "American flag watercolor print -- flag flying against blue sky in Covington Kentucky",
-    description:     "On the morning of September 14, 1814, Francis Scott Key watched the bombardment of Fort McHenry from a ship in Baltimore Harbor and saw, through the smoke and early light, that the American flag was still flying.  The flag that inspired him was 30 by 42 feet -- so large it was designed to be seen from a distance.  His poem became a song, and in 1931 that song became the national anthem.  The flag in this photograph flies today in Covington, Kentucky, across the river from the city that has always understood what it means to be at the crossroads of the American story.  Rendered with a watercolor finish from an original photograph, this print captures the flag as Key saw it -- bright against an uncertain sky, the stars holding their position exactly as they always have.",
-    images: {
-      main:    "images/cincinnati/dawns-early-light.jpg",
-      room:    "images/mockups/dawns-early-light-room.jpg",
-      framed:  "images/mockups/dawns-early-light-framed.jpg",
-      canvas:  "images/mockups/dawns-early-light-canvas-wrap.jpg",
-      metal:   "images/mockups/dawns-early-light-metal.jpg",
-        original: "images/originals/dawns-early-light.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
     
     
     "market-day": {
     id:              "market-day",
-    number:          "No. 08",
+    number:          "No. 07",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1140,24 +1084,85 @@ const PRODUCTS = {
   },
     
     
-     "heart-of-the-city": {
-    id:              "heart-of-the-city",
+    
+    "ault-park-ascent": {
+    id:              "ault-park-ascent",
+    number:          "No. 08",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Ault Park Ascent",
+    caption:         "The kind of beautiful that keeps on giving.",
+    altText:         "Ault Park Cincinnati watercolor print -- grand neoclassical stone steps with summer flowers and dramatic sky",
+    description:     "Levi and Susan Ault gave Cincinnati a gift in 1911 -- 224 acres of hillside land in Hyde Park that would become one of the city's most beloved green spaces.  The neoclassical pavilion that crowns those grand stone steps was built in 1930 and has been listed on the National Register of Historic Places ever since, its formal architecture a reminder of an era that believed public spaces should be genuinely beautiful.  For nearly a century Cincinnatians have climbed these steps for weddings, celebrations, and quiet afternoon walks -- the seasonal plantings at the base replanted each year by volunteers who understand that some things are worth maintaining.  Photographed in the summer of 2025 and rendered with a watercolor finish, this print captures Ault Park at its most generous -- the flowers in full bloom, the sky dramatic overhead, the steps waiting for whoever comes next.",
+    images: {
+      main:    "images/cincinnati/ault-park-ascent.jpg",
+      room:    "images/mockups/ault-park-ascent-room.jpg",
+      framed:  "images/mockups/ault-park-ascent-framed.jpg",
+      canvas:  "images/mockups/ault-park-ascent-canvas-wrap.jpg",
+      metal:   "images/mockups/ault-park-ascent-metal.jpg",
+        original: "images/originals/ault-park-ascent.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+
+
+  "dawns-early-light": {
+    id:              "dawns-early-light",
     number:          "No. 09",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
-    title:           "Heart of the City",
-    caption:         "She has stood at the center of Cincinnati since 1871.",
-    altText:         "Tyler Davidson Fountain watercolor print -- the historic bronze Genius of Water statue atop the Tyler Davidson Fountain on Fountain Square in downtown Cincinnati, with water cascading from her outstretched arms",
-    description:     "She has stood at the center of Cincinnati since 1871, arms outstretched, water pouring from her hands in every direction, a gesture of abundance and welcome that has defined Fountain Square for over 150 years. The Tyler Davidson Fountain was a gift to the city from businessman Henry Probasco, given in memory of his business partner and brother-in-law Tyler Davidson. Designed by August von Kreling and cast in Munich, the central figure  known as the Genius of Water, stands atop a tiered bronze basin surrounded by figures representing the many uses of water in daily life: the farmer, the fisherman, the mother, the firefighter.  Cincinnati was a city built on water. The Ohio River made it a trading capital and the Miami and Erie Canal connected it to the Great Lakes. The fountain honored all of that with a single figure and a single gesture, hands open, water catching the light in every direction. Fountain Square has been the city's gathering place ever since, for concerts, celebrations, and ordinary lunch breaks, and she has watched all of it from the center, exactly where she was placed. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most enduring icons at her most luminous.",
-
+    title:           "Dawn's Early Light",
+    caption:         "Not just a flag.  A promise of freedom.",
+    altText:         "American flag watercolor print -- flag flying against blue sky in Covington Kentucky",
+    description:     "On the morning of September 14, 1814, Francis Scott Key watched the bombardment of Fort McHenry from a ship in Baltimore Harbor and saw, through the smoke and early light, that the American flag was still flying.  The flag that inspired him was 30 by 42 feet -- so large it was designed to be seen from a distance.  His poem became a song, and in 1931 that song became the national anthem.  The flag in this photograph flies today in Covington, Kentucky, across the river from the city that has always understood what it means to be at the crossroads of the American story.  Rendered with a watercolor finish from an original photograph, this print captures the flag as Key saw it -- bright against an uncertain sky, the stars holding their position exactly as they always have.",
     images: {
-      main:    "images/cincinnati/heart-of-the-city.jpg",
-      room:    "images/mockups/heart-of-the-city-room.jpg",
-      framed:  "images/mockups/heart-of-the-city-framed.jpg",
-      canvas:  "images/mockups/heart-of-the-city-canvas-wrap.jpg",
-      metal:   "images/mockups/heart-of-the-city-metal.jpg",
-        original: "images/originals/heart-of-the-city.jpg"
+      main:    "images/cincinnati/dawns-early-light.jpg",
+      room:    "images/mockups/dawns-early-light-room.jpg",
+      framed:  "images/mockups/dawns-early-light-framed.jpg",
+      canvas:  "images/mockups/dawns-early-light-canvas-wrap.jpg",
+      metal:   "images/mockups/dawns-early-light-metal.jpg",
+        original: "images/originals/dawns-early-light.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },    
+    
+  "incline-to-the-mount": {
+    id:              "incline-to-the-mount",
+    number:          "No. 10",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Incline to the Mount",
+    caption:         "Still climbing, in memory.",
+    altText:         "Cincinnati incline railway watercolor print -- miniature display of historic Mt Adams incline at Krohn Conservatory",
+    description:     "Cincinnati was once a city of inclines.  At its peak in the late nineteenth century, the Queen City operated more incline railways than any city in the world -- steep mechanical lifts that carried passengers and freight from the riverfront up to the hilltop neighborhoods that defined the city's character.  The Mt. Adams Incline ran from 1876 to 1948, connecting the bustling streets below to the heights of one of Cincinnati's most beloved neighborhoods before the automobile made it obsolete.  All of the inclines are gone now.  What remains are photographs, memories, and this -- a lovingly crafted miniature display at Cincinnati's Krohn Conservatory in Eden Park, where that little red car still makes its climb through a Victorian Cincinnati that exists only in model form.  Rendered with a watercolor finish from an original photograph, this print captures something twice removed from the present -- a photograph of a memory of a city that was.",
+    images: {
+      main:    "images/cincinnati/incline-to-the-mount.jpg",
+      room:    "images/mockups/incline-to-the-mount-room.jpg",
+      framed:  "images/mockups/incline-to-the-mount-framed.jpg",
+      canvas:  "images/mockups/incline-to-the-mount-canvas-wrap.jpg",
+      metal:   "images/mockups/incline-to-the-mount-metal.jpg",
+        original: "images/originals/incline-to-the-mount.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1918,17 +1923,18 @@ const COLLECTIONS = {
     "island-gold"
   ],
   "cincinnati": [
-    "ault-park-ascent",
-    "gateway-to-the-queen-city",
-    "incline-to-the-mount",
+    "the-queens-crown",      
+    "heart-of-the-city",
     "love-the-cov",
+    "gateway-to-the-queen-city",
     "queen-city-overture",
     "the-grand-terminal",
-    "the-queens-crown",
     "dawns-early-light",
     "market-day",
-    "heart-of-the-city"
+    "ault-park-ascent",
+    "incline-to-the-mount"
   ],
+    
   "american-west": [
     "forgotten-miles",
     "crossroads",
