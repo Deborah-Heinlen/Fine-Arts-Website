@@ -1109,6 +1109,67 @@ const PRODUCTS = {
   },
     
     
+    "market-day": {
+    id:              "market-day",
+    number:          "No. 08",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Market Day",
+    caption:         "Since 1852, and still the best reason to get up early.",
+    altText:         "Findlay Market watercolor print -- the iconic green and red Findlay Market pavilion in Cincinnati's Over-the-Rhine neighborhood, with red café chairs and outdoor seating under a summer sky",
+    description:     "Findlay Market is the oldest continuously operating public market in Ohio, open since 1852, surviving wars, depressions, urban decline, and urban renewal, and arriving in the present day more vital than ever. The market sits at the heart of Over-the-Rhine, one of the largest intact urban historic districts in the United States, its cast iron and brick surroundings a reminder of the German immigrant community that built this neighborhood and this city into something remarkable. The pavilion itself, with its distinctive green signage, red ironwork, and cheerful awnings, has been a gathering place for Cincinnatians for over 170 years. On weekends it fills with farmers, vendors, chefs, families, and people who simply understand that buying food from the person who grew it is a different experience than any other kind of shopping. The red café chairs out front are almost always occupied, the coffee is always good, and the tomatoes are always worth the drive. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most beloved institutions exactly as it looks on a perfect market morning -- the sign lit, the chairs out, and the doors about to open.",
+    images: {
+      main:    "images/cincinnati/market-day.jpg",
+      room:    "images/mockups/market-day-room.jpg",
+      framed:  "images/mockups/market-day-framed.jpg",
+      canvas:  "images/mockups/market-day-canvas-wrap.jpg",
+      metal:   "images/mockups/market-day-metal.jpg",
+        original: "images/originals/market-day.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    
+     "heart-of-the-city": {
+    id:              "heart-of-the-city",
+    number:          "No. 09",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Heart of the City",
+    caption:         "She has stood at the center of Cincinnati since 1871.",
+    altText:         "Tyler Davidson Fountain watercolor print -- the historic bronze Genius of Water statue atop the Tyler Davidson Fountain on Fountain Square in downtown Cincinnati, with water cascading from her outstretched arms",
+    description:     "She has stood at the center of Cincinnati since 1871, arms outstretched, water pouring from her hands in every direction, a gesture of abundance and welcome that has defined Fountain Square for over 150 years. The Tyler Davidson Fountain was a gift to the city from businessman Henry Probasco, given in memory of his business partner and brother-in-law Tyler Davidson. Designed by August von Kreling and cast in Munich, the central figure  known as the Genius of Water, stands atop a tiered bronze basin surrounded by figures representing the many uses of water in daily life: the farmer, the fisherman, the mother, the firefighter.  Cincinnati was a city built on water. The Ohio River made it a trading capital and the Miami and Erie Canal connected it to the Great Lakes. The fountain honored all of that with a single figure and a single gesture, hands open, water catching the light in every direction. Fountain Square has been the city's gathering place ever since, for concerts, celebrations, and ordinary lunch breaks, and she has watched all of it from the center, exactly where she was placed. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most enduring icons at her most luminous.",
+
+    images: {
+      main:    "images/cincinnati/heart-of-the-city.jpg",
+      room:    "images/mockups/heart-of-the-city-room.jpg",
+      framed:  "images/mockups/heart-of-the-city-framed.jpg",
+      canvas:  "images/mockups/heart-of-the-city-canvas-wrap.jpg",
+      metal:   "images/mockups/heart-of-the-city-metal.jpg",
+        original: "images/originals/heart-of-the-city.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
 
   // ── AMERICAN WEST ────────────────────────────────────────────
 
@@ -1234,39 +1295,7 @@ const PRODUCTS = {
     }
   },
     
-        "market-day": {
-    id:              "market-day",
-    number:          "No. 08",
-    collection:      "cincinnati",
-    collectionLabel: "Cincinnati",
-    collectionPage:  "cincinnati.html",
-    title:           "Market Day",
-    caption:         "Since 1852, and still the best reason to get up early.",
-    altText:         "Findlay Market watercolor print -- the iconic green and red Findlay Market pavilion in Cincinnati's Over-the-Rhine neighborhood, with red café chairs and outdoor seating under a summer sky",
-    description:     "Findlay Market is the oldest continuously operating public market in Ohio, open since 1852, surviving wars, depressions, urban decline, and urban renewal, and arriving in the present day more vital than ever. The market sits at the heart of Over-the-Rhine, one of the largest intact urban historic districts in the United States, its cast iron and brick surroundings a reminder of the German immigrant community that built this neighborhood and this city into something remarkable. The pavilion itself, with its distinctive green signage, red ironwork, and cheerful awnings, has been a gathering place for Cincinnatians for over 170 years. On weekends it fills with farmers, vendors, chefs, families, and people who simply understand that buying food from the person who grew it is a different experience than any other kind of shopping. The red café chairs out front are almost always occupied, the coffee is always good, and the tomatoes are always worth the drive. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most beloved institutions exactly as it looks on a perfect market morning -- the sign lit, the chairs out, and the doors about to open.",
-    images: {
-      main:    "images/cincinnati/market-day.jpg",
-      room:    "images/mockups/market-day-room.jpg",
-      framed:  "images/mockups/market-day-framed.jpg",
-      canvas:  "images/mockups/market-day-canvas-wrap.jpg",
-      metal:   "images/mockups/market-day-metal.jpg",
-        original: "images/originals/market-day.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-
-
-    
+  
       // ── HORSE COUNTRY ────────────────────────────────────────────
     
     "biko": {
@@ -1897,7 +1926,8 @@ const COLLECTIONS = {
     "the-grand-terminal",
     "the-queens-crown",
     "dawns-early-light",
-    "market-day"
+    "market-day",
+    "heart-of-the-city"
   ],
   "american-west": [
     "forgotten-miles",
