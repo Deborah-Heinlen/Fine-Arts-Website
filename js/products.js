@@ -870,7 +870,7 @@ const PRODUCTS = {
 
     "gateway-to-the-queen-city": {
     id:              "gateway-to-the-queen-city",
-    number:          "No. 01",
+    number:          "No. 03",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -933,7 +933,7 @@ const PRODUCTS = {
 
   "love-the-cov": {
     id:              "love-the-cov",
-    number:          "No. 03",
+    number:          "No. 08",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1023,7 +1023,7 @@ const PRODUCTS = {
 
   "the-queens-crown": {
     id:              "the-queens-crown",
-    number:          "No. 06",
+    number:          "No. 01",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1055,7 +1055,7 @@ const PRODUCTS = {
     
     "market-day": {
     id:              "market-day",
-    number:          "No. 07",
+    number:          "No. 06",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1087,7 +1087,7 @@ const PRODUCTS = {
     
     "ault-park-ascent": {
     id:              "ault-park-ascent",
-    number:          "No. 08",
+    number:          "No. 07",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1118,7 +1118,7 @@ const PRODUCTS = {
 
   "dawns-early-light": {
     id:              "dawns-early-light",
-    number:          "No. 09",
+    number:          "No. 10",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1148,7 +1148,7 @@ const PRODUCTS = {
     
   "incline-to-the-mount": {
     id:              "incline-to-the-mount",
-    number:          "No. 10",
+    number:          "No. 09",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1925,14 +1925,14 @@ const COLLECTIONS = {
   "cincinnati": [
     "the-queens-crown",      
     "heart-of-the-city",
-    "love-the-cov",
     "gateway-to-the-queen-city",
     "queen-city-overture",
     "the-grand-terminal",
-    "dawns-early-light",
     "market-day",
     "ault-park-ascent",
-    "incline-to-the-mount"
+    "love-the-cov",
+    "incline-to-the-mount",
+    "dawns-early-light"
   ],
     
   "american-west": [
