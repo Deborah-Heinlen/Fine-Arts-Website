@@ -1233,6 +1233,36 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
+    
+        "market-day": {
+    id:              "market-day",
+    number:          "No. 08",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Market Day",
+    caption:         "Since 1852, and still the best reason to get up early.",
+    altText:         "Findlay Market watercolor print -- the iconic green and red Findlay Market pavilion in Cincinnati's Over-the-Rhine neighborhood, with red café chairs and outdoor seating under a summer sky",
+    description:     "Findlay Market is the oldest continuously operating public market in Ohio, open since 1852, surviving wars, depressions, urban decline, and urban renewal, and arriving in the present day more vital than ever. The market sits at the heart of Over-the-Rhine, one of the largest intact urban historic districts in the United States, its cast iron and brick surroundings a reminder of the German immigrant community that built this neighborhood and this city into something remarkable. The pavilion itself, with its distinctive green signage, red ironwork, and cheerful awnings, has been a gathering place for Cincinnatians for over 170 years. On weekends it fills with farmers, vendors, chefs, families, and people who simply understand that buying food from the person who grew it is a different experience than any other kind of shopping. The red café chairs out front are almost always occupied, the coffee is always good, and the tomatoes are always worth the drive. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most beloved institutions exactly as it looks on a perfect market morning -- the sign lit, the chairs out, and the doors about to open.",
+    images: {
+      main:    "images/cincinnati/market-day.jpg",
+      room:    "images/mockups/market-day-room.jpg",
+      framed:  "images/mockups/market-day-framed.jpg",
+      canvas:  "images/mockups/market-day-canvas-wrap.jpg",
+      metal:   "images/mockups/market-day-metal.jpg",
+        original: "images/originals/market-day.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
 
 
 
@@ -1866,7 +1896,8 @@ const COLLECTIONS = {
     "queen-city-overture",
     "the-grand-terminal",
     "the-queens-crown",
-    "dawns-early-light"
+    "dawns-early-light",
+    "market-day"
   ],
   "american-west": [
     "forgotten-miles",
