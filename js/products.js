@@ -446,7 +446,7 @@ const PRODUCTS = {
 
   "american-glory": {
     id:              "american-glory",
-    number:          "No. 02",
+    number:          "No. 01",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -476,7 +476,7 @@ const PRODUCTS = {
 
   "isis": {
     id:              "isis",
-    number:          "No. 06",
+    number:          "No. 02",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -506,7 +506,7 @@ const PRODUCTS = {
 
   "apollo": {
     id:              "apollo",
-    number:          "No. 08",
+    number:          "No. 03",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -534,9 +534,41 @@ const PRODUCTS = {
     }
   },
 
-  "quiet-perch": {
+   "night-shift": {
+    id:              "night-shift",
+    number:          "No. 04",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Night Shift",
+    caption:         "Twelve hours of dark.  Not a moment wasted.",
+    altText:         "Great horned owl watercolor print -- great horned owl with intense yellow eyes and prominent ear tufts on a dark woodland perch.",
+    description:     "The Great Horned Owl is one of the most powerful and adaptable raptors in North America -- and one of the most perfectly engineered for the work it does.  Those tufts are not ears.  They are feathers, used for communication and camouflage, arranged to break up the owl's silhouette against the bark of the trees where it roosts.  The actual ears are asymmetrical openings on either side of the skull, positioned at slightly different heights so the brain can triangulate the exact location of a sound in three dimensions -- a system so precise that a Great Horned Owl can locate and strike prey beneath a foot of snow in complete darkness.  It can rotate its head 270 degrees, compensating for eyes that are fixed in the skull and so large relative to its body that they cannot move.  The Great Horned Owl will eat almost anything -- rabbits, skunks, house cats, other raptors, Canada geese -- and is the only animal that regularly preys on skunks.  Rendered with a watercolor finish from an original photograph, this portrait captures a bird that has heard everything going on around it and is choosing, for the moment, not to act.",
+    images: {
+      main:    "images/avian-studies/night-shift.jpg",
+      room:    "images/mockups/night-shift-room.jpg",
+      framed:  "images/mockups/night-shift-framed.jpg",
+      canvas:  "images/mockups/night-shift-canvas-wrap.jpg",
+      metal:   "images/mockups/night-shift-metal.jpg",
+      original: "images/originals/night-shift.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },    
+    
+ 
+    
+"quiet-perch": {
     id:              "quiet-perch",
-    number:          "No. 11",
+    number:          "No. 12",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -566,7 +598,7 @@ const PRODUCTS = {
     
   "sentinels-watch": {
     id:              "sentinels-watch",
-    number:          "No. 12",
+    number:          "No. 10",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -596,7 +628,7 @@ const PRODUCTS = {
 
   "still-waters": {
     id:              "still-waters",
-    number:          "No. 13",
+    number:          "No. 14",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -626,7 +658,7 @@ const PRODUCTS = {
 
   "the-mantle": {
     id:              "the-mantle",
-    number:          "No. 04",
+    number:          "No. 05",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -656,7 +688,7 @@ const PRODUCTS = {
 
   "crimson": {
     id:              "crimson",
-    number:          "No. 01",
+    number:          "No. 06",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -686,7 +718,7 @@ const PRODUCTS = {
     
     "rose-and-rust": {
     id:              "rose-and-rust",
-    number:          "No. 03",
+    number:          "No. 07",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -716,7 +748,7 @@ const PRODUCTS = {
     
     "the-redbird": {
     id:              "the-redbird",
-    number:          "No. 05",
+    number:          "No. 08",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -746,7 +778,7 @@ const PRODUCTS = {
     
     "hidden-fire": {
     id:              "hidden-fire",
-    number:          "No. 07",
+    number:          "No. 09",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -776,7 +808,7 @@ const PRODUCTS = {
     
     "full-sail": {
     id:              "full-sail",
-    number:          "No. 09",
+    number:          "No. 11",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -804,39 +836,11 @@ const PRODUCTS = {
     }
   },
     
-    "night-shift": {
-    id:              "night-shift",
-    number:          "No. 10",
-    collection:      "avian-studies",
-    collectionLabel: "Avian Studies",
-    collectionPage:  "avian-studies.html",
-    title:           "Night Shift",
-    caption:         "Twelve hours of dark.  Not a moment wasted.",
-    altText:         "Great horned owl watercolor print -- great horned owl with intense yellow eyes and prominent ear tufts on a dark woodland perch.",
-    description:     "The Great Horned Owl is one of the most powerful and adaptable raptors in North America -- and one of the most perfectly engineered for the work it does.  Those tufts are not ears.  They are feathers, used for communication and camouflage, arranged to break up the owl's silhouette against the bark of the trees where it roosts.  The actual ears are asymmetrical openings on either side of the skull, positioned at slightly different heights so the brain can triangulate the exact location of a sound in three dimensions -- a system so precise that a Great Horned Owl can locate and strike prey beneath a foot of snow in complete darkness.  It can rotate its head 270 degrees, compensating for eyes that are fixed in the skull and so large relative to its body that they cannot move.  The Great Horned Owl will eat almost anything -- rabbits, skunks, house cats, other raptors, Canada geese -- and is the only animal that regularly preys on skunks.  Rendered with a watercolor finish from an original photograph, this portrait captures a bird that has heard everything going on around it and is choosing, for the moment, not to act.",
-    images: {
-      main:    "images/avian-studies/night-shift.jpg",
-      room:    "images/mockups/night-shift-room.jpg",
-      framed:  "images/mockups/night-shift-framed.jpg",
-      canvas:  "images/mockups/night-shift-canvas-wrap.jpg",
-      metal:   "images/mockups/night-shift-metal.jpg",
-      original: "images/originals/night-shift.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
+ 
     
      "island-gold": {
     id:              "island-gold",
-    number:          "No. 14",
+    number:          "No. 13",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -1900,28 +1904,31 @@ const COLLECTIONS = {
     "cloud-forest-crimson",
     "lavender-and-light"
   ],
+    
   "wildlife": [
     "focused-intent",
     "pathfinder",
     "untamed-majesty",
     "firefox"
   ],
-  "avian-studies": [
-    "crimson",
+    
+  "avian-studies": [ 
     "american-glory",
-    "rose-and-rust",    
-    "the-mantle",
-    "the-redbird",  
     "isis",
-    "hidden-fire",
     "apollo",
-    "full-sail",
     "night-shift",  
-    "quiet-perch",
+    "the-mantle",
+    "crimson",
+    "rose-and-rust", 
+    "the-redbird",      
+    "hidden-fire", 
     "sentinels-watch",
-    "still-waters",
-    "island-gold"
+    "full-sail",
+    "quiet-perch",
+    "island-gold",
+    "still-waters"
   ],
+    
   "cincinnati": [
     "the-queens-crown",      
     "heart-of-the-city",
