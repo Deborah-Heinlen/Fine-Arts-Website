@@ -510,25 +510,25 @@
        MAIN HEADER -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
-    <a href="index.html">
-      <img src="images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
+    <a href="../index.html">
+      <img src="../images/logoblack.jpg" alt="Deborah Heinlen Fine Art" class="header-logo" />
     </a>
-    <a href="index.html" class="header-title">Deborah Heinlen Fine Art</a>
-  <a href="cart.html" class="header-cart">
-  Cart <span id="cartCount"></span>
-</a>
+    <a href="../index.html" class="header-title">Deborah Heinlen Fine Art</a>
+    <a href="../cart/" class="header-cart">
+      Cart <span id="cartCount"></span>
+    </a>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════
        COLLECTIONS STRIP
   ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
-    <a href="wildlife.html"          class="strip-link">Wildlife</a>
-    <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
-    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
-    <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
-    <a href="americana.html"        class="strip-link">Americana</a>
-    <a href="american-west.html"     class="strip-link">American West</a>
+    <a href="../wildlife/"          class="strip-link">Wildlife</a>
+    <a href="../botanical-studies/" class="strip-link">Botanical Studies</a>
+    <a href="../avian-studies/"     class="strip-link">Avian Studies</a>
+    <a href="../cincinnati/"        class="strip-link">Cincinnati</a>
+    <a href="../americana/"         class="strip-link">Americana</a>
+    <a href="../american-west/"     class="strip-link">American West</a>
   </div>
 
   <main class="cart-page">
@@ -547,21 +547,21 @@
   <!-- ═══════════════════════════════════════════════════════════════
        FOOTER -- do not change
   ════════════════════════════════════════════════════════════════ -->
- <footer>
+  <footer>
     <p style="margin-bottom: 0.8rem;">
-      <a href="contact.html" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about a print?  We'd love to hear from you.</a>
+      <a href="../contact/" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about a print?  We'd love to hear from you.</a>
     </p>
     <p>
       &copy; <span id="yr"></span> Deborah Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="contact.html">Contact</a>
+      <a href="../contact/">Contact</a>
     </p>
     <p style="margin-top: 0.5rem;">
       All images &copy; Deborah Heinlen.  All rights reserved.
     </p>
   </footer>
 
-  <script src="js/products.js"></script>
-  <script src="js/cart.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
 
   <script>
 
@@ -570,12 +570,8 @@
     // ═══════════════════════════════════════════════════════════════
     // CHECKOUT FUNCTION URL
     // ═══════════════════════════════════════════════════════════════
-    // UPDATE THIS when your server is set up.  Replace the
-    // placeholder with the real URL of your checkout function.
-    // Example: 'https://your-worker.your-account.workers.dev'
-    // ═══════════════════════════════════════════════════════════════
+    const CHECKOUT_URL = 'https://dhfa-checkout.deborahheinlenphotography.workers.dev';
 
-const CHECKOUT_URL = 'https://dhfa-checkout.deborahheinlenphotography.workers.dev';
     // ═══════════════════════════════════════════════════════════════
     // RENDER CART
     // ═══════════════════════════════════════════════════════════════
@@ -587,7 +583,7 @@ const CHECKOUT_URL = 'https://dhfa-checkout.deborahheinlenphotography.workers.de
         layout.innerHTML = `
           <div class="cart-empty">
             <p>Your cart is empty.</p>
-            <a href="index.html">Browse the Collections</a>
+            <a href="../index.html">Browse the Collections</a>
           </div>
         `;
         return;
@@ -596,7 +592,6 @@ const CHECKOUT_URL = 'https://dhfa-checkout.deborahheinlenphotography.workers.de
       // ── BUILD ITEMS HTML ──────────────────────────────────────
       const itemsHtml = items.map(item => {
 
-        // Build meta line: collection, medium, size, frame/mat if present
         const metaParts = [
           item.collection,
           item.medium.charAt(0).toUpperCase() + item.medium.slice(1),
@@ -641,9 +636,9 @@ const CHECKOUT_URL = 'https://dhfa-checkout.deborahheinlenphotography.workers.de
             <strong>$${subtotal.toFixed(2)}</strong>
           </div>
           <div class="summary-divider"></div>
-          <p class="summary-note">Shipping is free..</p>
+          <p class="summary-note">Shipping is free.</p>
           <button class="btn-checkout" id="checkoutBtn" type="button">Proceed to Checkout</button>
-          <a href="index.html" class="continue-link">Continue Shopping</a>
+          <a href="../index.html" class="continue-link">Continue Shopping</a>
         </aside>
       `;
 
@@ -681,23 +676,20 @@ const CHECKOUT_URL = 'https://dhfa-checkout.deborahheinlenphotography.workers.de
 
         const btn = document.getElementById('checkoutBtn');
 
-        // Prevent double-clicks
         btn.disabled = true;
         btn.textContent = 'Connecting to Stripe...';
 
         try {
 
-          // Get the current site URL for success/cancel redirects
-          const baseUrl = window.location.origin + window.location.pathname.replace('cart.html', '');
+          const origin = window.location.origin;
 
-          // Send cart items to the secure checkout function
           const response = await fetch(CHECKOUT_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               items: cartGet(),
-              successUrl: baseUrl + 'success.html?session_id={CHECKOUT_SESSION_ID}',
-              cancelUrl:  baseUrl + 'cart.html'
+              successUrl: origin + '/success/?session_id={CHECKOUT_SESSION_ID}',
+              cancelUrl:  origin + '/cart/'
             })
           });
 
@@ -710,7 +702,6 @@ const CHECKOUT_URL = 'https://dhfa-checkout.deborahheinlenphotography.workers.de
             return;
           }
 
-          // Redirect customer to Stripe's checkout page
           window.location.href = data.url;
 
         } catch (err) {
