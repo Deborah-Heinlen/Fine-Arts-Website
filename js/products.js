@@ -446,7 +446,7 @@ const PRODUCTS = {
 
   "american-glory": {
     id:              "american-glory",
-    number:          "No. 02",
+    number:          "No. 01",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -476,7 +476,7 @@ const PRODUCTS = {
 
   "isis": {
     id:              "isis",
-    number:          "No. 06",
+    number:          "No. 02",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -506,7 +506,7 @@ const PRODUCTS = {
 
   "apollo": {
     id:              "apollo",
-    number:          "No. 08",
+    number:          "No. 03",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -534,9 +534,41 @@ const PRODUCTS = {
     }
   },
 
-  "quiet-perch": {
+   "night-shift": {
+    id:              "night-shift",
+    number:          "No. 04",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Night Shift",
+    caption:         "Twelve hours of dark.  Not a moment wasted.",
+    altText:         "Great horned owl watercolor print -- great horned owl with intense yellow eyes and prominent ear tufts on a dark woodland perch.",
+    description:     "The Great Horned Owl is one of the most powerful and adaptable raptors in North America -- and one of the most perfectly engineered for the work it does.  Those tufts are not ears.  They are feathers, used for communication and camouflage, arranged to break up the owl's silhouette against the bark of the trees where it roosts.  The actual ears are asymmetrical openings on either side of the skull, positioned at slightly different heights so the brain can triangulate the exact location of a sound in three dimensions -- a system so precise that a Great Horned Owl can locate and strike prey beneath a foot of snow in complete darkness.  It can rotate its head 270 degrees, compensating for eyes that are fixed in the skull and so large relative to its body that they cannot move.  The Great Horned Owl will eat almost anything -- rabbits, skunks, house cats, other raptors, Canada geese -- and is the only animal that regularly preys on skunks.  Rendered with a watercolor finish from an original photograph, this portrait captures a bird that has heard everything going on around it and is choosing, for the moment, not to act.",
+    images: {
+      main:    "images/avian-studies/night-shift.jpg",
+      room:    "images/mockups/night-shift-room.jpg",
+      framed:  "images/mockups/night-shift-framed.jpg",
+      canvas:  "images/mockups/night-shift-canvas-wrap.jpg",
+      metal:   "images/mockups/night-shift-metal.jpg",
+      original: "images/originals/night-shift.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },    
+    
+ 
+    
+"quiet-perch": {
     id:              "quiet-perch",
-    number:          "No. 11",
+    number:          "No. 12",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -566,7 +598,7 @@ const PRODUCTS = {
     
   "sentinels-watch": {
     id:              "sentinels-watch",
-    number:          "No. 12",
+    number:          "No. 10",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -596,7 +628,7 @@ const PRODUCTS = {
 
   "still-waters": {
     id:              "still-waters",
-    number:          "No. 13",
+    number:          "No. 14",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -626,7 +658,7 @@ const PRODUCTS = {
 
   "the-mantle": {
     id:              "the-mantle",
-    number:          "No. 04",
+    number:          "No. 05",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -656,7 +688,7 @@ const PRODUCTS = {
 
   "crimson": {
     id:              "crimson",
-    number:          "No. 01",
+    number:          "No. 06",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -686,7 +718,7 @@ const PRODUCTS = {
     
     "rose-and-rust": {
     id:              "rose-and-rust",
-    number:          "No. 03",
+    number:          "No. 07",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -716,7 +748,7 @@ const PRODUCTS = {
     
     "the-redbird": {
     id:              "the-redbird",
-    number:          "No. 05",
+    number:          "No. 08",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -746,7 +778,7 @@ const PRODUCTS = {
     
     "hidden-fire": {
     id:              "hidden-fire",
-    number:          "No. 07",
+    number:          "No. 09",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -776,7 +808,7 @@ const PRODUCTS = {
     
     "full-sail": {
     id:              "full-sail",
-    number:          "No. 09",
+    number:          "No. 11",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -804,39 +836,11 @@ const PRODUCTS = {
     }
   },
     
-    "night-shift": {
-    id:              "night-shift",
-    number:          "No. 10",
-    collection:      "avian-studies",
-    collectionLabel: "Avian Studies",
-    collectionPage:  "avian-studies.html",
-    title:           "Night Shift",
-    caption:         "Twelve hours of dark.  Not a moment wasted.",
-    altText:         "Great horned owl watercolor print -- great horned owl with intense yellow eyes and prominent ear tufts on a dark woodland perch.",
-    description:     "The Great Horned Owl is one of the most powerful and adaptable raptors in North America -- and one of the most perfectly engineered for the work it does.  Those tufts are not ears.  They are feathers, used for communication and camouflage, arranged to break up the owl's silhouette against the bark of the trees where it roosts.  The actual ears are asymmetrical openings on either side of the skull, positioned at slightly different heights so the brain can triangulate the exact location of a sound in three dimensions -- a system so precise that a Great Horned Owl can locate and strike prey beneath a foot of snow in complete darkness.  It can rotate its head 270 degrees, compensating for eyes that are fixed in the skull and so large relative to its body that they cannot move.  The Great Horned Owl will eat almost anything -- rabbits, skunks, house cats, other raptors, Canada geese -- and is the only animal that regularly preys on skunks.  Rendered with a watercolor finish from an original photograph, this portrait captures a bird that has heard everything going on around it and is choosing, for the moment, not to act.",
-    images: {
-      main:    "images/avian-studies/night-shift.jpg",
-      room:    "images/mockups/night-shift-room.jpg",
-      framed:  "images/mockups/night-shift-framed.jpg",
-      canvas:  "images/mockups/night-shift-canvas-wrap.jpg",
-      metal:   "images/mockups/night-shift-metal.jpg",
-      original: "images/originals/night-shift.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
+ 
     
      "island-gold": {
     id:              "island-gold",
-    number:          "No. 14",
+    number:          "No. 13",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
     collectionPage:  "avian-studies.html",
@@ -868,39 +872,9 @@ const PRODUCTS = {
 
   // ── CINCINNATI ───────────────────────────────────────────────
 
-  "ault-park-ascent": {
-    id:              "ault-park-ascent",
-    number:          "No. 01",
-    collection:      "cincinnati",
-    collectionLabel: "Cincinnati",
-    collectionPage:  "cincinnati.html",
-    title:           "Ault Park Ascent",
-    caption:         "The kind of beautiful that keeps on giving.",
-    altText:         "Ault Park Cincinnati watercolor print -- grand neoclassical stone steps with summer flowers and dramatic sky",
-    description:     "Levi and Susan Ault gave Cincinnati a gift in 1911 -- 224 acres of hillside land in Hyde Park that would become one of the city's most beloved green spaces.  The neoclassical pavilion that crowns those grand stone steps was built in 1930 and has been listed on the National Register of Historic Places ever since, its formal architecture a reminder of an era that believed public spaces should be genuinely beautiful.  For nearly a century Cincinnatians have climbed these steps for weddings, celebrations, and quiet afternoon walks -- the seasonal plantings at the base replanted each year by volunteers who understand that some things are worth maintaining.  Photographed in the summer of 2025 and rendered with a watercolor finish, this print captures Ault Park at its most generous -- the flowers in full bloom, the sky dramatic overhead, the steps waiting for whoever comes next.",
-    images: {
-      main:    "images/cincinnati/ault-park-ascent.jpg",
-      room:    "images/mockups/ault-park-ascent-room.jpg",
-      framed:  "images/mockups/ault-park-ascent-framed.jpg",
-      canvas:  "images/mockups/ault-park-ascent-canvas-wrap.jpg",
-      metal:   "images/mockups/ault-park-ascent-metal.jpg",
-        original: "images/originals/ault-park-ascent.jpg"
-    },
-    prices: {
-      metal:  { "55": 55,   "95": 95,   "180": 180 },
-      canvas: { "200": 200, "250": 250, "300": 300 },
-      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
-    },
-    sizeLabels: {
-      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
-      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },
-
-  "gateway-to-the-queen-city": {
+    "gateway-to-the-queen-city": {
     id:              "gateway-to-the-queen-city",
-    number:          "No. 02",
+    number:          "No. 03",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -926,25 +900,27 @@ const PRODUCTS = {
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
-  },
-
-  "incline-to-the-mount": {
-    id:              "incline-to-the-mount",
-    number:          "No. 03",
+  },    
+    
+  
+      "heart-of-the-city": {
+    id:              "heart-of-the-city",
+    number:          "No. 02",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
-    title:           "Incline to the Mount",
-    caption:         "Still climbing, in memory.",
-    altText:         "Cincinnati incline railway watercolor print -- miniature display of historic Mt Adams incline at Krohn Conservatory",
-    description:     "Cincinnati was once a city of inclines.  At its peak in the late nineteenth century, the Queen City operated more incline railways than any city in the world -- steep mechanical lifts that carried passengers and freight from the riverfront up to the hilltop neighborhoods that defined the city's character.  The Mt. Adams Incline ran from 1876 to 1948, connecting the bustling streets below to the heights of one of Cincinnati's most beloved neighborhoods before the automobile made it obsolete.  All of the inclines are gone now.  What remains are photographs, memories, and this -- a lovingly crafted miniature display at Cincinnati's Krohn Conservatory in Eden Park, where that little red car still makes its climb through a Victorian Cincinnati that exists only in model form.  Rendered with a watercolor finish from an original photograph, this print captures something twice removed from the present -- a photograph of a memory of a city that was.",
+    title:           "Heart of the City",
+    caption:         "She has stood at the center of Cincinnati since 1871.",
+    altText:         "Tyler Davidson Fountain watercolor print -- the historic bronze Genius of Water statue atop the Tyler Davidson Fountain on Fountain Square in downtown Cincinnati, with water cascading from her outstretched arms",
+    description:     "She has stood at the center of Cincinnati since 1871, arms outstretched, water pouring from her hands in every direction, a gesture of abundance and welcome that has defined Fountain Square for over 150 years. The Tyler Davidson Fountain was a gift to the city from businessman Henry Probasco, given in memory of his business partner and brother-in-law Tyler Davidson. Designed by August von Kreling and cast in Munich, the central figure  known as the Genius of Water, stands atop a tiered bronze basin surrounded by figures representing the many uses of water in daily life: the farmer, the fisherman, the mother, the firefighter.  Cincinnati was a city built on water. The Ohio River made it a trading capital and the Miami and Erie Canal connected it to the Great Lakes. The fountain honored all of that with a single figure and a single gesture, hands open, water catching the light in every direction. Fountain Square has been the city's gathering place ever since, for concerts, celebrations, and ordinary lunch breaks, and she has watched all of it from the center, exactly where she was placed. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most enduring icons at her most luminous.",
+
     images: {
-      main:    "images/cincinnati/incline-to-the-mount.jpg",
-      room:    "images/mockups/incline-to-the-mount-room.jpg",
-      framed:  "images/mockups/incline-to-the-mount-framed.jpg",
-      canvas:  "images/mockups/incline-to-the-mount-canvas-wrap.jpg",
-      metal:   "images/mockups/incline-to-the-mount-metal.jpg",
-        original: "images/originals/incline-to-the-mount.jpg"
+      main:    "images/cincinnati/heart-of-the-city.jpg",
+      room:    "images/mockups/heart-of-the-city-room.jpg",
+      framed:  "images/mockups/heart-of-the-city-framed.jpg",
+      canvas:  "images/mockups/heart-of-the-city-canvas-wrap.jpg",
+      metal:   "images/mockups/heart-of-the-city-metal.jpg",
+        original: "images/originals/heart-of-the-city.jpg"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -958,9 +934,10 @@ const PRODUCTS = {
     }
   },
 
+
   "love-the-cov": {
     id:              "love-the-cov",
-    number:          "No. 04",
+    number:          "No. 08",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -990,7 +967,7 @@ const PRODUCTS = {
 
   "queen-city-overture": {
     id:              "queen-city-overture",
-    number:          "No. 05",
+    number:          "No. 04",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1020,7 +997,7 @@ const PRODUCTS = {
 
   "the-grand-terminal": {
     id:              "the-grand-terminal",
-    number:          "No. 06",
+    number:          "No. 05",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1050,7 +1027,7 @@ const PRODUCTS = {
 
   "the-queens-crown": {
     id:              "the-queens-crown",
-    number:          "No. 07",
+    number:          "No. 01",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1078,9 +1055,74 @@ const PRODUCTS = {
     }
   },
 
+    
+    
+    "market-day": {
+    id:              "market-day",
+    number:          "No. 06",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Market Day",
+    caption:         "Since 1852, and still the best reason to get up early.",
+    altText:         "Findlay Market watercolor print -- the iconic green and red Findlay Market pavilion in Cincinnati's Over-the-Rhine neighborhood, with red café chairs and outdoor seating under a summer sky",
+    description:     "Findlay Market is the oldest continuously operating public market in Ohio, open since 1852, surviving wars, depressions, urban decline, and urban renewal, and arriving in the present day more vital than ever. The market sits at the heart of Over-the-Rhine, one of the largest intact urban historic districts in the United States, its cast iron and brick surroundings a reminder of the German immigrant community that built this neighborhood and this city into something remarkable. The pavilion itself, with its distinctive green signage, red ironwork, and cheerful awnings, has been a gathering place for Cincinnatians for over 170 years. On weekends it fills with farmers, vendors, chefs, families, and people who simply understand that buying food from the person who grew it is a different experience than any other kind of shopping. The red café chairs out front are almost always occupied, the coffee is always good, and the tomatoes are always worth the drive. Rendered with a watercolor finish from an original photograph, this print captures one of Cincinnati's most beloved institutions exactly as it looks on a perfect market morning -- the sign lit, the chairs out, and the doors about to open.",
+    images: {
+      main:    "images/cincinnati/market-day.jpg",
+      room:    "images/mockups/market-day-room.jpg",
+      framed:  "images/mockups/market-day-framed.jpg",
+      canvas:  "images/mockups/market-day-canvas-wrap.jpg",
+      metal:   "images/mockups/market-day-metal.jpg",
+        original: "images/originals/market-day.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+    
+    
+    
+    "ault-park-ascent": {
+    id:              "ault-park-ascent",
+    number:          "No. 07",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Ault Park Ascent",
+    caption:         "The kind of beautiful that keeps on giving.",
+    altText:         "Ault Park Cincinnati watercolor print -- grand neoclassical stone steps with summer flowers and dramatic sky",
+    description:     "Levi and Susan Ault gave Cincinnati a gift in 1911 -- 224 acres of hillside land in Hyde Park that would become one of the city's most beloved green spaces.  The neoclassical pavilion that crowns those grand stone steps was built in 1930 and has been listed on the National Register of Historic Places ever since, its formal architecture a reminder of an era that believed public spaces should be genuinely beautiful.  For nearly a century Cincinnatians have climbed these steps for weddings, celebrations, and quiet afternoon walks -- the seasonal plantings at the base replanted each year by volunteers who understand that some things are worth maintaining.  Photographed in the summer of 2025 and rendered with a watercolor finish, this print captures Ault Park at its most generous -- the flowers in full bloom, the sky dramatic overhead, the steps waiting for whoever comes next.",
+    images: {
+      main:    "images/cincinnati/ault-park-ascent.jpg",
+      room:    "images/mockups/ault-park-ascent-room.jpg",
+      framed:  "images/mockups/ault-park-ascent-framed.jpg",
+      canvas:  "images/mockups/ault-park-ascent-canvas-wrap.jpg",
+      metal:   "images/mockups/ault-park-ascent-metal.jpg",
+        original: "images/originals/ault-park-ascent.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+
+
   "dawns-early-light": {
     id:              "dawns-early-light",
-    number:          "No. 08",
+    number:          "No. 10",
     collection:      "cincinnati",
     collectionLabel: "Cincinnati",
     collectionPage:  "cincinnati.html",
@@ -1106,9 +1148,37 @@ const PRODUCTS = {
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
+  },    
+    
+  "incline-to-the-mount": {
+    id:              "incline-to-the-mount",
+    number:          "No. 09",
+    collection:      "cincinnati",
+    collectionLabel: "Cincinnati",
+    collectionPage:  "cincinnati.html",
+    title:           "Incline to the Mount",
+    caption:         "Still climbing, in memory.",
+    altText:         "Cincinnati incline railway watercolor print -- miniature display of historic Mt Adams incline at Krohn Conservatory",
+    description:     "Cincinnati was once a city of inclines.  At its peak in the late nineteenth century, the Queen City operated more incline railways than any city in the world -- steep mechanical lifts that carried passengers and freight from the riverfront up to the hilltop neighborhoods that defined the city's character.  The Mt. Adams Incline ran from 1876 to 1948, connecting the bustling streets below to the heights of one of Cincinnati's most beloved neighborhoods before the automobile made it obsolete.  All of the inclines are gone now.  What remains are photographs, memories, and this -- a lovingly crafted miniature display at Cincinnati's Krohn Conservatory in Eden Park, where that little red car still makes its climb through a Victorian Cincinnati that exists only in model form.  Rendered with a watercolor finish from an original photograph, this print captures something twice removed from the present -- a photograph of a memory of a city that was.",
+    images: {
+      main:    "images/cincinnati/incline-to-the-mount.jpg",
+      room:    "images/mockups/incline-to-the-mount-room.jpg",
+      framed:  "images/mockups/incline-to-the-mount-framed.jpg",
+      canvas:  "images/mockups/incline-to-the-mount-canvas-wrap.jpg",
+      metal:   "images/mockups/incline-to-the-mount-metal.jpg",
+        original: "images/originals/incline-to-the-mount.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
   },
-    
-    
 
   // ── AMERICAN WEST ────────────────────────────────────────────
 
@@ -1233,10 +1303,8 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     }
   },
-
-
-
     
+  
       // ── HORSE COUNTRY ────────────────────────────────────────────
     
     "biko": {
@@ -1788,7 +1856,7 @@ const PRODUCTS = {
     collectionLabel: "Landscapes",
     collectionPage:  "landscapes.html",
     title:           "Reflections of Wonder",
-    caption:         "Some places are so large they can only be understood in reflection.",
+    caption:         "Some places are so large they can only be understood in the reflection.",
     altText:         "Denali watercolor print -- snow-capped Mount McKinley and Alaska Range reflected in the still water of Wonder Lake in Denali National Park, Alaska",
     description:     "The Athabascan people named this mountain Denali -- the great one -- and left it at that, which turns out to have been the right call.  At 20,310 feet, it is the highest peak in North America, and on a clear day in Denali National Park it dominates the horizon in a way that makes every other landscape feel like a rehearsal.  Wonder Lake sits at mile 85 of the Denali Park Road, shallow and glacier-fed, cold enough and quiet enough on calm mornings to produce a reflection this precise -- the mountain and the sky doubled, the clouds above and below the same clouds, the peaks above and below the same peaks.  There is no road noise here.  No crowds.  Just the water, the mountain, and the particular silence that only exists in places this far from everything else.  The park protects six million acres of wilderness around it, most of it roadless, most of it unchanged since the ice retreated twelve thousand years ago.  Rendered with a watercolor finish from an original photograph taken at Wonder Lake in Denali National Park, this print captures the moment when the mountain becomes its own mirror -- and the silence has a shape you can almost see.",
     images: {
@@ -1836,38 +1904,44 @@ const COLLECTIONS = {
     "cloud-forest-crimson",
     "lavender-and-light"
   ],
+    
   "wildlife": [
     "focused-intent",
     "pathfinder",
     "untamed-majesty",
     "firefox"
   ],
-  "avian-studies": [
-    "crimson",
+    
+  "avian-studies": [ 
     "american-glory",
-    "rose-and-rust",    
-    "the-mantle",
-    "the-redbird",  
     "isis",
-    "hidden-fire",
     "apollo",
-    "full-sail",
     "night-shift",  
-    "quiet-perch",
+    "the-mantle",
+    "crimson",
+    "rose-and-rust", 
+    "the-redbird",      
+    "hidden-fire", 
     "sentinels-watch",
-    "still-waters",
-    "island-gold"
+    "full-sail",
+    "quiet-perch",
+    "island-gold",
+    "still-waters"
   ],
+    
   "cincinnati": [
-    "ault-park-ascent",
+    "the-queens-crown",      
+    "heart-of-the-city",
     "gateway-to-the-queen-city",
-    "incline-to-the-mount",
-    "love-the-cov",
     "queen-city-overture",
     "the-grand-terminal",
-    "the-queens-crown",
+    "market-day",
+    "ault-park-ascent",
+    "love-the-cov",
+    "incline-to-the-mount",
     "dawns-early-light"
   ],
+    
   "american-west": [
     "forgotten-miles",
     "crossroads",

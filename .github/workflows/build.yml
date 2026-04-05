@@ -1,0 +1,34 @@
+name: Build product pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'js/products.js'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run build script
+        run: node build.js
+
+      - name: Commit and push product pages
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add products/
+          git diff --staged --quiet || git commit -m "Auto-generate product pages"
+          git push

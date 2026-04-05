@@ -1,38 +1,41 @@
+<!-- ═══════════════════════════════════════════════════════════════
+     HOME PAGE -- index.html
+     Location: /index.html  (root level)
+     Canonical: https://heinlenfineart.com/
+════════════════════════════════════════════════════════════════ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     
-        <!-- HEINLEN FINE ART HOME PAGE -->
+  <!-- HEINLEN FINE ART HOME PAGE -->
     
-    <!-- Favicon -->
-<link rel="icon" type="image/png" href="/images/favicon.png" />
-<link rel="apple-touch-icon" href="/images/favicon.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/favicon.png" />
 
-<!-- Open Graph / Social Media Preview -->
-<meta property="og:title" content="Heinlen Fine Art" />
-<meta property="og:description" content="Watercolor fine art prints of wildlife, botanicals, birds, landscapes, and more.  Every print begins as a photograph." />
-<meta property="og:image" content="https://heinlenfineart.com/images/banner-social.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://heinlenfineart.com" />
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="Heinlen Fine Art" />
+  <meta property="og:description" content="Watercolor fine art prints of wildlife, botanicals, birds, landscapes, and more.  Every print begins as a photograph." />
+  <meta property="og:image" content="https://heinlenfineart.com/images/banner-social.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heinlenfineart.com" />
     
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4SMWQ4CMPS');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4SMWQ4CMPS');
+  </script>
     
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Heinlen Fine Art</title>
-<meta name="description" content="Watercolor fine art prints of wildlife, botanicals, birds, landscapes, and more.  Every print begins as a photograph." />
-<link rel="canonical" href="https://heinlenfineart.com/" />
-    
+  <title>Heinlen Fine Art</title>
+  <meta name="description" content="Watercolor fine art prints of wildlife, botanicals, birds, landscapes, and more.  Every print begins as a photograph." />
+  <link rel="canonical" href="https://heinlenfineart.com/" />
 
   <!-- ═══════════════════════════════════════════════════════════════
        FONTS -- do not change
@@ -82,7 +85,7 @@
     }
 
     .header-logo {
-      height:90px;
+      height: 90px;
       width: auto;
       display: block;
     }
@@ -503,7 +506,6 @@
       margin-bottom: 2.5rem;
     }
 
-    /* Top row: 4 equal cards */
     .collections-row-top {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -512,7 +514,6 @@
       margin: 0 auto 1.2rem auto;
     }
 
-    /* Bottom row: 3 slightly wider cards, centered */
     .collections-row-bottom {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -657,7 +658,7 @@
     ════════════════════════════════════════════════════════════════ */
     @media (max-width: 900px) {
       .site-header { padding: 0.9rem 1.5rem; }
-      .header-title { font-size: 2rem; }
+      .header-title { display: none; }
       .collections-strip { flex-wrap: wrap; top: 62px; }
       .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
 
@@ -725,7 +726,7 @@
     }
 
     /* ═══════════════════════════════════════════════════════════════
-       IMAGE PROTECTION  -- DO NOT REMOVE
+       IMAGE PROTECTION -- DO NOT REMOVE
     ════════════════════════════════════════════════════════════════ */
     img {
       -webkit-user-select: none;
@@ -757,7 +758,7 @@
     <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <a href="cart.html" class="header-cart">Cart <span id="cartCount"></span></a>
+    <a href="cart/" class="header-cart">Cart <span id="cartCount"></span></a>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════
@@ -765,35 +766,33 @@
   ════════════════════════════════════════════════════════════════ -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
     <a href="index.html">Home</a>
-    <a href="wildlife.html">Wildlife</a>
-    <a href="botanical-studies.html">Botanical Studies</a>
-    <a href="avian-studies.html">Avian Studies</a>
-    <a href="cincinnati.html">Cincinnati</a>
-    <a href="horse-country.html">Horse Country</a>
-    <a href="landscapes.html">Landscapes</a>
-    <a href="american-west.html">American West</a>
+    <a href="wildlife/">Wildlife</a>
+    <a href="botanical-studies/">Botanical Studies</a>
+    <a href="avian-studies/">Avian Studies</a>
+    <a href="cincinnati/">Cincinnati</a>
+    <a href="horse-country/">Horse Country</a>
+    <a href="landscapes/">Landscapes</a>
+    <a href="american-west/">American West</a>
   </nav>
 
   <!-- ═══════════════════════════════════════════════════════════════
        COLLECTIONS STRIP -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
-    <a href="index.html"             class="strip-link">Home</a>
-    <a href="wildlife.html"          class="strip-link">Wildlife</a>
-    <a href="botanical-studies.html" class="strip-link">Botanical Studies</a>
-    <a href="avian-studies.html"     class="strip-link">Avian Studies</a>
-    <a href="cincinnati.html"        class="strip-link">Cincinnati</a>
-    <a href="horse-country.html"     class="strip-link">Horse Country</a>
-    <a href="landscapes.html"        class="strip-link">Landscapes</a>
-    <a href="american-west.html"     class="strip-link">American West</a>
+    <a href="index.html"          class="strip-link active">Home</a>
+    <a href="wildlife/"           class="strip-link">Wildlife</a>
+    <a href="botanical-studies/"  class="strip-link">Botanical Studies</a>
+    <a href="avian-studies/"      class="strip-link">Avian Studies</a>
+    <a href="cincinnati/"         class="strip-link">Cincinnati</a>
+    <a href="horse-country/"      class="strip-link">Horse Country</a>
+    <a href="landscapes/"         class="strip-link">Landscapes</a>
+    <a href="american-west/"      class="strip-link">American West</a>
   </div>
 
   <div id="story-section">
 
     <!-- ═══════════════════════════════════════════════════════════
          BACKGROUND IMAGES
-         To change which images appear in the scrolling story:
-         update the src attributes below.
     ════════════════════════════════════════════════════════════ -->
     <div id="story-bg">
       <img class="bg-image active" data-index="0"
@@ -823,11 +822,6 @@
 
       <div class="card-spacer" data-bg="0"></div>
 
-      <!-- ═══════════════════════════════════════════════════════
-           STORY CARDS
-           To change the images shown in these panels:
-           update the src attributes below.
-      ════════════════════════════════════════════════════════ -->
       <div class="story-card" data-bg="1">
         <div class="card-image-side">
           <img src="images/wildlife/focused-intent.jpg"
@@ -894,9 +888,7 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       COLLECTIONS GRID -- 7 collections, 4 top + 3 bottom
-       To update the representative image for each collection:
-       update the src attribute on the img tag inside that card.
+       COLLECTIONS GRID
   ════════════════════════════════════════════════════════════════ -->
   <section class="collections" id="collections">
     <p class="collections-label">Browse the Collections</p>
@@ -904,7 +896,7 @@
     <!-- Top row: 4 collections -->
     <div class="collections-row-top">
 
-      <a href="wildlife.html" class="collection-card">
+      <a href="wildlife/" class="collection-card">
         <img src="images/wildlife/pathfinder.jpg"
              alt="Pathfinder watercolor fine art print of a gray wolf close portrait with golden eyes by Deborah Heinlen" />
         <div class="collection-info">
@@ -913,7 +905,7 @@
         </div>
       </a>
 
-      <a href="botanical-studies.html" class="collection-card">
+      <a href="botanical-studies/" class="collection-card">
         <img src="images/botanical-studies/waterlily-in-bloom.jpg"
              alt="Waterlily in Bloom watercolor fine art print of a purple water lily bud at the Dallas Arboretum by Deborah Heinlen" />
         <div class="collection-info">
@@ -922,7 +914,7 @@
         </div>
       </a>
 
-      <a href="avian-studies.html" class="collection-card">
+      <a href="avian-studies/" class="collection-card">
         <img src="images/avian-studies/the-mantle.jpg"
              alt="The Mantle watercolor fine art print of a bald eagle with wings fully spread mantling by Deborah Heinlen" />
         <div class="collection-info">
@@ -931,7 +923,7 @@
         </div>
       </a>
 
-      <a href="cincinnati.html" class="collection-card">
+      <a href="cincinnati/" class="collection-card">
         <img src="images/cincinnati/queen-city-overture.jpg"
              alt="Queen City Overture watercolor fine art print of Cincinnati Music Hall High Victorian Gothic architecture by Deborah Heinlen" />
         <div class="collection-info">
@@ -945,7 +937,7 @@
     <!-- Bottom row: 3 collections, centered -->
     <div class="collections-row-bottom">
 
-      <a href="horse-country.html" class="collection-card">
+      <a href="horse-country/" class="collection-card">
         <img src="images/horse-country/biko.jpg"
              alt="Biko watercolor fine art print of a rescued Thoroughbred horse in Lexington Kentucky by Deborah Heinlen" />
         <div class="collection-info">
@@ -954,7 +946,7 @@
         </div>
       </a>
 
-      <a href="landscapes.html" class="collection-card">
+      <a href="landscapes/" class="collection-card">
         <img src="images/landscapes/blue-channels.jpg"
              alt="Blue Channels watercolor fine art print of water channels in the Great Salt Lake of Utah by Deborah Heinlen" />
         <div class="collection-info">
@@ -963,7 +955,7 @@
         </div>
       </a>
 
-      <a href="american-west.html" class="collection-card">
+      <a href="american-west/" class="collection-card">
         <img src="images/american-west/crossroads.jpg"
              alt="Crossroads watercolor fine art print of a weathered signpost near Moab Utah at Little Far West by Deborah Heinlen" />
         <div class="collection-info">
@@ -983,13 +975,13 @@
     <h2>Explore Further</h2>
     <p>More collections from Heinlen Fine Art</p>
     <nav class="collections-row" aria-label="All collections">
-      <a href="wildlife.html"          class="collection-link">Wildlife</a>
-      <a href="botanical-studies.html" class="collection-link">Botanical Studies</a>
-      <a href="avian-studies.html"     class="collection-link">Avian Studies</a>
-      <a href="cincinnati.html"        class="collection-link">Cincinnati</a>
-      <a href="horse-country.html"     class="collection-link">Horse Country</a>
-      <a href="landscapes.html"        class="collection-link">Landscapes</a>
-      <a href="american-west.html"     class="collection-link">American West</a>
+      <a href="wildlife/"          class="collection-link">Wildlife</a>
+      <a href="botanical-studies/" class="collection-link">Botanical Studies</a>
+      <a href="avian-studies/"     class="collection-link">Avian Studies</a>
+      <a href="cincinnati/"        class="collection-link">Cincinnati</a>
+      <a href="horse-country/"     class="collection-link">Horse Country</a>
+      <a href="landscapes/"        class="collection-link">Landscapes</a>
+      <a href="american-west/"     class="collection-link">American West</a>
     </nav>
   </section>
 
@@ -998,11 +990,11 @@
   ════════════════════════════════════════════════════════════════ -->
   <footer>
     <p style="margin-bottom: 0.8rem;">
-      <a href="contact.html" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about a print?  We'd love to hear from you.</a>
+      <a href="contact/" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about a print?  We'd love to hear from you.</a>
     </p>
     <p>
       &copy; <span id="yr"></span> Heinlen Fine Art &nbsp;&middot;&nbsp;
-      <a href="contact.html">Contact</a>
+      <a href="contact/">Contact</a>
     </p>
     <p style="margin-top: 0.5rem;">
       All images &copy; Deborah Heinlen.  All rights reserved.
@@ -1040,7 +1032,6 @@
 
     // ═══════════════════════════════════════════════════════════════
     // BACKGROUND IMAGE SWAP
-    // Triggered by scroll position -- do not change
     // ═══════════════════════════════════════════════════════════════
     const storySection = document.getElementById('story-section');
     const storyBg      = document.getElementById('story-bg');
