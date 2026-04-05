@@ -106,21 +106,21 @@
       color: var(--cream);
     }
 
-.cart-badge {
-  display: none;
-  background: var(--text-dark);
-  color: var(--cream);
-  font-size: 0.55rem;
-  font-weight: 400;
-  min-width: 1.1rem;
-  height: 1.1rem;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  padding: 0 0.2rem;
-  vertical-align: middle;
-}
+    .cart-badge {
+      display: none;
+      background: var(--text-dark);
+      color: var(--cream);
+      font-size: 0.55rem;
+      font-weight: 400;
+      min-width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      padding: 0 0.2rem;
+      vertical-align: middle;
+    }
 
     .header-cart:hover .cart-badge {
       background: var(--cream);
@@ -171,7 +171,6 @@
       margin-right: auto;
     }
 
-    /* Fix: margin-top needs to apply properly with auto left/right */
     .cart-page { margin-top: 122px; }
 
     .cart-header {
@@ -520,15 +519,17 @@
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       COLLECTIONS STRIP
+       COLLECTIONS STRIP -- do not change
   ════════════════════════════════════════════════════════════════ -->
   <div class="collections-strip">
-    <a href="../wildlife/"          class="strip-link">Wildlife</a>
-    <a href="../botanical-studies/" class="strip-link">Botanical Studies</a>
-    <a href="../avian-studies/"     class="strip-link">Avian Studies</a>
-    <a href="../cincinnati/"        class="strip-link">Cincinnati</a>
-    <a href="../americana/"         class="strip-link">Americana</a>
-    <a href="../american-west/"     class="strip-link">American West</a>
+    <a href="../index.html"          class="strip-link">Home</a>
+    <a href="../wildlife/"           class="strip-link">Wildlife</a>
+    <a href="../botanical-studies/"  class="strip-link">Botanical Studies</a>
+    <a href="../avian-studies/"      class="strip-link">Avian Studies</a>
+    <a href="../cincinnati/"         class="strip-link">Cincinnati</a>
+    <a href="../horse-country/"      class="strip-link">Horse Country</a>
+    <a href="../landscapes/"         class="strip-link">Landscapes</a>
+    <a href="../american-west/"      class="strip-link">American West</a>
   </div>
 
   <main class="cart-page">
@@ -688,7 +689,7 @@
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               items: cartGet(),
-              successUrl: origin + '/success/?session_id={CHECKOUT_SESSION_ID}',
+              successUrl: origin + '/success.html?session_id={CHECKOUT_SESSION_ID}',
               cancelUrl:  origin + '/cart/'
             })
           });
