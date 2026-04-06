@@ -564,8 +564,6 @@ const PRODUCTS = {
     }
   },    
     
- 
-    
 "quiet-perch": {
     id:              "quiet-perch",
     number:          "No. 12",
