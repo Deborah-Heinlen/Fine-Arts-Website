@@ -133,6 +133,10 @@ Object.values(PRODUCTS).forEach(function(product) {
   page = page.replace(/href="\.\.\/horse-country\//g,      'href="/horse-country/');
   page = page.replace(/href="\.\.\/landscapes\//g,         'href="/landscapes/');
   page = page.replace(/href="\.\.\/american-west\//g,      'href="/american-west/');
+  page = page.replace(/'\.\.\//g,                          "'/");
+    
+    
+    
 
   // 10. Add a note at the top that this is auto-generated
   page = page.replace(
