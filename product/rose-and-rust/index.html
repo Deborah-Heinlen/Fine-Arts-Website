@@ -1125,7 +1125,7 @@
 
     // ── GET PRODUCT ID FROM URL ──────────────────────────────────
     const params    = new URLSearchParams(window.location.search);
-    const productId = params.get('id');
+    const productId = window.__PRODUCT_ID__ || params.get('id');
     const product   = productId ? PRODUCTS[productId] : null;
 
     // ── FRAME + MAT COLOR MAP ────────────────────────────────────
