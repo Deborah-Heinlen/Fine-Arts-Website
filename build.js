@@ -133,8 +133,7 @@ Object.values(PRODUCTS).forEach(function(product) {
   page = page.replace(/href="\.\.\/horse-country\//g,      'href="/horse-country/');
   page = page.replace(/href="\.\.\/landscapes\//g,         'href="/landscapes/');
   page = page.replace(/href="\.\.\/american-west\//g,      'href="/american-west/');
-  page = page.replace(/'\.\.\//g,                          "'/");
-  page = page.replace(/`\.\.\//g,                          "`/");
+
     
     
     
