@@ -1177,11 +1177,11 @@
 
       // Build gallery images
       const galleryImgs = `
-        <img src="../${product.images.main}"   alt="${product.title} fine art print" class="active" data-thumb="../${product.images.main}" />
-        <img src="../${product.images.room}"   alt="${product.title} shown in a room setting" data-thumb="../${product.images.room}" />
-        <img src="../${product.images.framed}" alt="${product.title} framed print sample" data-thumb="../${product.images.framed}" />
-        <img src="../${product.images.canvas}" alt="${product.title} canvas wrap sample" data-thumb="../${product.images.canvas}" />
-        <img src="../${product.images.metal}"  alt="${product.title} metal print sample" data-thumb="../${product.images.metal}" />
+        <imgsrc="/${product.images.main}"   alt="${product.title} fine art print" class="active" data-thumb="../${product.images.main}" />
+        <imgsrc="/${product.images.room}"   alt="${product.title} shown in a room setting" data-thumb="../${product.images.room}" />
+        <imgsrc="/${product.images.framed}" alt="${product.title} framed print sample" data-thumb="../${product.images.framed}" />
+        <imgsrc="/${product.images.canvas}" alt="${product.title} canvas wrap sample" data-thumb="../${product.images.canvas}" />
+        <imgsrc="/${product.images.metal}"  alt="${product.title} metal print sample" data-thumb="../${product.images.metal}" />
       `;
 
       // Build before/after section (only if original photo exists)
@@ -1190,11 +1190,11 @@
         <section class="before-after-section">
           <div class="before-after-grid">
             <div class="before-after-img-wrap">
-              <img src="../${product.images.original}" alt="${product.title} - original photograph" />
+              <imgsrc="/${product.images.original}" alt="${product.title} - original photograph" />
               <span class="before-after-label">Original Photograph</span>
             </div>
             <div class="before-after-img-wrap">
-              <img src="../${product.images.main}" alt="${product.title} - watercolor print" />
+              <imgsrc="/${product.images.main}" alt="${product.title} - watercolor print" />
               <span class="before-after-label">Watercolor Print</span>
             </div>
           </div>
@@ -1207,7 +1207,7 @@
       // Build mobile medium preview
       const mobileMediumPreview = `
         <div class="mobile-medium-preview" id="mobileMediumPreview" title="Tap to view in gallery">
-          <img id="mobileMediumImg" src="../${product.images.metal}" alt="${product.title} - selected medium preview" />
+          <img id="mobileMediumImg"src="/${product.images.metal}" alt="${product.title} - selected medium preview" />
           <p class="mobile-medium-preview-label" id="mobileMediumLabel">Metal Print Preview</p>
         </div>
       `;
@@ -1351,7 +1351,7 @@
                   <div class="swatch-row">
                     ${FRAME_OPTIONS.map(f => `
                       <div class="swatch-item">
-                        <img src="../${f.img}" alt="${f.label} frame" loading="lazy" />
+                        <imgsrc="/${f.img}" alt="${f.label} frame" loading="lazy" />
                         <span>${f.label}</span>
                       </div>`).join('')}
                   </div>
@@ -1359,7 +1359,7 @@
                   <div class="swatch-row">
                     ${MAT_OPTIONS.map(m => `
                       <div class="swatch-item">
-                        <img src="../${m.img}" alt="${m.label} mat" loading="lazy" />
+                        <imgsrc="/${m.img}" alt="${m.label} mat" loading="lazy" />
                         <span>${m.label}</span>
                       </div>`).join('')}
                   </div>
@@ -1512,7 +1512,7 @@
         item.className = 'modal-swatch-item';
         item.dataset.group = 'frame';
         item.dataset.label = opt.label;
-        item.innerHTML = `<img src="../${opt.img}" alt="${opt.label} frame" /><span>${opt.label}</span>`;
+        item.innerHTML = `<imgsrc="/${opt.img}" alt="${opt.label} frame" /><span>${opt.label}</span>`;
         frameSwatchesEl.appendChild(item);
       });
 
@@ -1523,7 +1523,7 @@
         item.className = 'modal-swatch-item';
         item.dataset.group = 'mat';
         item.dataset.label = opt.label;
-        item.innerHTML = `<img src="../${opt.img}" alt="${opt.label} mat" /><span>${opt.label}</span>`;
+        item.innerHTML = `<imgsrc="/${opt.img}" alt="${opt.label} mat" /><span>${opt.label}</span>`;
         matSwatchesEl.appendChild(item);
       });
 
