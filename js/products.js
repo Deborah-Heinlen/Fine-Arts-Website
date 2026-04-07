@@ -14,6 +14,8 @@
 const PRODUCTS = {
     
     
+    
+    
   // ── BOTANICAL STUDIES ────────────────────────────────────────
 
   "waterlily-in-bloom": {
