@@ -575,7 +575,7 @@ const PRODUCTS = {
     title:           "Quiet Perch",
     caption:         "Small enough to overlook.  Too beautiful not to notice.",
     altText:         "Female Eastern bluebird watercolor print -- soft blue and warm rust colored bird perched quietly on a branch",
-    description:     "The female Eastern Bluebird rarely gets top billing -- that usually goes to the male, with his brilliant royal blue and vivid rusty breast.  But look closer.  Her coloring is softer, warmer, more complex -- a quiet beauty that rewards the patient observer.  Once nearly gone from the eastern United States due to habitat loss and competition from invasive species, the Eastern Bluebird made a remarkable comeback thanks to dedicated nest box programs across the country.  A year-round resident in the Cincinnati region, she has been a symbol of happiness and good fortune across cultures for centuries -- and it is hard to argue with that assessment.  Rendered with a watercolor finish from an original photograph, this print is a small invitation to slow down and notice the ones who don't announce themselves.",
+    description:     "The Tufted Titmouse is one of the most overlooked birds in the eastern woodland, which is remarkable given that it is almost never actually quiet.  It announces itself constantly -- a loud, whistled 'peter-peter-peter' that carries well beyond what a four-inch bird has any right to project.  That silver-gray crest is not just decorative; like the Great Horned Owl's tufts, it communicates mood, rising when the bird is alert or agitated and flattening when it is calm.  The Tufted Titmouse is a hoarder by nature, caching seeds and insects one at a time in bark crevices and soil, returning to them through winter with a memory that researchers have found to be surprisingly precise.  It is also bold for its size, frequently the first bird to investigate a new feeder and one of the few small songbirds that will take food directly from a human hand with enough patience on your part.  A year-round resident throughout the eastern United States, it does not migrate and does not disappear in winter -- it simply gets louder.  Rendered with a watercolor finish from an original photograph, Quiet Perch captures a bird that has never once considered going unnoticed.",
     images: {
       main:    "images/avian-studies/quiet-perch.jpg",
       room:    "images/mockups/quiet-perch-room.jpg",
@@ -604,8 +604,7 @@ const PRODUCTS = {
     collectionPage:  "avian-studies.html",
     title:           "Sentinel's Watch",
     caption:         "Standing guard over something only they can see.",
-    altText:         "Great blue heron watercolor print -- tall heron standing motionless on a fallen log above still water",
-    description:     "The Great Blue Heron is North America's largest heron -- nearly four and a half feet tall, with a wingspan that can reach six feet -- and yet somehow it has mastered the art of disappearing in plain sight.  Standing motionless on a fallen log above the water, it becomes part of the landscape, indistinguishable from the stillness around it.  That patience is not contemplative -- it is predatory, a hunting strategy refined over millions of years.  A familiar and beloved presence along the rivers and lakes of the Cincinnati region, the Great Blue Heron is one of those creatures that stops you mid-stride every single time.  Rendered with a watercolor finish from an original photograph, this print captures that suspended moment -- the held breath, the still water, the bird that has all the time in the world.",
+    altText:         "The female Eastern Bluebird rarely gets top billing -- that usually goes to the male, with his brilliant royal blue and vivid rusty breast.  But look closer.  Her coloring is softer, warmer, more complex -- a quiet beauty that rewards the patient observer.  Once nearly gone from the eastern United States due to habitat loss and competition from invasive species, the Eastern Bluebird made a remarkable comeback thanks to dedicated nest box programs across the country.  A year-round resident in the Cincinnati region, she has been a symbol of happiness and good fortune across cultures for centuries -- and it is hard to argue with that assessment.  Rendered with a watercolor finish from an original photograph, this print is a small invitation to slow down and notice the ones who don't announce themselves.",
     images: {
       main:    "images/avian-studies/sentinels-watch.jpg",
       room:    "images/mockups/sentinels-watch-room.jpg",
@@ -869,6 +868,36 @@ const PRODUCTS = {
   },      
       
 
+  "winter-vigil": {
+    id:              "winter-vigil",
+    number:          "No. 15",
+    collection:      "avian-studies",
+    collectionLabel: "Avian Studies",
+    collectionPage:  "avian-studies.html",
+    title:           "Winter Vigil",
+    caption:         "In the heart of the storm, stillness.",
+    altText:         "A barred owl perched on a snow-covered branch during a winter blizzard, rendered in watercolor style with soft muted tones of taupe, gray, and cream",
+    description:     "The Barred Owl is one of the most successful raptors in North America, not because it is the largest or the most powerful, but because it is extraordinarily adaptable. It does not migrate. It does not hibernate. It simply stays, enduring whatever winter delivers with a patience that borders on indifference. While most wildlife retreats during a blizzard, the Barred Owl often hunts more actively, using hearing so acute it can detect a mouse moving beneath a foot of fresh snow. Those dark brown eyes -- unusual in a world of yellow-eyed owls -- give it an almost human expressiveness, which may explain why people stop cold when they encounter one. It cannot move those eyes; like all owls, its eyes are fixed in the skull, so it rotates its entire head instead, up to 270 degrees, missing nothing. Its call -- 'who cooks for you, who cooks for you-all' -- carries through winter woods for half a mile. If you have heard it and not known what it was, you have not forgotten it. Rendered with a watercolor finish from an original photograph taken during an active snowstorm, Winter Vigil captures a bird that has been watching far longer than you have been looking.",
+    images: {
+      main:    "images/avian-studies/winter-vigil.jpg",
+      room:    "images/mockups/winter-vigil-room.jpg",
+      framed:  "images/mockups/winter-vigil-framed.jpg",
+      canvas:  "images/mockups/winter-vigil-canvas-wrap.jpg",
+      metal:   "images/mockups/winter-vigil-metal.jpg",
+        original: "images/originals/winter-vigil.jpg"
+    },
+    prices: {
+      metal:  { "55": 55,   "95": 95,   "180": 180 },
+      canvas: { "200": 200, "250": 250, "300": 300 },
+      framed: { "160": 160, "240": 240, "300": 300, "400": 400 }
+    },
+    sizeLabels: {
+      metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
+      canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
+    }
+  },
+ 
 
   // ── CINCINNATI ───────────────────────────────────────────────
 
@@ -1926,7 +1955,8 @@ const COLLECTIONS = {
     "full-sail",
     "quiet-perch",
     "island-gold",
-    "still-waters"
+    "still-waters",
+    "winter-vigil"
   ],
     
   "cincinnati": [
