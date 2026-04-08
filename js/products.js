@@ -867,6 +867,7 @@ const PRODUCTS = {
     }
   },      
       
+    
   "winter-vigil": {
     id:              "winter-vigil",
     number:          "No. 15",
