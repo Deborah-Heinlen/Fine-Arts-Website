@@ -928,8 +928,13 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },    
+       },
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "the-grand-terminal",       title: "The Grand Terminal",            image: "images/cincinnati/the-grand-terminal.jpg" },
+      { id: "queen-city-overture",           title: "Queen City Overture",          image: "images/cincinnati/queen-city-overture.jpg" }
+    ]
+  },
     
   
       "heart-of-the-city": {
@@ -960,9 +965,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+    },
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
+      { id: "queen-city-overture",           title: "Queen City Overture",          image: "images/cincinnati/queen-city-overture.jpg" }
+    ]
   },
-
+    
 
   "love-the-cov": {
     id:              "love-the-cov",
@@ -991,8 +1001,15 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+       },
+      
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
+      { id: "queen-city-overture",           title: "Queen City Overture",          image: "images/cincinnati/queen-city-overture.jpg" }
+    ]
   },
+    
 
   "queen-city-overture": {
     id:              "queen-city-overture",
@@ -1021,9 +1038,15 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+     },
+      
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
+      { id: "market-day",           title: "Market Day",          image: "images/cincinnati/market-day.jpg" }
+    ]
   },
-
+    
   "the-grand-terminal": {
     id:              "the-grand-terminal",
     number:          "No. 05",
@@ -1051,9 +1074,16 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+    },
+      
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
+      { id: "queen-city-overture",           title: "Queen City Overture",          image: "images/cincinnati/queen-city-overture.jpg" }
+    ]
   },
-
+    
+    
   "the-queens-crown": {
     id:              "the-queens-crown",
     number:          "No. 01",
@@ -1083,6 +1113,7 @@ const PRODUCTS = {
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     },
+      
     related: [
       { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
       { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
@@ -1118,7 +1149,13 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+     },
+      
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "queen-city-overture",        title: "Queen City Overture",         image: "images/cincinnati/queen-city-overture.jpg" },
+      { id: "the-grand-terminal",           title: "The Grand Terminal",          image: "images/cincinnati/the-grand-terminal.jpg" }
+    ]
   },
     
     
@@ -1149,10 +1186,16 @@ const PRODUCTS = {
     sizeLabels: {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
-      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+      framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }     
+      },
+      
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "cincinnati-observatory",    title: "Cincinnati Observatory",        image: "images/cincinnati/cincinnati-observatory.jpg" },
+      { id: "market-day",                   title: "Market Day",                 image: "images/cincinnati/market-day.jpg" }
+    ]
   },
-
+    
 
   "dawns-early-light": {
     id:              "dawns-early-light",
@@ -1181,8 +1224,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },    
+    },
+      
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "love-the-cov",                 title: "Love the Cov",               image: "images/cincinnati/love-the-cov.jpg" },
+      { id: "the-mantle",                    title: "The Mantle",                image: "images/cincinnati/the-mantle.jpg" }
+    ]
+  },
     
   "incline-to-the-mount": {
     id:              "incline-to-the-mount",
@@ -1211,9 +1260,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+    },
+      
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "cincinnati-observatory",    title: "Cincinnati Observatory",        image: "images/cincinnati/cincinnati-observatory.jpg" },
+      { id: "market-day",                   title: "Market Day",                 image: "images/cincinnati/market-day.jpg" }
+    ]
   },
-
   // ── AMERICAN WEST ────────────────────────────────────────────
 
 
