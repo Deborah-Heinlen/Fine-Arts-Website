@@ -734,8 +734,15 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+         },
+    related: [
+      { id: "the-redbird",               title: "The Redbird",                    image: "images/avian-studies/the-redbird.jpg" },
+      { id: "rose-and-rust",                title: "Rose and Rust",              image: "images/avian-studies/rose-and-rust.jpg" },
+      { id: "hidden-fire",              title: "Hidden Fire",                   image: "images/avian-studies/hidden-fire.jpg" }
+    ]
   },
+    
+    
     
     "rose-and-rust": {
     id:              "rose-and-rust",
@@ -764,8 +771,13 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
-  },  
+     },
+    related: [
+      { id: "the-redbird",              title: "The Redbird",                  image: "images/avian-studies/the-redbird.jpg" },
+      { id: "crimson",                  title: "Crimson",                         image: "images/avian-studies/crimson.jpg" },
+      { id: "hidden-fire",              title: "Hidden Fire",                   image: "images/avian-studies/hidden-fire.jpg" }
+    ]
+  },
     
     "the-redbird": {
     id:              "the-redbird",
@@ -794,8 +806,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+     },
+    related: [
+      { id: "rose-and-rust",              title: "Rose and Rust",                  image: "images/avian-studies/rose-and-rust.jpg" },
+      { id: "crimson",                  title: "Crimson",                         image: "images/avian-studies/crimson.jpg" },
+      { id: "hidden-fire",              title: "Hidden Fire",                   image: "images/avian-studies/hidden-fire.jpg" }
+    ]
   },
+    
     
     "hidden-fire": {
     id:              "hidden-fire",
@@ -824,7 +842,12 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+    },
+    related: [
+      { id: "rose-and-rust",              title: "Rose and Rust",                  image: "images/avian-studies/rose-and-rust.jpg" },
+      { id: "crimson",                  title: "Crimson",                         image: "images/avian-studies/crimson.jpg" },
+      { id: "the-redbird",              title: "The Redbird",                   image: "images/avian-studies/the-redbird.jpg" }
+    ]
   },
     
     "full-sail": {
