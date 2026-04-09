@@ -349,8 +349,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+        },
+    related: [
+      { id: "pathfinder",           title: "Pathfinder",                    image: "images/wildlife/pathfinder.jpg" },
+      { id: "untamed-majesty",       title: "Untamed majesty",            image: "images/wildlife/untamed-majesty.jpg" },
+      { id: "firefox",           title: "Firefox",          image: "images/wildlife/firefox.jpg" }
+    ]
   },
+    
 
   "pathfinder": {
     id:              "pathfinder",
@@ -379,9 +385,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+        },
+    related: [
+      { id: "focused-intent",           title: "Focused Intent",                    image: "images/wildlife/focused-intent.jpg" },
+      { id: "untamed-majesty",       title: "Untamed majesty",            image: "images/wildlife/untamed-majesty.jpg" },
+      { id: "firefox",           title: "Firefox",          image: "images/wildlife/firefox.jpg" }
+    ]
   },
-
+    
   "untamed-majesty": {
     id:              "untamed-majesty",
     number:          "No. 03",
@@ -409,9 +420,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+          },
+    related: [
+      { id: "focused-intent",           title: "Focused Intent",                    image: "images/wildlife/focused-intent.jpg" },
+      { id: "pathfinder",       title: "Pathfinder",            image: "images/wildlife/pathfinder.jpg" },
+      { id: "firefox",           title: "Firefox",          image: "images/wildlife/firefox.jpg" }
+    ]
   },
-
+    
    "firefox": {
     id:              "firefox",
     number:          "No. 04",
@@ -439,8 +455,14 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+           },
+    related: [
+      { id: "focused-intent",           title: "Focused Intent",                    image: "images/wildlife/focused-intent.jpg" },
+      { id: "pathfinder",                title: "Pathfinder",                     image: "images/wildlife/pathfinder.jpg" },
+      { id: "untamed-majesty",           title: "Untamed Majesty",              image: "images/wildlife/untamed-majesty.jpg" }
+    ]
   },
+    
     
     
     
