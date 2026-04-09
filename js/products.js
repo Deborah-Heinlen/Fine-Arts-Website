@@ -1081,9 +1081,13 @@ const PRODUCTS = {
       metal:  { "55": "8x10", "95": "11x14", "180": "16x20" },
       canvas: { "200": "16x20", "250": "20x24", "300": "24x30" },
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
-    }
+    },
+    related: [
+      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
+      { id: "the-grand-terminal",           title: "The Grand Terminal",          image: "images/cincinnati/the-grand-terminal.jpg" }
+    ]
   },
-
     
     
     "market-day": {
