@@ -465,7 +465,6 @@ const PRODUCTS = {
     
     
     
-    
     // ── AVIAN STUDIES ────────────────────────────────────────────
 
   "american-glory": {
