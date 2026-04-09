@@ -967,7 +967,7 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
     },
     related: [
-      { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
+      { id: "the-queens-crown",           title: "The Queen's Crown",           image: "images/cincinnati/the-queens-crown.jpg" },
       { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
       { id: "queen-city-overture",           title: "Queen City Overture",          image: "images/cincinnati/queen-city-overture.jpg" }
     ]
@@ -1043,7 +1043,7 @@ const PRODUCTS = {
     related: [
       { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
       { id: "gateway-to-the-queen-city",    title: "Gateway to the Queen City",   image: "images/cincinnati/gateway-to-the-queen-city.jpg" },
-      { id: "market-day",           title: "Market Day",          image: "images/cincinnati/market-day.jpg" }
+      { id: "market-day",                   title: "Market Day",          image: "images/cincinnati/market-day.jpg" }
     ]
   },
     
@@ -1229,7 +1229,7 @@ const PRODUCTS = {
     related: [
       { id: "heart-of-the-city",           title: "Heart of the City",           image: "images/cincinnati/heart-of-the-city.jpg" },
       { id: "love-the-cov",                 title: "Love the Cov",               image: "images/cincinnati/love-the-cov.jpg" },
-      { id: "the-mantle",                    title: "The Mantle",                image: "images/cincinnati/the-mantle.jpg" }
+      { id: "the-mantle",                    title: "The Mantle",                image: "images/avian-studies/the-mantle.jpg" }
     ]
   },
     
