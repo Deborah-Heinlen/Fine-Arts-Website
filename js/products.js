@@ -1072,6 +1072,7 @@ const PRODUCTS = {
       metal:   "images/mockups/the-queens-crown-metal.jpg",
         original: "images/originals/the-queens-crown.jpg"
     },
+      
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
       canvas: { "200": 200, "250": 250, "300": 300 },
