@@ -94,7 +94,7 @@ const PRODUCTS = {
       framed:  "images/mockups/redbuds-in-bloom-framed.webp",
       canvas:  "images/mockups/redbuds-in-bloom-canvas-wrap.webp",
       metal:   "images/mockups/redbuds-in-bloom-metal.webp",
-        original: "images/originals/redbuds.webp"
+        original: "images/originals/redbuds-in-bloom.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
