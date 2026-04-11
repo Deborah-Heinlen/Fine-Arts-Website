@@ -104,7 +104,7 @@ Object.values(PRODUCTS).forEach(function(product) {
 
   // 6. Replace og:image
   page = page.replace(
-    '<meta property="og:image" content="https://heinlenfineart.com/images/banner-social.jpg" />',
+    '<meta property="og:image" content="https://heinlenfineart.com/images/banner-social.webp" />',
     '<meta property="og:image" content="' + ogImage + '" />'
   );
 
