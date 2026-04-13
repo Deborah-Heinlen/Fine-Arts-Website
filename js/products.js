@@ -865,7 +865,7 @@ const PRODUCTS = {
       room:    "images/mockups/full-sail-room.webp",
       framed:  "images/mockups/full-sail-framed.webp",
       canvas:  "images/mockups/full-sail-canvas-wrap.webp",
-      metal:   "images/mockups/hidden-full-sail.webp",
+      metal:   "images/mockups/full-sail-metal.webp",
       original: "images/originals/full-sail.webp"
     },
     prices: {
