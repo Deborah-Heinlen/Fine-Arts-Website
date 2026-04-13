@@ -1,3 +1,5 @@
+const PRODUCTS = {
+
 // ═══════════════════════════════════════════════════════════════
 // PRODUCTS.JS -- Deborah Heinlen Fine Art
 // Single source of truth for all product data.
@@ -11,10 +13,7 @@
 // ═══════════════════════════════════════════════════════════════
 
 
-const PRODUCTS = {
-    
-    
-    
+
     
   // ── BOTANICAL STUDIES ────────────────────────────────────────
 
