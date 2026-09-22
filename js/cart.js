@@ -16,7 +16,7 @@ const CHRISTMAS_POPUP = {
   page:     '/christmas/',
   image:    '/images/christmas/winter-cardinal-card.webp',
   title:    'The Christmas Collection',
-  text:     'Watercolor greeting cards and postcards.  Mix and match 10 or more and every card is just $4.',
+    text:     'Watercolor greeting cards and postcards.  Mix and match 10 or more greeting cards for $4 each, or postcards for $2.50 each.',
   button:   'Shop Christmas Cards',
   delay:    4000,                    // milliseconds before it appears
   seenKey:  'dhfa_xmas_popup_2026'   // change the year each season so it shows again
