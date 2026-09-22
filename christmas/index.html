@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CHRISTMAS CARDS COLLECTION -- index.html
+     Location: /christmas/index.html
+     Canonical: https://heinlenfineart.com/christmas
+     Designs, prices, and shipping all come from js/stationery.js
+════════════════════════════════════════════════════════════════ -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE IDENTITY -- Christmas Cards
+  ════════════════════════════════════════════════════════════════ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas Cards &amp; Postcards | Heinlen Fine Art</title>
+  <meta name="description" content="Watercolor Christmas greeting cards and postcards from Heinlen Fine Art.  Candy canes, nutcrackers, cardinals, poinsettias, and more.  Mix and match 10 or more for $4 each, with free shipping on orders of $25 or more." />
+  <link rel="canonical" href="https://heinlenfineart.com/christmas" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FAVICON
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="../images/favicon.webp" />
+  <link rel="apple-touch-icon" href="../images/favicon.webp" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       OPEN GRAPH / SOCIAL MEDIA PREVIEW
+  ════════════════════════════════════════════════════════════════ -->
+  <meta property="og:title" content="Christmas Cards &amp; Postcards | Heinlen Fine Art" />
+  <meta property="og:description" content="Watercolor Christmas greeting cards and postcards.  Mix and match 10 or more for $4 each." />
+  <meta property="og:image" content="https://heinlenfineart.com/images/banner-social.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heinlenfineart.com/christmas" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SMWQ4CMPS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4SMWQ4CMPS');
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FONTS -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/uug2krd.css" />
+
+  <style>
+
+    /* ═══════════════════════════════════════════════════════════════
+       CSS VARIABLES -- site-wide colors, do not change
+    ════════════════════════════════════════════════════════════════ */
+    :root {
+      --cream:      #f5f0e8;
+      --linen:      #ede8dc;
+      --warm-tan:   #c8b89a;
+      --text-dark:  #2e2419;
+      --text-mid:   #6b5c4a;
+      --text-light: #9e8e7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: #f2ede8; color: var(--text-dark); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HEADER -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(242, 237, 232, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1.5px solid rgba(200, 184, 154, 0.3);
+    }
+
+    .header-logo { height: 90px; width: auto; display: block; }
+
+    .header-title {
+      font-family: "lindsey-signature", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      letter-spacing: 0em;
+      color: var(--text-dark);
+      text-decoration: none;
+      text-transform: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-cart {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.55rem 1.5rem;
+      transition: background 0.25s, color 0.25s;
+    }
+    .header-cart:hover { background: var(--warm-tan); color: var(--cream); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MOBILE HAMBURGER MENU
+    ════════════════════════════════════════════════════════════════ */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text-mid);
+      transition: all 0.3s;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--linen);
+      z-index: 198;
+      overflow-y: auto;
+      padding: 120px 2rem 3rem;
+    }
+
+    .mobile-nav.open { display: block; }
+
+    .mobile-nav a {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid #d8cfc4;
+      transition: color 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    .collections-strip {
+      position: fixed;
+      top: 130px;
+      left: 0; right: 0;
+      z-index: 199;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(237, 232, 220, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .strip-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 1.25rem 1.6rem;
+      border-right: 1px solid rgba(200, 184, 154, 0.3);
+      transition: background 0.2s, color 0.2s;
+    }
+    .strip-link:first-child { border-left: 1px solid rgba(200, 184, 154, 0.3); }
+    .strip-link:hover { background: rgba(200, 184, 154, 0.2); color: var(--text-dark); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO -- page title + slideshow
+       margin-top must clear the fixed header + collections strip
+    ════════════════════════════════════════════════════════════════ */
+    .hero {
+      margin-top: 175px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-texture {
+      position: relative;
+      background: var(--linen);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4.5rem 3rem 3.5rem;
+    }
+
+    .hero-texture::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .hero-text { position: relative; z-index: 2; text-align: center; }
+
+    .hero-breadcrumb {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+    }
+    .hero-breadcrumb a { color: inherit; text-decoration: none; transition: color 0.2s; }
+    .hero-breadcrumb a:hover { color: var(--text-mid); }
+
+    .hero-collection-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      line-height: 1.0;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.5s forwards;
+    }
+
+    .hero-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--warm-tan);
+      margin: 0 auto 1.8rem auto;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.7s forwards;
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.9s forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO SLIDESHOW -- square card images
+    ════════════════════════════════════════════════════════════════ */
+    .hero-slideshow {
+      position: relative;
+      overflow: hidden;
+      height: 65vh;
+      background: var(--linen);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+    .slide.active { opacity: 1; }
+
+    .slide img {
+      display: block;
+      max-width: 45%;
+      max-height: 58vh;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      border-radius: 1px;
+      filter: drop-shadow(0 8px 32px rgba(100, 80, 60, 0.15));
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, var(--linen));
+      pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       DEAL BAR -- bundle pricing, shipping, assortment button
+    ════════════════════════════════════════════════════════════════ */
+    .deal-bar {
+      background: var(--linen);
+      text-align: center;
+      padding: 4rem 2rem;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+      border-bottom: 1px solid rgba(200, 184, 154, 0.25);
+    }
+
+    .deal-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.02em;
+      line-height: 1.35;
+      margin-bottom: 0.9rem;
+    }
+
+    .deal-detail {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      line-height: 2;
+      margin-bottom: 2.2rem;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      background: transparent;
+      border: 1px solid rgba(100, 80, 60, 0.35);
+      padding: 0.95rem 2.4rem;
+      cursor: pointer;
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+    }
+    .btn-outline:hover { background: var(--warm-tan); border-color: var(--warm-tan); color: var(--cream); }
+    .btn-outline:focus-visible { outline: 2px solid var(--text-mid); outline-offset: 3px; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       DESIGN ROWS -- one row per card design
+    ════════════════════════════════════════════════════════════════ */
+    .prints-section {
+      display: flex;
+      flex-direction: column;
+      background: #1f3d2b;
+    }
+
+    .print-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 85vh;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .print-row.visible { opacity: 1; transform: translateY(0); }
+    .print-row.reverse { direction: rtl; }
+    .print-row.reverse > * { direction: ltr; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HOLIDAY ROW COLORS -- four gradients rotate down the page
+    ════════════════════════════════════════════════════════════════ */
+    .print-row.holiday-evergreen { background: linear-gradient(to right, #1f3d2b 0%, #2f5a3c 50%, #4a7a52 100%); }
+    .print-row.holiday-cranberry { background: linear-gradient(to right, #5a1a22 0%, #82262f 50%, #a4434a 100%); }
+    .print-row.holiday-midnight  { background: linear-gradient(to right, #1c2a44 0%, #2e4266 50%, #4a6590 100%); }
+    .print-row.holiday-candle    { background: linear-gradient(to right, #5e4019 0%, #86622a 50%, #a8844a 100%); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       DESIGN IMAGE & TEXT PANELS
+    ════════════════════════════════════════════════════════════════ */
+    .print-image {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+    }
+
+    .print-image img {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      max-height: 75vh;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      border-radius: 1px;
+      filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.25));
+      transition: opacity 0.35s ease;
+    }
+    .print-image img.swapping { opacity: 0; }
+
+    .print-text {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 5rem 5rem 4.5rem;
+      overflow: hidden;
+    }
+
+    .print-text::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+    }
+
+    .print-text-inner { position: relative; z-index: 2; text-align: center; }
+
+    .print-number {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(245, 240, 232, 0.75);
+      margin-bottom: 1.5rem;
+    }
+
+    .print-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      color: var(--cream);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+
+    .print-divider {
+      width: 36px;
+      height: 1px;
+      background: rgba(245, 240, 232, 0.6);
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .print-caption {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      margin-bottom: 2.4rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       SHOPPING CONTROLS -- type choice, quantity, add to cart
+    ════════════════════════════════════════════════════════════════ */
+    .shop-controls { display: flex; flex-direction: column; align-items: center; gap: 1.3rem; }
+
+    .type-toggle { display: inline-flex; border: 1px solid rgba(245, 240, 232, 0.45); }
+    .type-toggle button {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.66rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: transparent;
+      border: none;
+      padding: 0.75rem 1.4rem;
+      cursor: pointer;
+      transition: background 0.25s, color 0.25s;
+    }
+    .type-toggle button + button { border-left: 1px solid rgba(245, 240, 232, 0.45); }
+    .type-toggle button[aria-pressed="true"] { background: var(--cream); color: var(--text-dark); }
+    .type-toggle button:focus-visible { outline: 2px solid var(--cream); outline-offset: 2px; }
+
+    .price-line {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+    }
+    .price-line small {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.66rem;
+      font-weight: 300;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(245, 240, 232, 0.75);
+      margin-top: 0.35rem;
+    }
+
+    .qty-add { display: flex; align-items: stretch; gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
+
+    .qty-picker { display: inline-flex; align-items: center; border: 1px solid rgba(245, 240, 232, 0.45); }
+    .qty-picker button {
+      width: 2.6rem;
+      height: 100%;
+      min-height: 2.8rem;
+      background: transparent;
+      border: none;
+      color: var(--cream);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .qty-picker button:hover { background: rgba(245, 240, 232, 0.12); }
+    .qty-picker button:focus-visible { outline: 2px solid var(--cream); outline-offset: -2px; }
+    .qty-picker span {
+      min-width: 2.2rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      color: var(--cream);
+    }
+
+    .btn-add {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: transparent;
+      border: 1px solid rgba(245, 240, 232, 0.5);
+      padding: 0.85rem 2.2rem;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn-add:hover { background: var(--cream); color: var(--text-dark); }
+    .btn-add:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       ASSORTMENT BUILDER -- centered panel over the page
+    ════════════════════════════════════════════════════════════════ */
+    .assort-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      background: rgba(46, 36, 25, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .assort-overlay.open { display: flex; }
+
+    .assort-panel {
+      position: relative;
+      background: var(--cream);
+      width: 100%;
+      max-width: 980px;
+      max-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .assort-head {
+      padding: 2rem 2.5rem 1.4rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(200, 184, 154, 0.4);
+    }
+
+    .assort-head h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      font-weight: 300;
+      color: var(--text-dark);
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .assort-head p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .assort-close {
+      position: absolute;
+      top: 0.9rem;
+      right: 1rem;
+      width: 2.6rem;
+      height: 2.6rem;
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: var(--text-mid);
+      cursor: pointer;
+    }
+    .assort-close:hover { color: var(--text-dark); }
+    .assort-close:focus-visible { outline: 2px solid var(--text-mid); }
+
+    .assort-type { display: inline-flex; border: 1px solid var(--warm-tan); }
+    .assort-type button {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.66rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      background: transparent;
+      border: none;
+      padding: 0.7rem 1.4rem;
+      cursor: pointer;
+    }
+    .assort-type button + button { border-left: 1px solid var(--warm-tan); }
+    .assort-type button[aria-pressed="true"] { background: var(--warm-tan); color: var(--cream); }
+    .assort-type button:focus-visible { outline: 2px solid var(--text-mid); outline-offset: 2px; }
+
+    .assort-grid {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.6rem 2.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1.3rem;
+    }
+
+    .assort-tile { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+
+    .assort-pick {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: var(--linen);
+      border: 2px solid transparent;
+      cursor: pointer;
+      padding: 0;
+      transition: border-color 0.2s;
+    }
+    .assort-pick img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .assort-pick:hover { border-color: var(--warm-tan); }
+    .assort-pick:focus-visible { outline: 2px solid var(--text-mid); outline-offset: 2px; }
+    .assort-tile.chosen .assort-pick { border-color: #82262f; }
+
+    .assort-badge {
+      position: absolute;
+      top: 0.4rem;
+      right: 0.4rem;
+      min-width: 1.7rem;
+      height: 1.7rem;
+      padding: 0 0.4rem;
+      border-radius: 1rem;
+      background: #82262f;
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.8rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .assort-tile.chosen .assort-badge { display: flex; }
+
+    .assort-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.98rem;
+      color: var(--text-dark);
+      text-align: center;
+      line-height: 1.25;
+    }
+
+    .assort-step { display: none; align-items: center; border: 1px solid var(--warm-tan); }
+    .assort-tile.chosen .assort-step { display: inline-flex; }
+    .assort-step button {
+      width: 2.1rem;
+      height: 1.9rem;
+      background: transparent;
+      border: none;
+      color: var(--text-mid);
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .assort-step button:hover { background: var(--linen); }
+    .assort-step span { min-width: 1.6rem; text-align: center; font-size: 0.8rem; color: var(--text-dark); }
+
+    .assort-foot {
+      padding: 1.3rem 2.5rem 1.6rem;
+      border-top: 1px solid rgba(200, 184, 154, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .assort-message {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      color: var(--text-dark);
+      line-height: 1.45;
+      flex: 1 1 320px;
+    }
+    .assort-message small {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.78rem;
+      color: var(--text-mid);
+      margin-top: 0.25rem;
+    }
+    .assort-message .unlocked { color: #82262f; }
+
+    .assort-add {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: var(--text-dark);
+      border: 1px solid var(--text-dark);
+      padding: 0.95rem 2.2rem;
+      cursor: pointer;
+      transition: background 0.25s, opacity 0.25s;
+    }
+    .assort-add:hover { background: var(--text-mid); }
+    .assort-add:disabled { opacity: 0.35; cursor: default; background: var(--text-dark); }
+    .assort-add:focus-visible { outline: 2px solid var(--text-mid); outline-offset: 3px; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       ASSORTMENT BAR -- pinned to the bottom of the screen
+    ════════════════════════════════════════════════════════════════ */
+    body { padding-bottom: 76px; }
+
+    .assort-bar {
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 300;
+      background: #C8102E;
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 2rem;
+      box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .assort-bar-text {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.74rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.6;
+    }
+    .assort-bar-text strong {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      text-transform: none;
+      margin-right: 0.5rem;
+    }
+
+    .assort-bar-actions { display: flex; align-items: center; gap: 1.2rem; flex-shrink: 0; }
+
+    .assort-bar-btn {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #C8102E;
+      background: var(--cream);
+      border: 1px solid var(--cream);
+      padding: 0.75rem 1.6rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.25s, color 0.25s;
+    }
+    .assort-bar-btn:hover { background: transparent; color: var(--cream); }
+    .assort-bar-btn:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+
+    .assort-bar-cart {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.66rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cream);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(245, 240, 232, 0.7);
+      padding-bottom: 2px;
+      white-space: nowrap;
+    }
+    .assort-bar-cart[hidden] { display: none; }
+
+    /* Keep the "added to cart" message above the bar */
+    #cartConfirmMsg { bottom: 6rem !important; }
+
+    @media (max-width: 760px) {
+      body { padding-bottom: 118px; }
+      .assort-bar { flex-direction: column; gap: 0.6rem; padding: 0.8rem 1rem; text-align: center; }
+      .assort-bar-text { font-size: 0.64rem; letter-spacing: 0.1em; }
+      .assort-bar-text strong { display: block; margin: 0 0 0.1rem; font-size: 1.05rem; }
+      .assort-bar-btn { padding: 0.65rem 1rem; letter-spacing: 0.12em; font-size: 0.62rem; }
+      .assort-bar-cart { letter-spacing: 0.12em; font-size: 0.62rem; }
+      #cartConfirmMsg { bottom: 8.5rem !important; right: 1rem !important; left: 1rem !important; text-align: center; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+    ════════════════════════════════════════════════════════════════ */
+    .other-collections {
+      background: var(--linen);
+      padding: 6rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(200, 184, 154, 0.2);
+    }
+    .other-collections h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+    .other-collections p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+    .collections-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+    .collection-link {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      border: 1px solid var(--warm-tan);
+      padding: 0.75rem 2rem;
+      transition: background 0.25s, color 0.25s, border-color 0.25s;
+    }
+    .collection-link:hover { background: var(--warm-tan); border-color: var(--warm-tan); color: var(--cream); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+    ════════════════════════════════════════════════════════════════ */
+    footer {
+      padding: 2.5rem 3rem;
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: var(--text-light);
+      background: #e8e4e0;
+      border-top: 1px solid rgba(200, 184, 154, 0.25);
+    }
+    footer a { color: var(--text-light); text-decoration: none; }
+    footer a:hover { color: var(--text-mid); }
+
+    /* ═══════════════════════════════════════════════════════════════
+       IMAGE PROTECTION -- DO NOT REMOVE
+    ════════════════════════════════════════════════════════════════ */
+    img { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-drag: none; -webkit-touch-callout: none; pointer-events: none; }
+    a, button, .header-cart, .strip-link, .collection-link { pointer-events: auto; }
+    .print-image::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+    .slide::after { content: ''; position: absolute; inset: 0; z-index: 3; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       REDUCED MOTION
+    ════════════════════════════════════════════════════════════════ */
+    @media (prefers-reduced-motion: reduce) {
+      .print-row { opacity: 1; transform: none; transition: none; }
+      .slide, .print-image img { transition: none; }
+      .hero-collection-label, .hero-title, .hero-divider, .hero-tagline { animation: none; opacity: 1; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- tablet (max 900px)
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .site-header { padding: 0.9rem 1.5rem; }
+      .header-title { display: none; }
+      .collections-strip { flex-wrap: wrap; top: 119px; }
+      .strip-link { font-size: 0.6rem; padding: 0.7rem 1rem; }
+      .hero { margin-top: 165px; }
+      .hero-texture { padding: 3.5rem 2rem 2.5rem; }
+      .hero-slideshow { height: 55vw; }
+      .hero::after { display: none; }
+      .slide img { max-width: 60%; max-height: 50vw; }
+      .print-row, .print-row.reverse { grid-template-columns: 1fr; direction: ltr; min-height: auto; }
+      .print-image { padding: 2rem; }
+      .print-image img { max-height: none; }
+      .print-text { padding: 3rem 2rem; }
+      .deal-bar { padding: 3rem 1.5rem; }
+      .assort-head, .assort-grid, .assort-foot { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .other-collections { padding: 4rem 1.5rem; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE -- mobile (max 600px)
+    ════════════════════════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .site-header { padding: 0.75rem 1rem; }
+      .header-title { display: none; }
+      .collections-strip { display: none; }
+      .mobile-menu-btn { display: flex; }
+      .hero { margin-top: 120px; }
+      .hero-texture { padding: 2.5rem 1.5rem 2rem; }
+      .hero-title { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+      .hero-breadcrumb { margin-bottom: 1.5rem; }
+      .hero-slideshow { height: 80vw; }
+      .slide img { max-width: 80%; max-height: 75vw; }
+      .print-image { padding: 1.5rem; }
+      .print-text { padding: 2.5rem 1.5rem; }
+      .print-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+      .print-caption { font-size: 1rem; }
+      .assort-overlay { padding: 0; }
+      .assort-panel { max-height: 100vh; height: 100%; }
+      .assort-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+      .assort-foot { flex-direction: column; align-items: stretch; text-align: center; }
+      .other-collections { padding: 3rem 1rem; }
+      .other-collections h2 { font-size: 1.4rem; }
+      .collections-row { gap: 0.6rem; }
+      .collection-link { padding: 0.65rem 1.4rem; font-size: 0.65rem; }
+      footer { padding: 2rem 1rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HEADER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <a href="../index.html">
+      <img src="../images/favicon.webp" alt="Heinlen Fine Art" class="header-logo" />
+    </a>
+    <a href="../index.html" class="header-title">Heinlen Fine Art</a>
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="../cart/" class="header-cart">Cart <span id="cartCount"></span></a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MOBILE NAV PANEL -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="../wildlife/">Wildlife</a>
+    <a href="../botanical-studies/">Botanical Studies</a>
+    <a href="../avian-studies/">Avian Studies</a>
+    <a href="../cincinnati/">Cincinnati</a>
+    <a href="../horse-country/">Horse Country</a>
+    <a href="../landscapes/">Landscapes</a>
+    <a href="../american-west/">American West</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       COLLECTIONS STRIP -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="collections-strip">
+    <a href="../index.html"             class="strip-link">Home</a>
+    <a href="../wildlife/"              class="strip-link">Wildlife</a>
+    <a href="../botanical-studies/"     class="strip-link">Botanical Studies</a>
+    <a href="../avian-studies/"         class="strip-link">Avian Studies</a>
+    <a href="../cincinnati/"            class="strip-link">Cincinnati</a>
+    <a href="../horse-country/"         class="strip-link">Horse Country</a>
+    <a href="../landscapes/"            class="strip-link">Landscapes</a>
+    <a href="../american-west/"         class="strip-link">American West</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO -- collection title + rotating slideshow
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-texture">
+      <div class="hero-text">
+        <p class="hero-breadcrumb">
+          <a href="../index.html">Home</a> &nbsp;&rsaquo;&nbsp;
+          Christmas Cards
+        </p>
+        <p class="hero-collection-label">The Holiday Collection</p>
+        <h1 class="hero-title">Christmas Cards</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">Greeting cards and postcards for every name on your list.</p>
+      </div>
+    </div>
+    <div class="hero-slideshow" id="heroSlideshow"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       DEAL BAR -- text updates automatically from stationery.js
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="deal-bar">
+    <p class="deal-headline" id="dealHeadline"></p>
+    <p class="deal-detail" id="dealDetail"></p>
+    <button type="button" class="btn-outline" id="openAssortment">Build Your Own Assortment</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       DESIGN ROWS
+       Populated automatically by stationery.js -- do not edit here.
+  ════════════════════════════════════════════════════════════════ -->
+  <main class="prints-section" id="printsSection"></main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       EXPLORE FURTHER
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="other-collections">
+    <h2>Explore Further</h2>
+    <p>Fine art prints from Heinlen Fine Art</p>
+    <nav class="collections-row" aria-label="All collections">
+      <a href="../index.html"             class="collection-link">Home</a>
+      <a href="../wildlife/"              class="collection-link">Wildlife</a>
+      <a href="../botanical-studies/"     class="collection-link">Botanical Studies</a>
+      <a href="../avian-studies/"         class="collection-link">Avian Studies</a>
+      <a href="../cincinnati/"            class="collection-link">Cincinnati</a>
+      <a href="../horse-country/"         class="collection-link">Horse Country</a>
+      <a href="../landscapes/"            class="collection-link">Landscapes</a>
+      <a href="../american-west/"         class="collection-link">American West</a>
+    </nav>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER -- do not change
+  ════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <p style="margin-bottom: 0.8rem;">
+      <a href="../contact/" style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; font-weight: 300; letter-spacing: 0.02em; color: var(--text-mid);">Questions about an order?  We'd love to hear from you.</a>
+    </p>
+    <p>
+      &copy; <span id="yr"></span> Heinlen Fine Art &nbsp;&middot;&nbsp;
+      <a href="../contact/">Contact</a>
+    </p>
+    <p style="margin-top: 0.5rem;">
+      All images &copy; Deborah Heinlen.  All rights reserved.
+    </p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       ASSORTMENT BAR -- stays at the bottom of the screen
+       Message updates automatically as cards are added.
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="assort-bar" id="assortBar">
+    <p class="assort-bar-text" id="assortBarText"></p>
+    <div class="assort-bar-actions">
+      <button type="button" class="assort-bar-btn" id="assortBarBtn">Build Your Own Assortment</button>
+      <a href="../cart/" class="assort-bar-cart" id="assortBarCart" hidden>View Cart</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       ASSORTMENT BUILDER PANEL -- opens from the deal bar button
+  ════════════════════════════════════════════════════════════════ -->
+  <div class="assort-overlay" id="assortOverlay" aria-hidden="true">
+    <div class="assort-panel" role="dialog" aria-modal="true" aria-labelledby="assortTitle">
+      <button type="button" class="assort-close" id="assortClose" aria-label="Close">&times;</button>
+      <div class="assort-head">
+        <h2 id="assortTitle">Build Your Own Assortment</h2>
+        <p id="assortIntro"></p>
+        <div class="assort-type" role="group" aria-label="Card type">
+          <button type="button" data-type="card" aria-pressed="true">Greeting Cards</button>
+          <button type="button" data-type="postcard" aria-pressed="false">Postcards</button>
+        </div>
+      </div>
+      <div class="assort-grid" id="assortGrid"></div>
+      <div class="assort-foot">
+        <p class="assort-message" id="assortMessage" aria-live="polite"></p>
+        <button type="button" class="assort-add" id="assortAdd" disabled>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════════ -->
+  <script src="../js/stationery.js"></script>
+  <script src="../js/cart.js"></script>
+  <script>
+
+    // ── MOBILE MENU ──────────────────────────────────────────────
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      mobileBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded', false);
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ── FOOTER YEAR -- auto-updates, do not change ───────────────
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+
+    // ═══════════════════════════════════════════════════════════════
+    // SETUP -- everything below reads from stationery.js
+    // ═══════════════════════════════════════════════════════════════
+    const COLLECTION_LABEL = 'Christmas Cards';
+    const ROW_COLORS   = ['holiday-evergreen', 'holiday-cranberry', 'holiday-midnight', 'holiday-candle'];
+    const designIds    = STATIONERY_COLLECTIONS['christmas'] || [];
+    const PRICING      = STATIONERY_PRICING;
+    const MIN          = PRICING.bundleMin;
+
+    const money = n => '$' + (Number.isInteger(n) ? n : n.toFixed(2));
+    const nounFor = (type, count) => {
+      const word = type === 'card' ? 'card' : 'postcard';
+      return count === 1 ? word : word + 's';
+    };
+
+    // Count how many of a type are already in the cart
+    function countInCart(type) {
+      return cartGet()
+        .filter(i => i.medium === type)
+        .reduce((sum, i) => sum + i.qty, 0);
+    }
+
+    // Add a design to the cart, any quantity, in one step
+    function addStationery(id, type, qty) {
+      const d = STATIONERY[id];
+      if (!d || qty < 1) return;
+      const items = cartGet();
+      const uniqueKey = [id, type, 'single', '', ''].join('|');
+      const existing = items.find(i => i.uniqueKey === uniqueKey);
+
+      if (existing) {
+        existing.qty += qty;
+      } else {
+        items.push({
+          id:         id,
+          title:      d.title,
+          collection: COLLECTION_LABEL,
+          medium:     type,
+          sizeKey:    'single',
+          sizeLabel:  PRICING[type].label,
+          price:      PRICING[type].single,
+          image:      '/' + d.images[type],
+          frameColor: null,
+          matColor:   null,
+          qty:        qty,
+          uniqueKey:  uniqueKey
+        });
+      }
+      cartSave(items);
+    }
+
+
+    // ── DEAL BAR TEXT ────────────────────────────────────────────
+    document.getElementById('dealHeadline').textContent =
+      `Mix and match ${MIN} or more and every card is just ${money(PRICING.card.bundle)}.`;
+    document.getElementById('dealDetail').innerHTML =
+      `Greeting cards ${money(PRICING.card.single)} each &nbsp;&middot;&nbsp; ` +
+      `Postcards ${money(PRICING.postcard.single)} each, ${money(PRICING.postcard.bundle)} for ${MIN} or more<br>` +
+      `Free shipping on orders of ${money(SHIPPING_RULES.freeAt)} or more`;
+
+
+    // ── HERO SLIDESHOW ───────────────────────────────────────────
+    const slideshow = document.getElementById('heroSlideshow');
+    designIds.forEach((id, i) => {
+      const d = STATIONERY[id];
+      if (!d) return;
+      const slide = document.createElement('div');
+      slide.className = 'slide' + (i === 0 ? ' active' : '');
+      slide.innerHTML = `<img src="../${d.images.card}" alt="${d.altText}" />`;
+      slideshow.appendChild(slide);
+    });
+
+
+    // ── DESIGN ROWS ──────────────────────────────────────────────
+    const printsSection = document.getElementById('printsSection');
+
+    designIds.forEach((id, i) => {
+      const d = STATIONERY[id];
+      if (!d) return;
+
+      const row = document.createElement('article');
+      row.className = 'print-row ' + ROW_COLORS[i % ROW_COLORS.length] + (i % 2 !== 0 ? ' reverse' : '');
+      row.dataset.design = id;
+      row.innerHTML = `
+        <div class="print-image">
+          <img src="../${d.images.card}" alt="${d.altText}" loading="lazy" />
+        </div>
+        <div class="print-text">
+          <div class="print-text-inner">
+            <p class="print-number">${d.number}</p>
+            <h2 class="print-title">${d.title}</h2>
+            <div class="print-divider"></div>
+            <p class="print-caption">&ldquo;${d.caption}&rdquo;</p>
+
+            <div class="shop-controls">
+              <div class="type-toggle" role="group" aria-label="Choose greeting card or postcard">
+                <button type="button" data-type="card" aria-pressed="true">Greeting Card</button>
+                <button type="button" data-type="postcard" aria-pressed="false">Postcard</button>
+              </div>
+              <p class="price-line"></p>
+              <div class="qty-add">
+                <div class="qty-picker">
+                  <button type="button" data-step="-1" aria-label="Decrease quantity">&#8722;</button>
+                  <span aria-live="polite">1</span>
+                  <button type="button" data-step="1" aria-label="Increase quantity">&#43;</button>
+                </div>
+                <button type="button" class="btn-add">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      printsSection.appendChild(row);
+
+      // Row state
+      let type = 'card';
+      let qty  = 1;
+      const img       = row.querySelector('.print-image img');
+      const priceLine = row.querySelector('.price-line');
+      const qtyLabel  = row.querySelector('.qty-picker span');
+
+      function updatePrice() {
+        const p = PRICING[type];
+        priceLine.innerHTML =
+          `${money(p.single)} each` +
+          `<small>${money(p.bundle)} each for ${MIN} or more, mix and match</small>`;
+      }
+      updatePrice();
+
+      // Greeting card / postcard choice swaps the image
+      row.querySelectorAll('.type-toggle button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (btn.dataset.type === type) return;
+          type = btn.dataset.type;
+          row.querySelectorAll('.type-toggle button').forEach(b =>
+            b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+          img.classList.add('swapping');
+          setTimeout(() => {
+            img.src = '../' + d.images[type];
+            img.classList.remove('swapping');
+          }, 200);
+          updatePrice();
+        });
+      });
+
+      // Quantity
+      row.querySelectorAll('.qty-picker button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          qty = Math.max(1, Math.min(50, qty + Number(btn.dataset.step)));
+          qtyLabel.textContent = qty;
+        });
+      });
+
+      // Add to cart
+      row.querySelector('.btn-add').addEventListener('click', () => {
+        addStationery(id, type, qty);
+        cartShowConfirmation(d.title + ' ' + nounFor(type, qty));
+        updateAssortBar();
+        qty = 1;
+        qtyLabel.textContent = 1;
+      });
+    });
+
+
+    // ═══════════════════════════════════════════════════════════════
+    // ASSORTMENT BUILDER
+    // ═══════════════════════════════════════════════════════════════
+    const overlay    = document.getElementById('assortOverlay');
+    const grid       = document.getElementById('assortGrid');
+    const introEl    = document.getElementById('assortIntro');
+    const messageEl  = document.getElementById('assortMessage');
+    const addBtn     = document.getElementById('assortAdd');
+    const openBtn    = document.getElementById('openAssortment');
+
+    let assortType = 'card';
+    const picks = { card: {}, postcard: {} };   // { designId: count }
+
+    const totalPicked = t => Object.values(picks[t]).reduce((s, n) => s + n, 0);
+
+    function buildGrid() {
+      grid.innerHTML = '';
+      designIds.forEach(id => {
+        const d = STATIONERY[id];
+        if (!d) return;
+        const tile = document.createElement('div');
+        tile.className = 'assort-tile';
+        tile.dataset.design = id;
+        tile.innerHTML = `
+          <button type="button" class="assort-pick" aria-label="Add ${d.title}">
+            <img src="../${d.images[assortType]}" alt="" loading="lazy" />
+            <span class="assort-badge"></span>
+          </button>
+          <p class="assort-name">${d.title}</p>
+          <div class="assort-step">
+            <button type="button" data-step="-1" aria-label="One less ${d.title}">&#8722;</button>
+            <span></span>
+            <button type="button" data-step="1" aria-label="One more ${d.title}">&#43;</button>
+          </div>`;
+        grid.appendChild(tile);
+
+        tile.querySelector('.assort-pick').addEventListener('click', () => changePick(id, 1));
+        tile.querySelectorAll('.assort-step button').forEach(b =>
+          b.addEventListener('click', () => changePick(id, Number(b.dataset.step))));
+      });
+      refreshAssortment();
+    }
+
+    function changePick(id, step) {
+      const next = Math.max(0, (picks[assortType][id] || 0) + step);
+      if (next === 0) delete picks[assortType][id];
+      else picks[assortType][id] = Math.min(50, next);
+      refreshAssortment();
+    }
+
+    function refreshAssortment() {
+      const p        = PRICING[assortType];
+      const chosen   = totalPicked(assortType);
+      const inCart   = countInCart(assortType);
+      const combined = chosen + inCart;
+      const bundled  = combined >= MIN;
+      const each     = bundled ? p.bundle : p.single;
+      const total    = chosen * each;
+
+      // Tiles
+      grid.querySelectorAll('.assort-tile').forEach(tile => {
+        const n = picks[assortType][tile.dataset.design] || 0;
+        tile.classList.toggle('chosen', n > 0);
+        tile.querySelector('.assort-badge').textContent = n;
+        tile.querySelector('.assort-step span').textContent = n;
+      });
+
+      // Intro line
+      introEl.textContent =
+        `Tap a design to add it, and tap again for more.  Choose ${MIN} or more and every ` +
+        `${nounFor(assortType, 1)} is just ${money(p.bundle)}.`;
+
+      // Progress message
+      const cartNote = inCart > 0
+        ? ` (counting the ${inCart} already in your cart)`
+        : '';
+      let main;
+      if (chosen === 0) {
+        main = `Choose your favorites to begin.`;
+      } else if (!bundled) {
+        const more = MIN - combined;
+        main = `${chosen} ${nounFor(assortType, chosen)} chosen.  Add ${more} more and every ` +
+               `${nounFor(assortType, 1)} drops to ${money(p.bundle)}.`;
+      } else if (combined === MIN) {
+        main = `<span class="unlocked">Bundle price unlocked!</span>  Every ` +
+               `${nounFor(assortType, 1)} is now ${money(p.bundle)}.`;
+      } else {
+        main = `<span class="unlocked">${chosen} ${nounFor(assortType, chosen)} at ${money(p.bundle)} each.</span>  ` +
+               `Keep adding, every ${nounFor(assortType, 1)} is still ${money(p.bundle)}.`;
+      }
+
+      let detail = '';
+      if (chosen > 0) {
+        detail = `Total ${money(total)}`;
+        if (bundled) detail += `, you're saving ${money(chosen * (p.single - p.bundle))}`;
+        detail += cartNote + '.';
+      }
+
+      messageEl.innerHTML = main + (detail ? `<small>${detail}</small>` : '');
+      addBtn.disabled = chosen === 0;
+      addBtn.textContent = chosen > 0 ? `Add ${chosen} to Cart` : 'Add to Cart';
+    }
+
+    // Switch between greeting cards and postcards
+    document.querySelectorAll('.assort-type button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (btn.dataset.type === assortType) return;
+        assortType = btn.dataset.type;
+        document.querySelectorAll('.assort-type button').forEach(b =>
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+        grid.querySelectorAll('.assort-pick img').forEach(im => {
+          const id = im.closest('.assort-tile').dataset.design;
+          im.src = '../' + STATIONERY[id].images[assortType];
+        });
+        refreshAssortment();
+      });
+    });
+
+    // Open and close
+    let lastFocus = null;
+    function openAssortment() {
+      lastFocus = document.activeElement;
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      refreshAssortment();
+      document.getElementById('assortClose').focus();
+    }
+    function closeAssortment() {
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
+    }
+
+    openBtn.addEventListener('click', openAssortment);
+    document.getElementById('assortClose').addEventListener('click', closeAssortment);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeAssortment(); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && overlay.classList.contains('open')) closeAssortment();
+    });
+
+    // Add the assortment to the cart
+    addBtn.addEventListener('click', () => {
+      const chosen = totalPicked(assortType);
+      if (chosen === 0) return;
+      Object.entries(picks[assortType]).forEach(([id, n]) => addStationery(id, assortType, n));
+      picks[assortType] = {};
+      cartShowConfirmation(chosen + ' ' + nounFor(assortType, chosen));
+      refreshAssortment();
+      updateAssortBar();
+      closeAssortment();
+    });
+
+    buildGrid();
+
+    // ═══════════════════════════════════════════════════════════════
+    // ASSORTMENT BAR -- progress message at the bottom of the screen
+    // ═══════════════════════════════════════════════════════════════
+    const barText = document.getElementById('assortBarText');
+    const barCart = document.getElementById('assortBarCart');
+
+    function updateAssortBar() {
+      const cards     = countInCart('card');
+      const postcards = countInCart('postcard');
+
+      function line(type, count) {
+        const p = PRICING[type];
+        const one = nounFor(type, 1);
+        if (count >= MIN) {
+          return `<strong>Bundle price unlocked!</strong> Every ${one} in your cart is ${money(p.bundle)}`;
+        }
+        const more = MIN - count;
+        return `<strong>${count} ${nounFor(type, count)} in your cart.</strong> ` +
+               `Add ${more} more and every ${one} is ${money(p.bundle)}`;
+      }
+
+      if (cards === 0 && postcards === 0) {
+        barText.innerHTML = `<strong>Mix and match any ${MIN} or more.</strong> ` +
+          `Greeting cards ${money(PRICING.card.bundle)} each, postcards ${money(PRICING.postcard.bundle)} each`;
+      } else if (cards > 0 && (postcards === 0 || cards >= postcards)) {
+        barText.innerHTML = line('card', cards);
+      } else {
+        barText.innerHTML = line('postcard', postcards);
+      }
+      barCart.hidden = (cards + postcards) === 0;
+    }
+
+    document.getElementById('assortBarBtn').addEventListener('click', openAssortment);
+    window.addEventListener('storage', updateAssortBar);
+    updateAssortBar();
+
+
+    // ── SLIDESHOW ────────────────────────────────────────────────
+    const SLIDE_DURATION = 3000;
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function nextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+    if (slides.length > 1) setInterval(nextSlide, SLIDE_DURATION);
+
+    // ── SCROLL ANIMATION on design rows ─────────────────────────
+    const rows = document.querySelectorAll('.print-row');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    rows.forEach(row => observer.observe(row));
+
+    // ── IMAGE PROTECTION -- DO NOT REMOVE ───────────────────────
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.addEventListener('dragstart', function(e) {
+      if (e.target.tagName === 'IMG') { e.preventDefault(); }
+    });
+
+  </script>
+</body>
+</html>

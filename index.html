@@ -745,7 +745,154 @@
     .collection-card::before { content: ''; position: absolute; inset: 0; z-index: 3; }
     #story-bg::before { content: ''; position: absolute; inset: 0; z-index: 3; }
 
-  </style>
+
+	
+	
+	
+	
+    /* ═══════════════════════════════════════════════════════════════
+       CHRISTMAS BANNER -- seasonal, turned on and off in js/cart.js
+       (CHRISTMAS_ACTIVE at the top of that file)
+    ════════════════════════════════════════════════════════════════ */
+    .xmas-banner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      background: linear-gradient(to right, #5a1a22 0%, #82262f 50%, #a4434a 100%);
+    }
+    .xmas-banner[hidden] { display: none; }
+
+    .xmas-banner-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3.5rem 3rem;
+    }
+    .xmas-banner-image img {
+      display: block;
+      width: 100%;
+      max-width: 460px;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.3));
+    }
+
+    .xmas-banner-text {
+      text-align: center;
+      padding: 3.5rem 4rem 3.5rem 2rem;
+    }
+    .xmas-banner-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: rgba(245, 240, 232, 0.8);
+      margin-bottom: 1rem;
+    }
+    .xmas-banner-text h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-weight: 300;
+      color: var(--cream);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.4rem;
+    }
+    .xmas-banner-divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(245, 240, 232, 0.6);
+      margin: 0 auto 1.4rem;
+    }
+    .xmas-banner-blurb {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.6;
+      max-width: 420px;
+      margin: 0 auto 2.2rem;
+    }
+    .xmas-banner-btn {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--cream);
+      text-decoration: none;
+      border: 1px solid rgba(245, 240, 232, 0.6);
+      padding: 0.95rem 2.4rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    .xmas-banner-btn:hover { background: var(--cream); color: var(--text-dark); }
+    .xmas-banner-btn:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+
+    @media (max-width: 900px) {
+      .xmas-banner { grid-template-columns: 1fr; }
+      .xmas-banner-image { padding: 2.5rem 2rem 0; }
+      .xmas-banner-image img { max-width: 340px; }
+      .xmas-banner-text { padding: 2rem 1.5rem 3rem; }
+    }
+	  
+	  
+    /* ═══════════════════════════════════════════════════════════════
+       CHRISTMAS STRIP -- slim announcement at the top of the homepage
+       Seasonal, turned on and off in js/cart.js (CHRISTMAS_ACTIVE)
+    ════════════════════════════════════════════════════════════════ */
+    .xmas-strip {
+      position: fixed;
+      left: 0; right: 0;
+      z-index: 197;
+      top: 182px;
+		
+      display: block;
+      background: #C8102E;
+      color: var(--cream);
+      text-align: center;
+      text-decoration: none;
+      padding: 2rem 2rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      line-height: 1.8;
+      transition: background 0.3s;
+    }
+    .xmas-strip[hidden] { display: none; }
+    .xmas-strip:hover { background: linear-gradient(to right, #4a141b 0%, #6f1f28 50%, #8f3940 100%); }
+    .xmas-strip:focus-visible { outline: 2px solid var(--cream); outline-offset: -4px; }
+    .xmas-strip-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      letter-spacing: 0.03em;
+      text-transform: none;
+      margin-right: 0.6rem;
+    }
+    .xmas-strip-cta {
+      display: inline-block;
+      margin-left: 0.8rem;
+      border-bottom: 1px solid rgba(245, 240, 232, 0.7);
+    }
+
+    @media (max-width: 900px) {
+     .xmas-strip { top: 130px; }
+    }
+    @media (max-width: 600px) {
+     .xmas-strip { top: 115px; font-size: 0.64rem; letter-spacing: 0.12em; padding: 0.8rem 1rem; }
+      .xmas-strip-title { display: block; margin: 0 0 0.2rem; font-size: 1.1rem; }
+      .xmas-strip-cta { margin-left: 0.4rem; }
+    }
+
+	
+	</style>
 </head>
 
 <body>
@@ -792,7 +939,40 @@
     <a href="american-west/"      class="strip-link">American West</a>
   </div>
 
+	
+	  <!-- ═══════════════════════════════════════════════════════════════
+       CHRISTMAS STRIP -- seasonal announcement at the top
+       Shows only when CHRISTMAS_ACTIVE is true in js/cart.js.
+  ════════════════════════════════════════════════════════════════ -->
+  <a href="christmas/" class="xmas-strip" id="christmasStrip" hidden>
+    <span class="xmas-strip-title">The Christmas Collection is here</span>
+    Mix and match 10 or more cards for $4 each
+    <span class="xmas-strip-cta">Shop now</span>
+  </a>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof CHRISTMAS_ACTIVE === 'undefined' || !CHRISTMAS_ACTIVE) return;
+      var strip = document.getElementById('christmasStrip');
+      strip.hidden = false;
+
+      // Sit just below the fixed header and menu, whatever their height
+      function placeStrip() {
+        var bottom = document.querySelector('.site-header').getBoundingClientRect().bottom;
+        var menu = document.querySelector('.collections-strip');
+        if (menu && getComputedStyle(menu).display !== 'none') {
+          bottom = Math.max(bottom, menu.getBoundingClientRect().bottom);
+        }
+         strip.style.top = Math.round(bottom) + 'px';
+      }
+      placeStrip();
+      window.addEventListener('resize', placeStrip);
+    });
+  </script>
+
+
   <div id="story-section">
+	  
+	  
 
     <!-- ═══════════════════════════════════════════════════════════
          BACKGROUND IMAGES
@@ -889,6 +1069,35 @@
     <h2>Every Print Begins as a Photograph.</h2>
     <p>Every photograph becomes something more.  I photograph the natural world -- botanicals, wildlife, the quiet rhythms of farm and field -- then transform each image into a watercolor fine art print.  The result is something between memory and observation: familiar yet painterly, grounded in a real moment yet alive with color and texture.</p>
   </div>
+	
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       CHRISTMAS BANNER -- seasonal
+       Shows only when CHRISTMAS_ACTIVE is true in js/cart.js.
+       To change the picture, swap the image file name below.
+  ════════════════════════════════════════════════════════════════ -->
+  <section class="xmas-banner" id="christmasBanner" hidden>
+    <div class="xmas-banner-image">
+      <img src="images/christmas/poinsettia-star-card.webp"
+           alt="Poinsettia Star watercolor Christmas card by Heinlen Fine Art" loading="lazy" />
+    </div>
+    <div class="xmas-banner-text">
+      <p class="xmas-banner-label">The Holiday Collection</p>
+      <h2>Christmas Cards</h2>
+      <div class="xmas-banner-divider"></div>
+      <p class="xmas-banner-blurb">Watercolor greeting cards and postcards.  Mix and match 10 or more and every card is just $4.</p>
+      <a href="christmas/" class="xmas-banner-btn">Shop Christmas Cards</a>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof CHRISTMAS_ACTIVE !== 'undefined' && CHRISTMAS_ACTIVE) {
+        document.getElementById('christmasBanner').hidden = false;
+      }
+    });
+  </script>
+
+
 
   <!-- ═══════════════════════════════════════════════════════════════
        COLLECTIONS GRID
