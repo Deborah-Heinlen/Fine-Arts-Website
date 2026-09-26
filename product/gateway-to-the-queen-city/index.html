@@ -756,21 +756,78 @@
     .not-found a:hover { background: var(--warm-tan); color: var(--cream); }
 
     .before-after-section { padding: 0 3rem 2rem; max-width: 1100px; margin: 0 auto; }
-    .before-after-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; margin-bottom: 1.5rem; }
-    .before-after-img-wrap { position: relative; background: var(--linen); overflow: hidden; }
-    .before-after-img-wrap img { display: block; width: 100%; height: auto; padding: 0.75rem; object-fit: contain; }
-    .before-after-label {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      text-align: center;
-      padding: 0.6rem 0;
+    /* ── BEFORE / AFTER SLIDER ─────────────────────────────── */
+    .ba-frame { background: var(--linen); padding: 0.75rem; display: flex; justify-content: center; margin-bottom: 0.75rem; }
+    .ba-stage {
+      --pos: 50%;
+      position: relative;
+      display: inline-block;
+      max-width: 100%;
+      line-height: 0;
+      cursor: ew-resize;
+      touch-action: pan-y;
+      overflow: hidden;
+      -webkit-user-select: none; user-select: none;
+    }
+    .ba-stage img.ba-wc { display: block; max-width: 100%; max-height: 70vh; width: auto; height: auto; }
+    .ba-stage img.ba-orig {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+    }
+    .ba-handle {
+      position: absolute; top: 0; bottom: 0;
+      left: var(--pos);
+      width: 2px;
+      transform: translateX(-50%);
+      background: var(--cream);
+      box-shadow: 0 0 6px rgba(46, 36, 25, 0.35);
+      outline: none;
+    }
+    .ba-knob {
+      position: absolute; top: 50%; left: 50%;
+      width: 42px; height: 42px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: var(--cream);
+      border: 1px solid var(--warm-tan);
+      box-shadow: 0 2px 10px rgba(46, 36, 25, 0.25);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-mid);
+      transition: transform 0.2s ease;
+    }
+    .ba-knob svg { width: 22px; height: 22px; }
+    .ba-stage:hover .ba-knob,
+    .ba-handle:focus-visible .ba-knob { transform: translate(-50%, -50%) scale(1.08); }
+    .ba-handle:focus-visible .ba-knob { outline: 2px solid var(--text-mid); outline-offset: 3px; }
+    .ba-label {
+      position: absolute; top: 0.75rem;
+      padding: 0.4rem 0.75rem;
       font-family: 'Jost', sans-serif;
-      font-size: 0.6rem;
+      font-size: 0.58rem;
       font-weight: 300;
-      letter-spacing: 0.24em;
+      line-height: 1.4;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--text-mid);
-      background: linear-gradient(transparent, rgba(237, 232, 220, 0.9));
+      background: rgba(245, 240, 232, 0.88);
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .ba-label-orig { left: 0.75rem; }
+    .ba-label-wc   { right: 0.75rem; }
+    .ba-stage.ba-hide-orig-label .ba-label-orig,
+    .ba-stage.ba-hide-wc-label   .ba-label-wc { opacity: 0; }
+    .ba-hint {
+      text-align: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.58rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
     }
     .before-after-text { text-align: center; max-width: 640px; margin: 0 auto; }
     .before-after-text p {
@@ -808,7 +865,10 @@
       .mobile-medium-preview img { display: block; width: 100%; max-height: 280px; object-fit: contain; }
       .mobile-medium-preview-label { font-family: 'Jost', sans-serif; font-size: 0.58rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); margin-top: 0.4rem; }
       .before-after-section { padding: 0 1.5rem 2rem; }
-      .before-after-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .ba-stage img.ba-wc { max-height: 62vh; }
+      .ba-label { font-size: 0.52rem; padding: 0.3rem 0.55rem; top: 0.5rem; }
+      .ba-label-orig { left: 0.5rem; }
+      .ba-label-wc   { right: 0.5rem; }
     }
 
     @media (max-width: 600px) {
@@ -1059,16 +1119,20 @@
       const beforeAfterHTML = product.images.original ? `
         <div class="section-divider"><span>The Transformation</span></div>
         <section class="before-after-section">
-          <div class="before-after-grid">
-            <div class="before-after-img-wrap">
-              <img src="/${product.images.original}" alt="${product.title} - original photograph" />
-              <span class="before-after-label">Original Photograph</span>
-            </div>
-            <div class="before-after-img-wrap">
-              <img src="/${product.images.main}" alt="${product.title} - watercolor print" />
-              <span class="before-after-label">Watercolor Print</span>
+          <div class="ba-frame">
+            <div class="ba-stage">
+              <img class="ba-wc" src="/${product.images.main}" alt="${product.title} - watercolor print" />
+              <img class="ba-orig" src="/${product.images.original}" alt="${product.title} - original photograph" loading="lazy" />
+              <span class="ba-label ba-label-orig">Original Photograph</span>
+              <span class="ba-label ba-label-wc">Watercolor Print</span>
+              <div class="ba-handle" role="slider" tabindex="0" aria-label="Compare the original photograph with the watercolor print" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% original photograph">
+                <span class="ba-knob" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 3 12 9 18"></polyline><polyline points="15 6 21 12 15 18"></polyline></svg>
+                </span>
+              </div>
             </div>
           </div>
+          <p class="ba-hint">Drag to compare</p>
           <div class="before-after-text">
             <p>Each watercolor print begins as an original photograph captured on location.  Through careful artistic editing, the image is transformed into the fine art watercolor you see here.</p>
           </div>
@@ -1493,6 +1557,86 @@
       }
     }
     if (product) renderRelatedSection(product);
+
+    // ── BEFORE / AFTER SLIDER ───────────────────────────────────
+    function initBeforeAfterSlider() {
+      const stage = document.querySelector('.ba-stage');
+      if (!stage) return;
+      const handle = stage.querySelector('.ba-handle');
+      let pos = 50;
+      let dragging = false;
+      let hintFrame = null;
+
+      function setPos(p) {
+        pos = Math.max(0, Math.min(100, p));
+        stage.style.setProperty('--pos', pos + '%');
+        handle.setAttribute('aria-valuenow', Math.round(pos));
+        handle.setAttribute('aria-valuetext', Math.round(pos) + '% original photograph');
+        stage.classList.toggle('ba-hide-orig-label', pos < 18);
+        stage.classList.toggle('ba-hide-wc-label', pos > 82);
+      }
+
+      function setFromPointer(e) {
+        const rect = stage.getBoundingClientRect();
+        setPos(((e.clientX - rect.left) / rect.width) * 100);
+      }
+
+      function stopHint() {
+        if (hintFrame) { cancelAnimationFrame(hintFrame); hintFrame = null; }
+      }
+
+      stage.addEventListener('pointerdown', function(e) {
+        stopHint();
+        dragging = true;
+        stage.setPointerCapture(e.pointerId);
+        // On touch screens, wait for movement so a scroll gesture doesn't jump the slider
+        if (e.pointerType !== 'touch') setFromPointer(e);
+      });
+      stage.addEventListener('pointermove', function(e) {
+        if (dragging) setFromPointer(e);
+      });
+      ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(function(type) {
+        stage.addEventListener(type, function() { dragging = false; });
+      });
+
+      handle.addEventListener('keydown', function(e) {
+        const step = e.shiftKey ? 10 : 2;
+        let handled = true;
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') setPos(pos - step);
+        else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') setPos(pos + step);
+        else if (e.key === 'Home') setPos(0);
+        else if (e.key === 'End') setPos(100);
+        else handled = false;
+        if (handled) { stopHint(); e.preventDefault(); }
+      });
+
+      setPos(50);
+
+      // Gentle one-time nudge when the slider scrolls into view, so visitors see it moves
+      const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduceMotion && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function(entries) {
+          if (!entries[0].isIntersecting) return;
+          observer.disconnect();
+          const keyframes = [50, 30, 70, 50];
+          const segment = 700;
+          let start = null;
+          function step(ts) {
+            if (start === null) start = ts;
+            const elapsed = ts - start;
+            const i = Math.floor(elapsed / segment);
+            if (i >= keyframes.length - 1) { setPos(50); hintFrame = null; return; }
+            const t = (elapsed % segment) / segment;
+            const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+            setPos(keyframes[i] + (keyframes[i + 1] - keyframes[i]) * eased);
+            hintFrame = requestAnimationFrame(step);
+          }
+          setTimeout(function() { hintFrame = requestAnimationFrame(step); }, 400);
+        }, { threshold: 0.6 });
+        observer.observe(stage);
+      }
+    }
+    if (product) initBeforeAfterSlider();
 
     document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
     document.addEventListener('dragstart', function(e) { if (e.target.tagName === 'IMG') { e.preventDefault(); } });
