@@ -265,7 +265,7 @@
       display: block;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 1.8s ease-in-out;
+      transition: opacity 1.1s ease-in-out;
     }
 
     .hero-slide.active { opacity: 1; pointer-events: auto; z-index: 1; }
@@ -335,8 +335,7 @@
     .hero-dots button:focus-visible { outline: 2px solid var(--text-mid); outline-offset: 3px; }
 
     /* ═══════════════════════════════════════════════════════════════
-       FROM CAMERA TO CANVAS -- Night Watch photo dissolves into
-       the watercolor when this section scrolls into view
+       FROM CAMERA TO CANVAS -- Night Watch before / after slider
     ════════════════════════════════════════════════════════════════ */
     .transform-section {
       background: var(--linen);
@@ -359,24 +358,51 @@
       box-shadow: 0 12px 40px rgba(46, 36, 25, 0.08);
     }
 
-    .transform-stage { position: relative; line-height: 0; }
-    .transform-stage img { display: block; width: 100%; height: auto; }
-
-    .transform-stage .t-original {
-      position: absolute;
-      inset: 0;
-      height: 100%;
-      object-fit: cover;
-      transition: opacity 2.6s ease-in-out;
+    /* Before / after slider -- same look as the product pages */
+    .ba-stage {
+      --pos: 50%;
+      position: relative;
+      line-height: 0;
+      cursor: ew-resize;
+      touch-action: pan-y;
+      overflow: hidden;
+      -webkit-user-select: none; user-select: none;
     }
-
-    .transform-stage.is-painted .t-original { opacity: 0; }
-
-    .t-label {
-      position: absolute;
-      top: 0.9rem;
-      left: 0.9rem;
-      z-index: 4;
+    .ba-stage img.ba-wc { display: block; width: 100%; height: auto; }
+    .ba-stage img.ba-orig {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+    }
+    .ba-handle {
+      position: absolute; top: 0; bottom: 0;
+      left: var(--pos);
+      z-index: 5;
+      width: 2px;
+      transform: translateX(-50%);
+      background: var(--cream);
+      box-shadow: 0 0 6px rgba(46, 36, 25, 0.35);
+      outline: none;
+    }
+    .ba-knob {
+      position: absolute; top: 50%; left: 50%;
+      width: 42px; height: 42px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: var(--cream);
+      border: 1px solid var(--warm-tan);
+      box-shadow: 0 2px 10px rgba(46, 36, 25, 0.25);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-mid);
+      transition: transform 0.2s ease;
+    }
+    .ba-knob svg { width: 22px; height: 22px; }
+    .ba-stage:hover .ba-knob,
+    .ba-handle:focus-visible .ba-knob { transform: translate(-50%, -50%) scale(1.08); }
+    .ba-handle:focus-visible .ba-knob { outline: 2px solid var(--text-mid); outline-offset: 3px; }
+    .ba-label {
+      position: absolute; top: 0.9rem; z-index: 4;
       padding: 0.45rem 0.8rem;
       font-family: 'Jost', sans-serif;
       font-size: 0.58rem;
@@ -386,33 +412,23 @@
       text-transform: uppercase;
       color: var(--text-mid);
       background: rgba(245, 240, 232, 0.9);
-      transition: opacity 1.2s ease;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
     }
-
-    .t-label-wc { opacity: 0; }
-    .transform-stage.is-painted .t-label-photo { opacity: 0; }
-    .transform-stage.is-painted .t-label-wc { opacity: 1; }
-
-    .transform-replay {
-      display: block;
-      margin: 1.2rem auto 0;
+    .ba-label-orig { left: 0.9rem; }
+    .ba-label-wc   { right: 0.9rem; }
+    .ba-stage.ba-hide-orig-label .ba-label-orig,
+    .ba-stage.ba-hide-wc-label   .ba-label-wc { opacity: 0; }
+    .ba-hint {
+      text-align: center;
+      margin-top: 1.1rem;
       font-family: 'Jost', sans-serif;
-      font-size: 0.62rem;
+      font-size: 0.6rem;
       font-weight: 300;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--text-mid);
-      background: transparent;
-      border: 1px solid var(--warm-tan);
-      padding: 0.6rem 1.4rem;
-      cursor: pointer;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.6s ease, background 0.25s, color 0.25s;
+      color: var(--text-light);
     }
-
-    .transform-replay.show { opacity: 1; visibility: visible; }
-    .transform-replay:hover { background: var(--warm-tan); color: var(--cream); }
 
     .transform-kicker {
       font-family: 'Jost', sans-serif;
@@ -465,6 +481,9 @@
       .transform-section { padding: 4rem 1.5rem; }
       .transform-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .transform-text { text-align: center; }
+      .ba-label { font-size: 0.52rem; padding: 0.3rem 0.55rem; top: 0.5rem; }
+      .ba-label-orig { left: 0.5rem; }
+      .ba-label-wc   { right: 0.5rem; }
     }
 
     @media (max-width: 600px) {
@@ -476,7 +495,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .hero-slide, .transform-stage .t-original, .t-label, .hero-caption { transition-duration: 0.01s; }
+      .hero-slide, .ba-label, .hero-caption { transition-duration: 0.01s; }
     }
 
     /* ═══════════════════════════════════════════════════════════════
@@ -643,7 +662,7 @@
     }
     a, button, .btn-view, .header-cart, .strip-link { pointer-events: auto; }
     .collection-card::before { content: ''; position: absolute; inset: 0; z-index: 3; }
-    .hero-slide::before, .transform-stage::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+    .hero-slide::before, .ba-stage::before { content: ''; position: absolute; inset: 0; z-index: 3; }
 
 
 	
@@ -1016,8 +1035,8 @@
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       FROM CAMERA TO CANVAS -- the Night Watch photograph dissolves
-       into the watercolor when this section scrolls into view.
+       FROM CAMERA TO CANVAS -- drag slider comparing the Night Watch
+       photograph with the watercolor, same as the product pages.
        Update the heading and paragraph text here if needed.
   ════════════════════════════════════════════════════════════════ -->
   <section class="transform-section" id="from-camera-to-canvas">
@@ -1025,16 +1044,21 @@
 
       <div class="transform-media">
         <div class="transform-frame">
-          <div class="transform-stage" id="transformStage">
-            <img class="t-watercolor" src="images/landscapes/night-watch.webp" loading="lazy"
+          <div class="ba-stage" id="transformStage">
+            <img class="ba-wc" src="images/landscapes/night-watch.webp" loading="lazy"
                  alt="Night Watch watercolor fine art print of a bare tree beneath a starry night sky by Deborah Heinlen" />
-            <img class="t-original" src="images/landscapes/night-watch-original.webp" loading="lazy"
+            <img class="ba-orig" src="images/landscapes/night-watch-original.webp" loading="lazy"
                  alt="The original night photograph behind Night Watch, a bare tree beneath a starry sky, by Deborah Heinlen" />
-            <span class="t-label t-label-photo" aria-hidden="true">The Photograph</span>
-            <span class="t-label t-label-wc" aria-hidden="true">The Watercolor</span>
+            <span class="ba-label ba-label-orig" aria-hidden="true">Original Photograph</span>
+            <span class="ba-label ba-label-wc" aria-hidden="true">Watercolor Print</span>
+            <div class="ba-handle" role="slider" tabindex="0" aria-label="Compare the original photograph with the watercolor print" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% original photograph">
+              <span class="ba-knob" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 3 12 9 18"></polyline><polyline points="15 6 21 12 15 18"></polyline></svg>
+              </span>
+            </div>
           </div>
         </div>
-        <button class="transform-replay" id="transformReplay" type="button">Watch it again</button>
+        <p class="ba-hint">Drag to compare</p>
       </div>
 
       <div class="transform-text">
@@ -1128,7 +1152,7 @@
       var current = 0;
       var timer = null;
       var paused = false;
-      var INTERVAL = 7000;
+      var INTERVAL = 3500;
 
       var dots = slides.map(function (slide, i) {
         var b = document.createElement('button');
@@ -1168,42 +1192,71 @@
     })();
 
     // ═══════════════════════════════════════════════════════════════
-    // FROM CAMERA TO CANVAS -- photo dissolves into the watercolor
-    // the first time the section scrolls into view
+    // FROM CAMERA TO CANVAS -- drag slider, same as the product pages
     // ═══════════════════════════════════════════════════════════════
     (function () {
-      var stage  = document.getElementById('transformStage');
-      var replay = document.getElementById('transformReplay');
+      var stage = document.getElementById('transformStage');
       if (!stage) return;
-      var HOLD = 1200;     // time to look at the photograph first
-      var FADE = 2600;     // matches the CSS transition
+      var handle = stage.querySelector('.ba-handle');
+      var pos = 50, dragging = false, hintFrame = null;
 
-      function paint() {
-        setTimeout(function () {
-          stage.classList.add('is-painted');
-          setTimeout(function () { replay.classList.add('show'); }, FADE);
-        }, HOLD);
+      function setPos(p) {
+        pos = Math.max(0, Math.min(100, p));
+        stage.style.setProperty('--pos', pos + '%');
+        handle.setAttribute('aria-valuenow', Math.round(pos));
+        handle.setAttribute('aria-valuetext', Math.round(pos) + '% original photograph');
+        stage.classList.toggle('ba-hide-orig-label', pos < 18);
+        stage.classList.toggle('ba-hide-wc-label', pos > 82);
       }
+      function setFromPointer(e) {
+        var rect = stage.getBoundingClientRect();
+        setPos(((e.clientX - rect.left) / rect.width) * 100);
+      }
+      function stopHint() { if (hintFrame) { cancelAnimationFrame(hintFrame); hintFrame = null; } }
 
-      replay.addEventListener('click', function () {
-        replay.classList.remove('show');
-        var orig = stage.querySelector('.t-original');
-        orig.style.transition = 'none';
-        stage.classList.remove('is-painted');
-        void orig.offsetWidth;
-        orig.style.transition = '';
-        paint();
+      stage.addEventListener('pointerdown', function (e) {
+        stopHint();
+        dragging = true;
+        stage.setPointerCapture(e.pointerId);
+        // On touch screens, wait for movement so a scroll gesture doesn't jump the slider
+        if (e.pointerType !== 'touch') setFromPointer(e);
+      });
+      stage.addEventListener('pointermove', function (e) { if (dragging) setFromPointer(e); });
+      ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(function (type) {
+        stage.addEventListener(type, function () { dragging = false; });
       });
 
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (entries) {
+      handle.addEventListener('keydown', function (e) {
+        var step = e.shiftKey ? 10 : 2, handled = true;
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') setPos(pos - step);
+        else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') setPos(pos + step);
+        else if (e.key === 'Home') setPos(0);
+        else if (e.key === 'End') setPos(100);
+        else handled = false;
+        if (handled) { stopHint(); e.preventDefault(); }
+      });
+
+      setPos(50);
+
+      // Gentle one-time nudge when the slider scrolls into view, so visitors see it moves
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduceMotion && 'IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
           if (!entries[0].isIntersecting) return;
-          io.disconnect();
-          paint();
-        }, { threshold: 0.55 });
-        io.observe(stage);
-      } else {
-        paint();
+          observer.disconnect();
+          var keys = [50, 30, 70, 50], segment = 700, start = null;
+          function step(ts) {
+            if (start === null) start = ts;
+            var elapsed = ts - start, i = Math.floor(elapsed / segment);
+            if (i >= keys.length - 1) { setPos(50); hintFrame = null; return; }
+            var t = (elapsed % segment) / segment;
+            var eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+            setPos(keys[i] + (keys[i + 1] - keys[i]) * eased);
+            hintFrame = requestAnimationFrame(step);
+          }
+          setTimeout(function () { hintFrame = requestAnimationFrame(step); }, 400);
+        }, { threshold: 0.6 });
+        observer.observe(stage);
       }
     })();
 
