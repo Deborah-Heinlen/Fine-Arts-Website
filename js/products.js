@@ -33,7 +33,7 @@ const PRODUCTS = {
       framed:  "images/mockups/waterlily-in-bloom-framed.webp",
       canvas:  "images/mockups/waterlily-in-bloom-canvas-wrap.webp",
       metal:   "images/mockups/waterlily-in-bloom-metal.webp",
-      original: "images/originals/waterlily-in-bloom.webp"
+      original: "images/botanical-studies/waterlily-in-bloom-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -63,7 +63,7 @@ const PRODUCTS = {
       framed:  "images/mockups/golden-hour-framed.webp",
       canvas:  "images/mockups/golden-hour-canvas-wrap.webp",
       metal:   "images/mockups/golden-hour-metal.webp",
-      original: "images/originals/golden-hour.webp"
+      original: "images/botanical-studies/golden-hour-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -93,7 +93,7 @@ const PRODUCTS = {
       framed:  "images/mockups/redbuds-in-bloom-framed.webp",
       canvas:  "images/mockups/redbuds-in-bloom-canvas-wrap.webp",
       metal:   "images/mockups/redbuds-in-bloom-metal.webp",
-        original: "images/originals/redbuds-in-bloom.webp"
+        original: "images/botanical-studies/redbuds-in-bloom-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -123,7 +123,7 @@ const PRODUCTS = {
       framed:  "images/mockups/blue-flax-framed.webp",
       canvas:  "images/mockups/blue-flax-canvas-wrap.webp",
       metal:   "images/mockups/blue-flax-metal.webp",
-        original: "images/originals/blue-flax.webp"
+        original: "images/botanical-studies/blue-flax-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -153,7 +153,7 @@ const PRODUCTS = {
       framed:  "images/mockups/stargazer-framed.webp",
       canvas:  "images/mockups/stargazer-canvas-wrap.webp",
       metal:   "images/mockups/stargazer-metal.webp",
-        original: "images/originals/stargazer.webp"
+        original: "images/botanical-studies/stargazer-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -183,7 +183,7 @@ const PRODUCTS = {
       framed:  "images/mockups/hilo-gold-framed.webp",
       canvas:  "images/mockups/hilo-gold-canvas-wrap.webp",
       metal:   "images/mockups/hilo-gold-metal.webp",
-        original: "images/originals/hilo-gold.webp"
+        original: "images/botanical-studies/hilo-gold-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -213,7 +213,7 @@ const PRODUCTS = {
       framed:  "images/mockups/kohala-fire-framed.webp",
       canvas:  "images/mockups/kohala-fire-canvas-wrap.webp",
       metal:   "images/mockups/kohala-fire-metal.webp",
-        original: "images/originals/kohala-fire.webp"
+        original: "images/botanical-studies/kohala-fire-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -243,7 +243,7 @@ const PRODUCTS = {
       framed:  "images/mockups/lowcountry-red-framed.webp",
       canvas:  "images/mockups/lowcountry-red-canvas-wrap.webp",
       metal:   "images/mockups/lowcountry-red-metal.webp",
-        original: "images/originals/lowcountry-red.webp"
+        original: "images/botanical-studies/lowcountry-red-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -273,7 +273,7 @@ const PRODUCTS = {
       framed:  "images/mockups/cloud-forest-crimson-framed.webp",
       canvas:  "images/mockups/cloud-forest-crimson-canvas-wrap.webp",
       metal:   "images/mockups/cloud-forest-crimson-metal.webp",
-        original: "images/originals/cloud-forest-crimson.webp"
+        original: "images/botanical-studies/cloud-forest-crimson-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -303,7 +303,7 @@ const PRODUCTS = {
       framed:  "images/mockups/lavender-and-light-framed.webp",
       canvas:  "images/mockups/lavender-and-light-canvas-wrap.webp",
       metal:   "images/mockups/lavender-and-light-metal.webp",
-        original: "images/originals/lavender-and-light.webp"
+        original: "images/botanical-studies/lavender-and-light-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -337,7 +337,7 @@ const PRODUCTS = {
       framed:  "images/mockups/focused-intent-framed.webp",
       canvas:  "images/mockups/focused-intent-canvas-wrap.webp",
       metal:   "images/mockups/focused-intent-metal.webp",
-        original: "images/originals/focused-intent.webp"
+        original: "images/wildlife/focused-intent-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -373,7 +373,7 @@ const PRODUCTS = {
       framed:  "images/mockups/pathfinder-framed.webp",
       canvas:  "images/mockups/pathfinder-canvas-wrap.webp",
       metal:   "images/mockups/pathfinder-metal.webp",
-        original: "images/originals/pathfinder.webp"
+        original: "images/wildlife/pathfinder-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -408,7 +408,7 @@ const PRODUCTS = {
       framed:  "images/mockups/untamed-majesty-framed.webp",
       canvas:  "images/mockups/untamed-majesty-canvas-wrap.webp",
       metal:   "images/mockups/untamed-majesty-metal.webp",
-        original: "images/originals/untamed-majesty.webp"
+        original: "images/wildlife/untamed-majesty-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -443,7 +443,7 @@ const PRODUCTS = {
       framed:  "images/mockups/firefox-framed.webp",
       canvas:  "images/mockups/firefox-canvas-wrap.webp",
       metal:   "images/mockups/firefox-metal.webp",
-      original: "images/originals/firefox.webp"
+      original: "images/wildlife/firefox-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -482,7 +482,7 @@ const PRODUCTS = {
       framed:  "images/mockups/american-glory-framed.webp",
       canvas:  "images/mockups/american-glory-canvas-wrap.webp",
       metal:   "images/mockups/american-glory-metal.webp",
-        original: "images/originals/american-glory.webp"
+        original: "images/avian-studies/american-glory-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -512,7 +512,7 @@ const PRODUCTS = {
       framed:  "images/mockups/isis-framed.webp",
       canvas:  "images/mockups/isis-canvas-wrap.webp",
       metal:   "images/mockups/isis-metal.webp",
-        original: "images/originals/isis.webp"
+        original: "images/avian-studies/isis-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -542,7 +542,7 @@ const PRODUCTS = {
       framed:  "images/mockups/apollo-framed.webp",
       canvas:  "images/mockups/apollo-canvas-wrap.webp",
       metal:   "images/mockups/apollo-metal.webp",
-        original: "images/originals/apollo.webp"
+        original: "images/avian-studies/apollo-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -572,7 +572,7 @@ const PRODUCTS = {
       framed:  "images/mockups/night-shift-framed.webp",
       canvas:  "images/mockups/night-shift-canvas-wrap.webp",
       metal:   "images/mockups/night-shift-metal.webp",
-      original: "images/originals/night-shift.webp"
+      original: "images/avian-studies/night-shift-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -602,7 +602,7 @@ const PRODUCTS = {
       framed:  "images/mockups/quiet-perch-framed.webp",
       canvas:  "images/mockups/quiet-perch-canvas-wrap.webp",
       metal:   "images/mockups/quiet-perch-metal.webp",
-        original: "images/originals/quiet-perch.webp"
+        original: "images/avian-studies/quiet-perch-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -632,7 +632,7 @@ const PRODUCTS = {
       framed:  "images/mockups/sentinels-watch-framed.webp",
       canvas:  "images/mockups/sentinels-watch-canvas-wrap.webp",
       metal:   "images/mockups/sentinels-watch-metal.webp",
-        original: "images/originals/sentinels-watch.webp"
+        original: "images/avian-studies/sentinels-watch-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -662,7 +662,7 @@ const PRODUCTS = {
       framed:  "images/mockups/still-waters-framed.webp",
       canvas:  "images/mockups/still-waters-canvas-wrap.webp",
       metal:   "images/mockups/still-waters-metal.webp",
-        original: "images/originals/still-waters.webp"
+        original: "images/avian-studies/still-waters-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -692,7 +692,7 @@ const PRODUCTS = {
       framed:  "images/mockups/the-mantle-framed.webp",
       canvas:  "images/mockups/the-mantle-canvas-wrap.webp",
       metal:   "images/mockups/the-mantle-metal.webp",
-        original: "images/originals/the-mantle.webp"
+        original: "images/avian-studies/the-mantle-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -722,7 +722,7 @@ const PRODUCTS = {
       framed:  "images/mockups/crimson-framed.webp",
       canvas:  "images/mockups/crimson-canvas-wrap.webp",
       metal:   "images/mockups/crimson-metal.webp",
-        original: "images/originals/crimson.webp"
+        original: "images/avian-studies/crimson-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -759,7 +759,7 @@ const PRODUCTS = {
       framed:  "images/mockups/rose-and-rust-framed.webp",
       canvas:  "images/mockups/rose-and-rust-canvas-wrap.webp",
       metal:   "images/mockups/rose-and-rust-metal.webp",
-      original: "images/originals/rose-and-rust.webp"
+      original: "images/avian-studies/rose-and-rust-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -794,7 +794,7 @@ const PRODUCTS = {
       framed:  "images/mockups/the-redbird-framed.webp",
       canvas:  "images/mockups/the-redbird-canvas-wrap.webp",
       metal:   "images/mockups/the-redbird-metal.webp",
-      original: "images/originals/the-redbird.webp"
+      original: "images/avian-studies/the-redbird-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -830,7 +830,7 @@ const PRODUCTS = {
       framed:  "images/mockups/hidden-fire-framed.webp",
       canvas:  "images/mockups/hidden-fire-canvas-wrap.webp",
       metal:   "images/mockups/hidden-fire-metal.webp",
-      original: "images/originals/hidden-fire.webp"
+      original: "images/avian-studies/hidden-fire-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -865,7 +865,7 @@ const PRODUCTS = {
       framed:  "images/mockups/full-sail-framed.webp",
       canvas:  "images/mockups/full-sail-canvas-wrap.webp",
       metal:   "images/mockups/full-sail-metal.webp",
-      original: "images/originals/full-sail.webp"
+      original: "images/avian-studies/full-sail-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -897,7 +897,7 @@ const PRODUCTS = {
       framed:  "images/mockups/island-gold-framed.webp",
       canvas:  "images/mockups/island-gold-canvas-wrap.webp",
       metal:   "images/mockups/island-gold-metal.webp",
-        original: "images/originals/island-gold.webp"
+        original: "images/avian-studies/island-gold-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -927,7 +927,7 @@ const PRODUCTS = {
       framed:  "images/mockups/winter-vigil-framed.webp",
       canvas:  "images/mockups/winter-vigil-canvas-wrap.webp",
       metal:   "images/mockups/winter-vigil-metal.webp",
-        original: "images/originals/winter-vigil.webp"
+        original: "images/avian-studies/winter-vigil-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -960,7 +960,7 @@ const PRODUCTS = {
       framed:  "images/mockups/gateway-to-the-queen-city-framed.webp",
       canvas:  "images/mockups/gateway-to-the-queen-city-canvas-wrap.webp",
       metal:   "images/mockups/gateway-to-the-queen-city-metal.webp",
-        original: "images/originals/gateway-to-the-queen-city.webp"
+        original: "images/cincinnati/gateway-to-the-queen-city-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -997,7 +997,7 @@ const PRODUCTS = {
       framed:  "images/mockups/heart-of-the-city-framed.webp",
       canvas:  "images/mockups/heart-of-the-city-canvas-wrap.webp",
       metal:   "images/mockups/heart-of-the-city-metal.webp",
-        original: "images/originals/heart-of-the-city.webp"
+        original: "images/cincinnati/heart-of-the-city-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1033,7 +1033,7 @@ const PRODUCTS = {
       framed:  "images/mockups/love-the-cov-framed.webp",
       canvas:  "images/mockups/love-the-cov-canvas-wrap.webp",
       metal:   "images/mockups/love-the-cov-metal.webp",
-        original: "images/originals/love-the-cov.webp"
+        original: "images/cincinnati/love-the-cov-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1070,7 +1070,7 @@ const PRODUCTS = {
       framed:  "images/mockups/queen-city-overture-framed.webp",
       canvas:  "images/mockups/queen-city-overture-canvas-wrap.webp",
       metal:   "images/mockups/queen-city-overture-metal.webp",
-        original: "images/originals/queen-city-overture.webp"
+        original: "images/cincinnati/queen-city-overture-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1106,7 +1106,7 @@ const PRODUCTS = {
       framed:  "images/mockups/the-grand-terminal-framed.webp",
       canvas:  "images/mockups/the-grand-terminal-canvas-wrap.webp",
       metal:   "images/mockups/the-grand-terminal-metal.webp",
-        original: "images/originals/the-grand-terminal.webp"
+        original: "images/cincinnati/the-grand-terminal-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1143,7 +1143,7 @@ const PRODUCTS = {
       framed:  "images/mockups/the-queens-crown-framed.webp",
       canvas:  "images/mockups/the-queens-crown-canvas-wrap.webp",
       metal:   "images/mockups/the-queens-crown-metal.webp",
-        original: "images/originals/the-queens-crown.webp"
+        original: "images/cincinnati/the-queens-crown-original.webp"
     },
       
     prices: {
@@ -1181,7 +1181,7 @@ const PRODUCTS = {
       framed:  "images/mockups/market-day-framed.webp",
       canvas:  "images/mockups/market-day-canvas-wrap.webp",
       metal:   "images/mockups/market-day-metal.webp",
-        original: "images/originals/market-day.webp"
+        original: "images/cincinnati/market-day-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1219,7 +1219,7 @@ const PRODUCTS = {
       framed:  "images/mockups/ault-park-ascent-framed.webp",
       canvas:  "images/mockups/ault-park-ascent-canvas-wrap.webp",
       metal:   "images/mockups/ault-park-ascent-metal.webp",
-        original: "images/originals/ault-park-ascent.webp"
+        original: "images/cincinnati/ault-park-ascent-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1256,7 +1256,7 @@ const PRODUCTS = {
       framed:  "images/mockups/dawns-early-light-framed.webp",
       canvas:  "images/mockups/dawns-early-light-canvas-wrap.webp",
       metal:   "images/mockups/dawns-early-light-metal.webp",
-        original: "images/originals/dawns-early-light.webp"
+        original: "images/cincinnati/dawns-early-light-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1292,7 +1292,7 @@ const PRODUCTS = {
       framed:  "images/mockups/incline-to-the-mount-framed.webp",
       canvas:  "images/mockups/incline-to-the-mount-canvas-wrap.webp",
       metal:   "images/mockups/incline-to-the-mount-metal.webp",
-        original: "images/originals/incline-to-the-mount.webp"
+        original: "images/cincinnati/incline-to-the-mount-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1331,7 +1331,7 @@ const PRODUCTS = {
       framed:  "images/mockups/forgotten-miles-framed.webp",
       canvas:  "images/mockups/forgotten-miles-canvas-wrap.webp",
       metal:   "images/mockups/forgotten-miles-metal.webp",
-        original: "images/originals/forgotten-miles.webp"
+        original: "images/american-west/forgotten-miles-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1361,7 +1361,7 @@ const PRODUCTS = {
       framed:  "images/mockups/crossroads-framed.webp",
       canvas:  "images/mockups/crossroads-canvas-wrap.webp",
       metal:   "images/mockups/crossroads-metal.webp",
-        original: "images/originals/crossroads.webp"
+        original: "images/american-west/crossroads-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1391,7 +1391,7 @@ const PRODUCTS = {
       framed:  "images/mockups/homestead-framed.webp",
       canvas:  "images/mockups/homestead-canvas-wrap.webp",
       metal:   "images/mockups/homestead-metal.webp",
-        original: "images/originals/homestead.webp"
+        original: "images/american-west/homestead-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1421,7 +1421,7 @@ const PRODUCTS = {
       framed:  "images/mockups/pasture-calm-framed.webp",
       canvas:  "images/mockups/pasture-calm-canvas-wrap.webp",
       metal:   "images/mockups/pasture-calm-metal.webp",
-        original: "images/originals/pasture-calm.webp"
+        original: "images/american-west/pasture-calm-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1454,7 +1454,7 @@ const PRODUCTS = {
       framed:  "images/mockups/biko-framed.webp",
       canvas:  "images/mockups/biko-canvas-wrap.webp",
       metal:   "images/mockups/biko-metal.webp",
-        original: "images/originals/biko.webp"
+        original: "images/horse-country/biko-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1484,7 +1484,7 @@ const PRODUCTS = {
       framed:  "images/mockups/kindred-framed.webp",
       canvas:  "images/mockups/kindred-canvas-wrap.webp",
       metal:   "images/mockups/kindred-metal.webp",
-        original: "images/originals/kindred.webp"
+        original: "images/horse-country/kindred-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1514,7 +1514,7 @@ const PRODUCTS = {
       framed:  "images/mockups/eye-to-eye-framed.webp",
       canvas:  "images/mockups/eye-to-eye-canvas-wrap.webp",
       metal:   "images/mockups/eye-to-eye-metal.webp",
-        original: "images/originals/eye-to-eye.webp"
+        original: "images/horse-country/eye-to-eye-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1544,7 +1544,7 @@ const PRODUCTS = {
       framed:  "images/mockups/the-lookout-framed.webp",
       canvas:  "images/mockups/the-lookout-canvas-wrap.webp",
       metal:   "images/mockups/the-lookout-metal.webp",
-        original: "images/originals/the-lookout.webp"
+        original: "images/horse-country/the-lookout-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1574,7 +1574,7 @@ const PRODUCTS = {
       framed:  "images/mockups/three-wide-framed.webp",
       canvas:  "images/mockups/three-wide-canvas-wrap.webp",
       metal:   "images/mockups/three-wide-metal.webp",
-        original: "images/originals/three-wide.webp"
+        original: "images/horse-country/three-wide-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1604,7 +1604,7 @@ const PRODUCTS = {
       framed:  "images/mockups/the-win-framed.webp",
       canvas:  "images/mockups/the-win-canvas-wrap.webp",
       metal:   "images/mockups/the-win-metal.webp",
-        original: "images/originals/the-win.webp"
+        original: "images/horse-country/the-win-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1634,7 +1634,7 @@ const PRODUCTS = {
       framed:  "images/mockups/nose-to-nose-framed.webp",
       canvas:  "images/mockups/nose-to-nose-canvas-wrap.webp",
       metal:   "images/mockups/nose-to-nose-metal.webp",
-        original: "images/originals/nose-to-nose.webp"
+        original: "images/horse-country/nose-to-nose-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1664,7 +1664,7 @@ const PRODUCTS = {
       framed:  "images/mockups/in-the-clear-framed.webp",
       canvas:  "images/mockups/in-the-clear-canvas-wrap.webp",
       metal:   "images/mockups/in-the-clear-metal.webp",
-        original: "images/originals/in-the-clear.webp"
+        original: "images/horse-country/in-the-clear-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1694,7 +1694,7 @@ const PRODUCTS = {
       framed:  "images/mockups/high-desert-mustang-framed.webp",
       canvas:  "images/mockups/high-desert-mustang-canvas-wrap.webp",
       metal:   "images/mockups/high-desert-mustang-metal.webp",
-        original: "images/originals/high-desert-mustang.webp"
+        original: "images/horse-country/high-desert-mustang-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1724,7 +1724,7 @@ const PRODUCTS = {
       framed:  "images/mockups/new-beginnings-framed.webp",
       canvas:  "images/mockups/new-beginnings-canvas-wrap.webp",
       metal:   "images/mockups/new-beginnings-metal.webp",
-      original: "images/originals/new-beginnings.webp"
+      original: "images/horse-country/new-beginnings-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1756,7 +1756,7 @@ const PRODUCTS = {
       framed:  "images/mockups/ancient-falls-framed.webp",
       canvas:  "images/mockups/ancient-falls-canvas-wrap.webp",
       metal:   "images/mockups/ancient-falls-metal.webp",
-      original: "images/originals/ancient-falls.webp"
+      original: "images/landscapes/ancient-falls-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1786,7 +1786,7 @@ const PRODUCTS = {
       framed:  "images/mockups/bluegrass-summer-framed.webp",
       canvas:  "images/mockups/bluegrass-summer-canvas-wrap.webp",
       metal:   "images/mockups/bluegrass-summer-metal.webp",
-      original: "images/originals/bluegrass-summer.webp"
+      original: "images/landscapes/bluegrass-summer-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1816,7 +1816,7 @@ const PRODUCTS = {
       framed:  "images/mockups/night-watch-framed.webp",
       canvas:  "images/mockups/night-watch-canvas-wrap.webp",
       metal:   "images/mockups/night-watch-metal.webp",
-        original: "images/originals/night-watch.webp"
+        original: "images/landscapes/night-watch-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1846,7 +1846,7 @@ const PRODUCTS = {
       framed:  "images/mockups/blue-channels-framed.webp",
       canvas:  "images/mockups/blue-channels-canvas-wrap.webp",
       metal:   "images/mockups/blue-channels-metal.webp",
-        original: "images/originals/blue-channels.webp"
+        original: "images/landscapes/blue-channels-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1876,7 +1876,7 @@ const PRODUCTS = {
       framed:  "images/mockups/quiet-shore-framed.webp",
       canvas:  "images/mockups/quiet-shore-canvas-wrap.webp",
       metal:   "images/mockups/quiet-shore-metal.webp",
-        original: "images/originals/quiet-shore.webp"
+        original: "images/landscapes/quiet-shore-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1906,7 +1906,7 @@ const PRODUCTS = {
       framed:  "images/mockups/red-rock-light-framed.webp",
       canvas:  "images/mockups/red-rock-light-canvas-wrap.webp",
       metal:   "images/mockups/red-rock-light-metal.webp",
-        original: "images/originals/red-rock-light.webp"
+        original: "images/landscapes/red-rock-light-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1936,7 +1936,7 @@ const PRODUCTS = {
       framed:  "images/mockups/lakeside-solitude-framed.webp",
       canvas:  "images/mockups/lakeside-solitude-canvas-wrap.webp",
       metal:   "images/mockups/lakeside-solitude-metal.webp",
-        original: "images/originals/lakeside-solitude.webp"
+        original: "images/landscapes/lakeside-solitude-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1966,7 +1966,7 @@ const PRODUCTS = {
       framed:  "images/mockups/the-long-melt-framed.webp",
       canvas:  "images/mockups/the-long-melt-canvas-wrap.webp",
       metal:   "images/mockups/the-long-melt-metal.webp",
-        original: "images/originals/the-long-melt.webp"
+        original: "images/landscapes/the-long-melt-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -1996,7 +1996,7 @@ const PRODUCTS = {
       framed:  "images/mockups/reflections-of-wonder-framed.webp",
       canvas:  "images/mockups/reflections-of-wonder-canvas-wrap.webp",
       metal:   "images/mockups/reflections-of-wonder-metal.webp",
-        original: "images/originals/reflections-of-wonder.webp"
+        original: "images/landscapes/reflections-of-wonder-original.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
