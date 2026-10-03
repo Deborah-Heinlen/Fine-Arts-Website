@@ -735,7 +735,7 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
          },
     related: [
-      { id: "the-redbird",               title: "The Redbird",                    image: "images/avian-studies/the-redbird.webp" },
+      { id: "redbird",               title: "The Redbird",                    image: "images/avian-studies/redbird.webp" },
       { id: "rose-and-rust",                title: "Rose and Rust",              image: "images/avian-studies/rose-and-rust.webp" },
       { id: "hidden-fire",              title: "Hidden Fire",                   image: "images/avian-studies/hidden-fire.webp" }
     ]
@@ -772,14 +772,14 @@ const PRODUCTS = {
       framed: { "160": "9x12 print in 11x14 frame", "240": "12x16 print in 16x20 frame", "300": "16x20 print in 20x24 frame", "400": "20x26 print in 24x30 frame" }
      },
     related: [
-      { id: "the-redbird",              title: "The Redbird",                  image: "images/avian-studies/the-redbird.webp" },
+      { id: "redbird",              title: "The Redbird",                  image: "images/avian-studies/redbird.webp" },
       { id: "crimson",                  title: "Crimson",                         image: "images/avian-studies/crimson.webp" },
       { id: "hidden-fire",              title: "Hidden Fire",                   image: "images/avian-studies/hidden-fire.webp" }
     ]
   },
     
-    "the-redbird": {
-    id:              "the-redbird",
+    "redbird": {
+    id:              "redbird",
     number:          "No. 08",
     collection:      "avian-studies",
     collectionLabel: "Avian Studies",
@@ -789,12 +789,12 @@ const PRODUCTS = {
     altText:         "Northern cardinal watercolor print -- vivid red male cardinal perched on a weathered wooden rail against a soft green background",
     description:     "The Northern Cardinal gets its name from the Roman Catholic cardinals whose brilliant red robes were as recognizable in the Old World as this bird is in the New.  The male is one of the only songbirds in North America clothed entirely in red -- no stripes, no patches, no hedging -- just that complete, unambiguous declaration of color against whatever background he chooses.  He is the state bird of seven states, including both Ohio and Kentucky, a distinction earned not by committee but by the simple fact that he is impossible to overlook and impossible to forget.  Unlike most migratory songbirds, the Northern Cardinal stays through winter, a flash of living red against snow and bare branches that has been stopping people mid-stride for centuries.  Photographed perched on a weathered wooden rail and rendered with a watercolor finish from an original photograph, this portrait puts you face to face with one of the most recognized birds in North America -- still, watchful, and entirely at home exactly where he is.",
     images: {
-      main:    "images/avian-studies/the-redbird.webp",
-      room:    "images/avian-studies/the-redbird-room.webp",
-      framed:  "images/avian-studies/the-redbird-framed.webp",
-      canvas:  "images/avian-studies/the-redbird-canvas-wrap.webp",
-      metal:   "images/avian-studies/the-redbird-metal.webp",
-      original: "images/avian-studies/the-redbird-original.webp"
+      main:    "images/avian-studies/redbird.webp",
+      room:    "images/avian-studies/redbird-room.webp",
+      framed:  "images/avian-studies/redbird-framed.webp",
+      canvas:  "images/avian-studies/redbird-canvas-wrap.webp",
+      metal:   "images/avian-studies/redbird-metal.webp",
+      original: "images/avian-studies/redbird.webp"
     },
     prices: {
       metal:  { "55": 55,   "95": 95,   "180": 180 },
@@ -845,7 +845,7 @@ const PRODUCTS = {
     related: [
       { id: "rose-and-rust",              title: "Rose and Rust",                  image: "images/avian-studies/rose-and-rust.webp" },
       { id: "crimson",                  title: "Crimson",                         image: "images/avian-studies/crimson.webp" },
-      { id: "the-redbird",              title: "The Redbird",                   image: "images/avian-studies/the-redbird.webp" }
+      { id: "redbird",              title: "The Redbird",                   image: "images/avian-studies/redbird.webp" }
     ]
   },
     
@@ -2051,7 +2051,7 @@ const COLLECTIONS = {
     "the-mantle",
     "crimson",
     "rose-and-rust", 
-    "the-redbird",      
+    "redbird",      
     "hidden-fire", 
     "sentinels-watch",
     "full-sail",
